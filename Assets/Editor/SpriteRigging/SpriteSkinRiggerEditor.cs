@@ -103,7 +103,7 @@ namespace SpriteRigging
 		//Read bone list and populate it with components corresponding to its tags
 		private void RigBoneList ()
 		{
-
+			BoneRigging.RigBoneList(spriteSkinRigger.boneList, spriteSkinRigger.defaultRigidbody, spriteSkinRigger.defaultAnchor);
 		}
 	}
 }

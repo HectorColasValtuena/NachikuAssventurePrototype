@@ -42,7 +42,9 @@ namespace SpriteRigging.BoneUtility
 		public static bool RequiresRigidbody (Transform target) { return RequiresRigidbody(target.name); }
 		public static bool RequiresRigidbody (string name)
 		{
-			return GetParameterList(name).Contains(rigidbodyTag.ToString());
+			return GetParameterList(name).Contains(rigidbodyTag.ToString())
+				|| BoneNomenclature.RequiresAnchor(name)
+				|| BoneNomenclature.RequiresSprings(name);
 		}
 
 		//true if the target requires a ground anchor towards its parent
@@ -50,6 +52,13 @@ namespace SpriteRigging.BoneUtility
 		public static bool RequiresAnchor (string name)
 		{
 			return GetParameterList(name).Contains(anchorTag.ToString());
+		}
+
+		//true if the target has springs
+		public static bool RequiresSprings (Transform target) { return RequiresSprings(target.name); }
+		public static bool RequiresSprings (string name)
+		{
+			return GetParameterList(name).Contains(springTag.ToString());
 		}
 
 		//get a list of the proper names target bone requires a spring towards
