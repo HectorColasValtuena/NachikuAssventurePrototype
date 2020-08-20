@@ -334,6 +334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68672007ac70d744a8247e9097a850fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultRigidbody: {fileID: -913065796512859501, guid: 93c5961a0050eaa4e9b26b1df4af81ac, type: 3}
+  defaultAnchor: {fileID: 3971993850123967271, guid: 93c5961a0050eaa4e9b26b1df4af81ac, type: 3}
   boneList:
   - {fileID: 7504623456989188542}
   - {fileID: 1264753471008292740}

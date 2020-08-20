@@ -50,6 +50,7 @@ namespace SpriteRigging
 			{
 				Debug.Log("Rigging children of " + target.name);
 				RigBoneList();
+				Debug.Log("==== Done rigging");
 			}
 		}
 
