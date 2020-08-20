@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+using SpriteRigging.BoneUtility;
+
 namespace SpriteRigging
 {
 	[CustomEditor(typeof(SpriteSkinRigger))]
@@ -19,12 +21,13 @@ namespace SpriteRigging
 
 			/*[DEBUG]*/DoIncognitoButton();
 			DoChildrenToBoneListButton();
+			DoRigBoneListButton();
 		}
 
 	/*[DEBUG]*/
 		public void DoIncognitoButton ()
 		{
-			if (GUILayout.Button("Incognito Button", GUILayout.MaxWidth(125f)))
+			if (GUILayout.Button("Incognito Button"))//, GUILayout.MaxWidth(125f)))
 			{
 				Debug.Log("Don't mind me, I'm just Incognito Button");
 				DebugReportBoneList();
@@ -34,10 +37,19 @@ namespace SpriteRigging
 
 		public void DoChildrenToBoneListButton ()
 		{
-			if (GUILayout.Button("Children to Bone List", GUILayout.MaxWidth(125f)))
+			if (GUILayout.Button("Children to Bone List"))//, GUILayout.MaxWidth(125f)))
 			{
 				Debug.Log("Children to bone list");
 				ChildrenToBoneList();
+			}
+		}
+
+		public void DoRigBoneListButton ()
+		{
+			if (GUILayout.Button("Rig bone list"))//, GUILayout.MaxWidth(125f)))
+			{
+				Debug.Log("Rigging children of " + target.name);
+				RigBoneList();
 			}
 		}
 
@@ -86,6 +98,12 @@ namespace SpriteRigging
 				Debug.Log(springList);
 				Debug.Log("========");
 			}
+		}
+
+		//Read bone list and populate it with components corresponding to its tags
+		private void RigBoneList ()
+		{
+
 		}
 	}
 }
