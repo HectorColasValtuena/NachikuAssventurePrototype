@@ -1,0 +1,15 @@
+﻿using UnityEditor.U2D.Animation;
+
+namespace SpriteRigging.Editor
+{
+	public static class SpriteSkinRiggingExtension
+	{
+		public static void IncognitoButton (this UnityEditor.U2D.Animation.SpriteSkinEditor spriteSkinEditor)
+		{
+			if (GUILayout.Button("Incognito Button", GUILayout.MaxWidth(125f)))
+			{
+				Debug.Log("Don't mind me, I'm just Incognito Button");
+			}
+		}
+	}
+}

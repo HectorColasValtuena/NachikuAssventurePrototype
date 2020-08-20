@@ -1,0 +1,27 @@
+﻿#if ENABLE_ANIMATION_COLLECTION && ENABLE_ANIMATION_BURST
+#define ENABLE_ANIMATION_PERFORMANCE
+#endif
+
+using UnityEngine;
+using UnityEditorInternal;
+using UnityEngine.U2D.Animation;
+using UnityEditor.IMGUI.Controls;
+using UnityEngine.U2D;
+using UnityEngine.U2D.Common;
+
+namespace UnityEditor.U2D.Animation
+{
+	[CustomEditor(typeof(UnityEngine.U2D.Animation.SpriteSkin))]
+	[CanEditMultipleObjects]
+	//[DefaultExecutionOrder(-100)]
+	public class RiggableSpriteSkinEditor : SpriteSkinEditor
+	{
+		private void DoGenerateBonesButton()
+		{
+			if (GUILayout.Button("Incognito button", GUILayout.MaxWidth(125f)))
+			{
+				Debug.Log("Don't mind me, I'm just Incognito Button.");
+			}
+		}
+	}
+}
