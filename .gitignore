@@ -11,6 +11,8 @@
 /[Mm]emoryCaptures/
 /[Aa]ssets/[Ss]tandard [Aa]ssets/
 
+/[Rr]esources/[Rr]aw
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
