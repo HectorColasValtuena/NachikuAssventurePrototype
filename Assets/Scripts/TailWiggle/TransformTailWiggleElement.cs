@@ -2,17 +2,25 @@
 
 namespace SpriteRigging
 {
-	public class TransformTailWiggleElement : MonoBehaviour
+	public class TransformTailWiggleElement : MonoBehaviour, ITailElement
 	{
-		private Quaternion initialRotation;
+	//Implementación ITailElement
+		public float targetRotation
+		{
+			get { return _targetRotation; }
+			set { _targetRotation = Mathf.Clamp(value, -maxOffsetRotation, maxOffsetRotation); }
+		}
+	//ENDOF Implementación ITailElement
+		public float maxOffsetRotation = 30f;
+		public bool baseRotationFromStartingRotation = true;
 
-		public float offsetRotationTarget = 0.0f;
+		private Quaternion baseRotation;
+		private float _targetRotation = 0.0f;
 		private float lerpRate = 0.001f;
-		public float maxOffsetRotation = 30.0f;
 
 		void Start()
 		{
-			initialRotation = transform.rotation;
+			baseRotation = baseRotationFromStartingRotation ? transform.rotation : Quaternion.identity;
 		}
 
 		void Update()
@@ -22,16 +30,7 @@ namespace SpriteRigging
 
 		private void MatchRotation ()
 		{
-			//float targetAngle = Mathf.SmoothStep(transform.rotation.eulerAngles.z, initialRotation + offsetRotationTarget, lerpRate);
-			//transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, targetAngle);
-			transform.rotation = Quaternion.Slerp(transform.rotation, initialRotation * Quaternion.Euler(0f, 0f, offsetRotationTarget), lerpRate);
-			//transform.rotation = initialRotation * Quaternion.Euler(0f, 0f, targetAngle);
-		}
-
-		public void RotateElement (float value)
-		{
-			offsetRotationTarget += value;
-			offsetRotationTarget = Mathf.Clamp(offsetRotationTarget, -maxOffsetRotation, maxOffsetRotation);
+			transform.rotation = Quaternion.Slerp(transform.rotation, baseRotation * Quaternion.Euler(0f, 0f, _targetRotation), lerpRate);
 		}
 	}
 }

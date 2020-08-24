@@ -47,18 +47,8 @@ namespace SpriteRigging
 
 				if (direction > 0) { direction--; } else { direction ++; }//move direction towards 0 so it gets randomly changed every several segments
 
-				elementControllerList[i].RotateElement(torsion);
-				/*
-				//calculate a new rotation as a small variation of previous element's rotation
-				float targetRotation = previousRotation + Random.Range(-maxRotationPerElement * Time.deltaTime, maxRotationPerElement * Time.deltaTime);
-				//clamp rotation to the limits
-				targetRotation = Mathf.Clamp(targetRotation, -maxElementRotation, maxElementRotation);
-				//smooth rotation with respect to previous element to avoid jagged or serrated edges
-				targetRotation = Mathf.Lerp(previousRotation, targetRotation, interElementLerp);
-
-				elementControllerList[i].offsetRotationTarget = targetRotation;// assign target rotation
-				targetRotation = previousRotation;	//store this element's rotation for further consultation
-				//*/
+				//rotate element by torsion degrees
+				elementControllerList[i].targetRotation += torsion;
 			}
 		}
 	}
