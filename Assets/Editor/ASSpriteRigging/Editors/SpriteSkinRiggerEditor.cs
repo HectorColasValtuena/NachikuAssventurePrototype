@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-using ASSPriteRigging.BoneUtility;
+using ASSpriteRigging.BoneUtility;
 
-namespace ASSPriteRigging
+namespace ASSpriteRigging.Editors
 {
 	[CustomEditor(typeof(SpriteSkinRigger))]
 	public class SpriteSkinRiggerEditor : Editor
@@ -13,7 +13,7 @@ namespace ASSPriteRigging
 
 		private SpriteSkinRigger spriteSkinRigger;
 
-	//Setup button layout
+	//Setup GUI layout
 		public override void OnInspectorGUI ()
 		{
 			base.OnInspectorGUI();
@@ -63,7 +63,7 @@ namespace ASSPriteRigging
 				GenerateSpriteBones();
 			}
 		}
-	//ENDOF Setup button layout
+	//ENDOF Setup GUI layout
 
 		private void GenerateSpriteBones ()
 		{
@@ -76,25 +76,7 @@ namespace ASSPriteRigging
 		//incorporate every child without an ignore tag to our bone list
 		private void ChildrenToBoneList ()
 		{
-			List<Transform> childList = new List<Transform>();
-
-			Debug.Log(spriteSkinRigger.transform.name + " child count: " + spriteSkinRigger.transform.childCount);
-
-			for (int i = 0, iLimit = spriteSkinRigger.transform.childCount; i < iLimit; i++)
-			{
-				Transform child = spriteSkinRigger.transform.GetChild(i);
-
-				Debug.Log(i + ": " + BoneNomenclature.GetParameterList(child) + " > " + BoneNomenclature.IsIgnored(child));
-
-				//add this child to the list if it doesn't contain an ignore tag
-				if (!BoneNomenclature.IsIgnored(child))
-				{
-					childList.Add(child);
-				}
-			}
-
-			spriteSkinRigger.boneList = childList.ToArray();
-			Debug.Log("added children: " + childList.Count);
+			spriteSkinRigger.boneList = BoneUtility.BoneHierarchy.GetChildren(spriteSkinRigger.transform).ToArray();
 		}
 
 		private void DebugReportBoneList ()

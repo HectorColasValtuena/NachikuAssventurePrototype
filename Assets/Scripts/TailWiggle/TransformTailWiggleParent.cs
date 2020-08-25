@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ASSPriteRigging
+namespace ASSpriteRigging
 {
 	public class TransformTailWiggleParent : MonoBehaviour
 	{

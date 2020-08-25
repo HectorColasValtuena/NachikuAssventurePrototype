@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace ASSPriteRigging
+using ASSpriteRigging.BoneUtility;
+
+namespace ASSpriteRigging.Editors
 {
 	[CustomEditor(typeof(TransformTailWiggleParent))]
 	public class TransformTailWiggleParentEditor : Editor
 	{
 		private TransformTailWiggleParent transformTailWiggleParent;
 
+	//Setup GUI layout
 		public override void OnInspectorGUI ()
 		{
 			base.OnInspectorGUI();
@@ -28,26 +31,11 @@ namespace ASSPriteRigging
 		{
 			if (GUILayout.Button("Add controller to elements", GUILayout.MaxWidth(200f))) { AddComponentToTransformList<TransformTailWiggleElement>(transformTailWiggleParent.elementList); }	
 		}
+	//ENDOF Setup GUI layout
 
 		private void GetElementListFromChildren ()
 		{
-			transformTailWiggleParent.elementList = GetAllChildren(transformTailWiggleParent.transform, true).ToArray();
-		}
-
-		private List<Transform> GetAllChildren (Transform target, bool recursive = true)
-		{
-			List<Transform> childList = new List<Transform>();
-			for (int i = 0, iLimit = target.childCount; i < iLimit; i++)
-			{
-				Transform child = target.GetChild(i);
-
-				childList.Add(child);
-				if (recursive)
-				{
-					childList.AddRange(GetAllChildren(child, true));
-				}
-			}
-			return childList;
+			transformTailWiggleParent.elementList = BoneHierarchy.GetChildren(transformTailWiggleParent.transform, recursive: true, includeIgnored: true).ToArray();
 		}
 
 		private void AddComponentToTransformList <T> (Transform[] transformList) where T : MonoBehaviour

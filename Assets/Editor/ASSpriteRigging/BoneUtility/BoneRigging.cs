@@ -3,7 +3,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace ASSPriteRigging.BoneUtility
+namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneRigging
 	{

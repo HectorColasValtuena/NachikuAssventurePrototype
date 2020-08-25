@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ASSPriteRigging
+namespace ASSpriteRigging
 {
 	public class SpriteSkinRigger : MonoBehaviour
 	{

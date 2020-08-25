@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ASSPriteRigging.BoneUtility
+namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneNomenclature
 	{
