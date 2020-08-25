@@ -1,0 +1,813 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"button",
+				"buttonResult"
+			],
+			[
+				"spr",
+				"SpringJoint2D"
+			],
+			[
+				"Bo",
+				"BoneRigging"
+			],
+			[
+				"ne",
+				"newAnchor"
+			],
+			[
+				"S",
+				"SpringJoint2D"
+			],
+			[
+				"Rigi",
+				"Rigidbody2D"
+			],
+			[
+				"new",
+				"newRigidbody"
+			],
+			[
+				"Rigid",
+				"RigidbodyApplySettings"
+			],
+			[
+				"def",
+				"defaultAnchor"
+			],
+			[
+				"defa",
+				"defaultRigidbody"
+			],
+			[
+				"Requires",
+				"RequiresAnchor"
+			],
+			[
+				"target",
+				"targetEuler"
+			],
+			[
+				"pre",
+				"previousRotation"
+			],
+			[
+				"targ",
+				"targetRotation"
+			],
+			[
+				"tar",
+				"targetRotation"
+			],
+			[
+				"ta",
+				"targetRotation"
+			],
+			[
+				"max",
+				"maxRotationPerElement"
+			],
+			[
+				"pr",
+				"previousRotation"
+			],
+			[
+				"ele",
+				"elementList"
+			],
+			[
+				"ee",
+				"elementControllerList"
+			],
+			[
+				"Tranm",
+				"TransformTailWiggleElement"
+			],
+			[
+				"elem",
+				"elementControllerList"
+			],
+			[
+				"Tr",
+				"TransformTailWiggleParent"
+			],
+			[
+				"child",
+				"childList"
+			],
+			[
+				"e",
+				"elementList"
+			],
+			[
+				"tra",
+				"TransformTailWiggleParent"
+			],
+			[
+				"Get",
+				"GetTransformChildren"
+			],
+			[
+				"s",
+				"springName"
+			],
+			[
+				"spring",
+				"springList"
+			],
+			[
+				"Bone",
+				"BoneNomenclature"
+			],
+			[
+				"bone",
+				"boneList"
+			],
+			[
+				"transform",
+				"Transform"
+			],
+			[
+				"tag",
+				"tagFoundIndex"
+			],
+			[
+				"paramet",
+				"parameterEndIndex"
+			],
+			[
+				"para",
+				"parameterStartIndex"
+			],
+			[
+				"parameter",
+				"parameterCloseTag"
+			],
+			[
+				"GetP",
+				"GetParameterList"
+			],
+			[
+				"Spri",
+				"SpriteSkinRigger"
+			],
+			[
+				"instance",
+				"instanceController"
+			],
+			[
+				"gam",
+				"GameObject"
+			],
+			[
+				"ga",
+				"gameObject"
+			],
+			[
+				"parent",
+				"_parentController"
+			],
+			[
+				"T",
+				"TController"
+			],
+			[
+				"Controller",
+				"ControllerComponentBase"
+			],
+			[
+				"Thing",
+				"ThingMethod"
+			],
+			[
+				"ghost",
+				"ghostContainer"
+			],
+			[
+				"p",
+				"pointerDrag"
+			],
+			[
+				"dr",
+				"DroppedElement"
+			],
+			[
+				"dra",
+				"draggableTag"
+			],
+			[
+				"game",
+				"gameObject"
+			],
+			[
+				"A",
+				"ActiveDialog"
+			],
+			[
+				"cloud",
+				"cloudManager"
+			],
+			[
+				"x",
+				"xOffset"
+			],
+			[
+				"parallax",
+				"ParallaxSettings"
+			],
+			[
+				"verti",
+				"verticalRatio"
+			],
+			[
+				"a",
+				"anchorRelativeY"
+			],
+			[
+				"ver",
+				"verticalRatio"
+			],
+			[
+				"y",
+				"yMinPosition"
+			],
+			[
+				"dyn",
+				"dynamiteFX"
+			],
+			[
+				"dynami",
+				"DynamiteQuestPhase1Advancer"
+			],
+			[
+				"center",
+				"centerPoint"
+			],
+			[
+				"move",
+				"moveSpeed"
+			],
+			[
+				"cloudS",
+				"cloudSpriteList"
+			],
+			[
+				"rege",
+				"RegenerateStarpower"
+			],
+			[
+				"m_st",
+				"m_StarpowerReservoir"
+			],
+			[
+				"m_",
+				"m_FacingRight"
+			],
+			[
+				"r",
+				"ResizeCollider"
+			],
+			[
+				"Vec",
+				"Vector3"
+			],
+			[
+				"re",
+				"relativeTargetPosition"
+			],
+			[
+				"t",
+				"transform"
+			],
+			[
+				"cam",
+				"cameraFocusTarget"
+			],
+			[
+				"L",
+				"LevelManager"
+			],
+			[
+				"Set",
+				"SetBool"
+			],
+			[
+				"player",
+				"playerController"
+			],
+			[
+				"level",
+				"levelNumber"
+			],
+			[
+				"Leve",
+				"LevelUnlock"
+			],
+			[
+				"Level",
+				"LevelIsUnlocked"
+			],
+			[
+				"ma",
+				"maxSize"
+			],
+			[
+				"siz",
+				"sizeLerpRate"
+			],
+			[
+				"size",
+				"sizePerSpeed"
+			],
+			[
+				"targe",
+				"targetController"
+			],
+			[
+				"reset",
+				"ResetPlayer"
+			],
+			[
+				"starwp",
+				"StarpowerReservoir"
+			],
+			[
+				"st",
+				"starpowerGained"
+			],
+			[
+				"rese",
+				"resetInterfaceElement"
+			],
+			[
+				"res",
+				"resetInput"
+			],
+			[
+				"c",
+				"CheckResetInput"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"checkp",
+				"checkpointList"
+			],
+			[
+				"active",
+				"activeCheckpoint"
+			],
+			[
+				"ac",
+				"activeCheckpoint"
+			],
+			[
+				"check",
+				"checkpointList"
+			],
+			[
+				"sprite",
+				"spriteRenderer"
+			],
+			[
+				"sp",
+				"spriteRenderer"
+			],
+			[
+				"m_jump",
+				"m_JumpSpeed"
+			],
+			[
+				"m_Star",
+				"m_StarDashSpeed"
+			],
+			[
+				"m_star",
+				"m_StarDashSpeed"
+			],
+			[
+				"Vecto",
+				"Vector3"
+			],
+			[
+				"set",
+				"SetActiveStars"
+			],
+			[
+				"Sta",
+				"StarpowerReservoir"
+			],
+			[
+				"StarDas",
+				"StarDashing"
+			],
+			[
+				"m_j",
+				"m_JumpFlag"
+			],
+			[
+				"Rec",
+				"RectTransform"
+			],
+			[
+				"rect",
+				"RectTransform"
+			],
+			[
+				"Transfo",
+				"transform"
+			],
+			[
+				"I",
+				"ISignalHandler"
+			],
+			[
+				"wave",
+				"waveValue"
+			],
+			[
+				"Wave",
+				"WaveDrawer"
+			],
+			[
+				"IS",
+				"ISignalValue"
+			],
+			[
+				"GetChi",
+				"GetChildrenTouching"
+			],
+			[
+				"lows",
+				"lowestOffset"
+			],
+			[
+				"l",
+				"lowestOffset"
+			],
+			[
+				"off",
+				"Offset"
+			],
+			[
+				"lowe",
+				"lowestOffset"
+			],
+			[
+				"lo",
+				"lowestOffset"
+			],
+			[
+				"chil",
+				"childAsContainer"
+			],
+			[
+				"ISignal",
+				"ISignalContainer"
+			],
+			[
+				"ISig",
+				"ISignalHandler"
+			],
+			[
+				"ISi",
+				"ISignalContainer"
+			],
+			[
+				"Add",
+				"AddChildAt"
+			],
+			[
+				"Wa",
+				"Wave"
+			],
+			[
+				"TestItem",
+				"testItem1"
+			],
+			[
+				"test",
+				"testItem1"
+			],
+			[
+				"poi",
+				"pointList"
+			],
+			[
+				"point",
+				"pointList"
+			],
+			[
+				"poin",
+				"pointDensity"
+			],
+			[
+				"false",
+				"false"
+			],
+			[
+				"IV",
+				"IWSViewport"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"convert",
+				"Convert Case: Title Case"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor"
+	],
+	"file_history":
+	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/Interfaces/ITailElement.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/TransformTailWiggleParent.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/TransformTailWiggleElement.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Noped/SpriteSkinRiggingExtension.cs.nope",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/SpriteSkinRiggerEditor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/TransformTailWiggleParentEditor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/BoneUtility/BoneNomenclature.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/BoneUtility/BoneRigging.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Runtime/SpriteSkin.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
+		"/D/Juegos/The.Elfs.Lewd.Training/Readme.txt",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteSkinRigger/SpriteSkinRiggerEditor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/TailWiggle/TransformTailWiggleParentEditor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteSkinRigger/BoneNomenclature.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/TransformRandomTailWiggleElement.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/TransformRandomTailWiggle.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/Interfaces/IInstanceManager.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Runtime/SpriteSkinUtility.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/ResourceLoader.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Scripts/SpriteSkinRiggingExtension.cs",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SkinningModule/SpriteMeshData/SpriteMeshDataController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SkinningModule/BaseTool.cs",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SkinningModule/GenerateGeometryTool.cs",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/Unity.2D.Animation.Editor.asmdef",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/Assets/SkinningModule/MeshToolbar.uxml",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/Assets/SkinningModule/ToolbarStyle.uss",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/Unity.2D.Animation.Editor.asmdef",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/Assets/SkinningModule/GenerateGeometryPanel.uxml",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/SpriteSkin/SpriteSkinEditor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SkinningModule/UI/Toolbar.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/Assets/LayoutOverlay/LayoutOverlay.uxml",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/Assets/SkinningModule/BoneInspectorPanel.uxml",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteSkinRigger/NewBehaviourScript.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteSkinRigger/SpriteSkinRigger.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Scripts/RiggableSpriteSkinEditorWrong.cs.nope.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Scripts/SpriteSkinEditorExtension.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/ModifierSystem/Interfaces/IModifierController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/ModifierSystem/Classes/ModifierController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Components/RiggableSpriteSkin.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/Interfaces/IInstanceController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/Controller/BaseController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/Controller/Interfaces/IBaseController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/InstantiationInstanceManager.cs",
+		"/D/Torrents/Adobe Photoshop CC 2015 (20150529.r.88) (32+64Bit) + Crack/ReadMe.txt",
+		"/C/Users/Mephi/AppData/Local/Temp/Temp1_Adobe Photoshop CS2 With KeyGen.zip/Adobe Photoshop CS2 With KeyGen/HOW TO INSTALL.txt",
+		"/C/Users/Mephi/Desktop/Adobe Photoshop CS2 With KeyGen/HOW TO INSTALL.txt",
+		"/C/Users/Mephi/Desktop/hosts",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Editor/SpritePostProcess.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/InstanceControllerBase.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/IInstanceController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/IInstanceManager.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/InstanceController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/InstanceManager/IManagedObject.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/ModifierSystem/Interfaces/IModifierStack.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CombatSystem/Interfaces/IEffectStack.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/IManaPool.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CombatSystem/Interfaces/IDamageStack.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CombatSystem/Interfaces/IEffectStack.txt",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/Scripts/constructorTests.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/Controller/ControllerComponentBase.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/Controller/IControllerComponent.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Classes/ManaPool.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CombatSystem/Enums/EDamageElements.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Classes/CasterController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/ICasterController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/Controller/IBaseController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Core/Controller/ControllerComponentBase.txt",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/ModifierSystem/Interfaces/IModifierStackFloat.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/ModifierSystem/Interfaces/IModifierFloat.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/ModifierSystem/Interfaces/IModifier.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Classes/ManaPool.txt",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/IManaPool.txt",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/ISpellCastingController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/ISpell.cs",
+		"/D/Projects/Signal Breaker/Signal Breaker Unity Project/Assets/Scripts/Experimentos/DragDrop/DragXperiment.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/DamageSystem/Interfaces/IDamageStack.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/DamageSystem/Enums/EDamageElements.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CharacterSystem/Classes/CharacterRoot.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CharacterSystem/Interfaces/ICharacterRoot.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/BaseController/Interfaces/IBaseController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CharacterSystem/Clases/CharacterRoot.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/CharacterSystem/Clases/CharacterRoot.txt",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Clases/ModifierController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/IModifierStack.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/IModifierController.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/IModifier.cs",
+		"/C/Users/Mephi/AppData/Local/Temp/7zO4C071B9E/README.txt",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/SpellSystem/Interfaces/ICharacterModifiersStack.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/Scripts/InstantiateExperiment.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/Scripts/InterfacesTest.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/Scripts/ScriptableEggsperiment.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/ScriptableObjects/Classes/TestScriptableObject.cs",
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Interfaces/ISpell.cs",
+		"/D/Juegos/Doom/zdl/doc/zdl-log.txt",
+		"/C/Users/Mephi/Downloads/PKHeX_Error_Report 20191124212016.txt",
+		"/C/Users/Mephi/Downloads/main",
+		"/C/Users/Mephi/Desktop/Felicidades Gabbu",
+		"/D/Projects/Signal Breaker/Signal Breaker Unity Project/Assets/Scripts/Experimentos/DragDrop/DropReceiverXperiment.cs",
+		"/D/Projects/Signal Breaker/.gitignore",
+		"/D/Projects/CatAttack/.gitignore",
+		"/C/Users/Mephi/Desktop/tuputamadreenbragas.txt",
+		"/C/Users/Mephi/Documents/My Games/Binding of Isaac Afterbirth/options.ini",
+		"/C/Users/Mephi/Desktop/81-C# Script-NewBehaviourScript.cs.txt",
+		"/C/Users/Mephi/AppData/Local/Temp/Temp1_Fallout.3.Game.Of.The.Year.v1.7.0.3.GOG.zip/Fallout.3.Game.Of.The.Year.v1.7.0.3.GOG/README.txt",
+		"/D/Projects/Signal Breaker/Signal Breaker Unity Project/Assets/Scripts/Experimentos/RandomTests/DragXperiment.cs",
+		"/C/Users/Mephi/AppData/Local/Temp/7zO050CF131/README.txt",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/LevelManager.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/ImmobilizeOnEnable.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/DeImmobilizeOnEnable.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/texts/Teksto felisitasion isawa.txt",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/UI/EscMenuDeployer.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/TO-DO.txt",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/texts/MinerKittyTexts.txt",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/Environment/DisableOtherOnMyEnable.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/texts/CartaJandro",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/UI/MainMenu/QuitGameButton.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/FX/ParallaxSystem/ParallaxController.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/Environment/EnableOtherOnMyEnable.cs",
+		"/D/Projects/CatAttack/Canciones gonitas undertale.txt",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/ProgressionManager.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/UI/DialogAdvancer.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/texts/Napstatext.txt",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/ImmobilizeOnTrigger.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/CatController/PlatformerCharacter2D.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/FreezeOnEnable.cs",
+		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/UI/MenuPlayerprefsResetter.cs"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "NachikuAdventure.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
