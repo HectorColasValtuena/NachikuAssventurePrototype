@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace SpriteRigging
+namespace ASSPriteRigging
 {
 	[CustomEditor(typeof(TransformTailWiggleParent))]
 	public class TransformTailWiggleParentEditor : Editor

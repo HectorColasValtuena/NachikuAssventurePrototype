@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SpriteRigging
+namespace ASSPriteRigging
 {
 	public class TransformTailWiggleElement : MonoBehaviour, ITailElement
 	{

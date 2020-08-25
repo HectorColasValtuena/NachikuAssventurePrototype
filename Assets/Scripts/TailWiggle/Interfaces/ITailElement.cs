@@ -1,4 +1,4 @@
-﻿namespace SpriteRigging
+﻿namespace ASSPriteRigging
 {
 	public interface ITailElement
 	{

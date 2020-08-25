@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-using SpriteRigging.BoneUtility;
+using ASSPriteRigging.BoneUtility;
 
-namespace SpriteRigging
+namespace ASSPriteRigging
 {
 	[CustomEditor(typeof(SpriteSkinRigger))]
 	public class SpriteSkinRiggerEditor : Editor

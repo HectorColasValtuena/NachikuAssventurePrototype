@@ -1,6 +1,6 @@
 ﻿using UnityEditor.U2D.Animation;
 
-namespace SpriteRigging.Editor
+namespace ASSPriteRigging.Editor
 {
 	public static class SpriteSkinRiggingExtension
 	{
