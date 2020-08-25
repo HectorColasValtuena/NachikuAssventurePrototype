@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &8008375
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &33782595
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,8 +392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &47523277
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,8 +468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &56769900
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,8 +617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &67049087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,8 +1247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &159158937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,8 +1541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &222033204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,8 +1669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &238740459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,8 +1775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &241752123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,8 +1933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &248770117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,8 +2361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &356605686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2497,8 +2497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &397221308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,8 +2749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &439564148
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,8 +3044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &489775294
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,8 +3090,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &490581028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,8 +3136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &513328614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,8 +3212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &515782476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3404,8 +3404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &544678641
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,8 +3450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &546644252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,8 +3569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &557180145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,8 +3688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &594972102
 GameObject:
   m_ObjectHideFlags: 0
@@ -3734,8 +3734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &625006168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,8 +3900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &657591408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3946,8 +3946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &659400792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,7 +3988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 687527191}
   m_Layer: 0
-  m_Name: NachikuAssTail
+  m_Name: NachikuAssTailRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4781,8 +4781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &857979173
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,8 +4827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &859724137
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,8 +5409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1020988857
 GameObject:
   m_ObjectHideFlags: 0
@@ -5558,8 +5558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1033267473
 GameObject:
   m_ObjectHideFlags: 0
@@ -5664,8 +5664,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1055692246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5813,8 +5813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1085951315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5859,8 +5859,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1102754313
 GameObject:
   m_ObjectHideFlags: 0
@@ -5905,8 +5905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1108018083
 GameObject:
   m_ObjectHideFlags: 0
@@ -6393,8 +6393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1178862607
 GameObject:
   m_ObjectHideFlags: 0
@@ -6512,8 +6512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1181739109
 GameObject:
   m_ObjectHideFlags: 0
@@ -6558,8 +6558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1188023546
 GameObject:
   m_ObjectHideFlags: 0
@@ -6737,8 +6737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1211488099
 GameObject:
   m_ObjectHideFlags: 0
@@ -6783,8 +6783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1242841855
 GameObject:
   m_ObjectHideFlags: 0
@@ -7022,8 +7022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1297600769
 GameObject:
   m_ObjectHideFlags: 0
@@ -7527,8 +7527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1411184047
 GameObject:
   m_ObjectHideFlags: 0
@@ -7573,8 +7573,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1422065535
 GameObject:
   m_ObjectHideFlags: 0
@@ -8247,8 +8247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1541331442
 GameObject:
   m_ObjectHideFlags: 0
@@ -8353,8 +8353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1565308875
 GameObject:
   m_ObjectHideFlags: 0
@@ -8812,8 +8812,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1591668481
 GameObject:
   m_ObjectHideFlags: 0
@@ -9197,8 +9197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1636478774
 GameObject:
   m_ObjectHideFlags: 0
@@ -9376,8 +9376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1659308444
 GameObject:
   m_ObjectHideFlags: 0
@@ -9422,8 +9422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1670269065
 GameObject:
   m_ObjectHideFlags: 0
@@ -9571,8 +9571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1692497935
 GameObject:
   m_ObjectHideFlags: 0
@@ -9677,8 +9677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1719285174
 GameObject:
   m_ObjectHideFlags: 0
@@ -9753,8 +9753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1747521646
 GameObject:
   m_ObjectHideFlags: 0
@@ -9975,8 +9975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1835623770
 GameObject:
   m_ObjectHideFlags: 0
@@ -10486,8 +10486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1907596567
 GameObject:
   m_ObjectHideFlags: 0
@@ -10605,8 +10605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1923470266
 GameObject:
   m_ObjectHideFlags: 0
@@ -10952,8 +10952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &1980121031
 GameObject:
   m_ObjectHideFlags: 0
@@ -11623,8 +11623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77471d818d487da4c8fdb1067ee80957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRotationTarget: 0
   maxOffsetRotation: 30
+  baseRotationFromStartingRotation: 1
 --- !u!1 &2096737137
 GameObject:
   m_ObjectHideFlags: 0

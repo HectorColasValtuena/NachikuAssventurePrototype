@@ -13,18 +13,20 @@ namespace SpriteRigging
 
 		private SpriteSkinRigger spriteSkinRigger;
 
+	//Setup button layout
 		public override void OnInspectorGUI ()
 		{
 			base.OnInspectorGUI();
 
 			spriteSkinRigger = (SpriteSkinRigger) target;
 
+			DoGenerateSpriteBonesButton();
 			/*[DEBUG]*/DoIncognitoButton();
 			DoChildrenToBoneListButton();
 			DoRigBoneListButton();
 		}
 
-	/*[DEBUG]*/
+		/*[DEBUG]*/
 		public void DoIncognitoButton ()
 		{
 			if (GUILayout.Button("Incognito Button"))//, GUILayout.MaxWidth(125f)))
@@ -33,7 +35,7 @@ namespace SpriteRigging
 				DebugReportBoneList();
 			}
 		}
-	/*[DEBUG]*/
+		/*[DEBUG]*/
 
 		public void DoChildrenToBoneListButton ()
 		{
@@ -52,6 +54,23 @@ namespace SpriteRigging
 				RigBoneList();
 				Debug.Log("==== Done rigging");
 			}
+		}
+
+		public void DoGenerateSpriteBonesButton ()
+		{
+			if (GUILayout.RepeatButton("Generate Sprite Bones"))
+			{
+				GenerateSpriteBones();
+			}
+		}
+	//ENDOF Setup button layout
+
+		private void GenerateSpriteBones ()
+		{
+			Debug.LogWarning("Generating sprite bones");
+			//=================================================================================================================================
+			//[TO-DO]
+			//=================================================================================================================================
 		}
 
 		//incorporate every child without an ignore tag to our bone list
