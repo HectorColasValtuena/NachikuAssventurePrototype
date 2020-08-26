@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;	//NativeSlice
 using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.Rendering;
@@ -19,7 +20,7 @@ namespace ASSpriteRigging.BoneUtility
 			}
 
 		//cache vertex position list and create corresponding bone and weights
-			NativeSlice<Vector3> vertexList = _this.GetVertexAttribute(VertexAttribute.Position);
+			NativeSlice<Vector3> vertexList = _this.GetVertexAttribute<Vector3>(VertexAttribute.Position);
 			for (int i = 0, iLimit = vertexList.Length; i < iLimit; i++)
 			{
 				//===============================================================================================
