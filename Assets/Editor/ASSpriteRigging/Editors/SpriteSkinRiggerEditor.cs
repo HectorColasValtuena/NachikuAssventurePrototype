@@ -65,9 +65,13 @@ namespace ASSpriteRigging.Editors
 		}
 	//ENDOF Setup GUI layout
 
+		//remove bone information from the sprite
 		private void GenerateSpriteBones ()
 		{
+			//Undo.RecordObject(spriteSkinRigger, "Auto-generated bones");
+			//=================================================================================================================================
 			Debug.LogWarning("Generating sprite bones");
+
 			//=================================================================================================================================
 			//[TO-DO]
 			//=================================================================================================================================
