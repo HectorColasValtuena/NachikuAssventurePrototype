@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Collections;	//NativeSlice
+using Unity.Collections;		//NativeSlice, NativeArray
 using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.Rendering;	//VertexAttribute
+using UnityEditor; 				//Undo, AssetDatabase
 
 namespace ASSpriteRigging.BoneUtility
 {
@@ -12,6 +13,7 @@ namespace ASSpriteRigging.BoneUtility
 		//sets up the bone list and weights from vertex list
 		public static void BonesFromVertexList (this Sprite _this, string boneBaseName)
 		{
+			Debug.LogWarning("Generating sprite bones");
 		//validate if vertex information available
 			if (!_this.HasVertexAttribute(VertexAttribute.Position))
 			{
@@ -33,9 +35,15 @@ namespace ASSpriteRigging.BoneUtility
 				weightList[i] = CreateSimpleVertexWeight(i);
 			}
 
-		//apply the lists of bones and weights to the sprite
+		//apply the lists of bones and weights to the sprite, storing an undo snapshot to allow ctrl+z
+			Undo.RecordObject(_this, "Auto-generated bones for sprite \"" + _this.name + "\"");
 			_this.SetBones(boneList);
 			_this.SetVertexAttribute<BoneWeight>(VertexAttribute.BlendWeight, new NativeArray<BoneWeight>(weightList, Allocator.Temp));
+			Debug.Log ("Added " + _this.GetBones().Length + " bones to image");
+
+
+			//AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(_this));
+			AssetDatabase.CreateAsset(_this, "Assets/Tmp/GeneratedAss.png");
 		}
 
 		//creates a bone object

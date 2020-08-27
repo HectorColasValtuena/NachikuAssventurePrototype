@@ -58,23 +58,22 @@ namespace ASSpriteRigging.Editors
 
 		public void DoGenerateSpriteBonesButton ()
 		{
-			if (GUILayout.RepeatButton("Generate Sprite Bones"))
+			if (GUILayout.Button("Generate Sprite Bones"))
 			{
 				GenerateSpriteBones();
 			}
 		}
 	//ENDOF Setup GUI layout
 
-		//remove bone information from the sprite
+		//create bone information from the vertex list
 		private void GenerateSpriteBones ()
 		{
-			//Undo.RecordObject(spriteSkinRigger, "Auto-generated bones");
-			//=================================================================================================================================
-			Debug.LogWarning("Generating sprite bones");
-
-			//=================================================================================================================================
-			//[TO-DO]
-			//=================================================================================================================================
+			spriteSkinRigger.targetSprite.BonesFromVertexList(spriteSkinRigger.baseBoneName);
+			/*
+			Sprite sprite = spriteSkinRigger?.gameObject.GetComponent<SpriteRenderer>()?.sprite;
+			if (sprite != null) { sprite.BonesFromVertexList(spriteSkinRigger.baseBoneName); }
+			else { Debug.LogWarning("No sprite found"); }
+			*/
 		}
 
 		//incorporate every child without an ignore tag to our bone list
