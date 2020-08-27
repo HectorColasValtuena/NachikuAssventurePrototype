@@ -10,7 +10,7 @@ namespace ASSpriteRigging.BoneUtility
 	public static class SpriteRiggingExtensions
 	{
 		//sets up the bone list and weights from vertex list
-		public static void BonesFromVertexList (this Sprite _this)
+		public static void BonesFromVertexList (this Sprite _this, string boneBaseName)
 		{
 		//validate if vertex information available
 			if (!_this.HasVertexAttribute(VertexAttribute.Position))
@@ -19,14 +19,51 @@ namespace ASSpriteRigging.BoneUtility
 				return;
 			}
 
-		//cache vertex position list and create corresponding bone and weights
+		//iterate through the vertex list creating corresponding bones and weights
+			//cache vertex position list
 			NativeSlice<Vector3> vertexList = _this.GetVertexAttribute<Vector3>(VertexAttribute.Position);
+			//create lists to hold created bones and weights
+			SpriteBone[] boneList = new SpriteBone[vertexList.Length];
+			BoneWeight[] weightList = new BoneWeight[vertexList.Length];
+
+			//loop over vertex list
 			for (int i = 0, iLimit = vertexList.Length; i < iLimit; i++)
 			{
-				//===============================================================================================
-				//[TO-DO]
-				//===============================================================================================
+				boneList[i] = CreateBoneForVertex(i, boneBaseName, vertexList[i]);
+				weightList[i] = CreateSimpleVertexWeight(i);
 			}
+
+		//apply the lists of bones and weights to the sprite
+			_this.SetBones(boneList);
+			_this.SetVertexAttribute<BoneWeight>(VertexAttribute.BlendWeight, new NativeArray<BoneWeight>(weightList, Allocator.Temp));
 		}
+
+		//creates a bone object
+		private static SpriteBone CreateBoneForVertex (
+			int index,
+			string baseName,
+			Vector3 targetPosition,
+			Quaternion targetRotation = new Quaternion(),
+			int targetParent = 0,
+			float targetLength = 0f
+		) {
+			SpriteBone newBone = new SpriteBone();
+			newBone.name = baseName + index;
+			newBone.position = targetPosition;
+			newBone.rotation = targetRotation;
+			newBone.parentId = targetParent;
+			newBone.length = targetLength;
+			return newBone;
+		} 
+
+		//creates a simple skinning weight linking one vertex to one bone
+		private static BoneWeight CreateSimpleVertexWeight (int targetBone)
+		{
+			BoneWeight newWeight = new BoneWeight();
+			newWeight.boneIndex0 = targetBone;
+			newWeight.weight0 = 1f;
+			return newWeight;
+		}
+		
 	}
 }

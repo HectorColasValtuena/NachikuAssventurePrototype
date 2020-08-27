@@ -35,15 +35,12 @@ namespace ASSperiments
 
 			//=============================================================================================================
 			NativeSlice<Vector3> positionList = sprite.GetVertexAttribute<Vector3>(VertexAttribute.Position);
-			//Debug.Log(sprite.GetVertexAttribute(VertexAttribute.BlendIndices).GetType());
-			//NativeSlice<BoneWeight> blendIndicesList = sprite.GetVertexAttribute<BoneWeight>(VertexAttribute.BlendIndices);
 			NativeSlice<BoneWeight> blendWeightList = sprite.GetVertexAttribute<BoneWeight>(VertexAttribute.BlendWeight);
 
 			for (int i = 0, iLimit = sprite.GetVertexCount(); i < iLimit; i++)
 			{
 				Debug.Log("========\nVertex #" + i);
 				Debug.Log(positionList[i]);
-				//Debug.Log(blendIndicesList[i]);
 				Debug.Log(blendWeightList[i]);
 				Debug.Log(" > " + blendWeightList[i].boneIndex0 + ": " + blendWeightList[i].weight0);
 				Debug.Log(" > " + blendWeightList[i].boneIndex1 + ": " + blendWeightList[i].weight1);
