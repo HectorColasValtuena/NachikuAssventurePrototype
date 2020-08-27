@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Collections;	//NativeSlice
 using UnityEngine;
 using UnityEngine.U2D;
-using UnityEngine.Rendering;
+using UnityEngine.Rendering;	//VertexAttribute
 
 namespace ASSpriteRigging.BoneUtility
 {

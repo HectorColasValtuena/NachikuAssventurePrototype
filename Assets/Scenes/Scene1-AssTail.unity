@@ -7817,7 +7817,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.4056604, b: 0.024440186, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -7834,7 +7834,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10372,6 +10372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68672007ac70d744a8247e9097a850fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 0}
   defaultRigidbody: {fileID: -913065796512859501, guid: 93c5961a0050eaa4e9b26b1df4af81ac, type: 3}
   defaultAnchor: {fileID: 3971993850123967271, guid: 93c5961a0050eaa4e9b26b1df4af81ac, type: 3}
   boneList:

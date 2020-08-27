@@ -1,0 +1,27 @@
+Métodos de acceso avanzado a sprites
+https://docs.unity3d.com/ScriptReference/U2D.SpriteDataAccessExtensions.html
+
+Sprite.OverrideGeometry (explicación notacion vertices)
+Vertex positions are in Sprite.rect space meaning from Rect.zero to Rect.size. Pivot offset and transformation to unit space is done automatically.
+
+The size of the triangle array must always be a multiple of 3. The vertices connected to the triangle can be shared by simply indexing into the same vertex.
+https://docs.unity3d.com/2020.2/Documentation/ScriptReference/Sprite.OverrideGeometry.html?_ga=2.79165332.1018381944.1598292710-965091920.1580043096
+
+Proceso conversión de vertices en huesos:
+Recorrer un listado de posiciones de vertices del sprite
+U2D.SpriteDataAccessExtensions.GetVertexCount
+U2D.SpriteDataAccessExtensions.GetVertexAttribute
+Rendering.VertexAttribute
+Generar un hueso para cada vertice
+U2D.SpriteDataAccessExtensions.SetBones
+U2D.SpriteBone
+Asignar a cada vertice el blend weight correspondiente a su recién creado hueso
+U2D.SpriteDataAccessExtensions.SetVertexAttribute
+Rendering.VertexAttribute.BlendIndices
+Rendering.VertexAttribute.BlendWeight
+
+Detalles notación vertex weight y blend weights
+VertexAttribute.BlendIndices NO EXISTE
+VertexAttribute.BlendWeight contiene structs BoneWeight
+Unity.Collections.NativeList
+UnityEngine.BoneWeight
