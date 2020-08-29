@@ -34,16 +34,25 @@ namespace ASSpriteRigging.BoneUtility
 				boneList[i] = CreateBoneForVertex(i, boneBaseName, vertexList[i]);
 				weightList[i] = CreateSimpleVertexWeight(i);
 			}
-
+			_this.name += "[AUTORIG]";
 		//apply the lists of bones and weights to the sprite, storing an undo snapshot to allow ctrl+z
 			Undo.RecordObject(_this, "Auto-generated bones for sprite \"" + _this.name + "\"");
 			_this.SetBones(boneList);
 			_this.SetVertexAttribute<BoneWeight>(VertexAttribute.BlendWeight, new NativeArray<BoneWeight>(weightList, Allocator.Temp));
-			Debug.Log ("Added " + _this.GetBones().Length + " bones to image");
+			Debug.Log ("Added " + _this.GetBones().Length + " bones to sprite " + _this.name);
 
 
+			StoreAsset(_this);
 			//AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(_this));
-			AssetDatabase.CreateAsset(_this, "Assets/Tmp/GeneratedAss.png");
+			//AssetDatabase.CreateAsset(_this, "Assets/Tmp/GeneratedAss.asset");
+		}
+
+		private static void StoreAsset (Sprite target)
+		{
+			AssetDatabase.StartAssetEditing();
+			AssetDatabase.RemoveObjectFromAsset(target);
+			//AssetDatabase.CreateAsset(target, "Assets/Tmp/GeneratedAss.asset");
+			AssetDatabase.StopAssetEditing();
 		}
 
 		//creates a bone object

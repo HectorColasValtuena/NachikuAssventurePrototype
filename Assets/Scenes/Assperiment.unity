@@ -3627,7 +3627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseBoneName: bone_
-  targetRenderer: {fileID: 0}
+  targetSprite: {fileID: 21300000, guid: af1543afcf90c584fb63fb49ce1778d3, type: 3}
   defaultRigidbody: {fileID: 0}
   defaultAnchor: {fileID: 0}
   boneList: []
@@ -3679,7 +3679,7 @@ SpriteRenderer:
   m_Size: {x: 10.26, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1875477386
