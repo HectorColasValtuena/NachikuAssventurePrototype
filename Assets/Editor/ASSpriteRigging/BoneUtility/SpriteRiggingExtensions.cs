@@ -50,8 +50,9 @@ namespace ASSpriteRigging.BoneUtility
 		private static void StoreAsset (Sprite target)
 		{
 			AssetDatabase.StartAssetEditing();
-			AssetDatabase.RemoveObjectFromAsset(target);
+			//AssetDatabase.RemoveObjectFromAsset(target);
 			//AssetDatabase.CreateAsset(target, "Assets/Tmp/GeneratedAss.asset");
+			target.ApplyModifiedProperties();
 			AssetDatabase.StopAssetEditing();
 		}
 
