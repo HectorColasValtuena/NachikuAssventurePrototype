@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"bc",
+				"backupPath"
+			],
+			[
+				"back",
+				"backupPath"
+			],
+			[
+				"file",
+				"filePath"
+			],
+			[
+				"pro",
+				"processedFileCount"
+			],
+			[
+				"fil",
+				"filePath"
+			],
+			[
+				"para",
+				"parameterList"
+			],
+			[
 				"Asset",
 				"AssetDatabase"
 			],
@@ -174,10 +198,6 @@
 			[
 				"paramet",
 				"parameterEndIndex"
-			],
-			[
-				"para",
-				"parameterStartIndex"
 			],
 			[
 				"parameter",
@@ -494,73 +514,24 @@
 			[
 				"chil",
 				"childAsContainer"
-			],
-			[
-				"ISignal",
-				"ISignalContainer"
-			],
-			[
-				"ISig",
-				"ISignalHandler"
-			],
-			[
-				"ISi",
-				"ISignalContainer"
-			],
-			[
-				"Add",
-				"AddChildAt"
-			],
-			[
-				"Wa",
-				"Wave"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Experiments/SpriteExperimentsEditor.cs",
+			"file": "/C/Users/Mephi/Documents/Python/HolaPython.py",
 			"settings":
 			{
-				"buffer_size": 1606,
-				"encoding": "UTF-8",
+				"buffer_size": 222,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/SpriteSkinRiggerEditor.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
 			"settings":
 			{
-				"buffer_size": 3080,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
-			"settings":
-			{
-				"buffer_size": 323,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteRiggingExtensions.cs",
-			"settings":
-			{
-				"buffer_size": 2712,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/TransformTailWiggleParentEditor.cs",
-			"settings":
-			{
-				"buffer_size": 1512,
-				"encoding": "UTF-8 with BOM",
+				"buffer_size": 1020,
 				"line_ending": "Windows"
 			}
 		}
@@ -612,14 +583,26 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/PySpriteRigger/.gitignore",
+		"/D/Projects/PythonSpriteRigger/PySpriteRigger.py",
+		"/D/Projects/PythonSpriteRigger/read yaml in python.txt",
+		"/D/Projects/PythonSpriteRigger/beee.txt",
+		"/D/Projects/PythonSpriteRigger/aaahhh.txt",
+		"/C/Users/Mephi/Documents/Python/PyCalc.py",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SkinningModule/SpriteMeshData/SpriteMeshData.cs",
+		"/C/Users/Mephi/Documents/Python/argxperiment.py",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SkinningModule/SpriteMeshData/WeightEditor.cs",
+		"/C/Users/Mephi/Desktop/Preguntita.txt",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/SpriteSkinRiggerEditor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SpritePostProcess.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteRiggingExtensions.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/TransformTailWiggleParentEditor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Experiments/SpriteExperimentsEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/accesoHuesos.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Experiments/SpriteExperiments.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneHierarchy.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteRiggingExtensions.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/SpriteSkinRiggerEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Experiments/spriteExperimentsEditor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/TransformTailWiggleParentEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneRigging.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneNomenclature.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/Interfaces/ITailElement.cs",
@@ -727,19 +710,7 @@
 		"/D/Projects/CatAttack/.gitignore",
 		"/C/Users/Mephi/Desktop/tuputamadreenbragas.txt",
 		"/C/Users/Mephi/Documents/My Games/Binding of Isaac Afterbirth/options.ini",
-		"/C/Users/Mephi/Desktop/81-C# Script-NewBehaviourScript.cs.txt",
-		"/C/Users/Mephi/AppData/Local/Temp/Temp1_Fallout.3.Game.Of.The.Year.v1.7.0.3.GOG.zip/Fallout.3.Game.Of.The.Year.v1.7.0.3.GOG/README.txt",
-		"/D/Projects/Signal Breaker/Signal Breaker Unity Project/Assets/Scripts/Experimentos/RandomTests/DragXperiment.cs",
-		"/C/Users/Mephi/AppData/Local/Temp/7zO050CF131/README.txt",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/LevelManager.cs",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/ImmobilizeOnEnable.cs",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/GameMechanics/DeImmobilizeOnEnable.cs",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/texts/Teksto felisitasion isawa.txt",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/UI/EscMenuDeployer.cs",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/TO-DO.txt",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/texts/MinerKittyTexts.txt",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/Scripts/Environment/DisableOtherOnMyEnable.cs",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/texts/CartaJandro"
+		"/C/Users/Mephi/Desktop/81-C# Script-NewBehaviourScript.cs.txt"
 	],
 	"find":
 	{
@@ -778,86 +749,29 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Experiments/SpriteExperimentsEditor.cs",
+					"file": "/C/Users/Mephi/Documents/Python/HolaPython.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1606,
+						"buffer_size": 222,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1035,
-								1046
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 265.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/SpriteSkinRiggerEditor.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3080,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1557,
-								1557
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1381.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 323,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								167,
-								167
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -867,73 +781,31 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteRiggingExtensions.cs",
+					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2712,
+						"buffer_size": 1020,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								781,
-								788
-							],
-							[
-								887,
-								894
-							],
-							[
-								985,
-								987
-							],
-							[
-								1037,
-								1044
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 567.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/TransformTailWiggleParentEditor.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1512,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1004,
-								1004
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 265.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
 					"type": "text"
 				}
 			]
