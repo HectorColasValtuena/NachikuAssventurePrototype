@@ -26,7 +26,7 @@ def printGreeting (printHelp):
 	if (printHelp):
 		print ("* Processes UnityEngine's sprite meta files, converting mesh data into bones")
 		print ("* Usage: Pass the paths of target files as arguments")
-		print ("* $> py PySpriteRigger.py filePath1/fileName1 filePath2/fileName2")
+		print ("* $> py PySpriteRigger.py filePath1/fileName1 filePath2/fileName2 ...")
 
 #prints exit message and waits for any input to continue
 def printFinalReport (successCount, errorCount):
@@ -45,9 +45,14 @@ def processFile (filePath):
 			print ("! Nonexistent file")
 			raise
 		#move original file to backup location
-		originalFilePath = moveToBackup (filePath);
+		originalFilePath = moveToBackup (filePath)
 
 		#then read it, process the contents, and re-write it to the original file path
+		documents = yaml.full_load(open(originalFilePath))
+
+		for item, doc in documents.items():
+			print(item, ":", doc)
+			print("================================================================================")
 
 
 	#return true if success, false if failed
