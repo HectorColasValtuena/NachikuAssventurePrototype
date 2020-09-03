@@ -520,19 +520,30 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Mephi/Documents/Python/HolaPython.py",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/PySpriteRigger.py",
 			"settings":
 			{
-				"buffer_size": 222,
+				"buffer_size": 2475,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/AssBadImport.png.meta",
 			"settings":
 			{
-				"buffer_size": 1020,
+				"buffer_size": 50678,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/estructura meta sprite.txt",
+			"settings":
+			{
+				"buffer_size": 509,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "estructura relevante YAML archivos sprite.meta uni"
 			}
 		}
 	],
@@ -583,6 +594,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Mephi/Documents/Python/HolaPython.py",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
 		"/D/Projects/PySpriteRigger/.gitignore",
 		"/D/Projects/PythonSpriteRigger/PySpriteRigger.py",
 		"/D/Projects/PythonSpriteRigger/read yaml in python.txt",
@@ -616,7 +629,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/BoneUtility/BoneNomenclature.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/BoneUtility/BoneRigging.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.5/Runtime/SpriteSkin.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
 		"/D/Juegos/The.Elfs.Lewd.Training/Readme.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteSkinRigger/SpriteSkinRiggerEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/TailWiggle/TransformTailWiggleParentEditor.cs",
@@ -709,8 +721,7 @@
 		"/D/Projects/Signal Breaker/.gitignore",
 		"/D/Projects/CatAttack/.gitignore",
 		"/C/Users/Mephi/Desktop/tuputamadreenbragas.txt",
-		"/C/Users/Mephi/Documents/My Games/Binding of Isaac Afterbirth/options.ini",
-		"/C/Users/Mephi/Desktop/81-C# Script-NewBehaviourScript.cs.txt"
+		"/C/Users/Mephi/Documents/My Games/Binding of Isaac Afterbirth/options.ini"
 	],
 	"find":
 	{
@@ -749,57 +760,99 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Mephi/Documents/Python/HolaPython.py",
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/PySpriteRigger.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 222,
+						"buffer_size": 2475,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1854,
+								1854
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 564.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/AssBadImport.png.meta",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19222,
+								19434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 9677.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/estructura meta sprite.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1020,
+						"buffer_size": 509,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								351,
+								351
+							],
+							[
+								371,
+								371
+							],
+							[
+								391,
+								391
+							],
+							[
+								411,
+								411
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+							"auto_name": "estructura relevante YAML archivos sprite.meta uni",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
