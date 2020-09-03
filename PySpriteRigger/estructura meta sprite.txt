@@ -2,7 +2,7 @@ estructura relevante YAML archivos sprite.meta unity [no completa]
 [documento]
 TextureImporter:
 	spriteSheet:
-		vertices:
+		vertices: (list)
 		  -	{x: float, y: float}
 		bones:
 		  -	name: string
@@ -10,8 +10,8 @@ TextureImporter:
 			rotation: {x: float [0], y: float [0], z: float [0], w: float [1]}
 			length: int
 			parentId: int
-		weights:
-		  -	weight[0]: float
+		weights: (list)
+		  -	weight[0]: float (dictionary)
 			weight[1]: float
 			weight[2]: float
 			weight[3]: float
