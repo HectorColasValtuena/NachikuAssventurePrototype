@@ -6,7 +6,7 @@ using UnityEngine.U2D;
 using UnityEngine.Rendering;	//VertexAttribute
 using UnityEditor; 				//Undo, AssetDatabase
 
-namespace ASSpriteRigging.BoneUtility
+namespace ASSpriteRigging.Unity2DAnimationEditorExtensions
 {
 	public static class SpriteRiggingExtensions
 	{
@@ -52,7 +52,7 @@ namespace ASSpriteRigging.BoneUtility
 			AssetDatabase.StartAssetEditing();
 			//AssetDatabase.RemoveObjectFromAsset(target);
 			//AssetDatabase.CreateAsset(target, "Assets/Tmp/GeneratedAss.asset");
-			target.ApplyModifiedProperties();
+			//target.ApplyModifiedProperties();
 			AssetDatabase.StopAssetEditing();
 		}
 

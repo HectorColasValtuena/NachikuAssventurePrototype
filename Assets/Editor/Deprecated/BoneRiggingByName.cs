@@ -5,24 +5,34 @@ using UnityEditor;
 
 namespace ASSpriteRigging.BoneUtility
 {
-	public static class BoneRigging
+	public static class BoneRiggingByName
 	{
-		public static void RigBoneList (Transform[] boneList, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor, SpringJoint2D defaultSpring)
+		public static void RigBoneList (Transform[] boneList, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor)
 		{
 			foreach (Transform bone in boneList)
 			{
-				RigIndividualElements(bone, defaultRigidbody, defaultAnchor);
+				RigBone(bone, defaultRigidbody, defaultAnchor);
 			}
 		}
 
-		//creates components that affect a single bone: rigidbodies and disconnected anchors/joints
-		public static void RigIndividualElements (Transform bone, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor)
+		public static void RigBone (Transform bone, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor)
 		{
-			BoneCreateRigidbody(bone, defaultRigidbody);
-			BoneCreateAnchor(bone, defaultAnchor);
+			//ignore ignored bones
+			if (BoneNomenclature.IsIgnored(bone)) return;
+
+			//first create rigidbody
+			if (BoneNomenclature.RequiresRigidbody(bone)) { BoneCreateRigidbody(bone, defaultRigidbody); }
+
+			//then add required anchor
+			if (BoneNomenclature.RequiresAnchor(bone)) { BoneCreateAnchor(bone, defaultAnchor); }
+
+			//Lastly add required springs
+			//==============================================================================================================================
+			//[TO-DO]
+			//==============================================================================================================================
 		}
 
-		//creates a rigidbody on target bone (if non existent) and sets its properties replicating sample
+		//creates a rigidbody on bone target (if non existent) and sets its properties replicating sample
 		private static void BoneCreateRigidbody (Transform bone, Rigidbody2D sample)
 		{
 			//create a rigidbody if it doesn't exist
@@ -36,7 +46,7 @@ namespace ASSpriteRigging.BoneUtility
 		private static void BoneCreateAnchor (Transform bone, SpringJoint2D sample)
 		{
 			//try to find a joint pointing to the parent object.
-			SpringJoint2D newAnchor = BoneRigging.BoneFindSpringConnected(bone, bone.parent);
+			SpringJoint2D newAnchor = BoneFindSpringConnected(bone, bone.parent);
 			//if no pre-existent anchor found, create a new parent-connected spring
 			if (newAnchor == null)
 			{
@@ -44,11 +54,11 @@ namespace ASSpriteRigging.BoneUtility
 				newAnchor.connectedBody = bone.parent.gameObject.GetComponent<Rigidbody2D>();
 			}
 			//apply sample settings
-			SpringJointApplySettings(newAnchor, sample, false);
+			AnchorApplySettings(newAnchor, sample, false);
 		}
 
 		//finds a SpringJoint2D connected to target. returns null if non-existant
-		private static SpringJoint2D BoneFindSpringConnected (Transform bone, Transform target) { return BoneRigging.BoneFindSpringConnected(bone, target.gameObject.GetComponent<Rigidbody2D>()); }
+		private static SpringJoint2D BoneFindSpringConnected (Transform bone, Transform target) { return BoneFindSpringConnected(bone, target.gameObject.GetComponent<Rigidbody2D>()); }
 		private static SpringJoint2D BoneFindSpringConnected (Transform bone, Rigidbody2D target)
 		{
 			//get a list of springs
@@ -82,7 +92,7 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//applies right-hand properties to left-hand object
-		private static void SpringJointApplySettings (SpringJoint2D target, SpringJoint2D sample, bool alterConnectedBody = false)
+		private static void AnchorApplySettings (SpringJoint2D target, SpringJoint2D sample, bool alterConnectedBody = false)
 		{
 			if (alterConnectedBody)	{ target.connectedBody = sample.connectedBody; }		//conneted rigidbody
 			target.enableCollision = 				sample.enableCollision;					//enable collision

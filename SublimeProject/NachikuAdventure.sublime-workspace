@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Create",
+				"CreateBoneHierarchy"
+			],
+			[
 				"bc",
 				"backupPath"
 			],
@@ -510,46 +514,127 @@
 			[
 				"lo",
 				"lowestOffset"
-			],
-			[
-				"chil",
-				"childAsContainer"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/PySpriteRigger.py",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
 			"settings":
 			{
-				"buffer_size": 4089,
+				"buffer_size": 570,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/SpriteSkinRiggerEditor.cs",
+			"settings":
+			{
+				"buffer_size": 5159,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Deprecated/BoneRiggingByName.cs",
+			"settings":
+			{
+				"buffer_size": 4946,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneRigging.cs",
+			"settings":
+			{
+				"buffer_size": 4582,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "using System.Collections;\nusing System.Collections.Generic;\nusing Unity.Collections;\t\t//NativeSlice, NativeArray\nusing UnityEngine;\nusing UnityEngine.U2D;\nusing UnityEngine.Rendering;\t//VertexAttribute\nusing UnityEditor; \t\t\t\t//Undo, AssetDatabase\n\nnamespace ASSpriteRigging.BoneUtility\n{\n\tpublic static class SpriteRiggingExtensions\n\t{\n\t\t//sets up the bone list and weights from vertex list\n\t\tpublic static void BonesFromVertexList (this Sprite _this, string boneBaseName)\n\t\t{\n\t\t\tDebug.LogWarning(\"Generating sprite bones\");\n\t\t//validate if vertex information available\n\t\t\tif (!_this.HasVertexAttribute(VertexAttribute.Position))\n\t\t\t{\n\t\t\t\tDebug.LogWarning(\"Sprite has no vertex position attribute. Aborting.\");\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t//iterate through the vertex list creating corresponding bones and weights\n\t\t\t//cache vertex position list\n\t\t\tNativeSlice<Vector3> vertexList = _this.GetVertexAttribute<Vector3>(VertexAttribute.Position);\n\t\t\t//create lists to hold created bones and weights\n\t\t\tSpriteBone[] boneList = new SpriteBone[vertexList.Length];\n\t\t\tBoneWeight[] weightList = new BoneWeight[vertexList.Length];\n\n\t\t\t//loop over vertex list\n\t\t\tfor (int i = 0, iLimit = vertexList.Length; i < iLimit; i++)\n\t\t\t{\n\t\t\t\tboneList[i] = CreateBoneForVertex(i, boneBaseName, vertexList[i]);\n\t\t\t\tweightList[i] = CreateSimpleVertexWeight(i);\n\t\t\t}\n\t\t\t_this.name += \"[AUTORIG]\";\n\t\t//apply the lists of bones and weights to the sprite, storing an undo snapshot to allow ctrl+z\n\t\t\tUndo.RecordObject(_this, \"Auto-generated bones for sprite \\\"\" + _this.name + \"\\\"\");\n\t\t\t_this.SetBones(boneList);\n\t\t\t_this.SetVertexAttribute<BoneWeight>(VertexAttribute.BlendWeight, new NativeArray<BoneWeight>(weightList, Allocator.Temp));\n\t\t\tDebug.Log (\"Added \" + _this.GetBones().Length + \" bones to sprite \" + _this.name);\n\n\n\t\t\tStoreAsset(_this);\n\t\t\t//AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(_this));\n\t\t\t//AssetDatabase.CreateAsset(_this, \"Assets/Tmp/GeneratedAss.asset\");\n\t\t}\n\n\t\tprivate static void StoreAsset (Sprite target)\n\t\t{\n\t\t\tAssetDatabase.StartAssetEditing();\n\t\t\t//AssetDatabase.RemoveObjectFromAsset(target);\n\t\t\t//AssetDatabase.CreateAsset(target, \"Assets/Tmp/GeneratedAss.asset\");\n\t\t\t//target.ApplyModifiedProperties();\n\t\t\tAssetDatabase.StopAssetEditing();\n\t\t}\n\n\t\t//creates a bone object\n\t\tprivate static SpriteBone CreateBoneForVertex (\n\t\t\tint index,\n\t\t\tstring baseName,\n\t\t\tVector3 targetPosition,\n\t\t\tQuaternion targetRotation = new Quaternion(),\n\t\t\tint targetParent = 0,\n\t\t\tfloat targetLength = 0f\n\t\t) {\n\t\t\tSpriteBone newBone = new SpriteBone();\n\t\t\tnewBone.name = baseName + index;\n\t\t\tnewBone.position = targetPosition;\n\t\t\tnewBone.rotation = targetRotation;\n\t\t\tnewBone.parentId = targetParent;\n\t\t\tnewBone.length = targetLength;\n\t\t\treturn newBone;\n\t\t} \n\n\t\t//creates a simple skinning weight linking one vertex to one bone\n\t\tprivate static BoneWeight CreateSimpleVertexWeight (int targetBone)\n\t\t{\n\t\t\tBoneWeight newWeight = new BoneWeight();\n\t\t\tnewWeight.boneIndex0 = targetBone;\n\t\t\tnewWeight.weight0 = 1f;\n\t\t\treturn newWeight;\n\t\t}\n\t\t\n\t}\n}",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteRiggingExtensions.cs",
+			"file_size": 3117,
+			"file_write_time": 132437083549253150,
+			"settings":
+			{
+				"buffer_size": 3031,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "using UnityEngine;\n\nusing UnityEngine.U2D;\t\t\t\t//SpriteSkin\nusing UnityEngine.U2D.Animation;\t//SpriteBone,\n\nnamespace ASSpriteRigging.BoneUtility\n{\n\tinternal static class SpriteSkinExtensions\n\t{\n\t\tinternal static void CreateBoneHierarchy(this SpriteSkin spriteSkin)\n\t\t{\n\t\t\tSprite sprite = spriteSkin.GetComponent<SpriteRenderer>()?.sprite;\n\t\t\tif (sprite == null)\n\t\t\t{ throw new InvalidOperationException(\"SpriteRenderer has no Sprite set\"); }\n\n\t\t\tvar spriteBones = sprite.GetBones();\n\t\t\tvar transforms = new Transform[spriteBones.Length];\n\t\t\tTransform root = null;\n\n\t\t\tfor (int i = 0; i < spriteBones.Length; ++i)\n\t\t\t{\n\t\t\t\tCreateGameObject(i, spriteBones, transforms, spriteSkin.transform);\n\t\t\t\tif (spriteBones[i].parentId < 0 && root == null)\n\t\t\t\t{ root = transforms[i];}\n\t\t\t}\n\n\t\t\tspriteSkin.rootBone = root;\n\t\t\tspriteSkin.boneTransforms = transforms;\n\t\t}\n\n\t\tprivate static void CreateGameObject(int index, SpriteBone[] spriteBones, Transform[] transforms, Transform root)\n\t\t{\n\t\t\tif (transforms[index] == null)\n\t\t\t{\n\t\t\t\tvar spriteBone = spriteBones[index];\n\t\t\t\tif (spriteBone.parentId >= 0)\n\t\t\t\t{ CreateGameObject(spriteBone.parentId, spriteBones, transforms, root); }\n\n\t\t\t\tvar go = new GameObject(spriteBone.name);\n\t\t\t\tvar transform = go.transform;\n\t\t\t\tif (spriteBone.parentId >= 0)\n\t\t\t\t{ transform.SetParent(transforms[spriteBone.parentId]); }\n\t\t\t\telse\n\t\t\t\t{ transform.SetParent(root); }\n\t\t\t\ttransform.localPosition = spriteBone.position;\n\t\t\t\ttransform.localRotation = spriteBone.rotation;\n\t\t\t\ttransform.localScale = Vector3.one;\n\t\t\t\ttransforms[index] = transform;\n\t\t\t}\n\t\t}\n\t}\n}",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/U2DExtensions/SpriteSkinExtensions.cs",
+			"file_size": 1631,
+			"file_write_time": 132437151055550694,
+			"settings":
+			{
+				"buffer_size": 1580,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Unity2DAnimationEditorExtensions/SpriteRiggingExtensions.cs",
+			"settings":
+			{
+				"buffer_size": 3052,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/AssBadImport.png.meta",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Unity2DAnimationEditorExtensions/SpriteSkinExtensions.cs",
 			"settings":
 			{
-				"buffer_size": 50678,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/sprite.meta",
-			"settings":
-			{
-				"buffer_size": 72510,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
-			"settings":
-			{
-				"buffer_size": 1086,
+				"buffer_size": 1601,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "using UnityEngine;\n\nusing UnityEngine.U2D;\t\t\t\t//SpriteSkin\nusing UnityEngine.U2D.Animation;\t//SpriteBone,\n\nnamespace ASSpriteRigging.BoneUtility\n{\n\tinternal static class SpriteSkinExtensions\n\t{\n\t\tinternal static void CreateBoneHierarchy(this SpriteSkin spriteSkin)\n\t\t{\n\t\t\tSprite sprite = spriteSkin.GetComponent<SpriteRenderer>()?.sprite;\n\t\t\tif (sprite == null)\n\t\t\t{ throw new InvalidOperationException(\"SpriteRenderer has no Sprite set\"); }\n\n\t\t\tvar spriteBones = sprite.GetBones();\n\t\t\tvar transforms = new Transform[spriteBones.Length];\n\t\t\tTransform root = null;\n\n\t\t\tfor (int i = 0; i < spriteBones.Length; ++i)\n\t\t\t{\n\t\t\t\tCreateGameObject(i, spriteBones, transforms, spriteSkin.transform);\n\t\t\t\tif (spriteBones[i].parentId < 0 && root == null)\n\t\t\t\t{ root = transforms[i];}\n\t\t\t}\n\n\t\t\tspriteSkin.rootBone = root;\n\t\t\tspriteSkin.boneTransforms = transforms;\n\t\t}\n\n\t\tprivate static void CreateGameObject(int index, SpriteBone[] spriteBones, Transform[] transforms, Transform root)\n\t\t{\n\t\t\tif (transforms[index] == null)\n\t\t\t{\n\t\t\t\tvar spriteBone = spriteBones[index];\n\t\t\t\tif (spriteBone.parentId >= 0)\n\t\t\t\t{ CreateGameObject(spriteBone.parentId, spriteBones, transforms, root); }\n\n\t\t\t\tvar go = new GameObject(spriteBone.name);\n\t\t\t\tvar transform = go.transform;\n\t\t\t\tif (spriteBone.parentId >= 0)\n\t\t\t\t{ transform.SetParent(transforms[spriteBone.parentId]); }\n\t\t\t\telse\n\t\t\t\t{ transform.SetParent(root); }\n\t\t\t\ttransform.localPosition = spriteBone.position;\n\t\t\t\ttransform.localRotation = spriteBone.rotation;\n\t\t\t\ttransform.localScale = Vector3.one;\n\t\t\t\ttransforms[index] = transform;\n\t\t\t}\n\t\t}\n\t}\n}",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteSkinExtensions.cs",
+			"file_size": 1631,
+			"file_write_time": 132437151055550694,
+			"settings":
+			{
+				"buffer_size": 1580,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SpriteSkin/SpriteSkinEditor.cs",
+			"settings":
+			{
+				"buffer_size": 13822,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/estructura meta sprite.txt",
+			"settings":
+			{
+				"buffer_size": 536,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Runtime/SpriteSkin.cs",
+			"settings":
+			{
+				"buffer_size": 15869,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Runtime/SpriteSkinUtility.cs",
+			"settings":
+			{
+				"buffer_size": 19546,
 				"line_ending": "Windows"
 			}
 		}
@@ -590,21 +675,27 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Experiments",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Deprecated",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Experiments"
 	],
 	"file_history":
 	[
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/estructura meta sprite.txt",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/Interfaces/ITailElement.cs.meta",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/meta.cs.meta.backup",
-		"/C/Users/Mephi/Documents/Python/HolaPython.py",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/TransformTailWiggleElement.cs.meta",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/accesoHuesos.txt",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Deprecated/BoneRiggingByName.cs",
+		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Runtime/PrepareSkinningSystem.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/sprite.meta",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/AssBadImport.png.meta",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/PySpriteRigger.py",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/estructura meta sprite.txt",
+		"/C/Users/Mephi/Documents/Python/HolaPython.py",
 		"/D/Projects/PySpriteRigger/.gitignore",
 		"/D/Projects/PythonSpriteRigger/PySpriteRigger.py",
 		"/D/Projects/PythonSpriteRigger/read yaml in python.txt",
@@ -621,7 +712,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteRiggingExtensions.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/TransformTailWiggleParentEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Experiments/SpriteExperimentsEditor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/accesoHuesos.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Experiments/SpriteExperiments.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneHierarchy.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Experiments/spriteExperimentsEditor.cs",
@@ -721,14 +811,7 @@
 		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/Scripts/InterfacesTest.cs",
 		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/Scripts/ScriptableEggsperiment.cs",
 		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/ScriptableObjects/Classes/TestScriptableObject.cs",
-		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Interfaces/ISpell.cs",
-		"/D/Juegos/Doom/zdl/doc/zdl-log.txt",
-		"/C/Users/Mephi/Downloads/PKHeX_Error_Report 20191124212016.txt",
-		"/C/Users/Mephi/Downloads/main",
-		"/C/Users/Mephi/Desktop/Felicidades Gabbu",
-		"/D/Projects/Signal Breaker/Signal Breaker Unity Project/Assets/Scripts/Experimentos/DragDrop/DropReceiverXperiment.cs",
-		"/D/Projects/Signal Breaker/.gitignore",
-		"/D/Projects/CatAttack/.gitignore"
+		"/D/Projects/Wand&Staff DevLab/Wand&Staff DevLab Unityproject/Assets/WandAndStaffScripts/Interfaces/ISpell.cs"
 	],
 	"find":
 	{
@@ -747,6 +830,17 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"CreateGameObject",
+			"CreateBoneHierarchy",
+			"BoneRigging",
+			"BoneNomenclature",
+			"RigBoneList",
+			"DoChildrenToBoneListButton",
+			"ResetBoundsIfNeeded",
+			"ResetBonesIfNeeded",
+			"ResetBoundsIfNeeded",
+			"DoGenerateBonesButton",
+			"Button",
 			"BonesFromVertexList",
 			"ASSPriteRigging"
 		],
@@ -767,122 +861,386 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 10,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/PySpriteRigger.py",
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4089,
+						"buffer_size": 570,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3440,
-								3440
+								52,
+								52
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/C#/C#.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1497.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/AssBadImport.png.meta",
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/SpriteSkinRiggerEditor.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 50678,
+						"buffer_size": 5159,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2574,
-								2598
+								133,
+								133
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 17602.0,
+						"translation.y": 783.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Deprecated/BoneRiggingByName.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneRigging.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteRiggingExtensions.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/U2DExtensions/SpriteSkinExtensions.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/testing/sprite.meta",
+					"buffer": 6,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Unity2DAnimationEditorExtensions/SpriteRiggingExtensions.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 72510,
+						"buffer_size": 3052,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								72051,
-								72051
+								274,
+								306
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Unity2DAnimationEditorExtensions/SpriteSkinExtensions.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteSkinExtensions.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Editor/SpriteSkin/SpriteSkinEditor.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9260,
+								9366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 68130.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
+					"buffer": 10,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/estructura meta sprite.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1086,
+						"buffer_size": 536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1086,
-								1086
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 675.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Runtime/SpriteSkin.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14340,
+								14348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 732.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Runtime/SpriteSkinUtility.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4019,
+								4930
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1905.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

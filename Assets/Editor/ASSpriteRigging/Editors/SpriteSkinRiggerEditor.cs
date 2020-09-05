@@ -20,10 +20,43 @@ namespace ASSpriteRigging.Editors
 
 			spriteSkinRigger = (SpriteSkinRigger) target;
 
-			DoGenerateSpriteBonesButton();
-			/*[DEBUG]*/DoIncognitoButton();
-			DoChildrenToBoneListButton();
+			spriteSkinRigger.armed = false;
+
+			DoFullSetupButton();
 			DoRigBoneListButton();
+			/*[DEBUG]*/DoIncognitoButton();
+			//[DEPRECATED] DoChildrenToBoneListButton();
+		}
+
+		//check if script is armed for use
+		private bool RequestArmed ()
+		{
+			if (spriteSkinRigger.armed)
+			{
+				spriteSkinRigger.armed = false;
+				return true;
+			}
+			else
+			{
+				Debug.LogWarning("SpriteSkinRigger is disarmed - Arm before proceeding");
+				return false;
+			}
+		}
+
+		public void DoFullSetupButton ()
+		{
+			if (GUILayout.Button("Full setup"))
+			{
+				if (RequestArmed()) { FullSetup(); }
+			}
+		}
+
+		public void DoRigBoneListButton ()
+		{
+			if (GUILayout.Button("Rig bone list"))//, GUILayout.MaxWidth(125f)))
+			{
+				if (RequestArmed()) { RigBoneList(); }
+			}
 		}
 
 		/*[DEBUG]*/
@@ -37,43 +70,58 @@ namespace ASSpriteRigging.Editors
 		}
 		/*[DEBUG]*/
 
+		/*
+		[DEPRECATED]
 		public void DoChildrenToBoneListButton ()
 		{
 			if (GUILayout.Button("Children to Bone List"))//, GUILayout.MaxWidth(125f)))
 			{
-				Debug.Log("Children to bone list");
-				ChildrenToBoneList();
+				if (RequestArmed())
+				{
+					Debug.Log("Children to bone list");
+					ChildrenToBoneList();
+				}
 			}
 		}
-
-		public void DoRigBoneListButton ()
-		{
-			if (GUILayout.Button("Rig bone list"))//, GUILayout.MaxWidth(125f)))
-			{
-				Debug.Log("Rigging children of " + target.name);
-				RigBoneList();
-				Debug.Log("==== Done rigging");
-			}
-		}
-
-		public void DoGenerateSpriteBonesButton ()
-		{
-			if (GUILayout.Button("Generate Sprite Bones"))
-			{
-				GenerateSpriteBones();
-			}
-		}
+		*/
 	//ENDOF Setup GUI layout
-
-		//create bone information from the vertex list
-		private void GenerateSpriteBones ()
+		//performs every step of the automated rigging process at once:
+		//moves ten units of sperm forwards, then cast whale at next 2 tiles unless hitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitler
+		//that means: create gameobjects for every bone, then rig default components for every corresponding bone gameobject
+		private void FullSetup ()
 		{
-			spriteSkinRigger.targetSprite.BonesFromVertexList(spriteSkinRigger.baseBoneName);
-			/*
-			Sprite sprite = spriteSkinRigger?.gameObject.GetComponent<SpriteRenderer>()?.sprite;
-			if (sprite != null) { sprite.BonesFromVertexList(spriteSkinRigger.baseBoneName); }
-			else { Debug.LogWarning("No sprite found"); }
-			*/
+			Debug.Log("Initiating full setup of " + target.name);
+			CreateBoneHierarchy();
+		}
+
+		//creates gameobjects for every bone and stores them in spriteskin
+		private void CreateBoneHierarchy ()
+		{
+			var spriteSkin = spriteSkinRigger.spriteSkin;
+			var sprite = spriteSkinRigger.targetSprite;
+
+			if (sprite == null || spriteSkin.rootBone != null)
+			{
+				Debug.LogError("No sprite or no rootBone @" + spriteSkin.gameObject.name);
+				return;
+			}
+
+			Undo.RegisterCompleteObjectUndo(spriteSkin, "Create Bones");
+
+			spriteSkin.CreateBoneHierarchy();
+
+			foreach (var transform in spriteSkin.boneTransforms) 
+			{
+				Undo.RegisterCreatedObjectUndo(transform.gameObject, "Create Bones");
+			}
+
+			//reset bounds if needed
+			if (spriteSkin.isValid && spriteSkin.bounds == new Bounds())
+			{
+                spriteSkin.CalculateBounds();
+			}
+
+			EditorUtility.SetDirty(spriteSkin);
 		}
 
 		//incorporate every child without an ignore tag to our bone list
@@ -108,7 +156,9 @@ namespace ASSpriteRigging.Editors
 		//Read bone list and populate it with components corresponding to its tags
 		private void RigBoneList ()
 		{
+			Debug.Log("Rigging children of " + target.name);
 			BoneRigging.RigBoneList(spriteSkinRigger.boneList, spriteSkinRigger.defaultRigidbody, spriteSkinRigger.defaultAnchor);
+			Debug.Log("==== Done rigging");
 		}
 	}
 }
