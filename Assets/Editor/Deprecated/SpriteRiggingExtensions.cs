@@ -1,3 +1,8 @@
+/*
+*	first implementation attempt of a bone generator for a sprite.
+*	Failed because instance changes on the sprite could not be appparently stored unto the .meta file
+*/
+/*
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections;		//NativeSlice, NativeArray
@@ -6,7 +11,7 @@ using UnityEngine.U2D;
 using UnityEngine.Rendering;	//VertexAttribute
 using UnityEditor; 				//Undo, AssetDatabase
 
-namespace ASSpriteRigging.Unity2DAnimationEditorExtensions
+namespace DEPRECATED.ASSpriteRigging.Unity2DAnimationEditorExtensions
 {
 	public static class SpriteRiggingExtensions
 	{
@@ -85,3 +90,4 @@ namespace ASSpriteRigging.Unity2DAnimationEditorExtensions
 		
 	}
 }
+*/

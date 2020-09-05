@@ -3,7 +3,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace ASSpriteRigging.BoneUtility
+namespace DEPRECATED.ASSpriteRigging.BoneUtility
 {
 	public static class BoneRiggingByName
 	{
