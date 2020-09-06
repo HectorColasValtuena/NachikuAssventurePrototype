@@ -7,6 +7,8 @@ namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneRigging
 	{
+		public static void RigBoneList (SpriteSkinRigger target)
+		{ RigBoneList(target.spriteSkin.boneTransforms, target.defaultRigidbody, target.defaultAnchor, target.defaultSpring); }
 		public static void RigBoneList (Transform[] boneList, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor, SpringJoint2D defaultSpring)
 		{
 			foreach (Transform bone in boneList)
