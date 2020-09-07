@@ -16,6 +16,7 @@ namespace ASSpriteRigging.BoneUtility
 			Deprecated: replace with a method fetching the list from the spriteSkin object
 		===========================================================================================================
 		*/
+			Debug.LogWarning("BoneHierarchy.GetChildren() deprecated version called (wants their stuff back)");
 			List<Transform> childList = new List<Transform>();
 			for (int i = 0, iLimit = root.childCount; i < iLimit; i++)
 			{
@@ -46,6 +47,8 @@ namespace ASSpriteRigging.BoneUtility
 
 			Undo.RegisterCompleteObjectUndo(spriteSkin, "Create Bones");
 
+			//call accessor-exposed CreateBoneHierarchy method on the sprite skin
+			//this is what creates the transform structure
 			spriteSkin.PublicCreateBoneHierarchy();
 
 			foreach (Transform transform in spriteSkin.boneTransforms) 

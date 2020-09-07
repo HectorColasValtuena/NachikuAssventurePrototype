@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 using ASSpriteRigging.BoneUtility;
+using ASSpriteRigging.TailSystem;
 
 namespace ASSpriteRigging.Editors
 {
