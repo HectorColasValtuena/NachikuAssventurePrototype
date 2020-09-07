@@ -16,7 +16,7 @@ namespace ASSpriteRigging.BoneUtility
 		{
 			foreach (Transform bone in boneList)
 			{
-				RigIndividualElements (
+				RigBoneIndividualElements (
 					bone,
 					defaultRigidbody: defaultRigidbody,
 					defaultAnchor: defaultAnchor,
@@ -28,7 +28,7 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//creates components that affect a single bone: rigidbodies and disconnected anchors/joints
-		public static void RigIndividualElements (Transform bone, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor, CircleCollider2D defaultCollider, string defaultTag = null, int defaultLayer = -1)
+		public static void RigBoneIndividualElements (Transform bone, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor, CircleCollider2D defaultCollider, string defaultTag = null, int defaultLayer = -1)
 		{
 			BoneCreateRigidbody(bone, defaultRigidbody);
 			BoneCreateAnchor(bone, defaultAnchor);
