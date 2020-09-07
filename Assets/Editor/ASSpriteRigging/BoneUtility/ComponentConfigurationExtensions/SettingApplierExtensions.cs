@@ -23,34 +23,50 @@ namespace ASSpriteRigging.BoneUtility.ComponentConfigurers
 		}
 	//ENDOF Rigidbody2D components configuration
 
-	//SpringJoint2D components configuration
+	//Joint2D components configuration
+		//SpringJoint2D : AnchoredJoint2D
 		public static void ApplySettings (this SpringJoint2D _this, SpringJoint2D sample, bool alterConnectedBody = false)
 		{
-			if (alterConnectedBody)	{ _this.connectedBody = sample.connectedBody; }		//connected rigidbody
-			_this.enableCollision = 				sample.enableCollision;					//enable collision
-			_this.autoConfigureConnectedAnchor = 	sample.autoConfigureConnectedAnchor;	//auto configure connection
+			//properties
+			_this.autoConfigureDistance =	sample.autoConfigureDistance;			//auto configure distance
+			_this.dampingRatio = 			sample.dampingRatio;					//Damping ratio
+			_this.distance = 				sample.distance;						//distance
+			_this.frequency = 				sample.frequency;						//frequency
+
+			((AnchoredJoint2D) _this).ApplySettings((AnchoredJoint2D) sample);
+		}
+		//AnchoredJoint2D : Joint2D
+		public static void ApplySettings (this AnchoredJoint2D _this, AnchoredJoint2D sample, bool alterConnectedBody = false)
+		{
+			_this.autoConfigureConnectedAnchor =	sample.autoConfigureConnectedAnchor;	//auto configure connection
 			_this.anchor = 							sample.anchor;							//anchor x y
 			_this.connectedAnchor = 				sample.connectedAnchor;					//connected anchor x y
-			_this.autoConfigureDistance = 			sample.autoConfigureDistance;			//auto configure distance
-			_this.distance = 						sample.distance;						//distance
-			_this.dampingRatio = 					sample.dampingRatio;					//Damping ratio
-			_this.frequency = 						sample.frequency;						//frequency
-			_this.breakForce = 						sample.breakForce;						//break force
+
+			((Joint2D) _this).ApplySettings((Joint2D) sample);
 		}
-	//ENDOF SpringJoint2D components configuration
+		//Joint2D : Behaviour : Component
+		public static void ApplySettings (this Joint2D _this, Joint2D sample, bool alterConnectedBody = false)
+		{
+			if (alterConnectedBody)	{ _this.connectedBody = sample.connectedBody; }	//connected rigidbody
+			_this.enableCollision =	sample.enableCollision;			//enable collision
+			_this.breakForce =		sample.breakForce;				//break force
+		}
+	//ENDOF Joint2D components configuration
 
 	//Collider2D components configuration
+		//CircleCollider2D : Collider2D
+		public static void ApplySettings (this CircleCollider2D _this, CircleCollider2D sample)
+		{
+			_this.radius = 			sample.radius;				//object radius
+			((Collider2D) _this).ApplySettings((Collider2D) sample);
+		}
+		//Collider2D : Behaviour : Component
 		public static void ApplySettings (this Collider2D _this, Collider2D sample)
 		{
 			_this.sharedMaterial = 	sample.sharedMaterial;			//material
 			_this.isTrigger = 		sample.isTrigger;				//is trigger
 			_this.usedByEffector = 	sample.usedByEffector;			//used by an effector or not
 			_this.offset = 			sample.offset;					//mass
-		}
-		public static void ApplySettings (this CircleCollider2D _this, CircleCollider2D sample)
-		{
-			((Collider2D) _this).ApplySettings((Collider2D) sample);
-			_this.radius = 			sample.radius;				//object radius
 		}
 	//ENDOF Collider2D components configuration
 	}
