@@ -50,11 +50,14 @@ namespace ASSPhysics.HandSystem
 		{
 			inputHeldTime = 0.0f;
 			if (!TrySpecialAction())
+			{
+				InitiateGrab();
+			}
 		}
 
 		private void InputHeld ()
 		{
-			inputHeldTime += Time.DeltaTime;
+			inputHeldTime += Time.deltaTime;
 		}
 
 		private void InputEnded ()
@@ -67,10 +70,13 @@ namespace ASSPhysics.HandSystem
 		}
 
 		//Checks if we have to perform a special action and initiate it
-		//returns true on success
+		//returns true if we have a special action to perform
 		private bool TrySpecialAction ()
 		{
-
+		//=============================================================================
+		//[TO-DO] temporary version always returns false
+		//=============================================================================
+			return false;
 		}
 
 		private void InitiateGrab ()
@@ -86,6 +92,9 @@ namespace ASSPhysics.HandSystem
 		//[TO-DO]
 		//=============================================================================
 		}
+
+		private void EndActions ()
+		{}
 	}
 }
 

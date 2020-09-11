@@ -3,19 +3,19 @@ namespace ASSPhysics.HandSystem.Actions
 	public class ActionGrab : ActionBase
 	{
 		//initiate the action
-		private virtual void PerformInitiate ()
+		protected override void PerformInitiate ()
 		{
 
 		}
 
 		//maintain the action
-		public void Maintain ()
+		public override void Maintain ()
 		{
 
 		}
 
 		//finalize the action
-		public void Finalize ()
+		public override void Stop ()
 		{
 
 		}

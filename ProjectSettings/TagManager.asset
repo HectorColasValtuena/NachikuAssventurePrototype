@@ -45,3 +45,6 @@ TagManager:
   - name: DatAss
     uniqueID: 3434142119
     locked: 0
+  - name: HandCursor
+    uniqueID: 2910087449
+    locked: 0

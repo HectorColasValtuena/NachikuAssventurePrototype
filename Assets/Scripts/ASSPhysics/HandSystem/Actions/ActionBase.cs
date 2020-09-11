@@ -8,12 +8,12 @@ namespace ASSPhysics.HandSystem.Actions
 			hand = parentHand;
 			PerformInitiate();
 		}
-		public virtual void Maintain ();
-		public virtual void Finalize ();
+		public abstract void Maintain ();
+		public abstract void Stop ();
 	//ENDOF IHandAction implementation
 
-		private IHand hand;
+		protected IHand hand;
 
-		private virtual void PerformInitiate ();
+		protected abstract void PerformInitiate ();
 	}
 }
