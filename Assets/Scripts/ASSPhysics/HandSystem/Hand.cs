@@ -4,10 +4,8 @@ namespace ASSPhysics.HandSystem
 {
 	public class Hand : MonoBehaviour, IHand
 	{
-		private const float minimumTimeHeldForGrab = 0.1f;
-		private const float maximumTimeHeldForSlap = 0.3f;
-
 	//IHand implementation
+		private Vector3 _targetPosition = Vector3.zero;
 		public Vector3 targetPosition { set { _targetPosition = value; }}
 
 		//=============================================================================
@@ -16,49 +14,78 @@ namespace ASSPhysics.HandSystem
 		//called upon pressing, holding, and releasing input button
 		public void MainInput (EInputState state)
 		{
-			switch (state)
-			{
-				case EInputState.Started:
-					InputStarted();
-				case EInputState.Held:
-					InputHeld();
-					break;
-				case EInputState.Ended:
-					InputEnded();
-					break;
-			}
+			if (state == EInputState.Held) { InputHeld(); }
+			else if (state == EInputState.Started) { InputStarted(); }
+			else /*EInputState.Ended:*/	{ InputEnded(); }
+		}
+		public void MainInput (EInputState state, Vector3 position)
+		{
+			targetPosition = position;
+			MainInput (state);
 		}
 	//ENDOF IHand implementation
 
-		private Vector3 _targetPosition = Vector3.zero;
-		private float inputHeldTime = 0.0f;
-
-		private void InputStarted ()
-		{
-			inputHeldTime = 0.0f;
-		}
-
-		private void InputHeld ()
-		{
-
-		}
-
-		private void InputEnded ()
-		{
-			
-		}
-
+	//MonoBehaviour Lifecycle implementation
 		public void Awake ()
 		{
-
+		//=============================================================================
+		//[TO-DO]
+		//=============================================================================
 		}
 
 		public void Update()
 		{
-			
+		//=============================================================================
+		//[TO-DO]
+		//=============================================================================			
+		}
+	//ENDOF MonoBehaviour Lifecycle implementation
+
+		//private const float minimumTimeHeldForGrab = 0.1f;
+		private const float maximumTimeHeldForSlap = 0.1f;
+		private float inputHeldTime = 0.0f;
+
+		//upon first starting an input, try to determine if an special zone action is required. if not, try to initiate a grab.
+		private void InputStarted ()
+		{
+			inputHeldTime = 0.0f;
+			if (!TrySpecialAction())
 		}
 
-		public void Slap (){}
-		public void Grab (){}
+		private void InputHeld ()
+		{
+			inputHeldTime += Time.DeltaTime;
+		}
+
+		private void InputEnded ()
+		{
+			if (inputHeldTime <= maximumTimeHeldForSlap)
+			{
+				Slap();
+			}
+			EndActions();
+		}
+
+		//Checks if we have to perform a special action and initiate it
+		//returns true on success
+		private bool TrySpecialAction ()
+		{
+
+		}
+
+		private void InitiateGrab ()
+		{
+		//=============================================================================
+		//[TO-DO]
+		//=============================================================================
+		}
+
+		private void Slap ()
+		{
+		//=============================================================================
+		//[TO-DO]
+		//=============================================================================
+		}
 	}
 }
+

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-using static ASSPhysics.HandSystem.Mouse.MouseInput;
+using static ASSPhysics.HandSystem.Input.MouseInput;
 
 namespace ASSPhysics.HandSystem
 {
