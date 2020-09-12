@@ -7,11 +7,16 @@ namespace ASSPhysics.HandSystem.Input
 		private const string mouseXAxisName = "Mouse X";
 		private const string mouseYAxisName = "Mouse Y";
 
+
 		private static Vector3 cameraDepthCorrection = new Vector3 (0f, 0f, 10f);
 
 		//returns a vector3 representing the movement of the mouse during the last frame
 		public static Vector3 delta { get { return new Vector3 (UnityEngine.Input.GetAxis(mouseXAxisName), UnityEngine.Input.GetAxis(mouseYAxisName), 0f); }}
 		public static Vector3 screenSpaceDelta { get { return ScreenSpaceToWorldSpace(delta); }}
+
+		//scaled delta for configurable controls
+		public static float deltaScale = 0.5f;
+		public static Vector3 scaledDelta { get { return delta * deltaScale; }}
 
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 		//if correctPosition is true, the returned Vector3 originates in the camera's position

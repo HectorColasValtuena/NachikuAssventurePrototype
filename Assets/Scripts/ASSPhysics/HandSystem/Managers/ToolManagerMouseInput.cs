@@ -65,8 +65,9 @@ namespace ASSPhysics.HandSystem.Managers
 
 		private void UpdateMainTool ()
 		{
+			toolList[focusedTool].Move(MouseInput.scaledDelta);
 			//toolList[focusedTool].Move(MouseInput.screenSpaceDelta);
-			toolList[focusedTool].position = MouseInput.ScreenSpaceToWorldSpace(UnityEngine.Input.mousePosition, true);
+			//BAD BAD BAD> toolList[focusedTool].position = MouseInput.ScreenSpaceToWorldSpace(UnityEngine.Input.mousePosition, true);
 		}
 
 		//checks for input corresponding to main action (grab/slap), and performs the action if necessary
