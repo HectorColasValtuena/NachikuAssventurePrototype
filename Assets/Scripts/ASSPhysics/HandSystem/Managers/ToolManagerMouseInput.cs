@@ -16,8 +16,8 @@ namespace ASSPhysics.HandSystem.Managers
 		public void Update ()
 		{
 			ToolCycleCheck();
-			UpdateMainTool();
-			MainActionCheck();
+			UpdateFocusedToolPosition();
+			UpdateFocusedToolInput();
 		}
 	//ENDOF MonoBehaviour Lifecycle implementation
 
@@ -60,22 +60,29 @@ namespace ASSPhysics.HandSystem.Managers
 			}
 		}
 
-		private void UpdateMainTool ()
+		private void UpdateFocusedToolPosition ()
 		{
 			toolList[focusedTool].Move(MouseInput.scaledDelta);
-			//toolList[focusedTool].Move(MouseInput.screenSpaceDelta);
-			//BAD BAD BAD> toolList[focusedTool].position = MouseInput.ScreenSpaceToWorldSpace(UnityEngine.Input.mousePosition, true);
 		}
 
-		//checks for input corresponding to main action (grab/slap), and performs the action if necessary
-		private void MainActionCheck ()
+		//checks for input corresponding to main action, sends the correct state to the tool
+		private void UpdateFocusedToolInput ()
 		{
-
-		}
-
-		private void MainActionPerform ()
-		{
-
+			bool button = Input.GetMouseButton(0);
+			bool buttonFirstDown = Input.GetMouseButtonDown(0);
+			EInputState state;
+			if (button && !buttonFirstDown)
+			{
+				toolList[focusedTool].MainInput(EInputState.Held);
+			}
+			else if (buttonFirstDown)
+			{
+				toolList[focusedTool].MainInput(EInputState.Started);
+			}
+			else if (Input.GetMouseButtonUp(0))
+			{
+				toolList[focusedTool].MainInput(EInputState.Ended);
+			}
 		}
 	}
 }

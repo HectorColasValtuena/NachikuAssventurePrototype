@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using AssPhysics.Constants;
+
 namespace ASSPhysics.HandSystem.Tools
 {
 	[RequireComponent(typeof(Animator))]
@@ -26,7 +28,6 @@ namespace ASSPhysics.HandSystem.Tools
 		}
 
 		//wether the hand is on focus or not
-		private const string animatorVarName_Focused = "Focused";
 		private bool _focused;
 		public bool focused
 		{
@@ -35,7 +36,7 @@ namespace ASSPhysics.HandSystem.Tools
 			{
 				Debug.Log(animator);
 				_focused = value;
-				animator.SetBool(animatorVarName_Focused, value);
+				animator.SetBool(AnimationNames.focused, value);
 			}
 		}
 
@@ -63,7 +64,7 @@ namespace ASSPhysics.HandSystem.Tools
 		{
 		//=============================================================================
 		//[TO-DO] Move this elsewhere
-		//=============================================================================		
+		//=============================================================================
 			return new Vector3
 			(
 				Mathf.Clamp

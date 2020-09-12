@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using ASSPhysics.Settings; //InputSettings
 
 namespace ASSPhysics.HandSystem.Tools
 {
@@ -24,6 +25,8 @@ namespace ASSPhysics.HandSystem.Tools
 	//ENDOF MonoBehaviour Lifecycle implementation
 
 	//ToolBase abstract implementation
+		private float inputHeldTime = 0.0f;
+		
 		protected override void InputStarted ()
 		{
 			//upon first starting an input, try to determine if an special zone action is required
@@ -42,7 +45,7 @@ namespace ASSPhysics.HandSystem.Tools
 
 		protected override void InputEnded ()
 		{
-			if (inputHeldTime <= maximumTimeHeldForSlap)
+			if (inputHeldTime <= InputSettings.maximumTimeHeldForSlap)
 			{
 				Slap();
 			}
@@ -50,9 +53,6 @@ namespace ASSPhysics.HandSystem.Tools
 		}
 	//ENDOF ToolBase abstract implementation
 
-		//private const float minimumTimeHeldForGrab = 0.1f;
-		private const float maximumTimeHeldForSlap = 0.1f;
-		private float inputHeldTime = 0.0f;
 
 
 		//Checks if we have to perform a special action and initiate it
