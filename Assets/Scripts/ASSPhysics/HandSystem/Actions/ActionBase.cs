@@ -1,3 +1,5 @@
+using ASSPhysics.HandSystem.Tools; //ITool
+
 namespace ASSPhysics.HandSystem.Actions
 {
 	public abstract class ActionBase : IAction

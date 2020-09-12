@@ -15,22 +15,26 @@ namespace ASSPhysics.HandSystem.Input
 
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 		//if correctPosition is true, the returned Vector3 originates in the camera's position
-		public static Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, bool correctPosition = false) { return ScreenSpaceToWorldSpace (mousePosition, Camera.main); }
+		public static Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, bool correctPosition = false) { return ScreenSpaceToWorldSpace (mousePosition, Camera.main, correctPosition); }
 		public static Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, Camera pivotCamera, bool correctPosition = false)
 		{
-			Vector3 screenHalfSize = new Vector3 (Screen.width/2, Screen.height/2, 0f);
+			Debug.Log("Mouse position: " + mousePosition);
+
+			//Vector3 screenHalfSize = new Vector3 (Screen.width/2, Screen.height/2, 0f);
+			Vector3 screenSize = new Vector3 (Screen.width, Screen.height, 0f);
 			//first correct the mousePosition into a vector with 0,0 originating in the screen's middlepoint (right under the camera)
-			Vector3 position = mousePosition - screenHalfSize;
+			//Vector3 position = mousePosition - screenHalfSize;
 			//normalize position
-			position = Vector3Divide (position, screenHalfSize);
+			Vector3 position = Vector3Divide (mousePosition, screenSize);
 			//now multiply into screen size ratio
-			position = Vector3.Scale(position, CameraOrthographicSize(pivotCamera));
+			position = Vector3.Scale(position, GetCameraSize(pivotCamera));
 			//finally correct world position if necessary
 			if (correctPosition)
 			{
-				position = position + pivotCamera.transform.position + cameraDepthCorrection;
+				position = position + pivotCamera.transform.position + cameraDepthCorrection - (GetCameraSize(pivotCamera)/2);
 			}
 
+			Debug.Log("World position: " + position);
 			return position;
 		}
 
@@ -40,13 +44,13 @@ namespace ASSPhysics.HandSystem.Input
 			return new Vector3 (
 				leftHand.x/rightHand.x,
 				leftHand.y/rightHand.y,
-				leftHand.z/rightHand.z
+				(rightHand.z != 0) ? leftHand.z/rightHand.z : 0
 			);
 		}
 
-		private static Vector3 CameraOrthographicSize (Camera pivotCamera) 
+		private static Vector3 GetCameraSize (Camera pivotCamera) 
 		{
-			return new Vector3 (pivotCamera.orthographicSize * pivotCamera.aspect,	pivotCamera.orthographicSize, 0f);
+			return new Vector3 (pivotCamera.orthographicSize * pivotCamera.aspect * 2,	pivotCamera.orthographicSize * 2, 0f);
 		}
 	}
 }
