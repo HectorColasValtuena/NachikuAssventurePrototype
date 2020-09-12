@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ASSPhysics.HandSystem
+namespace ASSPhysics.HandSystem.Tools
 {
 	public class Hand : MonoBehaviour, ITool
 	{
