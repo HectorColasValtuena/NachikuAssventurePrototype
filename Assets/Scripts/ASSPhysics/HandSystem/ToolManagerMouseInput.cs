@@ -4,10 +4,10 @@ using static ASSPhysics.HandSystem.Input.MouseInput;
 
 namespace ASSPhysics.HandSystem
 {
-	public class HandManagerFromMouseCursor : MonoBehaviour
+	public class ToolManagerMouseInput : ToolManagerBase
 	{
 		[SerializeField]
-		protected IHand[] handList;	//list of hands
+		protected ITool[] toolList;	//list of hands
 
 		private int mainHand;		//highligted and active hand
 

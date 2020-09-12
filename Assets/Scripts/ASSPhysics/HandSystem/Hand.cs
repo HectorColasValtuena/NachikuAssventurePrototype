@@ -2,11 +2,18 @@
 
 namespace ASSPhysics.HandSystem
 {
-	public class Hand : MonoBehaviour, IHand
+	public class Hand : MonoBehaviour, ITool
 	{
 	//IHand implementation
-		private Vector3 _targetPosition = Vector3.zero;
-		public Vector3 targetPosition { set { _targetPosition = value; }}
+		public Vector3 position
+		{
+			set 
+			{
+				//[TO-DO] ignore set if hand is in auto mode
+				transform.position = value;
+			};
+			get { return transform.position; }
+		}
 
 		//=============================================================================
 		//[TO-DO]
