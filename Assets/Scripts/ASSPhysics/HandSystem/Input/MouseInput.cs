@@ -9,7 +9,6 @@ namespace ASSPhysics.HandSystem.Input
 
 		private static Vector3 cameraDepthCorrection = new Vector3 (0f, 0f, 10f);
 
-
 		//returns a vector3 representing the movement of the mouse during the last frame
 		public static Vector3 delta { get { return new Vector3 (UnityEngine.Input.GetAxis(mouseXAxisName), UnityEngine.Input.GetAxis(mouseYAxisName), 0f); }}
 		public static Vector3 screenSpaceDelta { get { return ScreenSpaceToWorldSpace(delta); }}

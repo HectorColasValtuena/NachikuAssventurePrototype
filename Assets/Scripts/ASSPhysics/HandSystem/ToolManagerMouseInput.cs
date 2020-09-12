@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-using static ASSPhysics.HandSystem.Input.MouseInput;
+using ASSPhysics.HandSystem.Input;
 
 namespace ASSPhysics.HandSystem
 {
@@ -9,30 +9,30 @@ namespace ASSPhysics.HandSystem
 		[SerializeField]
 		protected ITool[] toolList;	//list of hands
 
-		private int mainHand;		//highligted and active hand
+		private int mainTool;		//highligted and active hand
 
 		public void Update ()
 		{
-			HandCycleCheck();
-			UpdateMainHand();
+			ToolCycleCheck();
+			UpdateMainTool();
 			MainActionCheck();
 		}
 
 		//checks for input corresponding to hand swap, and performs the action if necessary
-		private void HandCycleCheck ()
+		private void ToolCycleCheck ()
 		{
 			
 		}
 
 		//
-		private void HandCyclePerform ()
+		private void ToolCyclePerform ()
 		{
 			
 		}
 
-		private void UpdateMainHand ()
+		private void UpdateMainTool ()
 		{
-
+			toolList[mainTool].Move(MouseInput.screenSpaceDelta);
 		}
 
 		//checks for input corresponding to main action (grab/slap), and performs the action if necessary
