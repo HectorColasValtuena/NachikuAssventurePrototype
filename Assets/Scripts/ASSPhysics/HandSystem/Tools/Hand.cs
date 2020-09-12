@@ -5,19 +5,22 @@ namespace ASSPhysics.HandSystem.Tools
 	public class Hand : ToolBase
 	{
 	//MonoBehaviour Lifecycle implementation
+/*
 		public void Awake ()
 		{
+			base.Awake();
 		//=============================================================================
 		//[TO-DO]
 		//=============================================================================
 		}
-
-		public void Update()
+		public void Update ()
 		{
+			base.Update();
 		//=============================================================================
 		//[TO-DO]
 		//=============================================================================			
 		}
+*/
 	//ENDOF MonoBehaviour Lifecycle implementation
 
 	//ToolBase abstract implementation

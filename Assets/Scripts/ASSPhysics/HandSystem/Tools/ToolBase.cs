@@ -2,8 +2,18 @@
 
 namespace ASSPhysics.HandSystem.Tools
 {
+	[RequireComponent(typeof(Animator))]
 	public abstract class ToolBase : MonoBehaviour, ITool
 	{
+	//Object initialization and local variables
+		protected Animator animator;
+
+		public virtual void Awake () {
+			animator = gameObject.GetComponent<Animator>();
+		}
+
+	//ENDOF Object initialization and local variables
+
 	//IHand implementation
 		public Vector3 position
 		{
@@ -15,15 +25,24 @@ namespace ASSPhysics.HandSystem.Tools
 			get { return transform.position; }
 		}
 
-		public bool focused {get; set;}		//wether the hand is on focus or not
+		//wether the hand is on focus or not
+		private const string animatorVarName_Focused = "Focused";
+		private bool _focused;
+		public bool focused
+		{
+			get { return _focused; }
+			set
+			{
+				Debug.Log(animator);
+				_focused = value;
+				animator.SetBool(animatorVarName_Focused, value);
+			}
+		}
 
 		public void Move (Vector3 delta)
 		{
 			position = position + delta;
 		}
-		//=============================================================================
-		//[TO-DO]
-		//=============================================================================
 		//called upon pressing, holding, and releasing input button
 		public void MainInput (EInputState state, Vector3 targetPosition)
 		{
@@ -38,9 +57,13 @@ namespace ASSPhysics.HandSystem.Tools
 		}
 	//ENDOF IHand implementation
 
+	//Private functionality
 		//clamp a position within viewing range of Camera.main
 		private Vector3 ClampPositionToCamera (Vector3 position)
 		{
+		//=============================================================================
+		//[TO-DO] Move this elsewhere
+		//=============================================================================		
 			return new Vector3
 			(
 				Mathf.Clamp
@@ -58,6 +81,7 @@ namespace ASSPhysics.HandSystem.Tools
 				position.z
 			);
 		}
+	//ENDOF Private functionality
 
 		protected abstract void InputStarted ();
 		protected abstract void InputHeld ();
