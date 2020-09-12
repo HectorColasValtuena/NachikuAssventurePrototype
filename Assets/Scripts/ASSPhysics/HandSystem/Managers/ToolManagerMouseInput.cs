@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 
-using ASSPhysics.HandSystem.Input;
+using ASSPhysics.HandSystem.Tools; //ITool
+using ASSPhysics.HandSystem.Input; //MouseInput
 
-namespace ASSPhysics.HandSystem
+namespace ASSPhysics.HandSystem.Managers
 {
 	public class ToolManagerMouseInput : ToolManagerBase
 	{
 		[SerializeField]
-		protected ITool[] toolList;	//list of hands
+		private ITool[] toolList;	//list of hands
 
 		private int mainTool;		//highligted and active hand
 
