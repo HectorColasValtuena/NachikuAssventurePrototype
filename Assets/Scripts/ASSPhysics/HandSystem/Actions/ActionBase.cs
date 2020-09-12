@@ -3,16 +3,16 @@ namespace ASSPhysics.HandSystem.Actions
 	public abstract class ActionBase : IAction
 	{
 	//IHandAction implementation
-		public void Initiate (IHand parentHand)
+		public void Initiate (ITool parentTool)
 		{
-			hand = parentHand;
+			tool = parentTool;
 			PerformInitiate();
 		}
 		public abstract void Maintain ();
 		public abstract void Stop ();
 	//ENDOF IHandAction implementation
 
-		protected IHand hand;
+		protected ITool tool;
 
 		protected abstract void PerformInitiate ();
 	}

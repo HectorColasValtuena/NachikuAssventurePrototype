@@ -11,9 +11,11 @@ namespace ASSPhysics.HandSystem
 			{
 				//[TO-DO] ignore set if hand is in auto mode
 				transform.position = value;
-			};
+			}
 			get { return transform.position; }
 		}
+
+		public bool focused {get; set;}		//wether the hand is on focus or not
 
 		//=============================================================================
 		//[TO-DO]
@@ -25,9 +27,9 @@ namespace ASSPhysics.HandSystem
 			else if (state == EInputState.Started) { InputStarted(); }
 			else /*EInputState.Ended:*/	{ InputEnded(); }
 		}
-		public void MainInput (EInputState state, Vector3 position)
+		public void MainInput (EInputState state, Vector3 targetPosition)
 		{
-			targetPosition = position;
+			position = targetPosition;
 			MainInput (state);
 		}
 	//ENDOF IHand implementation
