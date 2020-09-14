@@ -1,5 +1,7 @@
 using ASSPhysics.HandSystem.Tools; //ITool
 
+/*DEBUG*/using UnityEngine;/*DEBUG*/
+
 namespace ASSPhysics.HandSystem.Actions
 {
 	public abstract class ActionBase : IAction
@@ -11,6 +13,8 @@ namespace ASSPhysics.HandSystem.Actions
 		//initialize the action with a reference to the parent tool
 		public virtual bool Initialize (ITool parentTool)
 		{
+			if (tool == parentTool) { return true; }
+			Debug.Log("Action initializing:" + this);
 			tool = parentTool;
 			return IsValid();
 		}

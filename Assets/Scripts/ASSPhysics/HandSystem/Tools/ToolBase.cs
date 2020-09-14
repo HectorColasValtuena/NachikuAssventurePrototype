@@ -72,14 +72,17 @@ namespace ASSPhysics.HandSystem.Tools
 	//ENDOF IHand implementation
 
 	//Private functionality
-		//ensure current action matches with type T
-		protected void SetAction <T> () where T : class, IAction, new()
+		//Start an action of type T unless its the type currently active
+		//the initialize it with a reference to ourselves and return its startup validity check
+		protected bool SetAction <T> () where T : class, IAction, new()
 		{
 			if ((action as T) == null)
 			{
-				action?.Clear();
-				action = new T ();
+				action?.Clear(); //call Clear on the previous action for cleanup
+				action = new T (); //create the new action
+				return action.Initialize((ITool)this); //initialize it with a proper reference
 			}
+			return true;
 		}
 
 		//=============================================================================

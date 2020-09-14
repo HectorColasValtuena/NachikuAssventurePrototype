@@ -1,6 +1,7 @@
 using UnityEngine; //Physics, Transform, SpringJoint, ...
 
 using static ASSPhysics.HandSystem.Actions.ActionSettings.ActionSettings; //tailGrabSettings, surfaceGrabSettings
+using ASSistant.ComponentConfigurers; //SpringJoint2D.ApplySettings(sample);
 
 namespace ASSPhysics.HandSystem.Actions
 {
@@ -28,6 +29,9 @@ namespace ASSPhysics.HandSystem.Actions
 	//ENDOF ActionBase abstract implementation
 
 	//ActionGrab specifics private implementation
+		//list of currently in-use joints
+		private SpringJoint[] jointList;
+
 		//Gets all of the grabbable transforms. First tries to fetch a single tail backbone.
 		//If no tail bones, fetch every surface bone in range
 		private Transform[] GetBonesInRange ()
@@ -89,15 +93,35 @@ namespace ASSPhysics.HandSystem.Actions
 			return transformList;
 		}
 
-		private SpringJoint[] jointList;
 
-		private void CreateJoints (Transform[] targets, SpringJoint sampleTransform)
+		//create joints required from the tool gameobject to each target
+		private void CreateJoints (Transform[] targets, SpringJoint2D sampleSpring)
 		{
-			///////////////////////////////////////////////////////////////////////////////////////////////
-			//[TO-DO]
-			///////////////////////////////////////////////////////////////////////////////////////////////
+			//clear joint list
+			RemoveJoints();
+			//create a joint for each target
+			for (int i = 0, iLimit = targets.Length; i < iLimit; i++)
+			{
+				CreateJoint(targets[i], sampleSpring);
+			}
 		}
 
+		//Create a joint linked to a specific transform
+		private SpringJoint2D CreateJoint (Transform target, SpringJoint2D sampleSpring)
+		{
+			//fetch target rigidbody and ensure it exists
+			Rigidbody2D targetBody = target.GetComponent<Rigidbody2D>();
+			if (targetBody == null) { return null; }
+			//create the joint
+			SpringJoint2D newJoint = tool.gameObject.AddComponent<SpringJoint2D>();
+			//apply the sample settings and link target rigidbody
+			newJoint.ApplySettings(sampleSpring);
+			newJoint.connectedBody = targetBody;
+			//return the component
+			return newJoint;
+		}
+
+		//Remove all joints currently in use
 		private void RemoveJoints ()
 		{
 			if (jointList != null)

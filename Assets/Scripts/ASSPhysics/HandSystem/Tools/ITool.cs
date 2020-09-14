@@ -4,6 +4,9 @@ namespace ASSPhysics.HandSystem.Tools
 {
 	public interface ITool
 	{
+		Transform transform {get;}
+		GameObject gameObject {get;}
+
 		Vector3 position {get; set;}	//position of the hand
 		bool focused {get; set;}		//wether the hand is on focus or not
 
