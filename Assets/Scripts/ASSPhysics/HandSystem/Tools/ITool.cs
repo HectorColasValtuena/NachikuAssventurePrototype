@@ -12,5 +12,7 @@ namespace ASSPhysics.HandSystem.Tools
 		//called with either an Started, Held, or Ended state. also sets position if provided.
 		void MainInput (EInputState state);
 		void MainInput (EInputState state, Vector3 targetPosition);
+
+		void ActionEnded (); //Called by the current action to remove itself
 	}
 }

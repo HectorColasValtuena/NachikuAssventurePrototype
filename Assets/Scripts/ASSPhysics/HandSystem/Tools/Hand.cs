@@ -47,9 +47,8 @@ namespace ASSPhysics.HandSystem.Tools
 		{
 			if (inputHeldTime <= InputSettings.maximumTimeHeldForSlap)
 			{
-				Slap();
+				InitiateSlap();
 			}
-			EndActions();
 		}
 	//ENDOF ToolBase abstract implementation
 
@@ -72,7 +71,7 @@ namespace ASSPhysics.HandSystem.Tools
 		//=============================================================================
 		}
 
-		private void Slap ()
+		private void InitiateSlap ()
 		{
 		//=============================================================================
 		//[TO-DO]
