@@ -1,6 +1,6 @@
 using UnityEngine; //Physics, Transform, SpringJoint, ...
 
-using ASSPhysics.HandSystem.Actions.ActionSettings;
+using static ASSPhysics.HandSystem.Actions.ActionSettings.ActionSettings; //tailGrabSettings, surfaceGrabSettings
 
 namespace ASSPhysics.HandSystem.Actions
 {
@@ -32,8 +32,8 @@ namespace ASSPhysics.HandSystem.Actions
 		//If no tail bones, fetch every surface bone in range
 		private Transform[] GetBonesInRange ()
 		{
-			Transform[] boneList = GetTailBoneInRange();
-			if (boneList == null || boneList.Length == 0)
+			Transform[] boneList = {GetTailBoneInRange()};
+			if (boneList[0] == null)
 			{
 				boneList = GetSurfaceBonesInRange();
 			}
@@ -45,13 +45,13 @@ namespace ASSPhysics.HandSystem.Actions
 		{
 			//find all the tail bones nearby
 			Collider[] boneList = Physics.OverlapSphere(
-				Vector3 position,
-				ActionSettings.tailGrabSettings.radius,
-				ActionSettings.tailGrabSettings.grabbableMask,
+				tool.position,
+				tailGrabSettings.radius,
+				tailGrabSettings.grabbableMask,
 				QueryTriggerInteraction.Collide
 			);
 
-			if (boneList.Length == 0) { return; }
+			if (boneList.Length == 0) { return null; }
 
 			//now find the nearest tail bone of the list
 			int closest = 0;
@@ -60,9 +60,9 @@ namespace ASSPhysics.HandSystem.Actions
 			{
 				//keep current bone if closer than previous closest
 				if (
-					Vector3.distance(boneList[i].transform.position, tool.transform.position)
+					Vector3.Distance(boneList[i].transform.position, tool.position)
 					<
-					Vector3.distance(boneList[closest].transform.position, tool.transform.position)
+					Vector3.Distance(boneList[closest].transform.position, tool.position)
 				) {
 					closest = i;
 				}
@@ -70,18 +70,33 @@ namespace ASSPhysics.HandSystem.Actions
 			return boneList[closest].transform;
 		}
 
-		//get a list of all bones in range
+		//get a list of all surface bones in range
 		private Transform[] GetSurfaceBonesInRange ()
 		{
-			return (Transform[]) Physics.OverlapSphere(
-				Vector3 position,
-				ActionSettings.surfaceGrabSettings.radius,
-				ActionSettings.surfaceGrabSettings.grabbableMask,
+			Collider[] colliderList = Physics.OverlapSphere(
+				tool.position,
+				surfaceGrabSettings.radius,
+				surfaceGrabSettings.grabbableMask,
 				QueryTriggerInteraction.Collide
 			);
+			Transform[] transformList = new Transform[colliderList.Length];
+
+			for (int i = 0, iLimit = colliderList.Length; i < iLimit; i++)
+			{
+				transformList[i] = colliderList[i].transform;
+			}
+
+			return transformList;
 		}
 
 		private SpringJoint[] jointList;
+
+		private void CreateJoints (Transform[] targets, SpringJoint sampleTransform)
+		{
+			///////////////////////////////////////////////////////////////////////////////////////////////
+			//[TO-DO]
+			///////////////////////////////////////////////////////////////////////////////////////////////
+		}
 
 		private void RemoveJoints ()
 		{

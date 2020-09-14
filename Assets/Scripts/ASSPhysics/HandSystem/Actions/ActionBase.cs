@@ -23,11 +23,11 @@ namespace ASSPhysics.HandSystem.Actions
 		{
 			tool.ActionEnded();
 		}
+
+		//returns true if this action is valid for this hand (targets in range 'n such)
+		public virtual bool IsValid () { return true; }
 	//ENDOF IHandAction implementation
 
 		protected ITool tool;
-
-		//returns true if this action is valid for this hand (targets in range 'n such)
-		protected virtual bool IsValid () { return true; }
 	}
 }

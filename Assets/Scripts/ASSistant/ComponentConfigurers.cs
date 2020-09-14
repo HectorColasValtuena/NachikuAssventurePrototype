@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace ASSpriteRigging.BoneUtility.ComponentConfigurers
+namespace ASSistant.ComponentConfigurers
 {
 	//applies right-hand properties to left-hand objects
-	public static class SettingApplierExtensions
+	public static class ComponentConfigurers
 	{
 	//Rigidbody2D components configuration
 		public static void ApplySettings (this Rigidbody2D _this, Rigidbody2D sample)

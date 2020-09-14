@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEditor;
 
 //Component.ApplySettings(sample) methods for several UnityEngine components
-using static ASSpriteRigging.BoneUtility.ComponentConfigurers.SettingApplierExtensions;
+using ASSistant.ComponentConfigurers;
+
 
 namespace ASSpriteRigging.BoneUtility
 {

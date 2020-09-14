@@ -13,5 +13,7 @@ namespace ASSPhysics.HandSystem.Actions
 		void Input (EInputState state);
 		//clears and finishes the action
 		void Clear ();
+		//returns true if this action is valid for this hand (targets in range 'n such)
+		bool IsValid ();
 	}
 }
