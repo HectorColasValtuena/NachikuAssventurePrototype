@@ -10,7 +10,7 @@ namespace ASSPhysics.HandSystem.Tools
 	{
 	//Object initialization and local variables
 		protected Animator animator;
-		protected IAction action;
+		protected IAction action = null;
 
 		public virtual void Awake () {
 			animator = gameObject.GetComponent<Animator>();
@@ -76,13 +76,24 @@ namespace ASSPhysics.HandSystem.Tools
 		//the initialize it with a reference to ourselves and return its startup validity check
 		protected bool SetAction <T> () where T : class, IAction, new()
 		{
+			//if the current action is NOT of the same type as the target
+			//only then attempt to create a new action
 			if ((action as T) == null)
 			{
-				action?.Clear(); //call Clear on the previous action for cleanup
-				action = new T (); //create the new action
-				return action.Initialize((ITool)this); //initialize it with a proper reference
+				//create the new action
+				IAction newAction = new T ();
+				//initialize it with a proper reference and check if it's valid
+				if (newAction.Initialize((ITool)this))
+				{
+					action?.Clear(); //call Clear on the previous action for cleanup
+					action = newAction; //store the new action
+					return true;	//return true indicating valid action
+				}
+
+				return false;	//return false indicating failed action
 			}
-			return true;
+			//if the current action IS of the target type, return its validity
+			return action.IsValid();
 		}
 
 		//=============================================================================

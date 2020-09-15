@@ -4,6 +4,8 @@ namespace ASSPhysics.HandSystem.Actions
 {
 	public interface IAction 
 	{
+		//returns true if this action is currently doing something, like maintaining a grab or repeating a slapping pattern
+		bool ongoing {get;}
 		//wether action is to automatically repeat
 		bool automatic {get; set;}
 		//initialize the action with a reference to the parent tool

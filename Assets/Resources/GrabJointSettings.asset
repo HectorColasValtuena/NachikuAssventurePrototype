@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fb3992c95ae584b9388626a521f367, type: 3}
+  m_Name: GrabJointSettings
+  m_EditorClassIdentifier: 
+  sampleJoint: {fileID: 4704849587592402504, guid: fca1b4ddc3900f04aadd479516d8a68a, type: 3}

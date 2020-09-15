@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using ASSPhysics.Settings; //InputSettings
+using ASSPhysics.HandSystem.Actions; //ActionGrab
 
 namespace ASSPhysics.HandSystem.Tools
 {
@@ -66,20 +67,20 @@ namespace ASSPhysics.HandSystem.Tools
 
 		private void InitiateGrab ()
 		{
-		//=============================================================================
-		//[TO-DO]
-		//=============================================================================
+			Debug.Log("InitiateGrab();");
+			SetAction<ActionGrab>();
 		}
 
 		private void InitiateSlap ()
 		{
+			Debug.Log("InitiateSlap();");
 		//=============================================================================
 		//[TO-DO]
 		//=============================================================================
 		}
 
-		private void EndActions ()
-		{}
+		//private void EndActions ()
+		//{}
 	}
 }
 
