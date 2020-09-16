@@ -2,6 +2,7 @@ using UnityEngine; //Physics, Transform, SpringJoint, ...
 
 using static ASSPhysics.HandSystem.Actions.ActionSettings.ActionSettings; //tailGrabSettings, surfaceGrabSettings
 using ASSistant.ComponentConfigurers; //SpringJoint2D.ApplySettings(sample);
+using AssPhysics.Constants;	//AnimationNames
 
 namespace ASSPhysics.HandSystem.Actions
 {
@@ -50,11 +51,13 @@ namespace ASSPhysics.HandSystem.Actions
 		private void InitiateGrab ()
 		{
 			CreateJoints(GetBonesInRange(), grabJointSettings.sampleJoint);
+			tool.SetAnimationState(AnimationNames.Tool.stateGrab);
 		}
 
 		//End grabbing action
 		private void FinishGrab ()
 		{
+			tool.SetAnimationState(null);
 			Clear();
 		}
 

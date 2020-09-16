@@ -70,7 +70,6 @@ namespace ASSPhysics.HandSystem.Managers
 		{
 			bool button = Input.GetMouseButton(0);
 			bool buttonFirstDown = Input.GetMouseButtonDown(0);
-			EInputState state;
 			if (button && !buttonFirstDown)
 			{
 				toolList[focusedTool].MainInput(EInputState.Held);

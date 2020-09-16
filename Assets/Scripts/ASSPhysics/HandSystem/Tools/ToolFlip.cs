@@ -23,7 +23,7 @@ public class ToolFlip : MonoBehaviour
 
 	public void Start ()
 	{
-		bool flipVal = Flip(); Debug.Log(flipVal); animator.SetBool(AnimationNames.horizontalFlip, flipVal);
+		bool flipVal = Flip(); Debug.Log(flipVal); animator.SetBool(AnimationNames.Tool.horizontalFlip, flipVal);
 		//animator.SetBool(AnimationNames.horizontalFlip, Flip());
 		Destroy(this);
 	}

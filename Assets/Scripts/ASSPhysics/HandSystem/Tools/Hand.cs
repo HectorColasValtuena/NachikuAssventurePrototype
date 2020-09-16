@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using ASSPhysics.Settings; //InputSettings
+using AssPhysics.Constants;	//AnimationNames
 using ASSPhysics.HandSystem.Actions; //ActionGrab
 
 namespace ASSPhysics.HandSystem.Tools
@@ -50,6 +51,13 @@ namespace ASSPhysics.HandSystem.Tools
 			{
 				InitiateSlap();
 			}
+		}
+
+		//sets the animator
+		public override void SetAnimationState (string triggerName)
+		{
+			if (triggerName == null) { triggerName = AnimationNames.Tool.stateFlat; }
+			base.SetAnimationState(triggerName);
 		}
 	//ENDOF ToolBase abstract implementation
 

@@ -38,7 +38,7 @@ namespace ASSPhysics.HandSystem.Tools
 			{
 				Debug.Log(animator);
 				_focused = value;
-				animator.SetBool(AnimationNames.focused, value);
+				animator.SetBool(AnimationNames.Tool.focused, value);
 			}
 		}
 
@@ -69,7 +69,13 @@ namespace ASSPhysics.HandSystem.Tools
 		{
 			action = null;
 		}
-	//ENDOF IHand implementation
+
+		//sets the animator
+		public virtual void SetAnimationState (string triggerName)
+		{
+			animator.SetTrigger(triggerName);
+		}
+	//ENDOF ITool implementation
 
 	//Private functionality
 		//Start an action of type T unless its the type currently active
