@@ -9,35 +9,28 @@ namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneHierarchy
 	{
-		public static List<Transform> GetChildren (Transform root, bool recursive = true, bool includeIgnored = false)
+		//finds a SpringJoint2D connected to target. returns null if non-existant
+		public static SpringJoint2D BoneFindSpringConnected (Transform bone, Transform target) { return BoneFindSpringConnected(bone, target.gameObject.GetComponent<Rigidbody2D>()); }
+		public static SpringJoint2D BoneFindSpringConnected (Transform bone, Rigidbody2D target)
 		{
-		/*
-		===========================================================================================================
-			Deprecated: replace with a method fetching the list from the spriteSkin object
-		===========================================================================================================
-		*/
-			Debug.LogWarning("BoneHierarchy.GetChildren() deprecated version called (wants their stuff back)");
-			List<Transform> childList = new List<Transform>();
-			for (int i = 0, iLimit = root.childCount; i < iLimit; i++)
+			//get a list of springs
+			SpringJoint2D[] springList = bone.gameObject.GetComponents<SpringJoint2D>();
+			foreach (SpringJoint2D spring in springList)
 			{
-				Transform child = root.GetChild(i);
-
-				//ignore this element if it includes an ignore tag
-				if (!includeIgnored && BoneNomenclature.IsIgnored(child)) { continue; }
-
-				childList.Add(child);
-
-				//add children of this element if necessary
-				if (recursive) { childList.AddRange(GetChildren(child, recursive, includeIgnored));	}
+				//find a spring connected to target rigidbody and return it
+				if (spring.connectedBody == target)
+				{
+					return spring;
+				}
 			}
-			return childList;
+			return null;	//return null if none found
 		}
 
 		//creates gameobjects for every bone and stores them in spriteskin
 		public static void CreateBoneHierarchy (SpriteSkinRigger spriteSkinRigger)
 		{
 			SpriteSkin spriteSkin = spriteSkinRigger.spriteSkin;
-			Sprite sprite = spriteSkinRigger.targetSprite;
+			Sprite sprite = spriteSkinRigger.sprite;
 
 			if (sprite == null || spriteSkin.rootBone != null)
 			{
@@ -60,6 +53,30 @@ namespace ASSpriteRigging.BoneUtility
 			spriteSkin.CalculateBoundsIfNecessary();
 
 			EditorUtility.SetDirty(spriteSkin);
+		}
+		
+		public static List<Transform> GetChildren (Transform root, bool recursive = true, bool includeIgnored = false)
+		{
+		/*
+		===========================================================================================================
+			Deprecated: replace with a method fetching the list from the spriteSkin object
+		===========================================================================================================
+		*/
+			Debug.LogWarning("BoneHierarchy.GetChildren() deprecated version called (wants their stuff back)");
+			List<Transform> childList = new List<Transform>();
+			for (int i = 0, iLimit = root.childCount; i < iLimit; i++)
+			{
+				Transform child = root.GetChild(i);
+
+				//ignore this element if it includes an ignore tag
+				if (!includeIgnored && BoneNomenclature.IsIgnored(child)) { continue; }
+
+				childList.Add(child);
+
+				//add children of this element if necessary
+				if (recursive) { childList.AddRange(GetChildren(child, recursive, includeIgnored));	}
+			}
+			return childList;
 		}
 	}
 }

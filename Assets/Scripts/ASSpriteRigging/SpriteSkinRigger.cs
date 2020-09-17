@@ -9,7 +9,7 @@ namespace ASSpriteRigging
 	{
 		public bool armed = false;
 
-		public Sprite targetSprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
+		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
 		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<UnityEngine.U2D.Animation.SpriteSkin>(); }}
 		//public Transform[] boneList { get { return spriteSkin?.; /*Lista de huesos?*/}}
 
