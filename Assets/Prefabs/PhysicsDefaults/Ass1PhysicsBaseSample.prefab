@@ -45,7 +45,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -73,7 +73,7 @@ SpringJoint2D:
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.01
-  m_Frequency: 1
+  m_Frequency: 1.5
 --- !u!58 &4803101206637104447
 CircleCollider2D:
   m_ObjectHideFlags: 0

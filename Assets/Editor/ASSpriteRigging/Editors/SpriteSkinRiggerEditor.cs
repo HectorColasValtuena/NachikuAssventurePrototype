@@ -50,7 +50,7 @@ namespace ASSpriteRigging.Editors
 
 		public void DoRigBoneListButton ()
 		{
-			if (GUILayout.Button("Rig bone list"))//, GUILayout.MaxWidth(125f)))
+			if (GUILayout.Button("Setup & configure bone components"))//, GUILayout.MaxWidth(125f)))
 			{
 				if (RequestArmed()) { BoneRigging.RigBoneList(spriteSkinRigger); }
 			}
