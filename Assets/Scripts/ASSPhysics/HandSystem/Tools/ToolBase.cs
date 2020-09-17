@@ -98,7 +98,7 @@ namespace ASSPhysics.HandSystem.Tools
 
 				return false;	//return false indicating failed action
 			}
-			//if the current action IS of the target type, return its validity
+			//if the current action IS of the target type, re-initialize it and return its validity check
 			return action.IsValid();
 		}
 

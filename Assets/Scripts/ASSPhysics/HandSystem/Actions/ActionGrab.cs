@@ -11,7 +11,7 @@ namespace ASSPhysics.HandSystem.Actions
 	//ActionBase abstract implementation
 		//returns true if this action is currently doing something, like maintaining a grab or repeating a slapping pattern
 		//Will be true if base.ongoing (because automated) or if we have a joint list acting upon the world
-		public override bool ongoing { get { return (jointList != null || base.ongoing); }}
+		//public override bool ongoing { get { return (jointList != null || base.ongoing); }}
 		//receive state of corresponding input medium
 		public override void Input (EInputState state)
 		{
