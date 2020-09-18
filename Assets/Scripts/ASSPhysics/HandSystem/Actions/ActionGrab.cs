@@ -8,10 +8,9 @@ namespace ASSPhysics.HandSystem.Actions
 {
 	public class ActionGrab : ActionBase
 	{
-	//ActionBase abstract implementation
+	//ActionBase override implementation
 		//returns true if this action is currently doing something, like maintaining a grab or repeating a slapping pattern
 		//Will be true if base.ongoing (because automated) or if we have a joint list acting upon the world
-		//public override bool ongoing { get { return (jointList != null || base.ongoing); }}
 		//receive state of corresponding input medium
 		public override void Input (EInputState state)
 		{
@@ -41,11 +40,31 @@ namespace ASSPhysics.HandSystem.Actions
 /////////////////////////////////////////////////////////////////////////////////////////////////////			
 			return (GetBonesInRange().Length > 0);
 		}
-	//ENDOF ActionBase abstract implementation
+
+		//try to set in automatic state. Returns true on success
+		public override bool Automate ()
+		{
+			auto = grabActive;
+			return auto;
+		}
+
+		//update automatic action. To be called once per frame while action is automated. returns false if automation stops
+		public override bool AutomationUpdate ()
+		{
+			return auto;
+		}
+
+		public override void DeAutomate ()
+		{
+			FinishGrab();
+		}
+	//ENDOF ActionBase override implementation
 
 	//Grab Action Implementation
 		//list of currently in-use joints
 		private SpringJoint2D[] jointList;
+		//determines if grab is active
+		public bool grabActive { get { return (jointList != null); }}
 
 		//initiate grabbing action
 		private void InitiateGrab ()

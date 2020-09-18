@@ -4,6 +4,7 @@ namespace AssPhysics.Constants
 	{
 		public static class Tool
 		{
+			public const string automated = "Automated";
 			public const string focused = "Focused";
 			public const string horizontalFlip = "HorizontalFlip";
 

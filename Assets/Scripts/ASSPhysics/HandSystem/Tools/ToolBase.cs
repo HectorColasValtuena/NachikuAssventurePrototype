@@ -8,22 +8,47 @@ namespace ASSPhysics.HandSystem.Tools
 	[RequireComponent(typeof(Animator))]
 	public abstract class ToolBase : MonoBehaviour, ITool
 	{
-	//Object initialization and local variables
+	//Local variables
+		//cached reference to animator component
 		protected Animator animator;
+		//current action
 		protected IAction action = null;
+		//is this tool in auto mode
+		protected bool auto
+		{
+			get
+			{
+				return _auto;
+			}
+			set
+			{
+				_auto = value;
+				animator.SetBool(AnimationNames.Tool.automated, value);
+			}
+		}
+		private bool _auto = false;
+	//ENDOF Local variables
 
+	//MonoBehaviour lifecycle Implementation
 		public virtual void Awake () {
 			animator = gameObject.GetComponent<Animator>();
 		}
 
-	//ENDOF Object initialization and local variables
+		public virtual void Update ()
+		{
+			if (auto)
+			{
+				action.AutomationUpdate();
+			}
+		}
+	//MonoBehaviour LifeCycle Implementation
 
 	//ITool implementation
 		public Vector3 position
 		{
 			set 
 			{
-				//[TO-DO] ignore set if hand is in auto mode
+				if (auto) return;
 				transform.position = ClampPositionToCamera(value);
 			}
 			get { return transform.position; }
@@ -36,17 +61,21 @@ namespace ASSPhysics.HandSystem.Tools
 			get { return _focused; }
 			set
 			{
-				Debug.Log(animator);
+				if (_focused == true && value == false) { LostFocus(); }
 				_focused = value;
 				animator.SetBool(AnimationNames.Tool.focused, value);
 			}
 		}
 
+		//move the tool in worldspace
 		public void Move (Vector3 delta)
 		{
 			position = position + delta;
 		}
+
+		//Main Input Receiver
 		//called upon pressing, holding, and releasing input button
+		//propagates input to action only if non-automated. If automated, exits automation on input started
 		public void MainInput (EInputState state, Vector3 targetPosition)
 		{
 			position = targetPosition;
@@ -54,6 +83,16 @@ namespace ASSPhysics.HandSystem.Tools
 		}
 		public void MainInput (EInputState state)
 		{
+			//if automated ignore input save for determining wether to finish or not
+			if (auto)
+			{
+				if (state == EInputState.Started)
+				{
+					DeAutomate();
+				}
+				return;
+			}
+			
 			if (state == EInputState.Held) { InputHeld(); }
 			else if (state == EInputState.Started) { InputStarted(); }
 			else { InputEnded(); } //EInputState.Ended:
@@ -102,7 +141,37 @@ namespace ASSPhysics.HandSystem.Tools
 			return action.IsValid();
 		}
 
-		//=============================================================================
+		//called when losing focus
+		//when being unfocused the tool tries to automate the ongoing action
+		protected void LostFocus ()
+		{
+			if (!auto)
+			{
+				Automate();
+			}
+		}
+
+		//attempt to set in automated mode. 
+		protected void Automate ()
+		{
+			if (action != null && !action.auto)
+			{
+				auto = action.Automate();
+				Debug.Log("automating tool > " + auto);
+			}
+		}
+
+		//finish auto mode
+		protected void DeAutomate ()
+		{
+			if (action != null && action.auto)
+			{
+				action.DeAutomate();
+			}
+			auto = false;
+		}
+
+	//=============================================================================
 		//[TO-DO] Move this elsewhere
 		//=============================================================================
 		//clamp a position within viewing range of Camera.main
@@ -127,7 +196,7 @@ namespace ASSPhysics.HandSystem.Tools
 		}
 		//=============================================================================
 		//[TO-DO] Move this elsewhere
-		//=============================================================================
+	//=============================================================================
 	//ENDOF Private functionality
 
 	//Protected abstract method exposed for implementation

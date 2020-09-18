@@ -13,8 +13,8 @@ namespace ASSPhysics.HandSystem.Actions
 			get { return automatic; }
 		}*/
 		//wether action is to automatically repeat
-		public bool automatic {get {return _automatic;}}
-		protected bool _automatic = false;
+		public bool auto { get { return _auto; } protected set { _auto = value; }}
+		private bool _auto = false;
 
 		//initialize the action with a reference to the parent tool
 		public virtual bool Initialize (ITool parentTool)
@@ -28,16 +28,27 @@ namespace ASSPhysics.HandSystem.Actions
 		public abstract void Input (EInputState state);
 
 		//try to set in automatic state. Returns true on success
-		public virtual bool Automatize ()
+		public virtual bool Automate ()
 		{
-			
+			return false;
 		}
 
+		//update automatic action. To be called once per frame while action is automated. returns false if automation stops
+		public virtual bool AutomationUpdate ()
+		{
+			return false;
+		}
+
+		//stop automation
+		public virtual void DeAutomate ()
+		{
+			//clear();
+		}
 
 		//clears and finishes the action
 		public virtual void Clear ()
 		{
-			automatic = false;
+			//auto = false; //unnecessary the tool is gonna be destroyed anyway
 			tool.ActionEnded();
 		}
 
