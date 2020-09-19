@@ -2,8 +2,8 @@
 
 namespace ASSPhysics.TailSystem
 {
-	//
-	public class TailWiggleElementRigidbody : TailWiggleElementBase
+	[RequireComponent(typeof(Rigidbody2D))]
+	public class TailWiggleElementWithJoint : TailWiggleElementBase
 	{
 		protected override void MatchRotation ()
 		{

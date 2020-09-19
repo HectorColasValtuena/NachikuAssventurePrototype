@@ -6,11 +6,7 @@ using UnityEngine;
 
 namespace ASSPhysics.TailSystem
 {
-	public class TailWiggleParentTransform : TailWiggleParentBase
+	public class TailWiggleParentTransform : TailRootWiggle
 	{
-		public override System.Type GetElementType()
-		{
-			return typeof (TailWiggleElementTransform);
-		}
 	}
 }

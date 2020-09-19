@@ -6,12 +6,13 @@ using UnityEngine;
 
 namespace ASSPhysics.TailSystem
 {
-	public abstract class TailWiggleParentBase : MonoBehaviour
+	public abstract class TailRootWiggle : MonoBehaviour
 	{
 		public Transform[] elementList;
 		private ITailElement[] elementControllerList;
 
 		//public float speedBurstModifier = 1.0f;
+		public float baseRandomInterval = 2.0f;
 		public float maxTorsion = 45f;
 		public float torsionAccelerationPerElement = 10f;
 		public int directionSegmentSize = 24;
@@ -30,6 +31,19 @@ namespace ASSPhysics.TailSystem
 		}
 
 		public void Update ()
+		{
+			RandomizeTailChance();
+		}
+
+		private void RandomizeTailChance ()
+		{
+			if (Random.value <= (Time.deltaTime / baseRandomInterval))
+			{
+				RandomizeTailProfile();
+			}
+		}
+
+		private void RandomizeTailProfile ()
 		{
 			//float previousRotation = 0f;
 			float torsion = 0f;
@@ -53,6 +67,5 @@ namespace ASSPhysics.TailSystem
 				elementControllerList[i].targetRotation += torsion;
 			}
 		}
-		public abstract System.Type GetElementType();
 	}
 }

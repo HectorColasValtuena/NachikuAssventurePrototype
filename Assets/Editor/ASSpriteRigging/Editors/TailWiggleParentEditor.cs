@@ -4,21 +4,26 @@ using UnityEngine;
 using UnityEditor;
 
 using ASSpriteRigging.BoneUtility;
+//using ASSpriteRigging.BoneRigging;
 using ASSPhysics.TailSystem;
 
 namespace ASSpriteRigging.Editors
 {
-	[CustomEditor(typeof(TailWiggleParentBase))]
-	public class TailWiggleParentEditor : Editor
+	/*
+	[CustomEditor(typeof(TailRootWiggleTransform))]
+	public class TailRootWiggleTransformEditor : TailWiggleParentEditor {}
+	*/
+	[CustomEditor(typeof(TailRootWiggle))]
+	public class TailRootWiggleEditor : Editor
 	{
-		private TailWiggleParentBase tailWiggleParent;
+		private TailRootWiggle tailWiggleParent;
 
 	//Setup GUI layout
 		public override void OnInspectorGUI ()
 		{
 			base.OnInspectorGUI();
 
-			tailWiggleParent = (TailWiggleParentBase) target;
+			tailWiggleParent = (TailRootWiggle) target;
 
 			DoGetElementListFromChildrenButton();
 			DoAddComponentToElementListButton();
@@ -28,13 +33,11 @@ namespace ASSpriteRigging.Editors
 		{
 			if (GUILayout.Button("Get element list", GUILayout.MaxWidth(200f))) { GetElementListFromChildren(); }
 		}
-		public void DoAddComponentToElementListButton()
+		public void DoAddComponentToElementListButton ()
 		{
 			if (GUILayout.Button("Add controller to elements", GUILayout.MaxWidth(200f)))
 			{
-				AddComponentToTransformList<TailWiggleElementTransform>(tailWiggleParent.elementList);
-				//this is where element type 
-				/////////////////////////////////////////////////////////////////////////////////////////
+				TailRigging.RigTail(tailWiggleParent);
 			}
 		}
 	//ENDOF Setup GUI layout
@@ -45,15 +48,6 @@ namespace ASSpriteRigging.Editors
 			tailWiggleParent.elementList = BoneHierarchy.GetChildren(tailWiggleParent.transform, recursive: true, includeIgnored: true).ToArray();
 		}
 
-		private void AddComponentToTransformList <T> (Transform[] transformList) where T : MonoBehaviour
-		{
-			foreach (Transform element in transformList)
-			{
-				if (element.GetComponent<T>() == null)
-				{
-					ObjectFactory.AddComponent<T>(element.gameObject);
-				}
-			}
-		}
+		
 	}
 }
