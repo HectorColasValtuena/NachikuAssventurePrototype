@@ -52,7 +52,7 @@ namespace ASSpriteRigging.Editors
 		{
 			if (GUILayout.Button("Setup & configure bone components"))//, GUILayout.MaxWidth(125f)))
 			{
-				if (RequestArmed()) { BoneRigging.RigBoneList(spriteSkinRigger); }
+				if (RequestArmed()) { SpriteSkinRigging.RigBones(spriteSkinRigger); }
 			}
 		}
 
@@ -77,7 +77,7 @@ namespace ASSpriteRigging.Editors
 		{
 			Debug.Log("Initiating full setup of " + target.name);
 			BoneHierarchy.CreateBoneHierarchy(spriteSkinRigger);
-			BoneRigging.RigBoneList(spriteSkinRigger);
+			SpriteSkinRigging.RigBones(spriteSkinRigger);
 		}
 	}
 }
