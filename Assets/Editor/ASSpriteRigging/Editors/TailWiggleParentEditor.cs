@@ -4,21 +4,21 @@ using UnityEngine;
 using UnityEditor;
 
 using ASSpriteRigging.BoneUtility;
-using ASSpriteRigging.TailSystem;
+using ASSPhysics.TailSystem;
 
 namespace ASSpriteRigging.Editors
 {
-	[CustomEditor(typeof(TransformTailWiggleParent))]
-	public class TransformTailWiggleParentEditor : Editor
+	[CustomEditor(typeof(TailWiggleParentBase))]
+	public class TailWiggleParentEditor : Editor
 	{
-		private TransformTailWiggleParent transformTailWiggleParent;
+		private TailWiggleParentBase tailWiggleParent;
 
 	//Setup GUI layout
 		public override void OnInspectorGUI ()
 		{
 			base.OnInspectorGUI();
 
-			transformTailWiggleParent = (TransformTailWiggleParent) target;
+			tailWiggleParent = (TailWiggleParentBase) target;
 
 			DoGetElementListFromChildrenButton();
 			DoAddComponentToElementListButton();
@@ -30,13 +30,19 @@ namespace ASSpriteRigging.Editors
 		}
 		public void DoAddComponentToElementListButton()
 		{
-			if (GUILayout.Button("Add controller to elements", GUILayout.MaxWidth(200f))) { AddComponentToTransformList<TransformTailWiggleElement>(transformTailWiggleParent.elementList); }	
+			if (GUILayout.Button("Add controller to elements", GUILayout.MaxWidth(200f)))
+			{
+				AddComponentToTransformList<TailWiggleElementTransform>(tailWiggleParent.elementList);
+				//this is where element type 
+				/////////////////////////////////////////////////////////////////////////////////////////
+			}
 		}
 	//ENDOF Setup GUI layout
 
 		private void GetElementListFromChildren ()
 		{
-			transformTailWiggleParent.elementList = BoneHierarchy.GetChildren(transformTailWiggleParent.transform, recursive: true, includeIgnored: true).ToArray();
+			Debug.LogWarning("Tail editor method GetElementListFromChildren still uses BoneHierarchy.GetChildren Method. Danger of breaking upon updating GetChildren");
+			tailWiggleParent.elementList = BoneHierarchy.GetChildren(tailWiggleParent.transform, recursive: true, includeIgnored: true).ToArray();
 		}
 
 		private void AddComponentToTransformList <T> (Transform[] transformList) where T : MonoBehaviour

@@ -8,7 +8,7 @@ namespace ASSPhysics.HandSystem.Managers
 	public class ToolManagerMouseInput : ToolManagerBase
 	{
 	//MonoBehaviour Lifecycle implementation
-		public void Awake ()
+		public void Start ()
 		{
 			RallyTools();
 		}

@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+//using static System.Type; //Type
+
 using UnityEngine;
 
-namespace ASSpriteRigging.TailSystem
+namespace ASSPhysics.TailSystem
 {
-	public class TransformTailWiggleParent : MonoBehaviour
+	public abstract class TailWiggleParentBase : MonoBehaviour
 	{
 		public Transform[] elementList;
-		private TransformTailWiggleElement[] elementControllerList;
+		private ITailElement[] elementControllerList;
 
 		//public float speedBurstModifier = 1.0f;
 		public float maxTorsion = 45f;
@@ -19,10 +21,10 @@ namespace ASSpriteRigging.TailSystem
 
 		public void Start ()
 		{
-			elementControllerList = new TransformTailWiggleElement[elementList.Length];
+			elementControllerList = new ITailElement[elementList.Length];
 			for (int i = 0, iLimit = elementList.Length; i < iLimit; i++)
 			{
-				elementControllerList[i] = elementList[i].gameObject.GetComponent<TransformTailWiggleElement>();
+				elementControllerList[i] = elementList[i].gameObject.GetComponent<ITailElement>();
 				if (elementControllerList[i] == null) { Debug.LogError("Tail element missing controller: " + elementList[i].name); }
 			}
 		}
@@ -51,5 +53,6 @@ namespace ASSpriteRigging.TailSystem
 				elementControllerList[i].targetRotation += torsion;
 			}
 		}
+		public abstract System.Type GetElementType();
 	}
 }

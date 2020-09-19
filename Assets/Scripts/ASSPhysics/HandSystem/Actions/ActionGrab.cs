@@ -56,7 +56,6 @@ namespace ASSPhysics.HandSystem.Actions
 
 		public override void DeAutomate ()
 		{
-			//FinishGrab();
 			auto = false;
 		}
 	//ENDOF ActionBase override implementation

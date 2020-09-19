@@ -55,7 +55,7 @@ namespace ASSPhysics.HandSystem.Tools
 		}
 
 		//wether the hand is on focus or not
-		private bool _focused;
+		private bool _focused = false;
 		public bool focused
 		{
 			get { return _focused; }

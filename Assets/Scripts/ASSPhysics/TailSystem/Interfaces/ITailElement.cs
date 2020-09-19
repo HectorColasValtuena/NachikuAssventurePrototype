@@ -1,4 +1,4 @@
-﻿namespace ASSpriteRigging.TailSystem
+﻿namespace ASSPhysics.TailSystem
 {
 	public interface ITailElement
 	{
