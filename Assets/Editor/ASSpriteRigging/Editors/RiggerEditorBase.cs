@@ -4,17 +4,21 @@ using UnityEngine;
 using UnityEditor;
 
 using ASSpriteRigging.BoneUtility;
+using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger
 
 namespace ASSpriteRigging.Editors
 {
 	public abstract class RiggerEditorBase : Editor
 	{
-	//Setup GUI layout
-		//protected SpriteSkin
+		protected SpriteSkinBaseRigger rigger;
+		protected bool isArmed { get { return rigger.armed; } set { rigger.armed = value; }}
 
+	//Setup GUI layout
 		public override void OnInspectorGUI ()
 		{
 			base.OnInspectorGUI();
+			rigger = (SpriteSkinBaseRigger) target;
+
 			InspectorInitialization();
 			DoFullSetupButton();
 			DoRigBoneListButton();
@@ -52,12 +56,25 @@ namespace ASSpriteRigging.Editors
 		}
 	//ENDOF Setup GUI layout
 
-	//abstract methods and properties
-		protected abstract bool isArmed {get; set;}
+	//Core common logic
+		//performs every step of the automated rigging process at once:
+		//moves ten units of sperm forwards, then cast whale at next 2 tiles unless hitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitler
+		//that means:
+			//> create gameobjects for every bone invoking the corresponding SpriteSkin methods
+			//> rig default components for every corresponding bone gameobject (abstract- each rigger performs its own rigging)
 
-		protected abstract void InspectorInitialization ();
-		protected abstract void FullSetup ();
+		protected void FullSetup ()
+		{
+			Debug.Log("Initiating full setup of " + target.name);
+			BoneHierarchy.CreateBoneHierarchy(rigger);
+			RigBones();
+			Debug.Log("Full setup finished");
+		}
+	//ENDOF Core common logic
+
+	//overridable methods and properties
+		protected virtual void InspectorInitialization () {}
 		protected abstract void RigBones ();
-	//ENDOF abstract methods
+	//ENDOF overridable methods
 	}
 }
