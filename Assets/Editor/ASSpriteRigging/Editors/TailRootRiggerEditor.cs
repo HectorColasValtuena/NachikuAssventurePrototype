@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+using ASSpriteRigging;	//TailRootRigger
 using ASSpriteRigging.BoneUtility;
 //using ASSpriteRigging.BoneRigging;
 using ASSPhysics.TailSystem;
@@ -13,17 +14,18 @@ namespace ASSpriteRigging.Editors
 	[CustomEditor(typeof(TailRootWiggleTransform))]
 	public class TailRootWiggleTransformEditor : TailWiggleParentEditor {}
 	*/
-	[CustomEditor(typeof(TailRootWiggle))]
-	public class TailRootWiggleEditor : Editor
+	[CustomEditor(typeof(TailRootRigger))]
+	public class TailRootRiggerEditor : Editor
 	{
-		private TailRootWiggle tailWiggleParent;
+		//private TailRootWiggle tailRootWiggle;
+		private TailRootRigger tailRootRigger;
 
 	//Setup GUI layout
 		public override void OnInspectorGUI ()
 		{
 			base.OnInspectorGUI();
 
-			tailWiggleParent = (TailRootWiggle) target;
+			tailRootRigger = (TailRootRigger) target;
 
 			DoGetElementListFromChildrenButton();
 			DoAddComponentToElementListButton();
@@ -37,7 +39,7 @@ namespace ASSpriteRigging.Editors
 		{
 			if (GUILayout.Button("Add controller to elements", GUILayout.MaxWidth(200f)))
 			{
-				TailRigging.RigTail(tailWiggleParent);
+				TailRigging.RigTail(tailRootWiggle);
 			}
 		}
 	//ENDOF Setup GUI layout
@@ -45,7 +47,7 @@ namespace ASSpriteRigging.Editors
 		private void GetElementListFromChildren ()
 		{
 			Debug.LogWarning("Tail editor method GetElementListFromChildren still uses BoneHierarchy.GetChildren Method. Danger of breaking upon updating GetChildren");
-			tailWiggleParent.elementList = BoneHierarchy.GetChildren(tailWiggleParent.transform, recursive: true, includeIgnored: true).ToArray();
+			tailRootWiggle.elementList = BoneHierarchy.GetChildren(tailRootWiggle.transform, recursive: true, includeIgnored: true).ToArray();
 		}
 
 		

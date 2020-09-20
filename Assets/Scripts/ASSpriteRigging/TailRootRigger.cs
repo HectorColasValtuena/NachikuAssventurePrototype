@@ -1,16 +1,20 @@
-﻿using UnityEngine;
-using UnityEngine.U2D.Animation;
+using UnityEngine;
 
-namespace ASSpriteRigging
+using UnityEngine.U2D.Animation; //SpriteSkin
+
+using ASSPhysics.TailSystem;	//TailRootWiggle
+
+namespace ASSPriteRigging 
 {
-	[RequireComponent(typeof(SpriteRenderer))]
 	[RequireComponent(typeof(SpriteSkin))]
-	public class SpriteSkinRigger : MonoBehaviour
+	[RequireComponent(typeof(TailRootWiggle))]
+	public class TailRootRigger : MonoBehaviour
 	{
 		public bool armed = false;
 
-		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
-		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<UnityEngine.U2D.Animation.SpriteSkin>(); }}
+		//public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
+		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<SpriteSkin>(); }}
+		public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
 		//public Transform[] boneList { get { return spriteSkin?.; /*Lista de huesos?*/}}
 
 		public GameObject defaultLayerSample; //gameobject with sample of layer tag
@@ -19,7 +23,7 @@ namespace ASSpriteRigging
 
 		public Rigidbody2D defaultRigidbody; //Sample rigidbody configuration
 		public CircleCollider2D defaultCollider;
-		public SpringJoint2D defaultAnchor;	//Sample anchor spring (parent-connected) configuration
+		//public SpringJoint2D defaultAnchor;	//Sample anchor spring (parent-connected) configuration
 		public SpringJoint2D defaultSpring; //Sample spring configuration
 	}
 }

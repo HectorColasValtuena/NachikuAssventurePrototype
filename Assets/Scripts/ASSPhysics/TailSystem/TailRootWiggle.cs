@@ -8,7 +8,7 @@ namespace ASSPhysics.TailSystem
 {
 	public abstract class TailRootWiggle : MonoBehaviour
 	{
-		public Transform[] elementList;
+		public Transform[] elementTransformList;
 		private ITailElement[] elementControllerList;
 
 		//public float speedBurstModifier = 1.0f;
@@ -22,25 +22,33 @@ namespace ASSPhysics.TailSystem
 
 		public void Start ()
 		{
-			elementControllerList = new ITailElement[elementList.Length];
-			for (int i = 0, iLimit = elementList.Length; i < iLimit; i++)
+			//on start cache element element list 
+			elementControllerList = TransformListToComponentList(elementTransformList);
+		}
+
+		private ITailElement[] TransformListToComponentList (Transform[] transformList)
+		{
+			ITailElement[] componentList = new ITailElement[transformList.Length];
+			for (int i = 0, iLimit = transformList.Length; i < iLimit; i++)
 			{
-				elementControllerList[i] = elementList[i].gameObject.GetComponent<ITailElement>();
-				if (elementControllerList[i] == null) { Debug.LogError("Tail element missing controller: " + elementList[i].name); }
+				componentList[i] = transformList[i].gameObject.GetComponent<ITailElement>();
+				if (componentList[i] == null) { Debug.LogError("Tail element missing controller: " + elementTransformList[i].name); }
 			}
+			return componentList;
 		}
 
 		public void Update ()
 		{
-			RandomizeTailChance();
-		}
-
-		private void RandomizeTailChance ()
-		{
-			if (Random.value <= (Time.deltaTime / baseRandomInterval))
+			if (RandomTailMovementChance())
 			{
 				RandomizeTailProfile();
 			}
+		}
+
+
+		private bool RandomTailMovementChance ()
+		{
+			return Random.value <= (Time.deltaTime / baseRandomInterval);
 		}
 
 		private void RandomizeTailProfile ()
