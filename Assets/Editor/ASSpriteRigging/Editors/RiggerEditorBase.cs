@@ -10,7 +10,7 @@ namespace ASSpriteRigging.Editors
 	public abstract class RiggerEditorBase : Editor
 	{
 	//Setup GUI layout
-		protected abstract bool isArmed {get; set;}
+		//protected SpriteSkin
 
 		public override void OnInspectorGUI ()
 		{
@@ -52,7 +52,9 @@ namespace ASSpriteRigging.Editors
 		}
 	//ENDOF Setup GUI layout
 
-	//abstract methods
+	//abstract methods and properties
+		protected abstract bool isArmed {get; set;}
+
 		protected abstract void InspectorInitialization ();
 		protected abstract void FullSetup ();
 		protected abstract void RigBones ();

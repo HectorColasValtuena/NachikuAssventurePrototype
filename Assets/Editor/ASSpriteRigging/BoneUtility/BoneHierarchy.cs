@@ -5,6 +5,8 @@ using UnityEditor;
 using UnityEngine.U2D.Animation; //SpriteSkin
 using U2DAnimationAccessor;	//SpriteSkin.
 
+using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger
+
 namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneHierarchy
@@ -27,10 +29,10 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//creates gameobjects for every bone and stores them in spriteskin
-		public static void CreateBoneHierarchy (SpriteSkinRigger spriteSkinRigger)
+		public static void CreateBoneHierarchy (SpriteSkinBaseRigger rigger)
 		{
-			SpriteSkin spriteSkin = spriteSkinRigger.spriteSkin;
-			Sprite sprite = spriteSkinRigger.sprite;
+			SpriteSkin spriteSkin = rigger.spriteSkin;
+			Sprite sprite = rigger.sprite;
 
 			if (sprite == null || spriteSkin.rootBone != null)
 			{

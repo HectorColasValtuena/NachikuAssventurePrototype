@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-using ASSpriteRigging;	//TailRootRigger
+using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger, TailRootRigger
 using ASSpriteRigging.BoneUtility;
-//using ASSpriteRigging.BoneRigging;
-using ASSPhysics.TailSystem;
+
+using ASSPhysics.TailSystem; //TailRootWiggle
 
 namespace ASSpriteRigging.Editors
 {
@@ -15,31 +15,36 @@ namespace ASSpriteRigging.Editors
 	public class TailRootWiggleTransformEditor : TailWiggleParentEditor {}
 	*/
 	[CustomEditor(typeof(TailRootRigger))]
-	public class TailRootRiggerEditor : Editor
+	public class TailRootRiggerEditor : RiggerEditorBase
 	{
-		//private TailRootWiggle tailRootWiggle;
+		protected override bool isArmed { get { return tailRootRigger.armed; } set { tailRootRigger.armed = value; }}
 		private TailRootRigger tailRootRigger;
 
 	//Setup GUI layout
-		public override void OnInspectorGUI ()
+		protected override void InspectorInitialization ()
 		{
-			base.OnInspectorGUI();
-
 			tailRootRigger = (TailRootRigger) target;
-
-			DoGetElementListFromChildrenButton();
-			DoAddComponentToElementListButton();
 		}
 
-		public void DoGetElementListFromChildrenButton ()
+		protected override void FullSetup ()
 		{
-			if (GUILayout.Button("Get element list", GUILayout.MaxWidth(200f))) { GetElementListFromChildren(); }
+			Debug.Log("Initiating full setup of " + target.name);
+			BoneHierarchy.CreateBoneHierarchy(spriteSkinRigger);
+			RigBones();
+			Debug.Log("Full setup finished");
 		}
+
+		protected override void RigBones ()
+		{
+			SpriteSkinRigging.RigBones(spriteSkinRigger);
+			Debug.Log("Rigged bones of " + target.name);
+		}		
+/*
 		public void DoAddComponentToElementListButton ()
 		{
 			if (GUILayout.Button("Add controller to elements", GUILayout.MaxWidth(200f)))
 			{
-				TailRigging.RigTail(tailRootWiggle);
+				TailRigging.RigTail(tailRootRigger.tailRoot);
 			}
 		}
 	//ENDOF Setup GUI layout
@@ -47,9 +52,9 @@ namespace ASSpriteRigging.Editors
 		private void GetElementListFromChildren ()
 		{
 			Debug.LogWarning("Tail editor method GetElementListFromChildren still uses BoneHierarchy.GetChildren Method. Danger of breaking upon updating GetChildren");
-			tailRootWiggle.elementList = BoneHierarchy.GetChildren(tailRootWiggle.transform, recursive: true, includeIgnored: true).ToArray();
+			tailRootRigger.tailRoot.elementList = BoneHierarchy.GetChildren(tailRootRigger.transform, recursive: true, includeIgnored: true).ToArray();
 		}
-
+*/
 		
 	}
 }

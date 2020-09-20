@@ -2,7 +2,7 @@ using UnityEngine;
 using Unity.Collections; //NativeArray<T>
 using static UnityEngine.U2D.SpriteDataAccessExtensions; //Sprite.GetIndices() extension method
 
-
+using ASSpriteRigging.Riggers; //SpriteSkinRigger
 
 namespace ASSpriteRigging.BoneUtility
 {

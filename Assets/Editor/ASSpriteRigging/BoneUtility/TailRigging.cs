@@ -1,12 +1,14 @@
 using UnityEngine;
 using ASSPhysics.TailSystem;	//TailRootWiggle
 
+using ASSpriteRigging.Riggers;
+
 namespace ASSpriteRigging.BoneUtility
 {
 	public static class TailRigging
 	{
 	//Tail generation
-		public static void RigTail (TailRootWiggle tailRoot)
+		public static void RigTail (TailRootRigger rigger)
 		{
 			Debug.LogWarning("You dindn't implement me yet you bastard hitler hitler hitler hitler hitler");
 			//RigTailBoneList();
