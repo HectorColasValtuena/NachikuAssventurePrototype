@@ -30,13 +30,28 @@ namespace ASSpriteRigging.BoneUtility
 			return component;
 		}
 
-		//Creates a joint connecting both objects if none exists, and applies sample settings
-		//if mutual is true, a joint will be created on each object
-		//if mutual is omitted or false only one joint of type T will exist on first object
+		//Creates a joint from bone transform to target transform/rigidbody, and applies sample settings
 		public static TJoint2D BoneConnectJoint <TJoint2D> (Transform bone, Transform target, TJoint2D sample)
 			where TJoint2D: Joint2D
 		{
+			return BoneConnectJoint<TJoint2D> (bone, target.gameObject.GetComponent<Rigidbody2D>(), sample);
+		}
+		public static TJoint2D BoneConnectJoint <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody, TJoint2D sample)
+			where TJoint2D: Joint2D
+		{
+			//first try to find a pre-existing joint of adequate type and connected target
+			TJoint2D joint = BoneHierarchy.BoneFindJointConnected<TJoint2D>(bone, targetRigidbody);
 
+			//if desired joint did not exist, create a new joint
+			if (joint == null)
+			{
+				joint = ObjectFactory.AddComponent<TJoint2D>(bone.gameObject);
+			}
+
+			//copy public properties from sample object, connect the joint to the target, and return it
+			joint.ApplySettings(sample);
+			joint.connectedBody = targetRigidbody;
+			return joint;
 		}
 
 //======================================================================================================================

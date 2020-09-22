@@ -11,7 +11,7 @@ namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneHierarchy
 	{
-		//finds a joint of type Tjoint connected to target. returns null if non-existant
+		//finds a joint of type TJoint2D connected to target. returns null if non-existant
 		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Transform target)
 			where TJoint2D: Joint2D
 		{
