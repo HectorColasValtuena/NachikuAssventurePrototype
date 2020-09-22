@@ -11,21 +11,26 @@ namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneHierarchy
 	{
-		//finds a SpringJoint2D connected to target. returns null if non-existant
-		public static SpringJoint2D BoneFindSpringConnected (Transform bone, Transform target) { return BoneFindSpringConnected(bone, target.gameObject.GetComponent<Rigidbody2D>()); }
-		public static SpringJoint2D BoneFindSpringConnected (Transform bone, Rigidbody2D target)
+		//finds a joint of type Tjoint connected to target. returns null if non-existant
+		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Transform target)
+			where TJoint2D: Joint2D
 		{
-			//get a list of springs
-			SpringJoint2D[] springList = bone.gameObject.GetComponents<SpringJoint2D>();
-			foreach (SpringJoint2D spring in springList)
+			return BoneFindJointConnected<TJoint2D> (bone, target.gameObject.GetComponent<Rigidbody2D>());
+		}
+		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody)
+			where TJoint2D: joint2D
+		{
+			//get a list of all the joints of type TJoint2D contained in the origin bone
+			TJoint2D[] jointList = bone.gameObject.GetComponents<TJoint2D>();
+			//find a joint connected to target rigidbody and return it
+			foreach (TJoint2D joint in jointList)
 			{
-				//find a spring connected to target rigidbody and return it
-				if (spring.connectedBody == target)
+				if (joint.connectedBody == targetRigidbody)
 				{
-					return spring;
+					return joint;
 				}
 			}
-			return null;	//return null if none found
+			return null;//return null if none found
 		}
 
 		//creates gameobjects for every bone and stores them in spriteskin
