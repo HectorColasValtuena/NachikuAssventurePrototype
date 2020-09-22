@@ -58,32 +58,7 @@ namespace ASSpriteRigging.BoneUtility
 
 			//reset bounds if needed
 			spriteSkin.CalculateBoundsIfNecessary();
-
 			EditorUtility.SetDirty(spriteSkin);
-		}
-		
-		public static List<Transform> GetChildren (Transform root, bool recursive = true, bool includeIgnored = false)
-		{
-		/*
-		===========================================================================================================
-			Deprecated: replace with a method fetching the list from the spriteSkin object
-		===========================================================================================================
-		*/
-			Debug.LogWarning("BoneHierarchy.GetChildren() deprecated version called (wants their stuff back)");
-			List<Transform> childList = new List<Transform>();
-			for (int i = 0, iLimit = root.childCount; i < iLimit; i++)
-			{
-				Transform child = root.GetChild(i);
-
-				//ignore this element if it includes an ignore tag
-				if (!includeIgnored && BoneNomenclature.IsIgnored(child)) { continue; }
-
-				childList.Add(child);
-
-				//add children of this element if necessary
-				if (recursive) { childList.AddRange(GetChildren(child, recursive, includeIgnored));	}
-			}
-			return childList;
 		}
 	}
 }
