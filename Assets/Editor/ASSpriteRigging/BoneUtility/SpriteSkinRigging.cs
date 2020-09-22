@@ -46,10 +46,10 @@ namespace ASSpriteRigging.BoneUtility
 		//creates components that affect a single bone: rigidbodies and disconnected anchors/joints
 		private static void RigBoneIndividualElements (Transform bone, Rigidbody2D defaultRigidbody, SpringJoint2D defaultAnchor, CircleCollider2D defaultCollider, string defaultTag = null, int defaultLayer = -1)
 		{
-			BoneRigging.BoneCreateRigidbody(bone, defaultRigidbody);
-			BoneRigging.BoneCreateAnchor(bone, defaultAnchor);
-			BoneRigging.BoneCreateCollider(bone, defaultCollider);
 			BoneRigging.BoneSetTagAndLayer(bone, defaultTag, defaultLayer);
+			BoneRigging.BoneSetupComponent<Rigidbody2D>(bone, defaultRigidbody);
+			BoneRigging.BoneSetupComponent<CircleCollider2D>(bone, defaultCollider);
+			BoneRigging.BoneCreateAnchor(bone, defaultAnchor);
 		}
 	}
 }

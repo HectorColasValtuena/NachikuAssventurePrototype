@@ -41,7 +41,7 @@ namespace ASSpriteRigging.BoneUtility
 		/*
 		private static void RigTailBone (Transform bone, Transform nextBone, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
 		{
-			BoneRigging.AddComponentToTransform<TailWiggleElementTransform>(bone);
+			BoneRigging.AddComponentToTransform<TailWiggleElementTransform>(bone); //BoneSetupComponent
 			BoneRigging.BoneCreateRigidbody(bone, defaultRigidbody);
 			BoneRigging.BoneCreateCollider(bone, defaultCollider);
 			BoneRigging.BoneSetTagAndLayer(bone, defaultTag, defaultLayer);

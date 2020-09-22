@@ -1,7 +1,7 @@
 using UnityEngine; //Physics, Transform, SpringJoint, ...
 
 using static ASSPhysics.HandSystem.Actions.ActionSettings.ActionSettings; //tailGrabSettings, surfaceGrabSettings
-using ASSistant.ComponentConfigurers; //SpringJoint2D.ApplySettings(sample);
+using static ASSistant.ComponentConfiguration.ComponentConfigurer; //Component.ApplySettings(sample);
 using AssPhysics.Constants;	//AnimationNames
 
 namespace ASSPhysics.HandSystem.Actions

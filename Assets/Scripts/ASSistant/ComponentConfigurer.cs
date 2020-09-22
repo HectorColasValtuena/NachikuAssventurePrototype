@@ -45,7 +45,7 @@ namespace ASSistant.ComponentConfiguration
 		}
 		private static void ApplyPropertyIndexed (PropertyInfo property, System.Object target, System.Object sample)
 		{
-			Debug.LogWarning("!! ApplyPropertyIndexed unimplemented - property \"" + property.Name + "\" ignored");
+			Debug.LogWarning("!! ComponentConfigurer.ApplyPropertyIndexed() unimplemented - property \"" + property.Name + "\" ignored");
 		}
 	}
 }
