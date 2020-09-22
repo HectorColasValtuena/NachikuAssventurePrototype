@@ -18,7 +18,7 @@ namespace ASSpriteRigging.BoneUtility
 			return BoneFindJointConnected<TJoint2D> (bone, target.gameObject.GetComponent<Rigidbody2D>());
 		}
 		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody)
-			where TJoint2D: joint2D
+			where TJoint2D: Joint2D
 		{
 			//get a list of all the joints of type TJoint2D contained in the origin bone
 			TJoint2D[] jointList = bone.gameObject.GetComponents<TJoint2D>();
