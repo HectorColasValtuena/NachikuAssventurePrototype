@@ -13,9 +13,15 @@ namespace ASSpriteRigging.BoneUtility
 			Debug.LogWarning("You dindn't implement me yet you bastard hitler hitler hitler hitler hitler");
 			//RigTailBoneList();
 		}
-		public static void RigTail (Transform [] boneList, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
+
+		private	static void RigTailBoneRecursive (Transform rootBone, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
+		{
+			
+		}
+		/*public static void RigTail (Transform rootBone, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
 		{
 
+		
 			//rig each bone except the last
 			for (int i = 0, iLimit = boneList.Length - 1; i < iLimit; i++)
 			{
@@ -30,7 +36,9 @@ namespace ASSpriteRigging.BoneUtility
 				);
 			}
 		} 
+			*/
 
+		/*
 		private static void RigTailBone (Transform bone, Transform nextBone, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
 		{
 			BoneRigging.AddComponentToTransform<TailWiggleElementTransform>(bone);
@@ -38,7 +46,7 @@ namespace ASSpriteRigging.BoneUtility
 			BoneRigging.BoneCreateCollider(bone, defaultCollider);
 			BoneRigging.BoneSetTagAndLayer(bone, defaultTag, defaultLayer);
 		}
-
+		*/
 
 	//ENDOF Tail Generation
 	}

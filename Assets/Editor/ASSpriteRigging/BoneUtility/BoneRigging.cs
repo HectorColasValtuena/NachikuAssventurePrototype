@@ -16,12 +16,26 @@ namespace ASSpriteRigging.BoneUtility
 			if (targetLayer >= 0) { bone.gameObject.layer = targetLayer; }
 		}
 
+		//Ensures bone Transform contains one component of type T and applies sample settings if received
+		public static T BoneSetupComponent <T> (Transform bone, T sample) where T: Component
+		{
+			//return ComponentConfigurers.ApplySettings(BoneSetupComponent<T>(bone), sample);
+			return BoneSetupComponent<T>(bone).ApplySettings(sample);
+		}
+		public static T BoneSetupComponent <T> (Transform bone) where T: Component
+		{
+			T component = bone.gameObject.GetComponent<T>();
+			if (component == null) { component = ObjectFactory.AddComponent<T>(bone.gameObject); }
+			return component;
+		}
+
 //======================================================================================================================
 //[TO-DO] Condense the following methods into a single, generic-typed method BoneAddComponent<T>(T sample)
 //======================================================================================================================
 		//creates a rigidbody on target bone (if non existent) and sets its properties replicating sample
 		public static void BoneCreateRigidbody (Transform bone, Rigidbody2D sample)
 		{
+			Debug.LogWarning("BoneRigging old create component is deprecated - remove me");
 			//create a rigidbody if it doesn't exist
 			Rigidbody2D newRigidbody = bone.gameObject.GetComponent<Rigidbody2D>();
 			if (newRigidbody == null) { newRigidbody = ObjectFactory.AddComponent<Rigidbody2D>(bone.gameObject); }
@@ -32,6 +46,7 @@ namespace ASSpriteRigging.BoneUtility
 		//creates a CircleCollider2D on target bone (if non existent) and sets its properties replicating sample
 		public static void BoneCreateCollider (Transform bone, CircleCollider2D sample)
 		{
+			Debug.LogWarning("BoneRigging old create component is deprecated - remove me");
 			//create a rigidbody if it doesn't exist
 			CircleCollider2D newCollider = bone.gameObject.GetComponent<CircleCollider2D>();
 			if (newCollider == null) { newCollider = ObjectFactory.AddComponent<CircleCollider2D>(bone.gameObject); }
@@ -48,6 +63,7 @@ namespace ASSpriteRigging.BoneUtility
 		//create a spring joint pointing to target
 		public static void BoneCreateSpringJoint (Transform bone, Transform target, SpringJoint2D sample)
 		{
+			Debug.LogWarning("BoneRigging old create component is deprecated - remove me");
 			Rigidbody2D targetRigidbody = target.gameObject.GetComponent<Rigidbody2D>();
 			//try to find a pre-existing joint pointing to target object.
 			SpringJoint2D newJoint = BoneHierarchy.BoneFindSpringConnected(bone, targetRigidbody);
