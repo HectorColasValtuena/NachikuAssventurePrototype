@@ -171,7 +171,7 @@ namespace ASSPhysics.HandSystem.Actions
 			//create the joint
 			SpringJoint2D newJoint = tool.gameObject.AddComponent<SpringJoint2D>();
 			//apply the sample settings and link target rigidbody
-			newJoint.ApplySettings(sampleSpring);
+			newJoint.ApplySettings<SpringJoint2D>(sampleSpring);
 			newJoint.connectedBody = targetBody;
 			//return the component
 			return newJoint;

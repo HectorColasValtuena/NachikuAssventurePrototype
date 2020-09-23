@@ -15,7 +15,6 @@ namespace ASSistant.ComponentConfiguration
 			BindingFlags.SetProperty |
 			BindingFlags.GetProperty;
 
-
 		//applies right-hand properties to left-hand objects. returns reference to altered object
 		public static T ApplySettings <T> (this T _this, T sample) where T: Component
 		{
@@ -28,8 +27,17 @@ namespace ASSistant.ComponentConfiguration
 		}
 
 		//copies the value of one specific property from sample to target object
-		private static void ApplyProperty (PropertyInfo property, System.Object target, System.Object sample)
+		public static void ApplyProperty (PropertyInfo property, System.Object target, System.Object sample)
 		{
+			/*
+			Debug.Log("----\nproperty " + property);
+			Debug.Log("attributes " + property.Attributes);
+			//foreach (var attribute in property.Attributes) { Debug.Log("> " + attribute); }
+			Debug.Log("custom attributes: " + property.CustomAttributes);
+			foreach (var customAttribute in property.CustomAttributes) { Debug.Log("> " + customAttribute); }
+			//*/
+	
+			if (!property.CanRead || !property.CanWrite) { return; }
 			if (property.GetIndexParameters().Length == 0)
 			{
 				ApplyPropertyNonIndexed(property, target, sample);

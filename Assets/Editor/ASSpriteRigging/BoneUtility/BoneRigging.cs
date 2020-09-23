@@ -48,6 +48,8 @@ namespace ASSpriteRigging.BoneUtility
 				joint = ObjectFactory.AddComponent<TJoint2D>(bone.gameObject);
 			}
 
+			/*[DEBUG]*/if(targetRigidbody == null) { Debug.Log("JODER"); }
+
 			//copy public properties from sample object, connect the joint to the target, and return it
 			joint.ApplySettings(sample);
 			joint.connectedBody = targetRigidbody;
