@@ -34,7 +34,12 @@ namespace ASSpriteRigging.BoneUtility
 		public static TJoint2D BoneConnectJoint <TJoint2D> (Transform bone, Transform target, TJoint2D sample)
 			where TJoint2D: Joint2D
 		{
-			return BoneConnectJoint<TJoint2D> (bone, target.gameObject.GetComponent<Rigidbody2D>(), sample);
+			Rigidbody2D targetRigidbody = target.gameObject.GetComponent<Rigidbody2D>();
+			if (targetRigidbody != null)
+			{
+				return BoneConnectJoint<TJoint2D> (bone, targetRigidbody, sample);
+			}
+			Debug.LogWarning ("Connecting bone failed because target has no rigidbody: " + target.gameobject.name);
 		}
 		public static TJoint2D BoneConnectJoint <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody, TJoint2D sample)
 			where TJoint2D: Joint2D
@@ -47,8 +52,6 @@ namespace ASSpriteRigging.BoneUtility
 			{
 				joint = ObjectFactory.AddComponent<TJoint2D>(bone.gameObject);
 			}
-
-			/*[DEBUG]*/if(targetRigidbody == null) { Debug.Log("JODER"); }
 
 			//copy public properties from sample object, connect the joint to the target, and return it
 			joint.ApplySettings(sample);
