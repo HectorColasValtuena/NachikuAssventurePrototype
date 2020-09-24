@@ -2,6 +2,7 @@
 {
 	public interface ITailElement
 	{
-		float targetRotation {get; set;}
+		float offsetRotation {get; set;}
+		ITailElement[] childElementList {get;}
 	}
 }

@@ -39,7 +39,8 @@ namespace ASSpriteRigging.BoneUtility
 			{
 				return BoneConnectJoint<TJoint2D> (bone, targetRigidbody, sample);
 			}
-			Debug.LogWarning ("Connecting bone failed because target has no rigidbody: " + target.gameobject.name);
+			/*[DEBUG]*/Debug.LogWarning ("Connecting bone failed because target has no rigidbody: " + target.gameObject.name);
+			return null;
 		}
 		public static TJoint2D BoneConnectJoint <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody, TJoint2D sample)
 			where TJoint2D: Joint2D

@@ -1,3 +1,5 @@
+using System.Reflection;
+
 using UnityEngine;
 using ASSPhysics.TailSystem;	//TailRootWiggle
 
@@ -7,14 +9,53 @@ namespace ASSpriteRigging.BoneUtility
 {
 	public static class TailRigging
 	{
+		private static readonly BindingFlags privateMethodBindings =
+			BindingFlags.Static |
+			BindingFlags.NonPublic;
+
 	//Tail generation
 		public static void RigTail (TailRootRigger rigger)
-		{
-			Debug.LogWarning("You dindn't implement me yet you bastard hitler hitler hitler hitler hitler");
-			//RigTailBoneList();
+		{	
+			//generate a type footprint from the component types of target rigger
+			System.Type[] typeList =
+			{
+				rigger.defaultCollider.GetType(),
+				rigger.defaultChainJoint.GetType()
+			};
+			//create a generic method typed according to desired components
+			MethodInfo riggingMethodCall = 
+				rigger
+				.GetType()
+				.GetMethod("RigTailBoneRecursive", privateMethodBindings)
+				.MakeGenericMethod(typeList)
+			;
+
+			//compose parameter list for invokation
+			System.Object[] parameters = {
+				rigger.transform,				//Transform rootBone
+				rigger.defaultRigidbody,		//Rigidbody2D defaultRigidbody
+				rigger.defaultCollider,			//CircleCollider2D defaultCollider
+				rigger.defaultChainJoint,		//FixedJoint2D defaultChainJoint
+				rigger.defaultTag,				//string defaultTag
+				rigger.defaultLayer				//int defaultLayer
+			};
+			//invoke the call having properly set-up types and parameters
+			riggingMethodCall.Invoke(rigger, parameters);	
 		}
 
-		private	static void RigTailBoneRecursive (Transform rootBone, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
+		private	static void RigTailBoneRecursive <
+			TCollider,
+			TChainJoint
+		> (
+			Transform rootBone,
+			Rigidbody2D defaultRigidbody,
+			TCollider defaultCollider,
+			TChainJoint defaultChainJoint,
+			string defaultTag = null,
+			int defaultLayer = -1
+		)
+			where TCollider: Collider2D
+			where TChainJoint: Joint2D
 		{
 			
 		}

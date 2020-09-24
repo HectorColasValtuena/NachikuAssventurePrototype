@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace ASSPhysics.TailSystem
 {
-	public abstract class TailRootWiggle : MonoBehaviour
+	public class TailRootWiggle : MonoBehaviour
 	{
 		public Transform[] elementTransformList;
 		private ITailElement[] elementControllerList;
@@ -61,8 +61,9 @@ namespace ASSPhysics.TailSystem
 				//change directions every few segments randomly
 				if (direction == 0)
 				{
+					//calculate a random length for the next segment and multipy it by a random sign
+					//((Random.Range(0, 2) *2) -1); produces either 1 or -1
 					direction = Random.Range(1, directionSegmentSize + 1) * ((Random.Range(0, 2) *2) -1);
-					Debug.Log("New direction: " +  direction);
 				}
 
 				//randomly accelerate torsion in target direction
@@ -72,7 +73,7 @@ namespace ASSPhysics.TailSystem
 				if (direction > 0) { direction--; } else { direction ++; }//move direction towards 0 so it gets randomly changed every several segments
 
 				//rotate element by torsion degrees
-				elementControllerList[i].targetRotation += torsion;
+				elementControllerList[i].offsetRotation += torsion;
 			}
 		}
 	}

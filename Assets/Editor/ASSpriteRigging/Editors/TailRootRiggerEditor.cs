@@ -23,8 +23,9 @@ namespace ASSpriteRigging.Editors
 
 		protected override void RigBones ()
 		{
-			//[TO-DO]
+			TailRigging.RigTail(tailRootRigger);
 			Debug.Log("Rigged bones of " + target.name);
+
 		}
 	}
 }
