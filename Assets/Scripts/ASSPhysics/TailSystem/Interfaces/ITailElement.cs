@@ -3,6 +3,6 @@
 	public interface ITailElement
 	{
 		float offsetRotation {get; set;}
-		ITailElement[] childElementList {get;}
+		ITailElement childElement {get;}
 	}
 }

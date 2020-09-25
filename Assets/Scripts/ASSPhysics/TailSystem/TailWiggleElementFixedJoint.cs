@@ -8,9 +8,9 @@ namespace ASSPhysics.TailSystem
 		//private const float lerpRate = 0.001f;
 		private RelativeJoint2D joint;
 
-		public override void Awake ()
+		public /*override*/ void Awake ()
 		{
-			base.Awake();
+			//base.Awake();
 			joint = transform.gameObject.GetComponent<RelativeJoint2D>();
 		}
 

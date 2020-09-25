@@ -11,7 +11,9 @@ namespace ASSpriteRigging.Riggers
 	public class TailRootRigger : SpriteSkinBaseRigger
 	{
 		public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
-		
+
+		public TailWiggleElementBase defaultTailElement;
+
 		public Rigidbody2D defaultRigidbody; //Sample rigidbody configuration
 		public CircleCollider2D defaultCollider;
 		//public SpringJoint2D defaultAnchor;	//Sample anchor spring (parent-connected) configuration

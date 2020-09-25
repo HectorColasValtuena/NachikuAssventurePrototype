@@ -20,23 +20,23 @@ namespace ASSPhysics.TailSystem
 		}
 		private float _offsetRotation = 0.0f;
 
-		public ITailElement[] childElementList
+		public ITailElement childElement
 		{
 			get 
 			{
-				if (_childElementList == null) { _childElementList = FetchChildElementList(); }
-				return _childElementList;
+				if (_childElement == null) { _childElement = FetchChildElement(); }
+				return _childElement;
 			}
-			private set { _childElementList = value; }
+			private set { _childElement = value; }
 		}
-		private ITailElement[] _childElementList;
+		private ITailElement _childElement;
 	//ENDOF Implementación ITailElement
 
 	//MonoBehaviour lifecycle
-		public virtual void Awake ()
+		/*public virtual void Awake ()
 		{
-			childElementList = FetchChildElementList();
-		}
+			childElement = FetchChildElement();
+		}*/
 
 		public virtual void Start ()
 		{
@@ -50,6 +50,17 @@ namespace ASSPhysics.TailSystem
 	//ENDOF MonoBehaviour lifecycle
 
 	//internal methods implementation
+		//find and return the first child element controller
+		private ITailElement FetchChildElement ()
+		{
+			for (int i = 0, iLimit = transform.childCount; i < iLimit; i++)
+			{
+				ITailElement element = transform.GetChild(i).GetComponent<ITailElement>();
+				if (element != null) { return element; }
+			}
+			return null;
+		}
+
 		private ITailElement[] FetchChildElementList ()
 		{
 			List<ITailElement> elementList = new List<ITailElement>();
