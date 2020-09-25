@@ -67,7 +67,7 @@ RelativeJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_MaxForce: 10000
-  m_MaxTorque: 400
+  m_MaxTorque: 500
   m_CorrectionScale: 0.2
   m_AutoConfigureOffset: 1
   m_LinearOffset: {x: 0, y: 0}
