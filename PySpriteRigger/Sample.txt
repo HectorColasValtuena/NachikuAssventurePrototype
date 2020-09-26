@@ -1,3 +1,6 @@
 .\PySpriteRigger.py ..\Assets\Sprites\
 
 .\PySpriteRigger.py ..\Assets\Sprites\SlicedRigs\AssTail\LowerBack.png.meta ..\Assets\Sprites\SlicedRigs\AssTail\NalgaDerecha.png.meta ..\Assets\Sprites\SlicedRigs\AssTail\NalgaIzquierda.png.meta ..\Assets\Sprites\SlicedRigs\AssTail\PataDerecha.png.meta ..\Assets\Sprites\SlicedRigs\AssTail\PataIzquierda.png.meta ..\Assets\Sprites\SlicedRigs\AssTail\Tail.png.meta ..\Assets\Sprites\SlicedRigs\AssTail\VulvaLeft.png.meta ..\Assets\Sprites\SlicedRigs\AssTail\VulvaRight.png.meta
+
+
+.\PySpriteRigger.py  ..\Assets\Sprites\SlicedRigs\TailPose\LeftButtock.png.meta ..\Assets\Sprites\SlicedRigs\TailPose\LeftLeg.png.meta ..\Assets\Sprites\SlicedRigs\TailPose\RightButtock.png.meta ..\Assets\Sprites\SlicedRigs\TailPose\RightLeg.png.meta ..\Assets\Sprites\SlicedRigs\TailPose\Tail.png.meta ..\Assets\Sprites\SlicedRigs\TailPose\Torso.png.meta ..\Assets\Sprites\SlicedRigs\TailPose\Vulva.png.meta

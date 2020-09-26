@@ -1,0 +1,100 @@
+TextureImporter:
+  alignment: 0
+  alphaIsTransparency: 1
+  alphaUsage: 1
+  applyGammaDecoding: 0
+  assetBundleName: null
+  assetBundleVariant: null
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  compressionQuality: 50
+  compressionQualitySet: 0
+  cubemapConvolution: 0
+  externalObjects: {}
+  generateCubemap: 6
+  grayScaleToAlpha: 0
+  ignorePngGamma: 0
+  internalIDToNameTable: []
+  isReadable: 0
+  lightmap: 0
+  maxTextureSize: 2048
+  maxTextureSizeSet: 0
+  mipmaps:
+    alphaTestReferenceValue: 0.5
+    borderMipMap: 0
+    enableMipMap: 0
+    fadeOut: 0
+    linearTexture: 0
+    mipMapFadeDistanceEnd: 3
+    mipMapFadeDistanceStart: 1
+    mipMapMode: 0
+    mipMapsPreserveCoverage: 0
+    sRGBTexture: 1
+  nPOTScale: 0
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  platformSettings:
+  - allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+    buildTarget: DefaultTexturePlatform
+    compressionQuality: 50
+    crunchedCompression: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    maxTextureSize: 2048
+    overridden: 0
+    resizeAlgorithm: 0
+    serializedVersion: 3
+    textureCompression: 1
+    textureFormat: -1
+  seamlessCubemap: 0
+  serializedVersion: 11
+  singleChannelComponent: 0
+  spriteBorder:
+    w: 0
+    x: 0
+    y: 0
+    z: 0
+  spriteExtrude: 1
+  spriteGenerateFallbackPhysicsShape: 1
+  spriteMeshType: 1
+  spriteMode: 1
+  spritePackingTag: null
+  spritePivot:
+    x: 0.5
+    y: 0.5
+  spritePixelsToUnits: 100
+  spriteSheet:
+    bones: []
+    edges: []
+    indices: null
+    internalID: 0
+    outline: []
+    physicsShape: []
+    secondaryTextures: []
+    serializedVersion: 2
+    spriteID: 5e97eb03825dee720800000000000000
+    sprites: []
+    vertices: []
+    weights: []
+  spriteTessellationDetail: -1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  textureFormat: 1
+  textureFormatSet: 0
+  textureSettings:
+    aniso: -1
+    filterMode: -1
+    mipBias: -100
+    serializedVersion: 2
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  textureShape: 1
+  textureType: 8
+  userData: null
+  vTOnly: 0
+fileFormatVersion: 2
+guid: 616bdc561e160f64b8715d3fb5233eae
