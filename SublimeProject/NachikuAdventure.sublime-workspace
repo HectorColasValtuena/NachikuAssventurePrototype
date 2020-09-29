@@ -529,10 +529,44 @@
 			}
 		},
 		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/Sample.txt",
+			"settings":
+			{
+				"buffer_size": 928,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
 			"settings":
 			{
 				"buffer_size": 5956,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "using UnityEngine;\n\nnamespace ASSPhysics.HandSystem.Actions\n{\n\tpublic static class ActionSupport\n\t{\n\t//CreateAnchoredJoint() Create an anchored joint linked to a specific target, adjusting offsets\n\t\t//overload taking a collider2d as \n\t\t//public static \n\t\t//\n\t\tpublic static TAnchoredJoint CreateAnchoredJoint <TAnchoredJoint> (\n\t\t\tTransform origin,\n\t\t\tTransform target,\n\t\t\tTAnchoredJoint sampleSpring,\n\t\t\tVector2? originOffset = null,\n\t\t\tVector2? targetOffset = null\n\t\t)\n\t\t\twhere TAnchoredJoint: AnchoredJoint2D\n\t\t{\n\t\t\treturn null;\n\t\t}\n\t//ENDOF CreateAnchoredJoint()\n\n\t//Private utility methods\n\t\t//Return the distance between the center of a collider and its anchored rigidbody as a vector2\n\t\tprivate static Vector2 GetColliderOffset (Collider2D collider)\n\t\t{\n\t\t\treturn Vector2.zero;\n\t\t}\n\t//ENDOF Private utility methods\n\t}\n}",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSupport.cs",
+			"file_size": 857,
+			"file_write_time": 132458780778244305,
+			"settings":
+			{
+				"buffer_size": 826,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "using UnityEngine;"
+			}
+		},
+		{
+			"contents": "Menu\nhttps://www.newgrounds.com/audio/listen/846735 AddBad - Nightmare [electro] - [buena para menú]\n\n\nCualquiera\nhttps://www.newgrounds.com/audio/listen/780692 FWLR Computer talk [Electro] [muy quentin dupieux - flat beat]\n\nhttps://www.newgrounds.com/audio/listen/595087 End of the World [Electro]\nhttps://www.newgrounds.com/audio/listen/759568 November [Electro]\n\n\n\nhttps://www.newgrounds.com/audio/listen/773506 Hentai [Electro] [no sé pero da para paja]",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Song Candidates.txt",
+			"file_size": 471,
+			"file_write_time": 132458629100537436,
+			"settings":
+			{
+				"buffer_size": 457,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -577,6 +611,9 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility",
@@ -586,6 +623,7 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Song Candidates.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRootRigger.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailWiggleElementFixedJoint.cs",
@@ -712,8 +750,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/SpriteSkinRiggerEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Noped/SpriteSkinRiggingExtension.cs.nope",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/SpriteSkinRiggerEditor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/TransformTailWiggleParentEditor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/BoneUtility/BoneNomenclature.cs"
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/SpriteRigging/TransformTailWiggleParentEditor.cs"
 	],
 	"find":
 	{
@@ -795,7 +832,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -824,13 +861,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/Sample.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								878,
+								878
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 55.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 5956,
@@ -840,8 +905,8 @@
 						"selection":
 						[
 							[
-								4053,
-								4053
+								5159,
+								5203
 							]
 						],
 						"settings":
@@ -850,10 +915,67 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1734.0,
+						"translation.y": 2835.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSupport.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								783,
+								783
+							]
+						],
+						"settings":
+						{
+							"auto_name": "using UnityEngine;",
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Song Candidates.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
