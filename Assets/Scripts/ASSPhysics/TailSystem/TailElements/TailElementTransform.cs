@@ -3,7 +3,7 @@
 namespace ASSPhysics.TailSystem
 {
 	//
-	public class TailWiggleElementTransform : TailElementBase
+	public class TailElementTransform : TailElementBase
 	{
 		private const float lerpRate = 0.001f;
 		protected override void MatchRotation ()

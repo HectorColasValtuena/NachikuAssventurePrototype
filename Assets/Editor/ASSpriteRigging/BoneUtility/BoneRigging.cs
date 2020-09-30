@@ -32,27 +32,27 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//Creates a joint from bone transform to target transform/rigidbody, and applies sample settings
-		public static TJoint2D BoneConnectJoint <TJoint2D> (Transform bone, Transform target, TJoint2D sample)
-			where TJoint2D: Joint2D
+		public static TJoint BoneConnectJoint <TJoint> (Transform bone, Transform target, TJoint sample)
+			where TJoint: Joint
 		{
 			Rigidbody2D targetRigidbody = target.gameObject.GetComponent<Rigidbody2D>();
 			if (targetRigidbody != null)
 			{
-				return BoneConnectJoint<TJoint2D> (bone, targetRigidbody, sample);
+				return BoneConnectJoint<TJoint> (bone, targetRigidbody, sample);
 			}
 			/*[DEBUG]*/Debug.LogWarning ("Connecting bone failed because target has no rigidbody: " + target.gameObject.name);
 			return null;
 		}
-		public static TJoint2D BoneConnectJoint <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody, TJoint2D sample)
-			where TJoint2D: Joint2D
+		public static TJoint BoneConnectJoint <TJoint> (Transform bone, Rigidbody2D targetRigidbody, TJoint sample)
+			where TJoint: Joint
 		{
 			//first try to find a pre-existing joint of adequate type and connected target
-			TJoint2D joint = BoneHierarchy.BoneFindJointConnected<TJoint2D>(bone, targetRigidbody);
+			TJoint joint = BoneHierarchy.BoneFindJointConnected<TJoint>(bone, targetRigidbody);
 
 			//if desired joint did not exist, create a new joint
 			if (joint == null)
 			{
-				joint = ObjectFactory.AddComponent<TJoint2D>(bone.gameObject);
+				joint = ObjectFactory.AddComponent<TJoint>(bone.gameObject);
 			}
 
 			//copy public properties from sample object, connect the joint to the target, and return it
@@ -62,10 +62,10 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//find and remove spring joint connected to target
-		public static void BoneRemoveConnectedJoint <TJoint2D> (Transform bone, Transform connectedTarget)
-			where TJoint2D: Joint2D
+		public static void BoneRemoveConnectedJoint <TJoint> (Transform bone, Transform connectedTarget)
+			where TJoint: Joint
 		{
-			TJoint2D foundJoint = BoneHierarchy.BoneFindJointConnected<TJoint2D>(bone, connectedTarget);
+			TJoint foundJoint = BoneHierarchy.BoneFindJointConnected<TJoint>(bone, connectedTarget);
 			if (foundJoint != null) 
 			{
 				Object.DestroyImmediate(foundJoint);
@@ -73,16 +73,16 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//creates a spring connecting both bones. If mutual, creates a spring from each bone, only from the first otherwise
-		public static void InterconnectBonePair <TJoint2D> (Transform bone1, Transform bone2, TJoint2D sample, bool mutual = false)
-			where TJoint2D: Joint2D
+		public static void InterconnectBonePair <TJoint> (Transform bone1, Transform bone2, TJoint sample, bool mutual = false)
+			where TJoint: Joint
 		{
 			if (bone1 == bone2) { return; }
 
-			BoneConnectJoint<TJoint2D>(bone1, bone2, sample);
+			BoneConnectJoint<TJoint>(bone1, bone2, sample);
 
 			//if connection is mutual create the opposite joint. if not, ensure there is no opposite joint
-			if (mutual) { BoneConnectJoint<TJoint2D>(bone2, bone1, sample); }
-			else { BoneRemoveConnectedJoint<TJoint2D>(bone2, bone1); }
+			if (mutual) { BoneConnectJoint<TJoint>(bone2, bone1, sample); }
+			else { BoneRemoveConnectedJoint<TJoint>(bone2, bone1); }
 		}
 	}
 }

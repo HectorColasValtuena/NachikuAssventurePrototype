@@ -24,7 +24,6 @@ namespace ASSPhysics.TailSystem
 		//update joint target rotation towards target angular offset
 		protected override void MatchRotation ()
 		{
-
 			//smooth target rotation towards target rotation
 			joint.targetRotation = Quaternion.Slerp(
 				joint.targetRotation, //transform.rotation,					
