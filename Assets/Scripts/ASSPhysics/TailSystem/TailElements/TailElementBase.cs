@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ASSPhysics.TailSystem
 {
-	public abstract class TailWiggleElementBase : MonoBehaviour, ITailElement
+	public abstract class TailElementBase : MonoBehaviour, ITailElement
 	{
 	
 		public float maxOffsetRotation = 30f;		//maximum rotation off from the base value
@@ -13,6 +13,7 @@ namespace ASSPhysics.TailSystem
 		protected Quaternion baseRotation;  //base rotation of the element. offsetRotation swings and is clamped around this value
 
 	//Implementación ITailElement
+		//angle from baseRotation we want to achieve for this element
 		public float offsetRotation
 		{
 			get { return _offsetRotation; }
@@ -20,6 +21,7 @@ namespace ASSPhysics.TailSystem
 		}
 		private float _offsetRotation = 0.0f;
 
+		//gets the next element in sequence
 		public ITailElement childElement
 		{
 			get 

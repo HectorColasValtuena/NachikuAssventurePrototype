@@ -11,28 +11,6 @@ namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneHierarchy
 	{
-		//finds a joint of type TJoint2D connected to target. returns null if non-existant
-		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Transform target)
-			where TJoint2D: Joint2D
-		{
-			return BoneFindJointConnected<TJoint2D> (bone, target.gameObject.GetComponent<Rigidbody2D>());
-		}
-		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody)
-			where TJoint2D: Joint2D
-		{
-			//get a list of all the joints of type TJoint2D contained in the origin bone
-			TJoint2D[] jointList = bone.gameObject.GetComponents<TJoint2D>();
-			//find a joint connected to target rigidbody and return it
-			foreach (TJoint2D joint in jointList)
-			{
-				if (joint.connectedBody == targetRigidbody)
-				{
-					return joint;
-				}
-			}
-			return null;//return null if none found
-		}
-
 		//creates gameobjects for every bone and stores them in spriteskin
 		public static void CreateBoneHierarchy (SpriteSkinBaseRigger rigger)
 		{
