@@ -8,8 +8,8 @@ using ASSpriteRigging.BoneUtility;
 
 namespace ASSpriteRigging.Editors
 {
-	[CustomEditor(typeof(SpriteSkinRigger))]
-	public class SpriteSkinRiggerEditor : RiggerEditorBase
+	[CustomEditor(typeof(SkinSurfaceRigger))]
+	public class SkinSurfaceRiggerEditor : RiggerEditorBase
 	{
 		protected override void RigBones ()
 		{

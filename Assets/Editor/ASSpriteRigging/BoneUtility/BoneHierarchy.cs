@@ -11,19 +11,22 @@ namespace ASSpriteRigging.BoneUtility
 {
 	public static class BoneHierarchy
 	{
-		//finds a joint of type TJoint2D connected to target. returns null if non-existant
-		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Transform target)
-			where TJoint2D: Joint2D
+		//finds a joint of type TJoint connected to target transform or rigidbody.
+		//returns null if target is not connected or non-existant
+		public static TJoint BoneFindJointConnected <TJoint> (Transform bone, Transform target)
+			where TJoint: Joint
 		{
-			return BoneFindJointConnected<TJoint2D> (bone, target.gameObject.GetComponent<Rigidbody2D>());
+			Rigidbody targetRigidbody = target.gameObject.GetComponent<Rigidbody>();
+			if (targetRigidbody == null) { return null; }
+			return BoneFindJointConnected<TJoint> (bone, targetRigidbody);
 		}
-		public static TJoint2D BoneFindJointConnected <TJoint2D> (Transform bone, Rigidbody2D targetRigidbody)
-			where TJoint2D: Joint2D
+		public static TJoint BoneFindJointConnected <TJoint> (Transform bone, Rigidbody targetRigidbody)
+			where TJoint: Joint
 		{
-			//get a list of all the joints of type TJoint2D contained in the origin bone
-			TJoint2D[] jointList = bone.gameObject.GetComponents<TJoint2D>();
+			//get a list of all the joints of type TJoint contained in the origin bone
+			TJoint[] jointList = bone.gameObject.GetComponents<TJoint>();
 			//find a joint connected to target rigidbody and return it
-			foreach (TJoint2D joint in jointList)
+			foreach (TJoint joint in jointList)
 			{
 				if (joint.connectedBody == targetRigidbody)
 				{

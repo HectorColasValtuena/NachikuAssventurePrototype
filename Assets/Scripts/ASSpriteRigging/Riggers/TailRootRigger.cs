@@ -12,11 +12,11 @@ namespace ASSpriteRigging.Riggers
 	{
 		public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
 
-		public TailWiggleElementBase defaultTailElement;
+		public ITailElement defaultTailElement;
 
-		public Rigidbody2D defaultRigidbody; //Sample rigidbody configuration
-		public CircleCollider2D defaultCollider;
+		public Rigidbody defaultRigidbody; //Sample rigidbody configuration
+		public Collider defaultCollider;
 		//public SpringJoint2D defaultAnchor;	//Sample anchor spring (parent-connected) configuration
-		public RelativeJoint2D defaultChainJoint; //Sample spring configuration
+		public Joint defaultChainJoint; //Sample spring configuration
 	}
 }

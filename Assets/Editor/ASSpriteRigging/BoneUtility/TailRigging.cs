@@ -1,9 +1,12 @@
 using System.Reflection;
 
 using UnityEngine;
-using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
 
-using ASSpriteRigging.Riggers;
+using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
+using ASSpriteRigging.Riggers;	//TailRigger
+
+using static ASSistant.ReflectionAssistant;
+
 
 namespace ASSpriteRigging.BoneUtility
 {
@@ -48,7 +51,6 @@ namespace ASSpriteRigging.BoneUtility
 			);
 		}
 
-
 		//Recursively populate every transform with adequate controller and components
 		private	static void RigTailBoneElementRecursive <
 			TTailElement,
@@ -57,19 +59,19 @@ namespace ASSpriteRigging.BoneUtility
 		> (
 			Transform bone,
 			TTailElement defaultTailElement,
-			Rigidbody2D defaultRigidbody,
+			Rigidbody defaultRigidbody,
 			TCollider defaultCollider,
 			TChainJoint defaultChainJoint,
 			string defaultTag = null,
 			int defaultLayer = -1
 		)
 			where TTailElement: UnityEngine.Component, ITailElement
-			where TCollider: Collider2D
-			where TChainJoint: Joint2D
+			where TCollider: Collider
+			where TChainJoint: Joint
 		{
 			Debug.Log("bone: "); Debug.LogWarning(bone);
 			BoneRigging.BoneSetTagAndLayer(bone, defaultTag, defaultLayer);
-			BoneRigging.BoneSetupComponent<Rigidbody2D>(bone, defaultRigidbody);
+			BoneRigging.BoneSetupComponent<Rigidbody>(bone, defaultRigidbody);
 			BoneRigging.BoneSetupComponent<TCollider>(bone, defaultCollider);
 
 			//last element of the chain doesn't need controller or joint. abort if no more descendants
@@ -92,69 +94,19 @@ namespace ASSpriteRigging.BoneUtility
 				TCollider,
 				TChainJoint
 			> (
-				next,	//Transform bone,
-				defaultTailElement,	//TTailElement defaultTailElement,
-				defaultRigidbody,	//Rigidbody2D defaultRigidbody,
-				defaultCollider,	//TCollider defaultCollider,
-				defaultChainJoint,	//TChainJoint defaultChainJoint,
-				defaultTag,			//string defaultTag = null,
-				defaultLayer		//int defaultLayer = -1
+				bone: next,	//Transform bone,
+				defaultTailElement: defaultTailElement,	//TTailElement defaultTailElement,
+				defaultRigidbody: defaultRigidbody,	//Rigidbody2D defaultRigidbody,
+				defaultCollider: defaultCollider,	//TCollider defaultCollider,
+				defaultChainJoint: defaultChainJoint,	//TChainJoint defaultChainJoint,
+				defaultTag: defaultTag,			//string defaultTag = null,
+				defaultLayer: defaultLayer		//int defaultLayer = -1
 			);
 
 			//finally connect the joint to the next element
 			BoneRigging.BoneConnectJoint<TChainJoint>(bone, next, defaultChainJoint);
 
 		}
-
-		/////////////////////////////////////////////////////////////////////////////////////////////////////
-		//[TO-DO] move this elsewhere
-		//Dynamically compose a generic method call and invoke with target parameters
-		private static void CallMethodWithTypesAndParameters (
-			System.Type type,
-			System.Object context,
-			string methodName,
-			BindingFlags bindingFlags, 
-			System.Type[] typeList,
-			System.Object[] parameters
-		) {
-			//context
-			//	.GetType()
-			type
-				.GetMethod(methodName, bindingFlags)
-				.MakeGenericMethod(typeList)
-				.Invoke(context, parameters);	//(context, parameters);
-		}
-
-		/*public static void RigTail (Transform rootBone, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
-		{
-
-		
-			//rig each bone except the last
-			for (int i = 0, iLimit = boneList.Length - 1; i < iLimit; i++)
-			{
-				RigTailBone(
-					bone: boneList[i],
-					nextBone: boneList[i+1],
-					defaultRigidbody: defaultRigidbody,
-					defaultCollider: defaultCollider,
-					defaultChainJoint: defaultChainJoint,
-					defaultTag: defaultTag,
-					defaultLayer: defaultLayer
-				);
-			}
-		} 
-			*/
-
-		/*
-		private static void RigTailBone (Transform bone, Transform nextBone, Rigidbody2D defaultRigidbody, CircleCollider2D defaultCollider, FixedJoint2D defaultChainJoint, string defaultTag = null, int defaultLayer = -1)
-		{
-			BoneRigging.AddComponentToTransform<TailWiggleElementTransform>(bone); //BoneSetupComponent
-			BoneRigging.BoneCreateRigidbody(bone, defaultRigidbody);
-			BoneRigging.BoneCreateCollider(bone, defaultCollider);
-			BoneRigging.BoneSetTagAndLayer(bone, defaultTag, defaultLayer);
-		}
-		*/
-
 	//ENDOF Tail Generation
 	}
 }
