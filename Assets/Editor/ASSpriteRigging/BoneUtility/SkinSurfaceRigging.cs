@@ -85,7 +85,8 @@ namespace ASSpriteRigging.BoneUtility
 			BoneRigging.BoneSetupComponent<TCollider>(bone, defaultCollider);
 
 			//create a connection towards its parent in the manner of an anchoring
-			BoneRigging.BoneConnectJoint<TAnchorJoint>(bone, bone.parent, defaultAnchor);
+			//BoneRigging2D.BoneConnectJoint2D<TAnchorJoint>(bone, bone.parent, defaultAnchorJoint);
+			BoneRigging.BoneConnectJoint<TAnchorJoint>(bone, bone.parent, defaultAnchorJoint);
 		}
 
 		//Generate springs between bones connected according to a triangle list

@@ -13,7 +13,7 @@ namespace ASSpriteRigging.Editors
 	{
 		protected override void RigBones ()
 		{
-			SpriteSkinRigging.RigBones((SpriteSkinRigger) rigger);
+			SkinSurfaceRigging.RigBones((SkinSurfaceRigger) rigger);
 			Debug.Log("Rigged bones of " + target.name);
 		}
 	}
