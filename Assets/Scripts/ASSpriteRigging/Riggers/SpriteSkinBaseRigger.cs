@@ -12,6 +12,7 @@ namespace ASSpriteRigging.Riggers
 
 		public GameObject defaultLayerSample; //gameobject with sample of layer tag
 		public int defaultLayer { get { return (defaultLayerSample != null) ? defaultLayerSample.layer : -1; }}
-		public string defaultTag = "Grabbable";	//Which tag to set the bone transforms as
+		public string defaultTag { get { return defaultLayerSample?.tag; }}
+		//public string defaultTag = "Grabbable";	//Which tag to set the bone transforms as
 	}
 }
