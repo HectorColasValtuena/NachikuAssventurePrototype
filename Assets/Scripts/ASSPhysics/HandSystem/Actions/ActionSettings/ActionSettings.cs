@@ -24,12 +24,12 @@ namespace ASSPhysics.HandSystem.Actions.ActionSettings
 		}}
 
 		private const string grabJointSettingsPath = "GrabJointSettings";
-		private static ActionSettingSpringJoint _grabJointSettings;
-		public static ActionSettingSpringJoint grabJointSettings
+		private static ActionSettingJoint _grabJointSettings;
+		public static ActionSettingJoint grabJointSettings
 		{ get {
 			return (_grabJointSettings != null)
 				? _grabJointSettings
-				: _grabJointSettings = Resources.Load<ActionSettingSpringJoint>(grabJointSettingsPath);
+				: _grabJointSettings = Resources.Load<ActionSettingJoint>(grabJointSettingsPath);
 		}}
 	}
 }

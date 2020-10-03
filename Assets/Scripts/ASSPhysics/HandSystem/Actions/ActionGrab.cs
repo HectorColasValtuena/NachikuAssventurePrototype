@@ -62,7 +62,7 @@ namespace ASSPhysics.HandSystem.Actions
 
 	//Grab Action Implementation
 		//list of currently in-use joints
-		private SpringJoint2D[] jointList;
+		private ConfigurableJoint[] jointList;
 		//determines if grab is active
 		public bool grabActive { get { return (jointList != null); }}
 
@@ -150,11 +150,11 @@ namespace ASSPhysics.HandSystem.Actions
 
 
 		//create joints required from the tool gameobject to each target
-		private void CreateJoints (Transform[] targets, SpringJoint2D sampleSpring)
+		private void CreateJoints (Transform[] targets, ConfigurableJoint sampleSpring)
 		{
 			//clear joint list and create a new list
 			RemoveJoints();
-			jointList = new SpringJoint2D[targets.Length];
+			jointList = new ConfigurableJoint[targets.Length];
 			//create a joint for each target
 			for (int i = 0, iLimit = targets.Length; i < iLimit; i++)
 			{
@@ -163,15 +163,15 @@ namespace ASSPhysics.HandSystem.Actions
 		}
 
 		//Create a joint linked to a specific transform
-		private SpringJoint2D CreateJoint (Transform target, SpringJoint2D sampleSpring)
+		private ConfigurableJoint CreateJoint (Transform target, ConfigurableJoint sampleSpring)
 		{
 			//fetch target rigidbody and ensure it exists
-			Rigidbody2D targetBody = target.GetComponent<Rigidbody2D>();
+			Rigidbody targetBody = target.GetComponent<Rigidbody>();
 			if (targetBody == null) { return null; }
 			//create the joint
-			SpringJoint2D newJoint = tool.gameObject.AddComponent<SpringJoint2D>();
+			ConfigurableJoint newJoint = tool.gameObject.AddComponent<ConfigurableJoint>();
 			//apply the sample settings and link target rigidbody
-			newJoint.ApplySettings<SpringJoint2D>(sampleSpring);
+			newJoint.ApplySettings<ConfigurableJoint>(sampleSpring);
 			newJoint.connectedBody = targetBody;
 			//return the component
 			return newJoint;
