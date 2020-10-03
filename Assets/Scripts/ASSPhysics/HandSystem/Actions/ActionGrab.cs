@@ -135,7 +135,6 @@ namespace ASSPhysics.HandSystem.Actions
 				tool.position,
 				surfaceGrabSettings.radius,
 				surfaceGrabSettings.layerMask
-				//QueryTriggerInteraction.Collide
 			);
 			Transform[] transformList = new Transform[colliderList.Length];
 
