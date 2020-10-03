@@ -8,8 +8,8 @@ namespace ASSpriteRigging.Riggers
 	public class SkinSurfaceRigger : SpriteSkinBaseRigger
 	{
 		public Rigidbody defaultRigidbody;	//Sample rigidbody configuration
-		public Collider defaultCollider;	//Sample collider configuration
-		public Joint defaultAnchorJoint;	//Sample anchor joint (parent-connected) configuration
-		public Joint defaultMeshJoint;		//Sample inter-vertex joint configuration
+		public SphereCollider defaultCollider;	//Sample collider configuration
+		public ConfigurableJoint defaultAnchorJoint;	//Sample anchor joint (parent-connected) configuration
+		public ConfigurableJoint defaultMeshJoint;		//Sample inter-vertex joint configuration
 	}
 }
