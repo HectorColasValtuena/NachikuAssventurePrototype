@@ -84,6 +84,8 @@ namespace ASSPhysics.HandSystem.Actions
 		//If no tail bones, fetch every surface bone in range
 		private Transform[] GetBonesInRange ()
 		{
+			//!"()!")/()!""
+	//replace GetTailBoneInRange and GetSurfaceBonesInRange with generic version
 			Transform[] boneList = {GetTailBoneInRange()};
 			if (boneList[0] == null)
 			{

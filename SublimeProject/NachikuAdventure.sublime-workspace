@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"max",
+				"maximumCollisions"
+			],
+			[
+				"collider",
+				"colliderList"
+			],
+			[
+				"origin",
+				"originPosition"
+			],
+			[
 				"def",
 				"defaultTag"
 			],
@@ -308,10 +320,6 @@
 				"targetRotation"
 			],
 			[
-				"max",
-				"maxRotationPerElement"
-			],
-			[
 				"pr",
 				"previousRotation"
 			],
@@ -506,14 +514,6 @@
 			[
 				"level",
 				"levelNumber"
-			],
-			[
-				"Leve",
-				"LevelUnlock"
-			],
-			[
-				"Level",
-				"LevelIsUnlocked"
 			]
 		]
 	},
@@ -532,7 +532,16 @@
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings/ActionSettingCollisionRadius.cs",
 			"settings":
 			{
-				"buffer_size": 801,
+				"buffer_size": 2169,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Comparers/ComparerSortCollidersByDistance.cs",
+			"settings":
+			{
+				"buffer_size": 1069,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -577,12 +586,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/Interfaces",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailElements",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Comparers",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor",
@@ -816,7 +820,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -832,8 +836,8 @@
 						"selection":
 						[
 							[
-								4304,
-								4304
+								3279,
+								3467
 							]
 						],
 						"settings":
@@ -842,10 +846,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1914.0,
+						"translation.y": 1770.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -854,15 +858,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 801,
+						"buffer_size": 2169,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								631,
-								631
+								1542,
+								1551
 							]
 						],
 						"settings":
@@ -874,6 +878,35 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Comparers/ComparerSortCollidersByDistance.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								958,
+								958
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

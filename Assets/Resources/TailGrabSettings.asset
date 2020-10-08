@@ -16,3 +16,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   radius: 0.2
+  maximumCollisions: 1
+  detectTriggers: 1
