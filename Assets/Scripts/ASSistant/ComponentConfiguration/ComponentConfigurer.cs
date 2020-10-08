@@ -16,7 +16,7 @@ namespace ASSistant.ComponentConfiguration
 			BindingFlags.GetProperty;
 
 		//applies right-hand properties to left-hand objects. returns reference to altered object
-		public static T ApplySettings <T> (this T _this, T sample) where T: Component
+		public static T EMApplySettings <T> (this T _this, T sample) where T: Component
 		{
 			PropertyInfo[] properties = _this.GetType().GetProperties(defaultBindingFlags);
 			foreach (PropertyInfo property in properties)
@@ -27,7 +27,7 @@ namespace ASSistant.ComponentConfiguration
 		}
 
 		//copies the value of one specific property from sample to target object
-		public static void ApplyProperty (PropertyInfo property, System.Object target, System.Object sample)
+		private static void ApplyProperty (PropertyInfo property, System.Object target, System.Object sample)
 		{
 			/*
 			Debug.Log("----\nproperty " + property);

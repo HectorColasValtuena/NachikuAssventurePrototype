@@ -3,7 +3,7 @@ using UnityEditor;
 
 using Unity.Collections; //NativeArray<T>
 
-using static ASSistant.ComponentConfiguration.ComponentConfigurer; //Component.ApplySettings(sample);
+using static ASSistant.ComponentConfiguration.ComponentConfigurer; //Component.EMApplySettings(sample);
 using ASSpriteRigging.BoneUtility;	//BoneHierarchy.BoneFindJointConnected()
 
 namespace ASSpriteRigging.BoneUtility
@@ -21,7 +21,7 @@ namespace ASSpriteRigging.BoneUtility
 		public static TComponent BoneSetupComponent <TComponent> (Transform bone, TComponent sample)
 			where TComponent: Component
 		{
-			return BoneSetupComponent<TComponent>(bone).ApplySettings(sample);
+			return BoneSetupComponent<TComponent>(bone).EMApplySettings(sample);
 		}
 		public static TComponent BoneSetupComponent <TComponent> (Transform bone)
 			where TComponent: Component
@@ -59,7 +59,7 @@ namespace ASSpriteRigging.BoneUtility
 			}
 
 			//copy public properties from sample object, connect the joint to the target, and return it
-			joint.ApplySettings(sample);
+			joint.EMApplySettings(sample);
 			joint.connectedBody = targetRigidbody;
 			return joint;
 		}

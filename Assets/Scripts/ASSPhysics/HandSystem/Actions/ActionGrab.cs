@@ -1,8 +1,10 @@
 using UnityEngine; //Physics, Transform, SpringJoint, ...
 
+using ASSPhysics.Constants;	//AnimationNames
 using static ASSPhysics.HandSystem.Actions.ActionSettings.ActionSettings; //tailGrabSettings, surfaceGrabSettings
-using static ASSistant.ComponentConfiguration.ComponentConfigurer; //Component.ApplySettings(sample);
-using AssPhysics.Constants;	//AnimationNames
+
+using ASSistant.ComponentConfiguration; //ComponentConfigurer.EMApplySettings(this Component);
+										//ColliderPosition.EMGetColliderTransformOffset(this Collider);
 
 namespace ASSPhysics.HandSystem.Actions
 {
@@ -38,7 +40,7 @@ namespace ASSPhysics.HandSystem.Actions
 //[TO-DO] optimize initialization by keeping a copy of bone list?
 //[TO-DO] consider OverlapCircleNonAlloc for fast validity checks too
 /////////////////////////////////////////////////////////////////////////////////////////////////////			
-			return (GetBonesInRange().Length > 0);
+			return (GetBoneCollidersInRange().Length > 0);
 		}
 
 		//try to set in automatic state. Returns true on success
@@ -69,7 +71,7 @@ namespace ASSPhysics.HandSystem.Actions
 		//initiate grabbing action
 		private void InitiateGrab ()
 		{
-			CreateJoints(GetBonesInRange(), grabJointSettings.sampleJoint);
+			CreateJoints(GetBoneCollidersInRange(), grabJointSettings.sampleJoint);
 			tool.SetAnimationState(AnimationNames.Tool.stateGrab);
 		}
 
@@ -82,76 +84,20 @@ namespace ASSPhysics.HandSystem.Actions
 
 		//Gets all of the grabbable transforms. First tries to fetch a single tail backbone.
 		//If no tail bones, fetch every surface bone in range
-		private Transform[] GetBonesInRange ()
+		private Collider[] GetBoneCollidersInRange ()
 		{
-			//!"()!")/()!""
-	//replace GetTailBoneInRange and GetSurfaceBonesInRange with generic version
-			Transform[] boneList = {GetTailBoneInRange()};
-			if (boneList[0] == null)
+			Collider[] colliderList = tailGrabSettings.GetCollidersInRange(tool.transform);
+			if (colliderList.Length < 1)
 			{
-				boneList = GetSurfaceBonesInRange();
+				colliderList = surfaceGrabSettings.GetCollidersInRange(tool.transform);
 			}
-			return boneList;
+			return colliderList;
 		}
 	//ENDOF Grab Action Implementation
 
 	//Grab Action support methods
-
-		//get the single closest tail bone
-		private Transform GetTailBoneInRange ()
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//[TO-DO] Congeal GetTailBoneInRange and GetSurfaceBonesInRange as a single parametrized method
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-		{
-			//find all the tail bones nearby
-			Collider2D[] boneList = Physics2D.OverlapCircleAll(
-				(Vector2) tool.position,
-				tailGrabSettings.radius,
-				tailGrabSettings.layerMask
-				//QueryTriggerInteraction.Collide
-			);
-			if (boneList.Length == 0) {Debug.Log("GetTailBoneInRange found none"); return null; }
-
-			//now find the nearest tail bone of the list
-			int closest = 0;
-
-			for (int i = 0, iLimit = boneList.Length; i < iLimit; i++)
-			{
-				//keep current bone if closer than previous closest
-				if (
-					Vector3.Distance(boneList[i].transform.position, tool.position)
-					<
-					Vector3.Distance(boneList[closest].transform.position, tool.position)
-				) {
-					closest = i;
-				}
-			}
-			Debug.Log("GetTailBoneInRange found " + boneList[closest].transform);
-			return boneList[closest].transform;
-		}
-
-		//get a list of all surface bones in range
-		private Transform[] GetSurfaceBonesInRange ()
-		{
-			Collider2D[] colliderList = Physics2D.OverlapCircleAll(
-				tool.position,
-				surfaceGrabSettings.radius,
-				surfaceGrabSettings.layerMask
-			);
-			Transform[] transformList = new Transform[colliderList.Length];
-
-			for (int i = 0, iLimit = colliderList.Length; i < iLimit; i++)
-			{
-				transformList[i] = colliderList[i].transform;
-			}
-
-			Debug.Log("GetSurfaceBonesInRange found " + transformList.Length);
-			return transformList;
-		}
-
-
 		//create joints required from the tool gameobject to each target
-		private void CreateJoints (Transform[] targets, ConfigurableJoint sampleSpring)
+		private void CreateJoints (Collider[] targets, ConfigurableJoint sampleSpring)
 		{
 			//clear joint list and create a new list
 			RemoveJoints();
@@ -164,7 +110,7 @@ namespace ASSPhysics.HandSystem.Actions
 		}
 
 		//Create a joint linked to a specific transform
-		private ConfigurableJoint CreateJoint (Transform target, ConfigurableJoint sampleSpring)
+		private ConfigurableJoint CreateJoint (Collider target, ConfigurableJoint sampleSpring)
 		{
 			//fetch target rigidbody and ensure it exists
 			Rigidbody targetBody = target.GetComponent<Rigidbody>();
@@ -172,8 +118,10 @@ namespace ASSPhysics.HandSystem.Actions
 			//create the joint
 			ConfigurableJoint newJoint = tool.gameObject.AddComponent<ConfigurableJoint>();
 			//apply the sample settings and link target rigidbody
-			newJoint.ApplySettings<ConfigurableJoint>(sampleSpring);
+			newJoint.EMApplySettings<ConfigurableJoint>(sampleSpring);
 			newJoint.connectedBody = targetBody;
+			//set connection offset according to collider position
+			newJoint.connectedAnchor = target.EMGetColliderTransformOffset();
 			//return the component
 			return newJoint;
 		}

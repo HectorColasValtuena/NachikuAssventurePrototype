@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using AssPhysics.Constants; //AnimationNames
+using ASSPhysics.Constants; //AnimationNames
 
 //on awake, sets the animator horizontal flip to true or false, alternatively
 [RequireComponent(typeof(Animator))]

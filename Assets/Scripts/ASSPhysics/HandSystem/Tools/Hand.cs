@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using ASSPhysics.Settings; //InputSettings
-using AssPhysics.Constants;	//AnimationNames
+using ASSPhysics.Constants;	//AnimationNames
 using ASSPhysics.HandSystem.Actions; //ActionGrab
 
 namespace ASSPhysics.HandSystem.Tools

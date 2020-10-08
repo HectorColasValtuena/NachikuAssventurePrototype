@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-using AssPhysics.Constants;
+using ASSPhysics.Constants;
 using ASSPhysics.HandSystem.Actions; //IAction
 
 namespace ASSPhysics.HandSystem.Tools

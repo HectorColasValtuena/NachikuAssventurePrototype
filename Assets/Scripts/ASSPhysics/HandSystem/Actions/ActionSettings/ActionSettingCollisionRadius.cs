@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;	//List<T>
 
-using ComparerColliderDistance = ASSPhysics.Comparers.ComparerSortCollidersByDistance;
+using ASSistant.Comparers; //ComparerSortCollidersByDistance
 
 namespace ASSPhysics.HandSystem.Actions.ActionSettings
 {
@@ -36,10 +36,10 @@ namespace ASSPhysics.HandSystem.Actions.ActionSettings
 			));
 
 			//sort detected colliders by distance 
-			colliderList.Sort(new ComparerColliderDistance(originPosition) as IComparer<Collider>);
+			colliderList.Sort(new ComparerSortCollidersByDistance(originPosition) as IComparer<Collider>);
 
 			//return a maximum of N colliders according to maximumCollisions
-			if (maximumCollisions < -1 || maximumCollisions > colliderList.Count)
+			if (maximumCollisions < 0 || maximumCollisions > colliderList.Count)
 			{
 				return colliderList.ToArray();
 			}

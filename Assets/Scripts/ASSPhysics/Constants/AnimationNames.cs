@@ -1,4 +1,4 @@
-namespace AssPhysics.Constants
+namespace ASSPhysics.Constants
 {
 	public static class AnimationNames
 	{
