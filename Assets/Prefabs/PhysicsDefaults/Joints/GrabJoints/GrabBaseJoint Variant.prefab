@@ -53,7 +53,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4231269617543097262, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_Name
-      value: GrabBaseJoint
+      value: GrabBaseJoint Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_XMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_YMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_LinearLimitSpring.spring
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_LinearLimitSpring.damper
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_LinearLimit.limit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_SlerpDrive.positionSpring
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_SlerpDrive.positionDamper
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
