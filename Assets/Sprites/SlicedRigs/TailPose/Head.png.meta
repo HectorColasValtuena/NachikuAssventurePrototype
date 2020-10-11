@@ -86,9 +86,14 @@ TextureImporter:
       parentId: -1
     - name: bone_2
       position: {x: 26.420103, y: 0.000010510784, z: 0}
-      rotation: {x: 0, y: 0, z: 0.061463103, w: 0.9981094}
-      length: 201.90518
+      rotation: {x: 0, y: 0, z: 0.061463106, w: 0.9981094}
+      length: 201.9052
       parentId: 0
+    - name: bone_3
+      position: {x: 201.90518, y: 0.0000024587769, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      length: 4.5166945
+      parentId: 1
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices:
