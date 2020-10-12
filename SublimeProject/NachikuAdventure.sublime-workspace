@@ -520,16 +520,6 @@
 	"buffers":
 	[
 		{
-			"contents": "Searching 127 files for \"random\" (case sensitive)\n\nD:\\Projects\\Nachiku Adventure Prototype\\2D Rigging experiment UnityProject\\Assets\\Scripts\\ASSPhysics\\MiscellaneousComponents\\KickerTorqueBase.cs:\n    9  \t\tpublic float maxForce;\n   10  \n   11: \t\tpublic int direction; //if not zero determines the sign of the force applied. If 0, a direction will be chosen randomly each time\n   12  \t}\n   13  }\n\nD:\\Projects\\Nachiku Adventure Prototype\\2D Rigging experiment UnityProject\\Assets\\Scripts\\ASSPhysics\\TailSystem\\TailRootWiggle.cs:\n   59  \t\t\tfor (int i = 0, iLimit = elementControllerList.Length; i < iLimit; i++)\n   60  \t\t\t{\n   61: \t\t\t\t//change directions every few segments randomly\n   62  \t\t\t\tif (direction == 0)\n   63  \t\t\t\t{\n   64: \t\t\t\t\t//calculate a random length for the next segment and multipy it by a random sign\n   65  \t\t\t\t\t//((Random.Range(0, 2) *2) -1); produces either 1 or -1\n   66  \t\t\t\t\tdirection = Random.Range(1, directionSegmentSize + 1) * ((Random.Range(0, 2) *2) -1);\n   67  \t\t\t\t}\n   68  \n   69: \t\t\t\t//randomly accelerate torsion in target direction\n   70  \t\t\t\ttorsion += Random.Range(0f, torsionAccelerationPerElement) * Time.deltaTime * Mathf.Sign((float)direction);\n   71  \t\t\t\ttorsion = Mathf.Clamp(torsion, -maxTorsion, maxTorsion);\n   72  \n   73: \t\t\t\tif (direction > 0) { direction--; } else { direction ++; }//move direction towards 0 so it gets randomly changed every several segments\n   74  \n   75  \t\t\t\t//rotate element by torsion degrees\n\n6 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 1488,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/KickerTorqueBase.cs",
 			"settings":
 			{
@@ -548,12 +538,13 @@
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Artist Candidates.txt",
 			"settings":
 			{
-				"buffer_size": 2579,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
+				"buffer_size": 126,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "https://twitter.com/Nachikusan_\t\t//Nachiku <3"
 			}
 		},
 		{
@@ -619,6 +610,8 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scenes/Final/MainMenu.unity",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/KickerTorqueBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/IKicker.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/KickerTorqueOnSleep.cs",
@@ -670,7 +663,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Song Candidates.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/Sample.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSupport2D.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/Interfaces/ITailElement.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/TailRootRiggerEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/SpriteSkinRiggerEditor.cs",
@@ -745,8 +737,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/Modified2DAnimation@4.2.5/Runtime/SpriteSkin.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/estructura meta sprite.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SpriteSkinExtensions.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/Deprecated/BoneRiggingByName.cs"
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/SpriteSkinRigger/SpriteSkinRigger.cs"
 	],
 	"find":
 	{
@@ -852,72 +843,6 @@
 			[
 				{
 					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1488,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										357,
-										363
-									],
-									[
-										671,
-										677
-									],
-									[
-										750,
-										756
-									],
-									[
-										805,
-										811
-									],
-									[
-										1017,
-										1023
-									],
-									[
-										1367,
-										1373
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								496,
-								496
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/KickerTorqueBase.cs",
 					"semi_transient": false,
 					"settings":
@@ -942,11 +867,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/KickerTorqueOnSleep.cs",
 					"semi_transient": false,
 					"settings":
@@ -970,40 +895,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Artist Candidates.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2579,
+						"buffer_size": 126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2010,
-								1950
+								45,
+								45
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"auto_name": "https://twitter.com/Nachikusan_\t\t//Nachiku <3",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/AssMath.cs",
 					"semi_transient": false,
 					"settings":
@@ -1027,7 +952,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
