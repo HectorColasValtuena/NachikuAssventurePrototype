@@ -1,13 +1,14 @@
 using UnityEngine;
 
+using ASSistant.ASSRandom; //RandomRangeFloat
+
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
 	public class KickerTorqueBase : MonoBehaviour, IKicker
 	{
 	//serialized properties 
 		//Minimum and maximum force range for every kicker
-		public float minForce;
-		public float maxForce;
+		public RandomRangeFloat randomForce;
 
 		public int direction; //if not zero determines the sign of the force applied. If 0, a direction will be chosen randomly each time
 
@@ -18,18 +19,21 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 	//ENDOF private fields and properties
 
 	//IKicker implementation
+		//applies a random torque at a random direction as the kick
 		public void Kick ()
 		{
-			///////////////////////////////////////////////////////////////////////////////////////////////////////////
-			//[TO-DO]
-			
+			//add a torque of random intensity and random direction in Z axis
+			targetRigidbody.AddTorque(
+				Vector3.Forward * randomForce.Generate() * RandomSign.Generate(),
+				ForceMode.Force
+			);
 		}
 	//ENDOF IKicker implementation
 
 	//MonoBehaviour Lifecycle
 		public void Awake ()
 		{
-			if (!targetRigidbody) targetRigidbody = GetComponent<Rigidbody>;
+			if (!targetRigidbody) targetRigidbody = gameObject.GetComponent<Rigidbody>();
 		}
 	//ENDOF MonoBehaviour Lifecycle
 	}
