@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
+using ASSistant; //AssMath
+
 namespace ASSPhysics.TailSystem
 {
 	public class TailRootWiggle : MonoBehaviour
@@ -63,7 +65,7 @@ namespace ASSPhysics.TailSystem
 				{
 					//calculate a random length for the next segment and multipy it by a random sign
 					//((Random.Range(0, 2) *2) -1); produces either 1 or -1
-					direction = Random.Range(1, directionSegmentSize + 1) * ((Random.Range(0, 2) *2) -1);
+					direction = Random.Range(1, directionSegmentSize + 1) * AssMath.RandomSign();
 				}
 
 				//randomly accelerate torsion in target direction
