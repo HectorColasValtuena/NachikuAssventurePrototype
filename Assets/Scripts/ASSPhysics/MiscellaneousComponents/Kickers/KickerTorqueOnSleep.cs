@@ -1,8 +1,14 @@
+using ASSistant.ASSRandom; //RandomRangeFloat
+
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public class KickerTorqueOnSleep : KickerTorqueBase
+	public class KickerTorqueOnSleep : KickerTorqueOnConditionBase
 	{
-		//MonoBehaviour Lifecycle
-		//ENDOF MonoBehaviour Lifecycle
+	//abstract method implementation
+		protected override bool CheckCondition ()
+		{
+			return targetRigidbody.IsSleeping();
+		}
+	//ENDOF abstract method implementation
 	}
 }

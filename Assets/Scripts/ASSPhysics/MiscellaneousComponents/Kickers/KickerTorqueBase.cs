@@ -22,9 +22,16 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 		//applies a random torque at a random direction as the kick
 		public void Kick ()
 		{
+			//turn direction
+			int sign = (direction > 0)
+						? 1			//if direction sign is + use 1
+					 : (direction < 0)
+						? -1		//if direction sign is - use -1
+						: RandomSign.Generate();	//if none, get a random sign
+
 			//add a torque of random intensity and random direction in Z axis
 			targetRigidbody.AddTorque(
-				Vector3.Forward * randomForce.Generate() * RandomSign.Generate(),
+				Vector3.forward * randomForce.Generate() * RandomSign.Generate(),
 				ForceMode.Force
 			);
 		}
