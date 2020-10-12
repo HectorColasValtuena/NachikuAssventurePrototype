@@ -16,7 +16,7 @@ namespace ASSistant.ASSRandom
 
 		public float Generate ()
 		{
-			return Random.Range(min, max);
+			return Range(min, max);
 		}
 	}
 }

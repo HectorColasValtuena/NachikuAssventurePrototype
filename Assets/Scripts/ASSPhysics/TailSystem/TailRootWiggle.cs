@@ -1,10 +1,10 @@
-﻿using System.Collections;
+﻿//using System.Collections;
 using System.Collections.Generic;
 //using static System.Type; //Type
 
 using UnityEngine;
 
-using ASSistant; //AssMath
+using RandomSign = ASSistant.ASSRandom.RandomSign; 
 
 namespace ASSPhysics.TailSystem
 {
@@ -65,7 +65,7 @@ namespace ASSPhysics.TailSystem
 				{
 					//calculate a random length for the next segment and multipy it by a random sign
 					//((Random.Range(0, 2) *2) -1); produces either 1 or -1
-					direction = Random.Range(1, directionSegmentSize + 1) * AssMath.RandomSign();
+					direction = Random.Range(1, directionSegmentSize + 1) * RandomSign.Generate();
 				}
 
 				//randomly accelerate torsion in target direction
