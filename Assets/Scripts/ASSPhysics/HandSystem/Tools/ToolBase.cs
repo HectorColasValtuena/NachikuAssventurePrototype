@@ -30,7 +30,8 @@ namespace ASSPhysics.HandSystem.Tools
 	//ENDOF Local variables
 
 	//MonoBehaviour lifecycle Implementation
-		public virtual void Awake () {
+		public virtual void Awake ()
+		{
 			animator = gameObject.GetComponent<Animator>();
 		}
 
