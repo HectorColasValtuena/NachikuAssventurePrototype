@@ -11,5 +11,10 @@ namespace ASSPhysics.Constants
 			public const string stateFlat = "StateFlat";
 			public const string stateGrab = "StateGrab";
 		}
+
+		public static class Interactable
+		{
+			public const string highlighted = "Highlighted";
+		}
 	}
 }

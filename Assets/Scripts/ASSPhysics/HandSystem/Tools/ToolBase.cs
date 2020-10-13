@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-using ASSPhysics.Constants;
 using ASSPhysics.HandSystem.Actions; //IAction
+using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
 namespace ASSPhysics.HandSystem.Tools
 {
