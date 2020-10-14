@@ -26,7 +26,7 @@ namespace ASSPhysics.InteractableSystem
 				if (value != _highlighted)
 				{
 					_highlighted = value;
-					animator.SetBool(AnimationNames.Interactable.highlighted, value);
+					HighlightChanged(value);
 				}
 			}
 		}
@@ -48,6 +48,11 @@ namespace ASSPhysics.InteractableSystem
 	//ENDOF MonoBehaviour lifecycle
 
 	//private methods
+		protected virtual void HighlightChanged (bool state)
+		{
+			animator.SetBool(AnimationNames.Interactable.highlighted, state);
+		}
+		
 		protected void TriggerCallbacks () { callback.Invoke(); }
 	//ENDOF private methods
 	}

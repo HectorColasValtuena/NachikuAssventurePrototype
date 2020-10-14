@@ -6,6 +6,6 @@ namespace ASSPhysics.InteractableSystem
 	public interface IInteractor
 	{
 		//activate this interactable
-		void Input(EInputState state);
+		void Input (EInputState state);
 	}
 }

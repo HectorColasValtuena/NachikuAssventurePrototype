@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 using ASSPhysics.HandSystem.Tools; //ITool
-using ASSPhysics.HandSystem.InputSources; //MouseInput
+using ASSPhysics.InputSystem; //MouseInput, EInputState
 
 namespace ASSPhysics.HandSystem.Managers
 {
@@ -54,7 +54,7 @@ namespace ASSPhysics.HandSystem.Managers
 		//checks for input corresponding to hand swap, and performs the action if necessa
 		private void ToolCycleCheck ()
 		{
-			if (Input.GetMouseButtonDown(1))
+			if (MouseInput.GetButtonDown(1))
 			{
 				SetFocused(focusedTool+1);
 			}

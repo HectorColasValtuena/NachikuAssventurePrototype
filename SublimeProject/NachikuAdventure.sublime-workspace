@@ -520,37 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/Interactor.cs",
 			"settings":
 			{
-				"buffer_size": 2607,
+				"buffer_size": 397,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableBase.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionUseInteractor.cs",
 			"settings":
 			{
-				"buffer_size": 1469,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractorBase.cs",
-			"settings":
-			{
-				"buffer_size": 117,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionBase.cs",
-			"settings":
-			{
-				"buffer_size": 1855,
+				"buffer_size": 1578,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -559,27 +541,43 @@
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
 			"settings":
 			{
-				"buffer_size": 4493,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings/ActionSettingCollisionRadius.cs",
-			"settings":
-			{
-				"buffer_size": 1876,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "using UnityEngine;\n\nusing ASSPhysics.InteractableSystem;\n\nnamespace ASSPhysics.HandSystem.Actions\n{\n\tpublic class ActionUseInteractor : ActionBase\n\t{\n\t//ActionBase override implementation\n\t\t//returns true if this action is currently doing something, like maintaining a grab or repeating a slapping pattern\n\t\t//Will be true if base.ongoing (because automated) or if we have a joint list acting upon the world\n\t\t//receive state of corresponding input medium\n\t\tpublic override void Input (EInputState state)\n\t\t{\n\t\t\tif (state == EInputState.Started)\n\t\t\t{\n\t\t\t\tInitiateGrab();\n\t\t\t}\n\t\t\tif (state == EInputState.Ended)\n\t\t\t{\n\t\t\t\tFinishGrab();\n\t\t\t}\n\t\t}\n\n\t\t//returns true if the action can be legally activated at its position\n\t\tpublic override bool IsValid ()\n\t\t{\n/////////////////////////////////////////////////////////////////////////////////////////////////////\n//[TO-DO] optimize initialization by keeping a copy of bone list?\n//[TO-DO] consider OverlapCircleNonAlloc for fast validity checks too\n/////////////////////////////////////////////////////////////////////////////////////////////////////\t\t\t\n\t\t\treturn (GetBoneCollidersInRange().Length > 0);\n\t\t}\n\n\t\t//Using an interactor is an entirely non-automatable one-shot action, so automation methods just report failure\n\t\tpublic override bool Automate () { return false; }\n\t\tpublic override bool AutomationUpdate () { return false; }\n\t\t//public override void DeAutomate ();\n\t//ENDOF ActionBase override implementation\n\n\t}\n}\n",
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionUseInteractor.cs",
-			"file_size": 1631,
-			"file_write_time": 132471172526247456,
-			"settings":
-			{
-				"buffer_size": 1470,
+				"buffer_size": 4621,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Managers/ToolManagerMouseInput.cs",
+			"settings":
+			{
+				"buffer_size": 2269,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableBase.cs",
+			"settings":
+			{
+				"buffer_size": 1614,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/EInputState.cs",
+			"settings":
+			{
+				"buffer_size": 86,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableTriggerOnRelease.cs",
+			"settings":
+			{
+				"buffer_size": 1504,
+				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
@@ -587,7 +585,7 @@
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Constants/AnimationNames.cs",
 			"settings":
 			{
-				"buffer_size": 454,
+				"buffer_size": 498,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -632,25 +630,45 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Input",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Inputs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem"
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Enumerations",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/InputSources",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings"
 	],
 	"file_history":
 	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/IInteractor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/MouseInput.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/EInputState.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableTriggerOnUp.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/Hand.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/InputSettings.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings/ActionSettingJoint.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings/ActionSettingCollisionRadius.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractorBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/InputSources/MouseInput.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings/ActionSettings.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Constants/AnimationNames.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ToolBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionUseInteractor.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/IInteractable.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ITool.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/IAction.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings/ActionSettingCollisionRadius.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Enumerations/EInputState.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Settings/InputSettings.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem.meta",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Experiments/Logger.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ToolBase.cs",
 		"/C/Users/Mephi/Desktop/descuento fiverr.txt",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/Hand.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/IInteractable.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/KickerTorqueOnSleep.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/KickerTorqueOnConditionBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/KickerTorqueBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ASSRandom/RandomRangeFloat.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ASSRandom/RandomSign.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Kickers/IKicker.cs",
@@ -663,20 +681,15 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/KickerTorqueBase",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ColliderPosition.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/Comparers/ComparerSortCollidersByDistance.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings/ActionSettingCollisionRadius.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ComponentConfigurer.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneRigging.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/SlicedRigs/TailPose/Head.png.meta",
 		"/H/autorun.inf",
 		"/C/Users/Mephi/AppData/Local/Temp/7zO44AF9E62/README.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ToolFlip.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Constants/AnimationNames.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ColliderAbsolutePosition.cs.meta",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ColliderAbsolutePosition.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Comparers/ComparerSortCollidersByDistance.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/IAction.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings/ActionSettings.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SpriteSkinBaseRigger.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SkinSurfaceRigger.cs",
@@ -735,14 +748,11 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/TailSystem/TailWiggleElementTransform.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/TailSystem/TailWiggleElementBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/TailSystem/Interfaces/ITailElement.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ITool.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Managers/ToolManagerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant.ComponentConfigurer/SettingApplierExtensions.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/Constants/ActionSettings.cs",
 		"/C/Users/Mephi/Desktop/Preguntita.txt",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/InputSources/MouseInput.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings/ActionSettingsGrab.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Enumerations/EInputState.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Experiments/ButtonDownLogger.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Input/MouseInput.cs",
 		"/D/Projects/Signal Breaker/Signal Breaker Unity Project/Assets/Scripts/WorldScreen/Prototypes/TestClickable.cs",
@@ -755,19 +765,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/HandManagerFromMouseCursor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/IHandAction.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/HandActionBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Inputs/MouseInput.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Mouse/MouseInput.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Interfaces/IHand.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Interfaces/IHandAction.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/HandActionBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/HandManagerBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/HandManagerMouseCursor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/HandManager.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/ComponentConfigurationExtensions/SettingApplierExtensions.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/U2DAnimationAccessor/SpriteSkinAccessor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/Interfaces/ITailElement.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/TailWiggle/TransformTailWiggleElement.cs"
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab"
 	],
 	"find":
 	{
@@ -786,6 +784,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Mouse",
+			"grabJointSettings",
 			"tailGrabSettings",
 			"random",
 			"ApplySettings",
@@ -869,53 +869,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailRootWiggle.cs",
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/Interactor.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2607,
+						"buffer_size": 397,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableBase.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								162
+								365,
+								365
 							]
 						],
 						"settings":
@@ -926,24 +897,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractorBase.cs",
+					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionUseInteractor.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 117,
+						"buffer_size": 1578,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								112
+								1213,
+								1213
 							]
 						],
 						"settings":
@@ -959,20 +930,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionBase.cs",
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1855,
+						"buffer_size": 4621,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								237,
-								237
+								2996,
+								2996
 							]
 						],
 						"settings":
@@ -981,27 +952,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
+						"translation.y": 1177.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
+					"buffer": 3,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Managers/ToolManagerMouseInput.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4493,
+						"buffer_size": 2269,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								180,
-								196
+								119,
+								119
 							]
 						],
 						"settings":
@@ -1013,24 +984,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionSettings/ActionSettingCollisionRadius.cs",
+					"buffer": 4,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableBase.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1876,
+						"buffer_size": 1614,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								868,
-								868
+								1515,
+								1515
 							]
 						],
 						"settings":
@@ -1039,27 +1010,55 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 15.0,
+						"translation.y": 513.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionUseInteractor.cs",
+					"buffer": 5,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/EInputState.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1470,
+						"buffer_size": 86,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								643,
-								643
+								62,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableTriggerOnRelease.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1324,
+								1324
 							]
 						],
 						"settings":
@@ -1068,10 +1067,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 27.0,
+						"translation.y": 504.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1080,15 +1079,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 454,
+						"buffer_size": 498,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								377,
-								389
+								469,
+								476
 							]
 						],
 						"settings":

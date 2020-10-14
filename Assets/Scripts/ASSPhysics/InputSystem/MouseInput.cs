@@ -2,7 +2,7 @@
 
 using InputSettings = ASSPhysics.SettingSystem.InputSettings; //InputSettings
 
-namespace ASSPhysics.HandSystem.InputSources
+namespace ASSPhysics.InputSystem
 {
 	public static class MouseInput
 	{
@@ -21,6 +21,9 @@ namespace ASSPhysics.HandSystem.InputSources
 		//scaled delta for configurable controls
 
 		public static Vector3 scaledDelta { get { return delta * InputSettings.mouseDeltaScale; }}
+
+		//gets button pressed
+		public static bool GetButtonDown (int buttonID) { return Input.GetMouseButtonDown(buttonID); }
 
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 		//if correctPosition is true, the returned Vector3 originates in the camera's position

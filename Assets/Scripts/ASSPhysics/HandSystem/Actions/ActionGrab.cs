@@ -1,7 +1,7 @@
 using UnityEngine; //Physics, Transform, SpringJoint, ...
 
 using ASSPhysics.Constants;	//AnimationNames
-//using ActionSettings = ASSPhysics.HandSystem.Actions.ActionSettings; //tailGrabSettings, surfaceGrabSettings
+using ActionSettings = ASSPhysics.SettingSystem.ActionSettings; //tailGrabSettings, surfaceGrabSettings
 using EInputState = ASSPhysics.InputSystem.EInputState;
 
 using ASSistant.ComponentConfiguration; //ComponentConfigurer.EMApplySettings(this Component);
@@ -72,7 +72,10 @@ namespace ASSPhysics.HandSystem.Actions
 		//initiate grabbing action
 		private void InitiateGrab ()
 		{
-			CreateJoints(GetBoneCollidersInRange(), grabJointSettings.sampleJoint);
+			CreateJoints (
+				targets: GetBoneCollidersInRange(),
+				sampleSpring: ActionSettings.grabJointSettings.sampleJoint
+			);
 			tool.SetAnimationState(AnimationNames.Tool.stateGrab);
 		}
 
@@ -87,10 +90,10 @@ namespace ASSPhysics.HandSystem.Actions
 		//If no tail bones, fetch every surface bone in range
 		private Collider[] GetBoneCollidersInRange ()
 		{
-			Collider[] colliderList = tailGrabSettings.GetCollidersInRange(tool.transform);
+			Collider[] colliderList = ActionSettings.tailGrabSettings.GetCollidersInRange(tool.transform);
 			if (colliderList.Length < 1)
 			{
-				colliderList = surfaceGrabSettings.GetCollidersInRange(tool.transform);
+				colliderList = ActionSettings.surfaceGrabSettings.GetCollidersInRange(tool.transform);
 			}
 			return colliderList;
 		}

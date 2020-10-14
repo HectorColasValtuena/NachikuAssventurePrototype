@@ -15,6 +15,7 @@ namespace ASSPhysics.Constants
 		public static class Interactable
 		{
 			public const string highlighted = "Highlighted";
+			public const string pressed = "Pressed";
 		}
 	}
 }

@@ -15,11 +15,11 @@ namespace ASSPhysics.HandSystem.Actions
 		{
 			if (state == EInputState.Started)
 			{
-				InitiateGrab();
+				//InitiateGrab();
 			}
 			if (state == EInputState.Ended)
 			{
-				FinishGrab();
+				//FinishGrab();
 			}
 		}
 
@@ -30,7 +30,7 @@ namespace ASSPhysics.HandSystem.Actions
 //[TO-DO] optimize initialization by keeping a copy of bone list?
 //[TO-DO] consider OverlapCircleNonAlloc for fast validity checks too
 /////////////////////////////////////////////////////////////////////////////////////////////////////			
-			return (GetBoneCollidersInRange().Length > 0);
+			return false;//(GetBoneCollidersInRange().Length > 0);
 		}
 
 		//Using an interactor is an entirely non-automatable one-shot action, so automation methods just report failure
