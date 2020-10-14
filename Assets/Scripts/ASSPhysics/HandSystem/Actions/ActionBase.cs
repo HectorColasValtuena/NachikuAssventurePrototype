@@ -6,6 +6,10 @@ namespace ASSPhysics.HandSystem.Actions
 {
 	public abstract class ActionBase : IAction
 	{
+	//private fields and properties
+		protected ITool tool;
+	//ENDOF private fields and properties
+
 	//IHandAction implementation
 		//returns true if this action is currently doing something, like maintaining a grab or repeating a slapping pattern
 		//base class only knows an action is ongoing if automatized. Children classes may determine additional conditions
@@ -56,6 +60,5 @@ namespace ASSPhysics.HandSystem.Actions
 		public virtual bool IsValid () { Debug.Log("ActionBase.IsValid()"); return false; }
 	//ENDOF IHandAction implementation
 
-		protected ITool tool;
 	}
 }
