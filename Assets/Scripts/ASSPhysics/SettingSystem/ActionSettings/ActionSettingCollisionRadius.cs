@@ -3,7 +3,7 @@ using System.Collections.Generic;	//List<T>
 
 using ASSistant.Comparers; //ComparerSortCollidersByDistance
 
-namespace ASSPhysics.HandSystem.Actions.ActionSettings
+namespace ASSPhysics.SettingSystem.ActionSettingTypes
 {
 	[CreateAssetMenu(fileName = "Data", menuName = "Action settings/Collision Radius settings", order = 1)]
 	public class ActionSettingCollisionRadius : ScriptableObject

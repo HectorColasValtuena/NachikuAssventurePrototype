@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-using ASSPhysics.Settings; //InputSettings
+using InputSettings = ASSPhysics.SettingSystem.InputSettings; //InputSettings
 
 namespace ASSPhysics.HandSystem.InputSources
 {

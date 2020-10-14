@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ASSPhysics.HandSystem.Actions.ActionSettings
+namespace ASSPhysics.SettingSystem.ActionSettingTypes
 {
 	[CreateAssetMenu(fileName = "Data", menuName = "Action settings/Spring Joint settings", order = 1)]
 	public class ActionSettingJoint : ScriptableObject

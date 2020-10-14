@@ -1,6 +1,8 @@
 ﻿using UnityEngine; //Resources
 
-namespace ASSPhysics.HandSystem.Actions.ActionSettings
+using ASSPhysics.SettingSystem.ActionSettingTypes;
+
+namespace ASSPhysics.SettingSystem
 {
 	//public definition of settings objects
 	public static class ActionSettings

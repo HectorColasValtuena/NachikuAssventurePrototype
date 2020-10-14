@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;	//UnityEvent
 
-using AnimationNames = ASSPhysics.Constants.AnimationNames;
+using AnimationNames = ASSPhysics.Constants.AnimationNames; 
+
+using EInputState = ASSPhysics.InputSystem.EInputState; //EInputState
 
 namespace ASSPhysics.InteractableSystem
 {
-	public class InteractableBase : MonoBehaviour, IInteractable
+	public abstract class InteractableBase : MonoBehaviour, IInteractable
 	{
 	//serialized fields and properties
 		public UnityEvent callback;
@@ -24,17 +26,14 @@ namespace ASSPhysics.InteractableSystem
 				if (value != _highlighted)
 				{
 					_highlighted = value;
-					SetHighlighted(value);
+					animator.SetBool(AnimationNames.Interactable.highlighted, value);
 				}
 			}
 		}
 	//ENDOF private fields and properties
 
 	//IInteractable implementation
-		public void Activate ()
-		{
-			callback.Invoke();
-		}
+		public abstract void Interact (EInputState state);
 	//ENDOF IInteractable implementation
 
 	//MonoBehaviour lifecycle
@@ -49,10 +48,7 @@ namespace ASSPhysics.InteractableSystem
 	//ENDOF MonoBehaviour lifecycle
 
 	//private methods
-		protected virtual void SetHighlighted (bool value)
-		{
-			animator.SetBool(AnimationNames.Interactable.highlighted, value);
-		}
+		protected void TriggerCallbacks () { callback.Invoke(); }
 	//ENDOF private methods
 	}
 }

@@ -3,9 +3,9 @@
 namespace ASSPhysics.InteractableSystem
 {
 	//interactable interface element, like a button
-	public interface IInteractable
+	public interface IInteractor
 	{
 		//activate this interactable
-		void Interact(EInputState state);
+		void Input(EInputState state);
 	}
 }

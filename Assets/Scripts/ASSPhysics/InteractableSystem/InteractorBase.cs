@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
+using EInputState = ASSPhysics.InputSystem.EInputState;
 
-public class InteractorBase : MonoBehaviour
+namespace ASSPhysics.InteractableSystem
 {
-	
+	public class InteractorBase : MonoBehaviour, IInteractor
+	{
+		public void Input (EInputState state)
+		{
+		};
+	}
 }

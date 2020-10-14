@@ -1,4 +1,4 @@
-namespace ASSPhysics.Settings
+namespace ASSPhysics.SettingSystem
 {
 	public static class InputSettings
 	{
