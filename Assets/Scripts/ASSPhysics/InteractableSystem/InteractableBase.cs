@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;	//UnityEvent
 
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
@@ -6,6 +7,10 @@ namespace ASSPhysics.InteractableSystem
 {
 	public class InteractableBase : MonoBehaviour, IInteractable
 	{
+	//serialized fields and properties
+		public UnityEvent callback;
+	//serialized fields and properties
+
 	//private fields and properties
 		protected Animator animator;	//animator used by this interactable
 
@@ -26,11 +31,9 @@ namespace ASSPhysics.InteractableSystem
 	//ENDOF private fields and properties
 
 	//IInteractable implementation
-		public void Activate()
+		public void Activate ()
 		{
-			//////////////////////////////////////////////////////////////////////////////////
-			//[TO-DO]
-			//////////////////////////////////////////////////////////////////////////////////
+			callback.Invoke();
 		}
 	//ENDOF IInteractable implementation
 
