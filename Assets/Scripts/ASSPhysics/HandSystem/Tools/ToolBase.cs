@@ -2,6 +2,7 @@
 
 using ASSPhysics.HandSystem.Actions; //IAction
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
+using EInputState = ASSPhysics.InputSystem.EInputState;
 
 namespace ASSPhysics.HandSystem.Tools
 {

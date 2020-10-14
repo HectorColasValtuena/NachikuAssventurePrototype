@@ -2,6 +2,7 @@ using UnityEngine; //Physics, Transform, SpringJoint, ...
 
 using ASSPhysics.Constants;	//AnimationNames
 using static ASSPhysics.HandSystem.Actions.ActionSettings.ActionSettings; //tailGrabSettings, surfaceGrabSettings
+using EInputState = ASSPhysics.InputSystem.EInputState;
 
 using ASSistant.ComponentConfiguration; //ComponentConfigurer.EMApplySettings(this Component);
 										//ColliderPosition.EMGetColliderTransformOffset(this Collider);

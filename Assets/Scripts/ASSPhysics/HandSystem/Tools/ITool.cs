@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using EInputState = ASSPhysics.InputSystem.EInputState;
+
 namespace ASSPhysics.HandSystem.Tools
 {
 	public interface ITool

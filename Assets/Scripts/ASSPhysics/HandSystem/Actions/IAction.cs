@@ -1,4 +1,5 @@
-using ASSPhysics.HandSystem.Tools; //ITool
+using ITool = ASSPhysics.HandSystem.Tools.ITool; //ITool
+using EInputState = ASSPhysics.InputSystem.EInputState;
 
 namespace ASSPhysics.HandSystem.Actions
 {

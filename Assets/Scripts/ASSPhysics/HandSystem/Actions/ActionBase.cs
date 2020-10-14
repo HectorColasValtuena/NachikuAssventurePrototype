@@ -1,6 +1,8 @@
 using ASSPhysics.HandSystem.Tools; //ITool
 
-/*DEBUG*/using UnityEngine;/*DEBUG*/
+using EInputState = ASSPhysics.InputSystem.EInputState;
+
+/*DEBUG*/using Debug = UnityEngine.Debug;/*DEBUG*/
 
 namespace ASSPhysics.HandSystem.Actions
 {

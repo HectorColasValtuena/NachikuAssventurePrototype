@@ -1,4 +1,4 @@
-namespace ASSPhysics.HandSystem
+namespace ASSPhysics.InputSystem
 {
 	public enum EInputState { Started, Held, Ended }
 }
