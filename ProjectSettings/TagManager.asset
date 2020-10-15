@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Backgrounds
+    uniqueID: 2550720579
+    locked: 0
   - name: Menu
     uniqueID: 479389097
     locked: 0
