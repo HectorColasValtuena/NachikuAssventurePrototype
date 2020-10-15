@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Logger : MonoBehaviour
 {
-	void ConsoleLog()
+	public void ConsoleLog()
 	{
 		Debug.Log("L M A O");
+	}
+
+	public void CustomLog(string message)
+	{
+		Debug.Log(message);
 	}
 }

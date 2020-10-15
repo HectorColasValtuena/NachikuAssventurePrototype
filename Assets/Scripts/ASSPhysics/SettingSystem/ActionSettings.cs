@@ -33,5 +33,14 @@ namespace ASSPhysics.SettingSystem
 				? _grabJointSettings
 				: _grabJointSettings = Resources.Load<ActionSettingJoint>(grabJointSettingsPath);
 		}}
+
+		private const string interactorAreaCheckSettingsPath = "InteractorAreaCheckSettings";
+		private static ActionSettingCollisionRadius _interactorCheckSettings;
+		public static ActionSettingCollisionRadius interactorCheckSettings
+		{ get {
+			return (_interactorCheckSettings != null)	//if cache is null, load from UnityEngine.Resources
+				? _interactorCheckSettings
+				: _interactorCheckSettings = Resources.Load<ActionSettingCollisionRadius>(interactorAreaCheckSettingsPath);
+		}}
 	}
 }

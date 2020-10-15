@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 using EInputState = ASSPhysics.InputSystem.EInputState;
+using IInteractor = ASSPhysics.InteractableSystem.IInteractor;
 
 namespace ASSPhysics.HandSystem.Tools
 {
@@ -8,6 +9,7 @@ namespace ASSPhysics.HandSystem.Tools
 	{
 		Transform transform {get;}
 		GameObject gameObject {get;}
+		IInteractor interactor {get;}
 
 		Vector3 position {get; set;}	//position of the hand
 		bool focused {get; set;}		//wether the hand is on focus or not

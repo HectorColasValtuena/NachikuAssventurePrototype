@@ -2,7 +2,7 @@
 
 using InputSettings = ASSPhysics.SettingSystem.InputSettings; //InputSettings
 using AnimationNames = ASSPhysics.Constants.AnimationNames;	//AnimationNames
-using ActionGrab = ASSPhysics.HandSystem.Actions.ActionGrab; //ActionGrab
+using ASSPhysics.HandSystem.Actions; //IAction, ActionGrab, ActionUseInteractor
 
 namespace ASSPhysics.HandSystem.Tools
 {
@@ -35,10 +35,7 @@ namespace ASSPhysics.HandSystem.Tools
 			//upon first starting an input, try to determine if an special zone action is required
 			//if not, try to initiate a grab.
 			inputHeldTime = 0.0f;
-			if (!TrySpecialAction())
-			{
-				InitiateGrab();
-			}
+			TryActions();
 		}
 
 		protected override void InputHeld ()
@@ -50,7 +47,8 @@ namespace ASSPhysics.HandSystem.Tools
 		{
 			if (inputHeldTime <= InputSettings.maximumTimeHeldForSlap)
 			{
-				InitiateSlap();
+				//SetAction<ActionSlap>();//InitiateSlap();
+				Debug.Log("Slappin'");
 			}
 		}
 
@@ -62,34 +60,12 @@ namespace ASSPhysics.HandSystem.Tools
 		}
 	//ENDOF ToolBase abstract implementation
 
-
-
-		//Checks if we have to perform a special action and initiate it
-		//returns true if we have a special action to perform
-		private bool TrySpecialAction ()
+	//private method implementation
+		private void TryActions ()
 		{
-		//=============================================================================
-		//[TO-DO] temporary version always returns false
-		//=============================================================================
-			return false;
+			if (SetAction<ActionUseInteractor>()) return;
+			if (SetAction<ActionGrab>()) return;
 		}
-
-		private void InitiateGrab ()
-		{
-			Debug.Log("InitiateGrab();");
-			SetAction<ActionGrab>();
-		}
-
-		private void InitiateSlap ()
-		{
-			Debug.Log("InitiateSlap();");
-		//=============================================================================
-		//[TO-DO]
-		//=============================================================================
-		}
-
-		//private void EndActions ()
-		//{}
 	}
 }
 

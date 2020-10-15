@@ -880,6 +880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 372887914}
+  - component: {fileID: 372887915}
   m_Layer: 0
   m_Name: logger
   m_TagString: Untagged
@@ -901,6 +902,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372887915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372887913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4b38cb2175fbd4aa931988c2604491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &385455154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1718297821450763346, guid: 7d83f083a41c5ff49b451ff6e3b4b9aa, type: 3}
@@ -2928,7 +2941,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1639845936, guid: da5b1aac614046249bb89852d17143a5, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1639845936, guid: da5b1aac614046249bb89852d17143a5, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2937,6 +2950,22 @@ PrefabInstance:
     - target: {fileID: 1639845936, guid: da5b1aac614046249bb89852d17143a5, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639845936, guid: da5b1aac614046249bb89852d17143a5, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 372887915}
+    - target: {fileID: 1639845936, guid: da5b1aac614046249bb89852d17143a5, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Logger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639845936, guid: da5b1aac614046249bb89852d17143a5, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConsoleLog
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639845936, guid: da5b1aac614046249bb89852d17143a5, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1600517113612391496, guid: da5b1aac614046249bb89852d17143a5, type: 3}
       propertyPath: m_LocalPosition.x

@@ -3,6 +3,8 @@
 using ASSPhysics.HandSystem.Actions; //IAction
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
 using EInputState = ASSPhysics.InputSystem.EInputState;
+using IInteractor = ASSPhysics.InteractableSystem.IInteractor;
+
 
 namespace ASSPhysics.HandSystem.Tools
 {
@@ -34,6 +36,7 @@ namespace ASSPhysics.HandSystem.Tools
 		public virtual void Awake ()
 		{
 			animator = gameObject.GetComponent<Animator>();
+			interactor = GetComponentInChildren<IInteractor>();
 		}
 
 		public virtual void Update ()
@@ -46,6 +49,9 @@ namespace ASSPhysics.HandSystem.Tools
 	//MonoBehaviour LifeCycle Implementation
 
 	//ITool implementation
+		//private IInteractor _interactor;
+		public IInteractor interactor {get; private set;}
+
 		public Vector3 position
 		{
 			set 
