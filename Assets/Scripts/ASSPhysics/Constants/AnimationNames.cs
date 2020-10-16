@@ -21,6 +21,7 @@ namespace ASSPhysics.Constants
 		public static class Curtains
 		{
 			public const string open = "CurtainsOpen";
+			public const string spotlightFocused = "SpotlightFocused";
 		}
 	}
 }
