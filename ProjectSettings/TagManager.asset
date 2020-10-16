@@ -54,3 +54,6 @@ TagManager:
   - name: HandCursor
     uniqueID: 2910087449
     locked: 0
+  - name: Foreground
+    uniqueID: 1598127839
+    locked: 0
