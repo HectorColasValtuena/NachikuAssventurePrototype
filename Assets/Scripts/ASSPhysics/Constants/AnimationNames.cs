@@ -17,5 +17,10 @@ namespace ASSPhysics.Constants
 			public const string highlighted = "Highlighted";
 			public const string pressed = "Pressed";
 		}
+
+		public static class Curtains
+		{
+			public const string open = "CurtainsOpen";
+		}
 	}
 }

@@ -57,3 +57,6 @@ TagManager:
   - name: Foreground
     uniqueID: 1598127839
     locked: 0
+  - name: Curtain
+    uniqueID: 20762165
+    locked: 0
