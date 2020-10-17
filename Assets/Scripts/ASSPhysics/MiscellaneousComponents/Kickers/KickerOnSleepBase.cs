@@ -1,8 +1,10 @@
+using UnityEngine;
+
 using ASSistant.ASSRandom; //RandomRangeFloat
 
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public class KickerTorqueOnSleep : KickerTorqueOnConditionBase
+	public abstract class KickerOnSleepBase : KickerOnConditionBase
 	{
 	//abstract method implementation
 		protected override bool CheckCondition ()

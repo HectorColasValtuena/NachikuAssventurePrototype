@@ -4,7 +4,7 @@ using ASSistant.ASSRandom; //RandomRangeFloat
 
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public abstract class KickerTorqueOnConditionBase : KickerTorqueBase
+	public abstract class KickerOnConditionBase : KickerBase
 	{
 	//serialized properties
 		public RandomRangeFloat randomDelay;
