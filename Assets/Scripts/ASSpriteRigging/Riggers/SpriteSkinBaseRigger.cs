@@ -3,7 +3,7 @@ using UnityEngine.U2D.Animation;
 
 namespace ASSpriteRigging.Riggers
 {
-	public class SpriteSkinBaseRigger : MonoBehaviour
+	public class SpriteSkinBaseRigger : ASSpriteRigging.BaseInspectors.ArmableInspectorBase
 	{
 		public Rigidbody targetAnchor;
 		public Rigidbody anchorRigidbody { get {
@@ -12,9 +12,7 @@ namespace ASSpriteRigging.Riggers
 				? targetAnchor
 				: gameObject.GetComponent<Rigidbody>();
 		}}
-
-		public bool armed = false;
-
+		
 		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
 		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<UnityEngine.U2D.Animation.SpriteSkin>(); }}
 

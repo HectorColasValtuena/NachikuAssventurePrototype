@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
@@ -8,37 +6,26 @@ using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger
 
 namespace ASSpriteRigging.Editors
 {
-	public abstract class RiggerEditorBase : Editor
+	public abstract class RiggerEditorBase : ArmableEditorBase
 	{
+	//private fields and properties
 		protected SpriteSkinBaseRigger rigger;
-		protected bool isArmed { get { return rigger.armed; } set { rigger.armed = value; }}
+	//ENDOF private fields and properties
 
-	//Setup GUI layout
-		public override void OnInspectorGUI ()
+	//ArmableEditorBase implementation
+		protected override void InspectorInitialization ()
 		{
-			base.OnInspectorGUI();
-			rigger = (SpriteSkinBaseRigger) target;
+			rigger = (SpriteSkinBaseRigger) target;			
+		}
 
-			InspectorInitialization();
+		protected override void DoButtons ()
+		{
 			DoFullSetupButton();
 			DoRigBoneListButton();
 		}
+	//ENDOF ArmableEditorBase implementation
 
-		//check if script is armed for use
-		private bool RequestArmed ()
-		{
-			if (isArmed)
-			{
-				isArmed = false;
-				return true;
-			}
-			else
-			{
-				Debug.LogWarning("Rigger is disarmed - Arm before proceeding");
-				return false;
-			}
-		}
-
+	//private methods
 		public void DoFullSetupButton ()
 		{
 			if (GUILayout.Button("Full setup"))
@@ -54,26 +41,22 @@ namespace ASSpriteRigging.Editors
 				if (RequestArmed()) { RigBones(); }
 			}
 		}
-	//ENDOF Setup GUI layout
 
-	//Core common logic
 		//performs every step of the automated rigging process at once:
 		//moves ten units of sperm forwards, then cast whale at next 2 tiles unless hitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitlerhitler
 		//that means:
 			//> create gameobjects for every bone invoking the corresponding SpriteSkin methods
 			//> rig default components for every corresponding bone gameobject (abstract- each rigger performs its own rigging)
-
-		protected void FullSetup ()
+		private void FullSetup ()
 		{
 			Debug.Log("Initiating full setup of " + target.name);
 			BoneHierarchy.CreateBoneHierarchy(rigger);
 			RigBones();
 			Debug.Log("Full setup finished");
 		}
-	//ENDOF Core common logic
+	//ENDOF private methods
 
 	//overridable methods and properties
-		protected virtual void InspectorInitialization () {}
 		protected abstract void RigBones ();
 	//ENDOF overridable methods
 	}
