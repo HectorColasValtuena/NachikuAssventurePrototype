@@ -5,6 +5,14 @@ namespace ASSpriteRigging.Riggers
 {
 	public class SpriteSkinBaseRigger : MonoBehaviour
 	{
+		public Rigidbody targetAnchor;
+		public Rigidbody anchorRigidbody { get {
+			//return this rigidbody if no target anchor is set
+			return (targetAnchor != null)
+				? targetAnchor
+				: gameObject.GetComponent<Rigidbody>();
+		}}
+
 		public bool armed = false;
 
 		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}

@@ -13,6 +13,7 @@ namespace ASSpriteRigging.BoneUtility
 			Debug.Log("Rigging bone components for " + target.gameObject.name);
 			RigBones(
 				boneList: target.spriteSkin.boneTransforms,
+				anchorRigidbody: target.anchorRigidbody,
 				triangles: target.sprite.GetIndices(),
 				defaultRigidbody: target.defaultRigidbody,
 				defaultAnchorJoint: target.defaultAnchorJoint,
@@ -28,6 +29,7 @@ namespace ASSpriteRigging.BoneUtility
 			TCollider
 		> (
 			Transform[] boneList,
+			Rigidbody anchorRigidbody,
 			NativeArray<ushort> triangles,
 			Rigidbody defaultRigidbody,
 			TAnchorJoint defaultAnchorJoint,
@@ -47,6 +49,7 @@ namespace ASSpriteRigging.BoneUtility
 					TCollider
 				> (
 					bone: bone,
+					anchorRigidbody: anchorRigidbody,
 					defaultRigidbody: defaultRigidbody,
 					defaultAnchorJoint: defaultAnchorJoint,
 					defaultCollider: defaultCollider,
@@ -68,6 +71,7 @@ namespace ASSpriteRigging.BoneUtility
 			TCollider
 		> (
 			Transform bone,
+			Rigidbody anchorRigidbody,
 			Rigidbody defaultRigidbody,
 			TAnchorJoint defaultAnchorJoint,
 			TCollider defaultCollider,
@@ -84,9 +88,8 @@ namespace ASSpriteRigging.BoneUtility
 			BoneRigging.BoneSetupComponent<Rigidbody>(bone, defaultRigidbody);
 			BoneRigging.BoneSetupComponent<TCollider>(bone, defaultCollider);
 
-			//create a connection towards its parent in the manner of an anchoring
-			//BoneRigging2D.BoneConnectJoint2D<TAnchorJoint>(bone, bone.parent, defaultAnchorJoint);
-			BoneRigging.BoneConnectJoint<TAnchorJoint>(bone, bone.parent, defaultAnchorJoint);
+			//create a joint anchoring the bone to target anchor rigidbody
+			BoneRigging.BoneConnectJoint<TAnchorJoint>(bone, anchorRigidbody, defaultAnchorJoint);
 		}
 
 		//Generate springs between bones connected according to a triangle list
