@@ -6223,6 +6223,38 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1 &682430454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1013944303764155327, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+  m_PrefabInstance: {fileID: 7821669532487885626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &682430455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682430454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee1c627f2b74e9428ac875a12e8fa07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 372887915}
+        m_TargetAssemblyTypeName: Logger, Assembly-CSharp
+        m_MethodName: CustomLog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: btn
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &716094854
 GameObject:
   m_ObjectHideFlags: 0
@@ -21399,7 +21431,7 @@ PrefabInstance:
       objectReference: {fileID: 1263986958}
     - target: {fileID: 1013944302607288129, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_Color.a
-      value: 0.5058824
+      value: 0.5019608
       objectReference: {fileID: 0}
     - target: {fileID: 1013944303764155326, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_LocalPosition.x
