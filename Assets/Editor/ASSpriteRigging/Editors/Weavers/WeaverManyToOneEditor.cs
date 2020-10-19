@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-using WeaverBase = ASSpriteRigging.Weavers.WeaverBase;
+using ASSpriteRigging.Weavers;
 
 namespace ASSpriteRigging.Editors
 {
