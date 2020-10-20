@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: SummoningCircleOutline
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOW_ON GREYSCALEOUTLINE_ON ROUNDWAVEUV_ON
-    WAVEUV_ON _GREYSCALEOUTLINE_ON
+  m_ShaderKeywords: CUSTOMBLENDING_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON GLOW_ON ROUNDWAVEUV_ON
+    WAVEUV_ON _GLOWTEXUSED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -53,7 +53,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FadeBurnTex:
-        m_Texture: {fileID: 2800000, guid: 677cca399782dea41aedc1d292ecb67d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7aad8c583ef292e48b06af0d1f2fab97, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FadeTex:
@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GlowTex:
-        m_Texture: {fileID: 2800000, guid: bd3249e8aae01e748aaca0c062e2c19c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4622ca548a6598d48825d49fd29c04d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -97,7 +97,7 @@ Material:
     - _AlphaCutoffValue: 0
     - _BillboardY: 0
     - _BlurHD: 0
-    - _BlurIntensity: 0
+    - _BlurIntensity: 20
     - _BumpScale: 1
     - _ChromAberrAlpha: 0.4
     - _ChromAberrAmount: 1
@@ -134,14 +134,14 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Glow: 4
-    - _GlowTexUsed: 0
+    - _GlowTexUsed: 1
     - _GradBlend: 1
     - _GrassManualAnim: 1
     - _GrassManualToggle: 0
     - _GrassSpeed: 2
     - _GrassWind: 20
     - _GreyscaleLuminosity: -1
-    - _GreyscaleOutline: 1
+    - _GreyscaleOutline: 0
     - _HandDrawnAmount: 9.6
     - _HandDrawnSpeed: 7.1
     - _HitEffectBlend: 1
@@ -165,7 +165,7 @@ Material:
     - _Mode: 0
     - _MotionBlurAngle: 0.1
     - _MotionBlurDist: 1.25
-    - _MyDstMode: 6
+    - _MyDstMode: 7
     - _MySrcMode: 5
     - _NegativeAmount: 1
     - _OcclusionStrength: 1
@@ -226,7 +226,7 @@ Material:
     - _ZWrite: 0
     - _ZoomUvAmount: 0.5
     m_Colors:
-    - _Color: {r: 1, g: 0, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeTarget: {r: 1, g: 0, b: 0, a: 1}
     - _ColorSwapBlue: {r: 1, g: 1, b: 1, a: 1}
