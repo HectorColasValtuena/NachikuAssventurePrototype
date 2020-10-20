@@ -1905,21 +1905,9 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 1263986958}
-    - target: {fileID: 1013944302607288129, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944302607288129, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944302607288129, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Color.g
+    - target: {fileID: 1013944302607288135, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944302607288129, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Color.b
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1013944303764155326, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1970,60 +1958,16 @@ PrefabInstance:
       value: BaseButton
       objectReference: {fileID: 0}
     - target: {fileID: 1013944304186590250, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944304186590251, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944304186590251, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944304186590251, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944304186590251, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944304186590251, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944304186590251, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013944304186590251, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
+      propertyPath: m_Color.g
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2422818338478566716, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3385832485753408613, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e10a6511a204db544aa1ca17f35d6215, type: 2}
-    - target: {fileID: 3385832485753408613, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3385832485753408613, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_FlipY
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4265705009796427727, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
-      propertyPath: m_Color.a
-      value: 0.5019608
       objectReference: {fileID: 0}
     - target: {fileID: 6309299139731477031, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2299,7 +2243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &249000210
 Transform:
   m_ObjectHideFlags: 0
