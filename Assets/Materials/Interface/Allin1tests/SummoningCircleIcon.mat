@@ -9,8 +9,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: SummoningCircleIcon
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOW_ON GREYSCALEOUTLINE_ON OUTBASE_ON OUTDIST_ON
-    _GREYSCALEOUTLINE_ON _OUTLINEDISTORTTOGGLE_ON
+  m_ShaderKeywords: BLUR_ON CUSTOMBLENDING_ON ETC1_EXTERNAL_ALPHA GLOW_ON GREYSCALEOUTLINE_ON
+    OUTBASE_ON OUTDIST_ON OUTTEX_ON _GREYSCALEOUTLINE_ON _OUTLINEDISTORTTOGGLE_ON
+    _OUTLINETEXTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -81,7 +82,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
-        m_Texture: {fileID: 2800000, guid: 74087f6d03f233e4a8a142fa01f9e5cf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7aad8c583ef292e48b06af0d1f2fab97, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -97,7 +98,7 @@ Material:
     - _AlphaCutoffValue: 0
     - _BillboardY: 0
     - _BlurHD: 0
-    - _BlurIntensity: 0
+    - _BlurIntensity: 4
     - _BumpScale: 1
     - _ChromAberrAlpha: 0.4
     - _ChromAberrAmount: 1
@@ -133,7 +134,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Glow: 4
+    - _Glow: 0
     - _GlowTexUsed: 0
     - _GradBlend: 1
     - _GrassManualAnim: 1
@@ -165,7 +166,7 @@ Material:
     - _Mode: 0
     - _MotionBlurAngle: 0.1
     - _MotionBlurDist: 1.25
-    - _MyDstMode: 6
+    - _MyDstMode: 10
     - _MySrcMode: 5
     - _NegativeAmount: 1
     - _OcclusionStrength: 1
@@ -183,9 +184,9 @@ Material:
     - _OutlineIsPixel: 0
     - _OutlinePixelWidth: 1
     - _OutlineTexGrey: 0
-    - _OutlineTexToggle: 0
-    - _OutlineTexXSpeed: 10
-    - _OutlineTexYSpeed: 0
+    - _OutlineTexToggle: 1
+    - _OutlineTexXSpeed: 0
+    - _OutlineTexYSpeed: -10
     - _OutlineWidth: 0.1
     - _Parallax: 0.02
     - _PinchUvAmount: 0
@@ -226,7 +227,7 @@ Material:
     - _ZWrite: 0
     - _ZoomUvAmount: 0.5
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeTarget: {r: 1, g: 0, b: 0, a: 1}
     - _ColorSwapBlue: {r: 1, g: 1, b: 1, a: 1}
@@ -234,7 +235,7 @@ Material:
     - _ColorSwapRed: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FadeBurnColor: {r: 1, g: 1, b: 0, a: 1}
-    - _GlowColor: {r: 1, g: 0, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
     - _GradBotLeftCol: {r: 0, g: 0, b: 1, a: 1}
     - _GradBotRightCol: {r: 0, g: 0, b: 1, a: 1}
     - _GradTopLeftCol: {r: 1, g: 0, b: 0, a: 1}
@@ -242,7 +243,7 @@ Material:
     - _GreyscaleTintColor: {r: 1, g: 1, b: 1, a: 1}
     - _HitEffectColor: {r: 1, g: 1, b: 1, a: 1}
     - _InnerOutlineColor: {r: 1, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 1, g: 0, b: 1, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
