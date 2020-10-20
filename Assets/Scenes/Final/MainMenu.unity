@@ -1905,9 +1905,13 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 1263986958}
+    - target: {fileID: 1013944302607288129, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_Color.a
+      value: 0.627451
+      objectReference: {fileID: 0}
     - target: {fileID: 1013944302607288135, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1013944303764155326, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1957,13 +1961,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1013944304186590248, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1013944304186590250, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_Color.g
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1013944304186590250, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2422818338478566716, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385832485753408613, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6309299139731477031, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_IsActive

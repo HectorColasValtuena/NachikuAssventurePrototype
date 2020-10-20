@@ -194,7 +194,7 @@ Material:
     - _PosterizeNumColors: 0
     - _PosterizeOutline: 0
     - _RandomSeed: 0
-    - _RectSize: 4
+    - _RectSize: 2
     - _RotateUvAmount: 0
     - _RoundWaveSpeed: 1
     - _RoundWaveStrength: 0.05
@@ -226,7 +226,7 @@ Material:
     - _ZWrite: 0
     - _ZoomUvAmount: 0.5
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeTarget: {r: 1, g: 0, b: 0, a: 1}
     - _ColorSwapBlue: {r: 1, g: 1, b: 1, a: 1}
