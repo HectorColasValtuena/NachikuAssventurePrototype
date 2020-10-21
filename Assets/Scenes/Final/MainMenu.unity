@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249000210}
     m_Modifications:
+    - target: {fileID: 1003415991, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_text
+      value: Escenas
+      objectReference: {fileID: 0}
     - target: {fileID: 1768121905, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.5
@@ -11198,6 +11202,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249000210}
     m_Modifications:
+    - target: {fileID: 1003415991, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_text
+      value: Jugar
+      objectReference: {fileID: 0}
     - target: {fileID: 1768121905, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.5
@@ -21822,6 +21830,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 249000210}
     m_Modifications:
+    - target: {fileID: 1003415991, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: m_text
+      value: Salir
+      objectReference: {fileID: 0}
     - target: {fileID: 1768121905, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.5
