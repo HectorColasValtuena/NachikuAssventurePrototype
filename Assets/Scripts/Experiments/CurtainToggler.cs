@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-using ASSPhysics.CurtainSystem;
+using CurtainsController = ASSPhysics.SceneSystem.CurtainsController;
 
 public class CurtainToggler : MonoBehaviour
 {

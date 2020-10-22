@@ -2,12 +2,15 @@
 
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
-namespace ASSPhysics.CurtainSystem
+namespace ASSPhysics.SceneSystem
 {
 	public class CurtainsController : MonoBehaviour
 	{
 	//serialized properties
 		public GameObject spotlightContainer;
+
+		public Transform rightSheetNode;
+		public Transform leftSheetNode;
 	//ENDOF serialized properties
 
 	//static properties and methods
@@ -16,6 +19,11 @@ namespace ASSPhysics.CurtainSystem
 		{
 			get { return instance.curtainAnimator.GetBool(AnimationNames.Curtains.open); }
 			set { instance.SetOpen(value); }
+		}
+
+		public static bool isCompletelyClosed
+		{
+			get { return instance.rightSheetNode.position.x < instance.leftSheetNode.position.x; }
 		}
 	//ENDOF static properties and methods
 
