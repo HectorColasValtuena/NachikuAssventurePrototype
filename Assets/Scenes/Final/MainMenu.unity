@@ -207,9 +207,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: cc7c56a9ef8ccc04299759416904aa32, type: 3}
     - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 372887915}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TMPSceneChange, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 372887916}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GoToScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
 --- !u!4 &9144864 stripped
@@ -3567,6 +3599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 372887914}
   - component: {fileID: 372887915}
+  - component: {fileID: 372887916}
   m_Layer: 0
   m_Name: logger
   m_TagString: Untagged
@@ -3598,6 +3631,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d4b38cb2175fbd4aa931988c2604491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &372887916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372887913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8337b4dc0d7ed44a1f75fccf73fb25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &384073455
@@ -11270,9 +11315,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3534cc8cf6b42bd4ba35e3c82b41382a, type: 3}
     - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 372887915}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TMPSceneChange, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 372887916}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GoToScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
 --- !u!1 &1142763359
