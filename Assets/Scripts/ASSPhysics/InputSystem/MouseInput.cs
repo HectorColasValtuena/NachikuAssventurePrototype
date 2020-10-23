@@ -25,6 +25,9 @@ namespace ASSPhysics.InputSystem
 		//gets button pressed
 		public static bool GetButtonDown (int buttonID) { return Input.GetMouseButtonDown(buttonID); }
 
+		//gets zoom input
+		public static float GetZoomDelta () { return Input.mouseScrollDelta.y; }
+
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 		//if correctPosition is true, the returned Vector3 originates in the camera's position
 		public static Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, bool correctPosition = false) { return ScreenSpaceToWorldSpace (mousePosition, Camera.main, correctPosition); }

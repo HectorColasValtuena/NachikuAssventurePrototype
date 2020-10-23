@@ -54,6 +54,7 @@ namespace ASSPhysics.HandSystem.Managers
 		//checks for input corresponding to hand swap, and performs the action if necessa
 		private void ToolCycleCheck ()
 		{
+			//[TO-DO] MouseInput should answer wether or not to swap active hands, not be directly requested the button input
 			if (MouseInput.GetButtonDown(1))
 			{
 				SetFocused(focusedTool+1);
