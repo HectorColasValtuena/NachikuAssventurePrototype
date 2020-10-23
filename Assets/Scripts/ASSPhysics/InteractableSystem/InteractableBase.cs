@@ -50,7 +50,8 @@ namespace ASSPhysics.InteractableSystem
 	//private methods
 		protected virtual void HighlightChanged (bool state)
 		{
-			animator.SetBool(AnimationNames.Interactable.highlighted, state);
+			if (animator != null)
+				animator.SetBool(AnimationNames.Interactable.highlighted, state);
 		}
 		
 		protected void TriggerCallbacks () { callback.Invoke(); }

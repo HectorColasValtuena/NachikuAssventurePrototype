@@ -19,7 +19,8 @@ namespace ASSPhysics.InteractableSystem
 				if (value != _pressed)
 				{
 					_pressed = value;
-					animator.SetBool(AnimationNames.Interactable.pressed, value);
+					if (animator != null)
+						animator.SetBool(AnimationNames.Interactable.pressed, value);
 				}
 			}
 		}
