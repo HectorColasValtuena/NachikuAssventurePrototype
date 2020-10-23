@@ -22,6 +22,7 @@ namespace ASSPhysics.Constants
 		{
 			public const string open = "CurtainsOpen";
 			public const string spotlightFocused = "SpotlightFocused";
+			public const string drumrollFinalClash = "FinalClash";
 		}
 	}
 }

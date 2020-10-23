@@ -23,7 +23,11 @@ namespace ASSPhysics.SceneSystem
 
 		public static bool isCompletelyClosed
 		{
-			get { return instance.rightSheetNode.position.x < instance.leftSheetNode.position.x; }
+			get
+			{
+				if (instance == null) { return true; }
+				return instance.rightSheetNode.position.x < instance.leftSheetNode.position.x;
+			}
 		}
 	//ENDOF static properties and methods
 
