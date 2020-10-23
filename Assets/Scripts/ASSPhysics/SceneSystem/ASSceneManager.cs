@@ -1,4 +1,6 @@
-﻿using UnityEngine.SceneManagement;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ASSPhysics.SceneSystem
 {
@@ -6,26 +8,30 @@ namespace ASSPhysics.SceneSystem
 	{
 	//Constants and enum definitions
 		//private const float sceneLoadMinimum = 0.9f;
-		private static enum ESceneNumbers : int
+		private static class SceneNumbers
 		{
-			LAUNCHER = 0,	//unused, included for consistency
-			CURTAINS = 1,
-			MAINMENU = 2
+			public static int LAUNCHER = 0;	//unused, included for consistency
+			public static int CURTAINS = 1;
+			public static int MAINMENU = 2;
 		}
 	//ENDOF Constants and enum definitions
 
 
 	//static properties and methods
 		private static ASSceneManager instance;
-		public static void InitializeCurtain ()
+		public static void InitializeCurtains ()
 		{
 			SceneManager.LoadScene(SceneNumbers.CURTAINS, LoadSceneMode.Additive);
-			StaticChangeScene(SceneNumbers.MAINMENU);
 		}
 
-		public static void StaticChangeScene (int targetScene)
+		public static void InitializeMenu ()
 		{
-			instance.ChangeScene(targetScene);
+			StaticChangeScene(SceneNumbers.MAINMENU, 3.0f);
+		}
+
+		public static void StaticChangeScene (int targetScene, float minimumWait = 0.0f)
+		{
+			instance.ChangeScene(targetScene, minimumWait);
 		}
 	//ENDOF static properties and methods
 
@@ -41,41 +47,52 @@ namespace ASSPhysics.SceneSystem
 	//ENDOF MonoBehaviour lifecycle implementation
 
 	//private methods
-		private void ChangeScene (int targetScene)
+		private void ChangeScene (int targetScene, float minimumWait = 0.0f)
 		{
 			if (busy) { return; }
-			StartCoroutine(ChangeSceneAsync(targetScene));
+			StartCoroutine(ChangeSceneAsync(targetScene, minimumWait));
 		}
-		private IEnumerator ChangeSceneAsync (int targetScene)
+		private IEnumerator ChangeSceneAsync (int targetScene, float minimumWait = 0.0f)
 		{
 			busy = true;
 			CurtainsController.open = false;	//close the curtains
-			//start loading next scene
-			AsyncOperation loadingScene = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
-			//wait until next scene is loaded and curtains are closed
+			//wait until curtains are closed
 			while (
 				!CurtainsController.isCompletelyClosed
 				//&& loadingScene.progress < sceneLoadMinimum
-				&& loadingScene.isDone
+				//&& !loadingScene.isDone
 			) {
+				//Debug.Log("Load progress: " + loadingScene.progress);
 				yield return null;
 			}
-			//once next scene is ready and curtains closed, unload previous scene and deploy next
-			UnloadActiveScene();
+			//unload previous scene before deploying next
+			AsyncOperation unloadingScene =	UnloadActiveScene();
+			if (unloadingScene != null)
+			{
+				while (!unloadingScene.isDone) { yield return null; }
+			}
+			yield return new WaitForSeconds(minimumWait);
+
+			//start loading next scene
+			AsyncOperation loadingScene = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
+			while (!loadingScene.isDone) { yield return null; }
+
+			//once next scene is ready set it as active
 			SetActiveScene(targetScene);
+
 			//finally open the curtains
 			CurtainsController.open = true;
 			busy = false;
 		}
 
-		private void UnloadActiveScene ()
+		private AsyncOperation UnloadActiveScene ()
 		{
-			if (SceneManager.GetActiveScene().buildIndex == ESceneNumbers.CURTAINS)
+			if (SceneManager.GetActiveScene().buildIndex == SceneNumbers.CURTAINS)
 			{
 				Debug.LogWarning("Cannot unload curtain scene - ignoring request");
-				return;
+				return null;
 			}
-			SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+			return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
 		}
 
 		private void SetActiveScene (int targetScene)
