@@ -27,7 +27,7 @@ namespace ASSPhysics.MiscellaneousComponents
 
 	//public methods
 		//moves the camera in the directions indicated by the signs of the components of direction NOT their values. Zero means no push in that axis.
-		public void Push (vector2 direction)
+		public void Push (Vector2 direction)
 		{
 
 		}
