@@ -33,7 +33,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: FXPulsatingPortal
+    path: FXWind
     classID: 82
     script: {fileID: 0}
   - curve:
@@ -41,7 +41,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.25
+        value: 0.1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -52,26 +52,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Volume
-    path: FXPulsatingPortal
-    classID: 82
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_Pitch
-    path: FXPulsatingPortal
+    path: FXWind
     classID: 82
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -83,22 +64,15 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 127390131
+      path: 3235768324
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 82
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 127390131
+      path: 3235768324
       attribute: 4104493590
-      script: {fileID: 0}
-      typeID: 82
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 127390131
-      attribute: 2863214265
       script: {fileID: 0}
       typeID: 82
       customType: 0
@@ -141,7 +115,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: FXPulsatingPortal
+    path: FXWind
     classID: 82
     script: {fileID: 0}
   - curve:
@@ -149,7 +123,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.25
+        value: 0.1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -160,26 +134,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Volume
-    path: FXPulsatingPortal
-    classID: 82
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_Pitch
-    path: FXPulsatingPortal
+    path: FXWind
     classID: 82
     script: {fileID: 0}
   m_EulerEditorCurves: []
