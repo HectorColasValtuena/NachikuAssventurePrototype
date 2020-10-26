@@ -6,12 +6,17 @@ namespace ASSPhysics.MiscellaneousComponents
 	{
 		public AudioSource[] audioSources;
 
-		public void PlayAudioOneShot ()
+		public void PlayAll ()
 		{
 			foreach (AudioSource audioSource in audioSources)
 			{
 				audioSource.Play();
 			}
+		}
+
+		public void PlayOne (int target)
+		{
+			audioSources[target].Play();
 		}
 	}
 }

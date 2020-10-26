@@ -6,7 +6,7 @@ namespace ASSPhysics.MiscellaneousComponents
 	{
 	//serialized fields
 		public float minSize = 1;
-		public Camera camera = null;
+		public new Camera camera = null;
 	//ENDOF serialized fields
 
 	//private fields and properties

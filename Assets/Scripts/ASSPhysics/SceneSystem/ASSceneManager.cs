@@ -71,10 +71,10 @@ namespace ASSPhysics.SceneSystem
 			{
 				while (!unloadingScene.isDone) { yield return null; }
 			}
-			yield return new WaitForSeconds(minimumWait);
-
 			//start loading next scene
 			AsyncOperation loadingScene = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
+
+			yield return new WaitForSeconds(minimumWait);
 			while (!loadingScene.isDone) { yield return null; }
 
 			//once next scene is ready set it as active

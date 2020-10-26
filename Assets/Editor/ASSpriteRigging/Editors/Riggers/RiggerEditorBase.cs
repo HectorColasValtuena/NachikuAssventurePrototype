@@ -9,13 +9,13 @@ namespace ASSpriteRigging.Editors
 	public abstract class RiggerEditorBase<TInspector> : ArmableEditorBase<TInspector>
 		where TInspector : SpriteSkinRiggerInspectorBase
 	{
-	//ArmableEditorBase implementation
+	//EditorBase implementation
 		protected override void DoButtons ()
 		{
 			DoButton("Full setup", FullSetup);
 			DoButton("Full setup", RigBones);
 		}
-	//ENDOF ArmableEditorBase implementation
+	//ENDOF EditorBase implementation
 
 	//private methods
 		//performs every step of the automated rigging process at once:

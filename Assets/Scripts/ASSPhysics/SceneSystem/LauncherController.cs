@@ -8,6 +8,7 @@ namespace ASSPhysics.SceneSystem
 		//public GameObject SplashContainer
 		public void Launch ()
 		{
+			CursorLocker.LockAndHideSystemCursor();
 			StartCoroutine(DelayedLaunch());
 		}
 

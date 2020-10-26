@@ -11,7 +11,7 @@ namespace ASSpriteRigging.Editors
 	//private method declaration
 		protected void ConnectRigidbodyToTarget (Rigidbody toRigidbody)
 		{
-			ConnectRigidbodies(targetInspector.targetRigidbody, toRigidbody);
+			ConnectRigidbodies(toRigidbody, targetInspector.targetRigidbody);
 		}
 	//ENDOF private method declaration
 	}
