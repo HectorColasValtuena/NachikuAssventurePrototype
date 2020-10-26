@@ -11,11 +11,5 @@ namespace ASSpriteRigging.Weavers
 				? commonRigidbody
 				: gameObject.GetComponent<Rigidbody>();
 		}}
-		/*
-		protected void ConnectRigidbodyToTarget (Rigidbody toRigidbody)
-		{
-			ConnectRigidbodies(targetRigidbody, toRigidbody);
-		}
-		*/
 	}
 }

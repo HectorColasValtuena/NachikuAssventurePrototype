@@ -5,19 +5,16 @@ using ArmableInspectorBase = ASSpriteRigging.BaseInspectors.ArmableInspectorBase
 
 namespace ASSpriteRigging.Editors
 {
-	public abstract class ArmableEditorBase : Editor
+	public abstract class ArmableEditorBase<TInspector> : EditorBase<TInspector>
+		where TInspector : ArmableInspectorBase
 	{
-		protected bool isArmed { get { return (target as ArmableInspectorBase).armed; } set { (target as ArmableInspectorBase).armed = value; }}
-
-	//Setup GUI layout
-		public override void OnInspectorGUI ()
-		{
-			base.OnInspectorGUI();
-
-			InspectorInitialization();
-			DoButtons();
+		protected bool isArmed 
+		{ 
+			get { return (targetInspector as ArmableInspectorBase).armed; }
+			set { (targetInspector as ArmableInspectorBase).armed = value; }
 		}
 
+	//Setup GUI layout
 		//check if script is armed for use
 		protected bool RequestArmed ()
 		{
@@ -32,11 +29,14 @@ namespace ASSpriteRigging.Editors
 				return false;
 			}
 		}
-	//ENDOF Setup GUI layout
 
-	//overridable methods and properties
-		protected abstract void InspectorInitialization ();
-		protected abstract void DoButtons ();
-	//ENDOF overridable methods
+		//draws a button that executes its corresponding action only if armed
+		protected override void DoButton (string buttonText, EditorActionDelegate action)
+		{
+			base.DoButton(buttonText, delegate() {
+				if (RequestArmed()) { action(); }
+			});
+		}
+	//ENDOF Setup GUI layout
 	}
 }

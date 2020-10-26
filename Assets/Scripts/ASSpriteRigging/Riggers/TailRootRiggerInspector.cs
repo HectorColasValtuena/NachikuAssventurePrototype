@@ -8,7 +8,7 @@ namespace ASSpriteRigging.Riggers
 {
 	[RequireComponent(typeof(SpriteSkin))]
 	[RequireComponent(typeof(TailRootWiggle))]
-	public class TailRootRigger : SpriteSkinBaseRigger
+	public class TailRootRiggerInspector : SpriteSkinRiggerInspectorBase
 	{
 		public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
 

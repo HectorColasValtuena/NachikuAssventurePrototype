@@ -19,7 +19,7 @@ namespace ASSpriteRigging.BoneUtility
 
 	//Tail generation
 		//extracts all the data from rigger object and calls a properly parametrized RigTailBoneRecursive
-		public static void RigTail (TailRootRigger rigger)
+		public static void RigTail (TailRootRiggerInspector rigger)
 		{	
 			//generate a type footprint from the component types of target rigger
 			System.Type[] typeList =

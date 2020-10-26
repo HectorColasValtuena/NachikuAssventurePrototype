@@ -10,22 +10,13 @@ using ASSPhysics.TailSystem; //TailRootWiggle
 
 namespace ASSpriteRigging.Editors
 {
-	[CustomEditor(typeof(TailRootRigger))]
-	public class TailRootRiggerEditor : RiggerEditorBase
+	[CustomEditor(typeof(TailRootRiggerInspector))]
+	public class TailRootRiggerEditor : RiggerEditorBase<TailRootRiggerInspector>
 	{
-		private TailRootRigger tailRootRigger;
-
-	//Setup GUI layout
-		protected override void InspectorInitialization ()
+	protected override void RigBones ()
 		{
-			tailRootRigger = (TailRootRigger) target;
-		}
-
-		protected override void RigBones ()
-		{
-			TailRigging.RigTail(tailRootRigger);
-			Debug.Log("Rigged bones of " + target.name);
-
+			TailRigging.RigTail(targetInspector);
+			Debug.Log("Rigged bones of " + targetInspector.name);
 		}
 	}
 }

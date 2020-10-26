@@ -5,17 +5,13 @@ using ASSpriteRigging.Weavers;
 
 namespace ASSpriteRigging.Editors
 {
-	[CustomEditor(typeof(WeaverInspectorXToOne))]
-	public abstract class WeaverEditorXToOne : WeaverEditorBase
+	public abstract class WeaverEditorXToOne<TInspector> : WeaverEditorBase<TInspector>
+		where TInspector : WeaverInspectorXToOneBase
 	{
-	//private fields and properties
-		private WeaverInspectorXToOne weaver { get { return (WeaverInspectorXToOne) target; }}
-	//ENDOF private fields and properties
-
 	//private method declaration
-		protected override void WeaveJoints()
+		protected void ConnectRigidbodyToTarget (Rigidbody toRigidbody)
 		{
-			Debug.LogError("WeaverManyToOneEditor.WeaveJoints(); unimplemented");
+			ConnectRigidbodies(targetInspector.targetRigidbody, toRigidbody);
 		}
 	//ENDOF private method declaration
 	}

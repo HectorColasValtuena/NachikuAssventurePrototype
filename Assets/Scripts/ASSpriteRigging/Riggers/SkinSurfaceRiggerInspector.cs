@@ -5,7 +5,7 @@ namespace ASSpriteRigging.Riggers
 {
 	[RequireComponent(typeof(SpriteRenderer))]
 	[RequireComponent(typeof(SpriteSkin))]
-	public class SkinSurfaceRigger : SpriteSkinBaseRigger
+	public class SkinSurfaceRiggerInspector : SpriteSkinRiggerInspectorBase
 	{
 		public Rigidbody defaultRigidbody;	//Sample rigidbody configuration
 		public SphereCollider defaultCollider;	//Sample collider configuration

@@ -3,7 +3,7 @@ using UnityEngine.U2D.Animation;
 
 namespace ASSpriteRigging.Riggers
 {
-	public class SpriteSkinBaseRigger : ASSpriteRigging.BaseInspectors.ArmableInspectorBase
+	public class SpriteSkinRiggerInspectorBase : ASSpriteRigging.BaseInspectors.ArmableInspectorBase
 	{
 		public Rigidbody targetAnchor;
 		public Rigidbody anchorRigidbody { get {

@@ -35,15 +35,6 @@ namespace ASSpriteRigging.BoneUtility
 		public static TJoint BoneConnectJoint <TJoint> (Transform bone, Transform target, TJoint sample)
 			where TJoint: Joint
 		{
-			/*Rigidbody targetRigidbody = target.gameObject.GetComponent<Rigidbody>();
-			if (targetRigidbody != null)
-			{
-				return BoneConnectJoint<TJoint> (bone, targetRigidbody, sample);
-			}
-			//[DEBUG]
-			Debug.LogWarning ("Connecting bone failed because target has no rigidbody: " + target.gameObject.name);
-			return null;
-			*/
 			return BoneConnectJoint<TJoint> (bone, target.gameObject.GetComponent<Rigidbody>(), sample);
 		}
 		public static TJoint BoneConnectJoint <TJoint> (Transform bone, Rigidbody targetRigidbody, TJoint sample)

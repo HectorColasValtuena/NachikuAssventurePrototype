@@ -8,12 +8,9 @@ using WeaverInspectorBase = ASSpriteRigging.Weavers.WeaverInspectorBase;
 namespace ASSpriteRigging.Editors
 {
 	//[CustomEditor(typeof(WeaverManyToOne))]
-	public abstract class WeaverEditorBase : ArmableEditorBase
+	public abstract class WeaverEditorBase<TInspector> : ArmableEditorBase<TInspector>
+		where TInspector : WeaverInspectorBase
 	{
-	//private properties
-		private WeaverInspectorBase weaver { get { return (WeaverInspectorBase) target; }}
-	//ENDOF private properties
-
 	//ArmableEditorBase implementation
 		protected override void DoButtons ()
 		{
@@ -27,7 +24,7 @@ namespace ASSpriteRigging.Editors
 			BoneRigging.BoneConnectJoint<ConfigurableJoint>(
 				bone: fromRigidbody.transform,
 				targetRigidbody: toRigidbody,
-				sample: weaver.defaultJoint
+				sample: targetInspector.defaultJoint
 			);
 		}
 	//ENDOF private methods

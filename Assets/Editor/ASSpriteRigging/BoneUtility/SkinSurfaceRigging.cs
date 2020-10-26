@@ -2,13 +2,13 @@ using UnityEngine;
 using Unity.Collections; //NativeArray<T>
 using static UnityEngine.U2D.SpriteDataAccessExtensions; //Sprite.GetIndices() extension method
 
-using ASSpriteRigging.Riggers; //SkinSurfaceRigger
+using ASSpriteRigging.Riggers; //SkinSurfaceRiggerInspector
 
 namespace ASSpriteRigging.BoneUtility
 {
 	public static class SkinSurfaceRigging
 	{
-		public static void RigBones (SkinSurfaceRigger target)
+		public static void RigBones (SkinSurfaceRiggerInspector target)
 		{
 			Debug.Log("Rigging bone components for " + target.gameObject.name);
 			RigBones(

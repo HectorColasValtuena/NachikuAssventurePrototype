@@ -37,7 +37,7 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//creates gameobjects for every bone and stores them in spriteskin
-		public static void CreateBoneHierarchy (SpriteSkinBaseRigger rigger)
+		public static void CreateBoneHierarchy (SpriteSkinRiggerInspectorBase rigger)
 		{
 			SpriteSkin spriteSkin = rigger.spriteSkin;
 			Sprite sprite = rigger.sprite;

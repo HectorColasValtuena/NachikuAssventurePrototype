@@ -8,13 +8,13 @@ using ASSpriteRigging.BoneUtility;
 
 namespace ASSpriteRigging.Editors
 {
-	[CustomEditor(typeof(SkinSurfaceRigger))]
-	public class SkinSurfaceRiggerEditor : RiggerEditorBase
+	[CustomEditor(typeof(SkinSurfaceRiggerInspector))]
+	public class SkinSurfaceRiggerEditor : RiggerEditorBase<SkinSurfaceRiggerInspector>
 	{
 		protected override void RigBones ()
 		{
-			SkinSurfaceRigging.RigBones((SkinSurfaceRigger) rigger);
-			Debug.Log("Rigged bones of " + target.name);
+			SkinSurfaceRigging.RigBones(targetInspector);
+			Debug.Log("Rigged bones of " + targetInspector.name);
 		}
 	}
 }
