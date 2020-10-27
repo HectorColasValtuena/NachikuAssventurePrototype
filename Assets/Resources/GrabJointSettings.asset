@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42fb3992c95ae584b9388626a521f367, type: 3}
   m_Name: GrabJointSettings
   m_EditorClassIdentifier: 
-  sampleJoint: {fileID: 3568578689155716912, guid: d63d4b7fa49ba6849baba9ebfbb8dcff, type: 3}
+  sampleJoint: {fileID: 3568578689155716912, guid: d413357e5c9be6c43bea26c37e453baf, type: 3}
