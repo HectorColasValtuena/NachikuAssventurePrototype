@@ -18,15 +18,15 @@ namespace ASSPhysics.InteractableSystem
 
 		//wether this interactable is being highlighted by an active interactor
 		private bool _highlighted = false;
-		protected bool highlighted
+		protected virtual bool highlighted
 		{
 			get { return _highlighted; }
 			set
 			{
-				if (value != _highlighted)
+				if (value != highlighted)
 				{
 					_highlighted = value;
-					HighlightChanged(value);
+					HighlightChanged(highlighted);
 				}
 			}
 		}
@@ -54,7 +54,7 @@ namespace ASSPhysics.InteractableSystem
 				animator.SetBool(AnimationNames.Interactable.highlighted, state);
 		}
 		
-		protected void TriggerCallbacks () { callback.Invoke(); }
+		protected virtual void TriggerCallbacks () { callback.Invoke(); }
 	//ENDOF private methods
 	}
 }

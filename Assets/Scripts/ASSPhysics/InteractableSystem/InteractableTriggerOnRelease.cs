@@ -11,19 +11,21 @@ namespace ASSPhysics.InteractableSystem
 		//wether this interactable is being pressed down by an active interactor
 		//will trigger on input release if input started over this item
 		private bool _pressed = false;
-		protected bool pressed
+		protected virtual bool pressed
 		{
 			get { return _pressed; }
 			set
 			{
-				if (value != _pressed)
+				if (value != pressed)
 				{
 					_pressed = value;
 					if (animator != null)
-						animator.SetBool(AnimationNames.Interactable.pressed, value);
+						animator.SetBool(AnimationNames.Interactable.pressed, pressed);
 				}
 			}
 		}
+
+		//protected override bool highlighted
 	//ENDOF private fields and properties
 
 	//overrides implementation
@@ -45,8 +47,8 @@ namespace ASSPhysics.InteractableSystem
 				//...
 				if (pressed) 
 				{
-					pressed = false;
 					TriggerCallbacks();
+					pressed = false;
 				}
 			}
 		}

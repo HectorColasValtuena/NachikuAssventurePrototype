@@ -31,7 +31,7 @@ namespace ASSPhysics.SceneSystem
 
 		public static void StaticChangeScene (int targetScene, float minimumWait = 0.0f)
 		{
-			instance.ChangeScene(targetScene, minimumWait);
+			if (!!instance)	instance.ChangeScene(targetScene, minimumWait);
 		}
 	//ENDOF static properties and methods
 
