@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ASSpriteRigging.Weavers
 {
-	public class WeaverInspectorXToOneBase : WeaverInspectorBase
+	public abstract class WeaverInspectorXToOneBase : WeaverInspectorBase
 	{
 		public Rigidbody commonRigidbody;
 		public Rigidbody targetRigidbody { get {

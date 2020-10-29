@@ -15,7 +15,7 @@ namespace ASSpriteRigging.Editors
 			{
 				ConnectRigidbodyToTarget(originRigidbody);
 			}
-			Debug.Log("Weaved ManyToOne joints");
+			Debug.Log(targetInspector.name + " Weaved ManyToOne joints");
 		}
 	//ENDOF private method declaration
 	}
