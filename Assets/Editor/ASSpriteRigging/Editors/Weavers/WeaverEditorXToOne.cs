@@ -1,3 +1,6 @@
+/////////////////DEPRECATED CLASS
+/*
+
 using UnityEngine;
 using UnityEditor;
 
@@ -16,3 +19,4 @@ namespace ASSpriteRigging.Editors
 	//ENDOF private method declaration
 	}
 }
+*/
