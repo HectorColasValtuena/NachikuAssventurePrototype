@@ -13,7 +13,7 @@ namespace ASSpriteRigging.Editors
 		protected override void DoButtons ()
 		{
 			DoButton("Full setup", FullSetup);
-			DoButton("Full setup", RigBones);
+			DoButton("Rig bone components & configuration", RigBones);
 		}
 	//ENDOF EditorBase implementation
 
@@ -28,7 +28,7 @@ namespace ASSpriteRigging.Editors
 			Debug.Log("Initiating full setup of " + targetInspector.name);
 			BoneHierarchy.CreateBoneHierarchy(targetInspector);
 			RigBones();
-			Debug.Log("Full setup finished");
+			Debug.Log(targetInspector.name + " full setup finished");
 		}
 	//ENDOF private methods
 

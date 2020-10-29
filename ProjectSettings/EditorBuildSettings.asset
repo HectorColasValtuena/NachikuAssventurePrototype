@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Quitter.unity
     guid: 35968d4cb0ebc204ca7bf3bcc8efdb6a
   - enabled: 1
-    path: Assets/Scenes/Scene1-AssTail.unity
+    path: Assets/Scenes/Final/Scene1-AssTail.unity
     guid: 5d92c6eb38ee37f45b7ea1ce6061b230
   - enabled: 1
     path: Assets/Scenes/Final/DEEMENS.unity
