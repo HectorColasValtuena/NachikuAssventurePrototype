@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1107719812963695085, guid: 62b8200aaf84ce84188b940a423312a7, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3823314368173548062, guid: 62b8200aaf84ce84188b940a423312a7, type: 3}
       propertyPath: m_Name
-      value: AssCheekSurfaceRigidbody
+      value: AssCheekSkinRigidbody
       objectReference: {fileID: 0}
     - target: {fileID: 8293539106570135915, guid: 62b8200aaf84ce84188b940a423312a7, type: 3}
       propertyPath: m_LocalPosition.x
