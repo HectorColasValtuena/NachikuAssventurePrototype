@@ -7,7 +7,7 @@ using ASSPhysics.PulseSystem;
 
 namespace ASSPhysics.TailSystem
 {
-	public abstract class TailElementBase : ChainElementPulsePropagatorBase<PulseDataSignedIntensity>
+	public abstract class TailElementBase : ChainElementPulsePropagatorBase
 	{
 	//serialized/public fields and properties
 		public float maxOffsetRotation = 30f;		//maximum rotation off from the base value
