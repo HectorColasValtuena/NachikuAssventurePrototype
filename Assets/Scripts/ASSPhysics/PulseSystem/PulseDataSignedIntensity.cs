@@ -3,13 +3,17 @@ namespace ASSPhysics.PulseSystem
 	public class PulseDataSignedIntensity : IPulseData
 	{
 	//IPulseData implementation
-		public float propagationDelayModifier;	//modifier for pulse propagation time delay
-		public int propagationDirection;			//propagation direction. 1 towards children, -1 towards parent, 0 default
+		//modifier for pulse propagation time delay
+		public float propagationDelayModifier { get; private set; }
+		//propagation direction. 1 towards children, -1 towards parent, 0 default
+		public int propagationDirection { get; private set; }
 	//ENDOF IPulseData implementation
 
 	//public fields and properties
-		public float pulseIntensity;	//intensity for the effects of the pulse
-		public int pulseSign;			//direction of the effects of the pulse. 1 positive -1 negative 0 default/random
+		//intensity for the effects of the pulse
+		public float pulseIntensity { get; private set; }
+		//direction of the effects of the pulse. 1 positive -1 negative 0 default/random
+		public int pulseSign { get; private set; }
 	//ENDOF public fields and properties
 
 	//constructor

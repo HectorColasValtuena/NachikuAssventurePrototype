@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-using ChainSystem;
+using ASSPhysics.ChainSystem;
 using RandomSign = ASSistant.ASSRandom.RandomSign;
 
 namespace ASSPhysics.PulseSystem
