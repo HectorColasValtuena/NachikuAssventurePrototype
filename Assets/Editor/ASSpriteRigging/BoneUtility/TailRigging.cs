@@ -65,7 +65,7 @@ namespace ASSpriteRigging.BoneUtility
 			string defaultTag = null,
 			int defaultLayer = -1
 		)
-			where TTailElement: UnityEngine.Component, ITailElement
+			where TTailElement: UnityEngine.Component, IPulsePropagator
 			where TCollider: Collider
 			where TChainJoint: Joint
 		{
