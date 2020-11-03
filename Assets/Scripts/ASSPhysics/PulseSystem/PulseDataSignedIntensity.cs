@@ -1,6 +1,6 @@
 namespace ASSPhysics.PulseSystem
 {
-	public class PulseDataSignedIntensity : IPulseData
+	public abstract class PulseDataSignedIntensity : IPulseData
 	{
 	//IPulseData implementation
 		//modifier for pulse propagation time delay
