@@ -7,12 +7,12 @@ using ASSPhysics.TailSystem;	//TailRootWiggle
 namespace ASSpriteRigging.Riggers
 {
 	[RequireComponent(typeof(SpriteSkin))]
-	[RequireComponent(typeof(TailRootWiggle))]
+	//[RequireComponent(typeof(TailRootWiggle))]
 	public class TailRootRiggerInspector : SpriteSkinRiggerInspectorBase
 	{
-		public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
+		//public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
 
-		public ITailElement defaultTailElement;
+	//	public ITailElement defaultTailElement;
 
 		public Rigidbody defaultRigidbody; //Sample rigidbody configuration
 		public Collider defaultCollider;

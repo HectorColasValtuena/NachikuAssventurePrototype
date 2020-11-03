@@ -1,5 +1,3 @@
-using Mathf = UnityEngine.Mathf;
-
 namespace ASSPhysics.PulseSystem
 {
 	public class PulseDataSignedImmutable : PulseDataSignedIntensityBase

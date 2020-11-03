@@ -7,15 +7,13 @@ namespace ASSPhysics.ChainSystem
 		//where TChainElement : IChainElement
 	{
 	//implementación IChainElement
-		private List<IChainElement> _chainChildren;
-		public IChainElement[] chainChildren { get { return _chainChildren[index]; }}
-
+		private List<IChainElement> chainChildren;
 		public IChainElement chainParent { get; private set; }
 
 		//set this element's parent element. Also adds itself as its parent's child
 		public void SetParent (IChainElement newParent)
 		{
-			parent = newParent;
+			chainParent = newParent;
 			if (newParent != null)
 			{
 				newParent.AddChild(this);
@@ -25,10 +23,16 @@ namespace ASSPhysics.ChainSystem
 		//add an element to child list
 		public void AddChild (IChainElement newChild)
 		{
-			if (!_chainChildren.Contains(newChild))
+			if (!chainChildren.Contains(newChild))
 			{
-				_chainChildren.Add(newChild);
+				chainChildren.Add(newChild);
 			}
+		}
+
+		//fetch a child by index
+		public IChainElement getChild (int index)
+		{
+			return chainChildren[index];
 		}
 	//ENDOF implementación IChainElement
 	}
