@@ -10,6 +10,8 @@ namespace ASSPhysics.ChainSystem
 		private List<IChainElement> chainChildren;
 		public IChainElement chainParent { get; private set; }
 
+		public int childCount { get { return chainChildren.Count; }}
+
 		//set this element's parent element. Also adds itself as its parent's child
 		public void SetParent (IChainElement newParent)
 		{
@@ -23,6 +25,7 @@ namespace ASSPhysics.ChainSystem
 		//add an element to child list
 		public void AddChild (IChainElement newChild)
 		{
+			if (chainChildren == null) chainChildren = new List<IChainElement>();
 			if (!chainChildren.Contains(newChild))
 			{
 				chainChildren.Add(newChild);
@@ -30,7 +33,7 @@ namespace ASSPhysics.ChainSystem
 		}
 
 		//fetch a child by index
-		public IChainElement getChild (int index)
+		public IChainElement GetChild (int index)
 		{
 			return chainChildren[index];
 		}

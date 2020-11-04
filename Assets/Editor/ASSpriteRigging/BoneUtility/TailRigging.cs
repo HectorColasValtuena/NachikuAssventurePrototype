@@ -65,7 +65,7 @@ namespace ASSpriteRigging.BoneUtility
 			string defaultTag = null,
 			int defaultLayer = -1
 		)
-			where TTailElement: UnityEngine.Component, IPulsePropagator
+			where TTailElement: UnityEngine.Component, ASSPhysics.PulseSystem.PulsePropagators.IPulsePropagator
 			where TCollider: Collider
 			where TChainJoint: Joint
 		{

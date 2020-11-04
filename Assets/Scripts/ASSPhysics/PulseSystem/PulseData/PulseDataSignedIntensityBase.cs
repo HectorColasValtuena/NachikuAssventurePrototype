@@ -1,4 +1,6 @@
-namespace ASSPhysics.PulseSystem
+using ASSPhysics.PulseSystem;
+
+namespace ASSPhysics.PulseSystem.PulseData
 {
 	public abstract class PulseDataSignedIntensityBase : IPulseData
 	{
@@ -6,7 +8,7 @@ namespace ASSPhysics.PulseSystem
 		//modifier for pulse propagation time delay
 		public float propagationDelayModifier { get; private set; }
 		//propagation direction. 1 towards children, -1 towards parent, 0 default
-		public int propagationDirection { get; private set; }
+		public EPulseDirection propagationDirection { get; private set; }
 		
 		//final pulse value
 		//basic signed intensity pulse returns intensity appl
@@ -25,7 +27,7 @@ namespace ASSPhysics.PulseSystem
 		public PulseDataSignedIntensityBase (
 			float __pulseIntensity = 1.0f,
 			float __propagationDelayModifier = 1.0f,
-			EPulseDirection __propagationDirection = EPulseDirection.children
+			EPulseDirection __propagationDirection = EPulseDirection.towardsChildren
 		) {
 			pulseIntensity = __pulseIntensity;
 			propagationDelayModifier = __propagationDelayModifier;

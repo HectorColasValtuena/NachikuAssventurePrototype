@@ -2,8 +2,9 @@ namespace ASSPhysics.PulseSystem
 {
 	public enum EPulseDirection
 	{
-		children,
-		parent,
-		both
+		//auto,
+		towardsChildren,
+		towardsParent,
+		//towardsBoth
 	}
 }

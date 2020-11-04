@@ -3,11 +3,9 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-using ASSPhysics.PulseSystem;
-
 namespace ASSPhysics.TailSystem
 {
-	public abstract class TailElementBase : ChainElementPulsePropagatorBase
+	public abstract class TailElementBase : ASSPhysics.PulseSystem.PulsePropagators.ChainElementPulsePropagatorBase
 	{
 	//serialized/public fields and properties
 		public float maxOffsetRotation = 30f;		//maximum rotation off from the base value

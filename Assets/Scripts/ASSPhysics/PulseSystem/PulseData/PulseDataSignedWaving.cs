@@ -1,8 +1,9 @@
 using Mathf = UnityEngine.Mathf;
 
+using ASSPhysics.PulseSystem;
 using ASSistant.ASSRandom;
 
-namespace ASSPhysics.PulseSystem
+namespace ASSPhysics.PulseSystem.PulseData
 {
 	public class PulseDataSignedWaving : PulseDataSignedIntensityBase
 	{
@@ -18,7 +19,7 @@ namespace ASSPhysics.PulseSystem
 			RandomRangeInt __segmentLengthRange,
 			float __pulseIntensity = 0.0f,
 			float __propagationDelayModifier = 1.0f,
-			int __propagationDirection = 1,
+			EPulseDirection __propagationDirection = EPulseDirection.towardsChildren,
 			int __pulseSign = 0,
 			float __pulseMaximumIntensity = 1.0f,
 			float __pulseChangeSpeed = 1.0f

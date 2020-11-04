@@ -1,4 +1,6 @@
-namespace ASSPhysics.PulseSystem
+using ASSPhysics.PulseSystem;
+
+namespace ASSPhysics.PulseSystem.PulseData
 {
 	public class PulseDataSignedImmutable : PulseDataSignedIntensityBase
 	{
