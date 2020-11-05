@@ -8,9 +8,10 @@ namespace ASSPhysics.TailSystem
 	public abstract class TailElementBase : ASSPhysics.PulseSystem.PulsePropagators.ChainElementPulsePropagatorBase
 	{
 	//serialized/public fields and properties
-		public float maxOffsetRotation = 30f;		//maximum rotation off from the base value
+		public float rotationMax = 30f;			//absolute maximum rotation off from base rotation
+		public float rotationSoftLimit = 20f;	//soft rotation limit. pulses of value 1.0f will result in this. can be exceeded
 		public bool baseRotationFromStartingRotation = true;	//wether to fetch rotation from initial state
-	//ENDOF serialized fields and properties
+	//ENDOF serialized/public fields and properties
 
 	//private fields and properties
 		protected Quaternion baseRotation;  //base rotation of the element. offsetRotation swings and is clamped around this value

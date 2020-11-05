@@ -2,7 +2,8 @@ using UnityEngine;
 
 using UnityEngine.U2D.Animation; //SpriteSkin
 
-using ASSPhysics.TailSystem;	//TailRootWiggle
+using IPulsePropagator = ASSPhysics.PulseSystem.PulsePropagators.IPulsePropagator;
+//using ASSPhysics.TailSystem;	//TailRootWiggle
 
 namespace ASSpriteRigging.Riggers
 {
@@ -12,11 +13,12 @@ namespace ASSpriteRigging.Riggers
 	{
 		//public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
 
-	//	public ITailElement defaultTailElement;
+		public IPulsePropagator defaultTailElement;	//default tail element controller
 
 		public Rigidbody defaultRigidbody; //Sample rigidbody configuration
 		public Collider defaultCollider;
 		//public SpringJoint2D defaultAnchor;	//Sample anchor spring (parent-connected) configuration
+		public Joint defaultTailAnchor; //Sample spring configuration
 		public Joint defaultChainJoint; //Sample spring configuration
 	}
 }
