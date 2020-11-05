@@ -12,9 +12,8 @@ using static ASSistant.ReflectionAssistant;
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
-	//[CustomEditor(typeof(TailRootRiggerInspector))]
-	public class TailRootRiggerEditor<TInspector> : RiggerEditorBase<TInspector>
-		where TInspector : TailRootRiggerInspector
+	[CustomEditor(typeof(TailRootRiggerInspector))]
+	public class TailRootRiggerEditor : RiggerEditorBase<TailRootRiggerInspector>
 	{
 	//constant definitions
 		private static readonly BindingFlags privateMethodBindings =
@@ -55,7 +54,7 @@ namespace ASSpriteRigging.Editors
 
 			//invoke the call having properly set-up types and parameters
 			CallMethodWithTypesAndParameters (
-				type: typeof (TailRootRiggerEditor<TInspector>),	//System.Type type
+				type: typeof (TailRootRiggerEditor),	//System.Type type
 				context: this,						//System.Object context,
 				methodName:	"RigTailBoneElementRecursive",		//string methodName,
 				bindingFlags: privateMethodBindings,	//BindingFlags bindingFlags, 
