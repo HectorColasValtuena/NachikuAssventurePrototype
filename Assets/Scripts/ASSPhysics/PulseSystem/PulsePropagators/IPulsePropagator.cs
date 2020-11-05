@@ -11,6 +11,6 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 		Transform transform {get;}
 
 		//execute a pulse and propagate it in the corresponding direction after proper delay
-		void Propagate (IPulseData pulseData);
+		void Pulse (IPulseData pulseData);
 	}
 }

@@ -1,7 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//using System.Collections;
+//	using System.Collections.Generic;
 
 using UnityEngine;
+
+using IPulsePropagator = ASSPhysics.PulseSystem.PulsePropagators.IPulsePropagator;
 
 namespace ASSPhysics.TailSystem
 {
@@ -28,6 +30,14 @@ namespace ASSPhysics.TailSystem
 			MatchRotation();
 		}
 	//ENDOF MonoBehaviour lifecycle
+
+	//ChainElementPulsePropagatorBase abstract method implementation
+		//get delay in seconds before propagation to target effectuates
+		protected override float GetPropagationDelay (IPulsePropagator target)
+		{
+			return Vector3.Distance(transform.position, target.transform.position);
+		}
+	//ENDOF ChainElementPulsePropagatorBase abstract method implementation
 
 	//Overridable methods
 		//attempts to match current rotation with target rotation

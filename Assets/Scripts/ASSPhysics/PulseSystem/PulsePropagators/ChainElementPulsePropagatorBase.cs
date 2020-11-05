@@ -10,10 +10,10 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 	{
 	//IPulsePropagator implementation
 		//propagates the pulse towards the parent or children elements depending on pulse propagation direction
-		public void Propagate (IPulseData pulseData)
+		public void Pulse (IPulseData pulseData)
 		{
 			//process the pulse, then propagate
-			Pulse(pulseData);
+			DoPulse(pulseData);
 
 			//then transmit the pulse in the desired direction
 			if (pulseData.propagationDirection > 0)
@@ -28,7 +28,7 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 					DelayedPropagation(pulseData, GetChild(i));
 				}
 			}
-			Debug.LogWarning("ChainElementPulsePropagatorBase.Propagate(): propagation direction is 0 - can't propagate");
+			Debug.LogWarning("ChainElementPulsePropagatorBase.Pulse(): propagation direction is 0 - can't propagate");
 		}
 	//ENDOF IPulsePropagator implementation
 
@@ -48,7 +48,7 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 			);
 
 			//then propagate a copy of the pulse updated for the distance to the target
-			propagationTarget.Propagate(
+			propagationTarget.Pulse(
 				pulseData.GetUpdatedPulse(
 					distance: Vector3.Distance(transform.position, propagationTarget.transform.position)
 				)
@@ -59,7 +59,7 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 	//overridable methods
 		//Override this method to execute the logic related to the pulse
 			//dis method is da method fo' da voodoo
-		public abstract void Pulse (IPulseData pulseData);
+		protected abstract void DoPulse (IPulseData pulseData);
 
 		//get delay in seconds before propagation to target effectuates
 		protected abstract float GetPropagationDelay (IPulsePropagator target);
