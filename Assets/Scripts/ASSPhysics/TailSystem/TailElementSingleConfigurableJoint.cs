@@ -21,8 +21,9 @@ namespace ASSPhysics.TailSystem
 	//ENDOF private fields and properties
 
 	//MonoBehaviour lifecycle implementation
-		public void Awake ()
+		public override void Awake ()
 		{
+			base.Awake();
 			joint = GetComponent<ConfigurableJoint>();
 		}
 	//ENDOF MonoBehaviour lifecycle implementation
@@ -41,7 +42,7 @@ namespace ASSPhysics.TailSystem
 		protected override void DoPulse (IPulseData pulseData)
 		{
 			Debug.Log("pulse");
-			targetRotation = baseRotation * PulseToRotation(pulseData);
+			targetRotation = PulseToRotation(pulseData); // * BaseRotation;
 		}
 	//ENDOF IPulsePropagator abstract method implementation
 

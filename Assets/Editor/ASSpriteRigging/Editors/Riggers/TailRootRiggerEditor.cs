@@ -91,7 +91,7 @@ namespace ASSpriteRigging.Editors
 
 			//create the element controller
 			TTailElement newElement = BoneRigging.BoneSetupComponent<TTailElement>(bone, defaultTailElement);
-			newElement.SetParent(bone.parent.GetComponent<TTailElement>());
+			//newElement.SetParent(bone.parent.GetComponent<TTailElement>());
 
 			//loop over this element's transform children, recursively rigging each of them
 			for (int i = 0, iLimit = bone.childCount; i < iLimit; i++)

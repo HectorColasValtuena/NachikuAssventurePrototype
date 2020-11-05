@@ -4,7 +4,6 @@ using UnityEngine;
 namespace ASSPhysics.ChainSystem
 {
 	public abstract class ChainElementBase : MonoBehaviour, IChainElement
-		//where TChainElement : IChainElement
 	{
 	//private fields
 		private List<IChainElement> _chainChildren;

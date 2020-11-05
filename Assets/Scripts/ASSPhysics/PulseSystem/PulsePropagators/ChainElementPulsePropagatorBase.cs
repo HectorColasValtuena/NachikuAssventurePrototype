@@ -8,7 +8,7 @@ using EPulseDirection = ASSPhysics.PulseSystem.EPulseDirection;
 
 namespace ASSPhysics.PulseSystem.PulsePropagators
 {
-	public abstract class ChainElementPulsePropagatorBase : ChainElementBase, IPulsePropagator
+	public abstract class ChainElementPulsePropagatorBase : ChainElementAutoFindParent, IPulsePropagator
 	{
 	//IPulsePropagator implementation
 		//propagates the pulse towards the parent or children elements depending on pulse propagation direction
