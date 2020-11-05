@@ -43,13 +43,13 @@ namespace ASSpriteRigging.Editors
 		
 			//compose parameter list for invokation
 			System.Object[] parameters = {
-				inspector.transform,				//Transform bone
-				inspector.defaultTailElement,		//TTailElement defaultTailElement,
+				inspector.spriteSkin.rootBone,	//inspector.transform,	//Transform bone
+				inspector.defaultTailElement,	//TTailElement defaultTailElement,
 				inspector.defaultRigidbody,		//Rigidbody2D defaultRigidbody
-				inspector.defaultCollider,			//CircleCollider2D defaultCollider
-				inspector.defaultChainJoint,		//FixedJoint2D defaultChainJoint
-				inspector.defaultTag,				//string defaultTag
-				inspector.defaultLayer				//int defaultLayer
+				inspector.defaultCollider,		//CircleCollider2D defaultCollider
+				inspector.defaultChainJoint,	//FixedJoint2D defaultChainJoint
+				inspector.defaultTag,			//string defaultTag
+				inspector.defaultLayer			//int defaultLayer
 			};
 
 			//invoke the call having properly set-up types and parameters
