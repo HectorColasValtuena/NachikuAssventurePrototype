@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5014515050089471984}
-  - component: {fileID: 813880512499356711}
+  - component: {fileID: -1953953471472975106}
   m_Layer: 0
-  m_Name: TailElementSimpleBase
+  m_Name: TailConfigJointBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &813880512499356711
+--- !u!114 &-1953953471472975106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,9 +40,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5786082623630352194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b12b0acf9a26684a81361368b09b739, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f385fb4397f45447b47e94b046bbbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationMax: 15
   rotationSoftLimit: 10
   baseRotationFromStartingRotation: 1
+  lerpRate: 0.1
