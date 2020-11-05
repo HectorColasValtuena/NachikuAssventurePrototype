@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b12b0acf9a26684a81361368b09b739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationMax: 30
-  rotationSoftLimit: 20
+  rotationMax: 20
+  rotationSoftLimit: 10
   baseRotationFromStartingRotation: 1
