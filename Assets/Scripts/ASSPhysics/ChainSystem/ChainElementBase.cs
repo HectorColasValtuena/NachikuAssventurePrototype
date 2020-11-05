@@ -6,11 +6,22 @@ namespace ASSPhysics.ChainSystem
 	public abstract class ChainElementBase : MonoBehaviour, IChainElement
 		//where TChainElement : IChainElement
 	{
-	//implementación IChainElement
-		private List<IChainElement> chainChildren;
-		public IChainElement chainParent { get; private set; }
+	//serialized fields
+		//[SerializeField]
+		public List<IChainElement> m_chainChildren;
 
-		public int childCount { get { return chainChildren.Count; }}
+		//[SerializeField]
+		public IChainElement m_chainParent;
+	//ENDOF serialized fields
+
+	//implementación IChainElement
+		public IChainElement chainParent
+		{
+			get { return m_chainParent; }
+			private set { m_chainParent = value; }
+		}
+
+		public int childCount { get { return (m_chainChildren != null) ? m_chainChildren.Count : 0; }}
 
 		//set this element's parent element. Also adds itself as its parent's child
 		public void SetParent (IChainElement newParent)
@@ -25,17 +36,17 @@ namespace ASSPhysics.ChainSystem
 		//add an element to child list
 		public void AddChild (IChainElement newChild)
 		{
-			if (chainChildren == null) chainChildren = new List<IChainElement>();
-			if (!chainChildren.Contains(newChild))
+			if (m_chainChildren == null) m_chainChildren = new List<IChainElement>();
+			if (!m_chainChildren.Contains(newChild))
 			{
-				chainChildren.Add(newChild);
+				m_chainChildren.Add(newChild);
 			}
 		}
 
 		//fetch a child by index
 		public IChainElement GetChild (int index)
 		{
-			return chainChildren[index];
+			return m_chainChildren[index];
 		}
 	//ENDOF implementación IChainElement
 	}

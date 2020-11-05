@@ -4,6 +4,8 @@ using UnityEngine;
 using ASSPhysics.ChainSystem;
 using IPulseData = ASSPhysics.PulseSystem.PulseData.IPulseData;
 
+using EPulseDirection = ASSPhysics.PulseSystem.EPulseDirection;
+
 namespace ASSPhysics.PulseSystem.PulsePropagators
 {
 	public abstract class ChainElementPulsePropagatorBase : ChainElementBase, IPulsePropagator
@@ -16,11 +18,11 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 			DoPulse(pulseData);
 
 			//then transmit the pulse in the desired direction
-			if (pulseData.propagationDirection > 0)
+			if (pulseData.propagationDirection == EPulseDirection.towardsParent)
 			{
 				DelayedPropagation(pulseData, chainParent);
 			}
-			else if (pulseData.propagationDirection < 0)
+			else if (pulseData.propagationDirection == EPulseDirection.towardsChildren)
 			{
 				//foreach (IChainElement chainChild in chainChildren)
 				for (int i = 0, iLimit = childCount; i < iLimit; i++)
@@ -28,7 +30,10 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 					DelayedPropagation(pulseData, GetChild(i));
 				}
 			}
-			Debug.LogWarning("ChainElementPulsePropagatorBase.Pulse(): propagation direction is 0 - can't propagate");
+			else
+			{
+				Debug.LogWarning("ChainElementPulsePropagatorBase.Pulse(): propagation direction is 0 - can't propagate");
+			}
 		}
 	//ENDOF IPulsePropagator implementation
 
