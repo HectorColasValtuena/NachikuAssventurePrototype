@@ -14,6 +14,7 @@ namespace ASSPhysics.PulseSystem.PulsePropagators
 		//propagates the pulse towards the parent or children elements depending on pulse propagation direction
 		public void Pulse (IPulseData pulseData)
 		{
+			Debug.Log("ChainElementPulsePropagatorBase.Pulse()");
 			//process the pulse, then propagate
 			DoPulse(pulseData);
 
