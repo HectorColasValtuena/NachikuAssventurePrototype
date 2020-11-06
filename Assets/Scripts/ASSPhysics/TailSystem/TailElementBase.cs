@@ -39,9 +39,9 @@ namespace ASSPhysics.TailSystem
 			baseRotation = baseRotationFromStartingRotation ? transform.rotation : Quaternion.identity;
 		}
 		*/
-		public virtual void Update()
+		public virtual void FixedUpdate()
 		{
-			MatchRotation();
+			UpdateRotation(Time.fixedDeltaTime);
 		}
 	//ENDOF MonoBehaviour lifecycle
 
@@ -55,7 +55,7 @@ namespace ASSPhysics.TailSystem
 
 	//Overridable methods
 		//attempts to match current rotation with target rotation
-		protected abstract void MatchRotation ();
+		protected abstract void UpdateRotation (float timeDelta);
 	//ENDOF Overridable methods
 	}
 }

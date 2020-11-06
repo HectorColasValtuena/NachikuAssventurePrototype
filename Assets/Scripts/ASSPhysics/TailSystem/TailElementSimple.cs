@@ -6,7 +6,7 @@ namespace ASSPhysics.TailSystem
 	{
 	//TailElementBase abstract method implementation
 		//attempts to match current rotation with target rotation
-		protected override void MatchRotation () {}
+		protected override void UpdateRotation (float timeDelta) {}
 	//ENDOF TailElementBase abstract method implementation
 
 	//IPulsePropagator abstract method implementation
