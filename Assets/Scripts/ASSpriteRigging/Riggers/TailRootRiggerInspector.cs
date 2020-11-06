@@ -4,7 +4,7 @@ using UnityEngine.U2D.Animation; //SpriteSkin
 
 using IPulsePropagator = ASSPhysics.PulseSystem.PulsePropagators.IPulsePropagator;
 
-using TailElementBase = ASSPhysics.TailSystem.TailElementBase;
+using TailElementSingleJoint = ASSPhysics.TailSystem.TailElementSingleJoint;
 //using ASSPhysics.TailSystem;	//TailRootWiggle
 
 namespace ASSpriteRigging.Riggers
@@ -15,7 +15,7 @@ namespace ASSpriteRigging.Riggers
 	{
 		//public TailRootWiggle tailRoot { get { return gameObject.GetComponent<TailRootWiggle>();}}
 
-		public TailElementBase defaultTailElement;	//default tail element controller
+		public TailElementSingleJoint defaultTailElement;	//default tail element controller
 
 		public Rigidbody defaultRigidbody; //Sample rigidbody configuration
 		public Collider defaultCollider;

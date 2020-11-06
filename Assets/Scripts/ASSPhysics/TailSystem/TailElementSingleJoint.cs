@@ -4,15 +4,23 @@ using IPulseData = ASSPhysics.PulseSystem.PulseData.IPulseData;
 
 namespace ASSPhysics.TailSystem
 {
-	public class TailElementSingleConfigurableJoint : TailElementBase
+	public class TailElementSingleJoint : TailElementBase
 	{
 	//serialized fields and properties
-		public float lerpRate = 0.05f;
+		[SerializeField]
+		private float _rotationRate = 45f;
+		public float rotationRate { get { return _rotationRate; } set { _rotationRate = value; } }
+
+		[SerializeField]
+		private float _lerpRate = 0.05f;
+		public float lerpRate { get { return _lerpRate; } set { _lerpRate = value; } }
+
 	//ENDOF serialized fields and properties
 
 	//private fields and properties
 		private ConfigurableJoint joint;	//managed joint. can only handle one joint, so single thread tails for this class
-		private Quaternion targetRotation;	//target rotation to reach
+		private Quaternion desiredRotation;	//target rotation to reach
+		private Quaternion expectedRotation;	//angle currently trying to achieve
 		private Quaternion jointRotation	//current joint target rotation. We'll slerp this into our target rotation
 		{
 			get { return joint.targetRotation; }
@@ -32,7 +40,8 @@ namespace ASSPhysics.TailSystem
 		//attempts to match current rotation with target rotation
 		protected override void MatchRotation ()
 		{
-			jointRotation = Quaternion.Slerp(jointRotation, targetRotation, lerpRate);
+
+			//jointRotation = Quaternion.Slerp(jointRotation, desiredRotation, lerpRate);
 		}
 	//ENDOF TailElementBase abstract method implementation
 
@@ -42,23 +51,27 @@ namespace ASSPhysics.TailSystem
 		protected override void DoPulse (IPulseData pulseData)
 		{
 			Debug.Log("pulse");
-			targetRotation = PulseToRotation(pulseData); // * BaseRotation;
+			desiredRotation = PulseToQuaternion(pulseData); // * BaseRotation;
 		}
 	//ENDOF IPulsePropagator abstract method implementation
 
 	//private methods
+		//returns Z rotation required by a pulse
+		private float PulseToAngle (IPulseData pulseData)
+		{
+			return Mathf.Clamp(
+				pulseData.computedValue * rotationSoftLimit,
+				-rotationMax,
+				rotationMax
+			);
+		}
+
 		//transform a pulse into a quaternion rotation 
 			//rotation around Z axis is proportional to pulse intensity
 			//and clamped between positive and negative rotationMax
-		private Quaternion PulseToRotation (IPulseData pulseData)
+		private Quaternion PulseToQuaternion (IPulseData pulseData)
 		{
-			return Quaternion.Euler(
-				0, 0, Mathf.Clamp(
-					pulseData.computedValue * rotationSoftLimit,
-					-rotationMax,
-					rotationMax
-				)
-			);
+			return Quaternion.Euler(0, 0, PulseToAngle(pulseData));
 		}
 	//ENDOF private methods
 	}
