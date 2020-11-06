@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_SlerpDrive.positionSpring
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_SlerpDrive.positionDamper

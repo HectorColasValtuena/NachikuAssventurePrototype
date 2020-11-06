@@ -239,7 +239,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -276,7 +276,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2208084}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -290,7 +290,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2208084}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -1653,7 +1653,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -1690,7 +1690,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42246679}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1704,7 +1704,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42246679}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -3259,7 +3259,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -3296,7 +3296,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52164893}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3310,7 +3310,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52164893}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -4577,7 +4577,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -4614,7 +4614,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124842114}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4628,7 +4628,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124842114}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -8530,7 +8530,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -8567,7 +8567,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169808927}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8581,7 +8581,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169808927}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -10040,7 +10040,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -10077,7 +10077,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230180581}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10091,7 +10091,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230180581}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -10215,7 +10215,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -10252,7 +10252,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245923563}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10266,7 +10266,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245923563}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -11629,7 +11629,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -11666,7 +11666,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308838827}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11680,7 +11680,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308838827}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -13641,7 +13641,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -13678,7 +13678,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372823812}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13692,7 +13692,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372823812}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -14165,7 +14165,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -14202,7 +14202,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382659166}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -14216,7 +14216,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382659166}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -15018,18 +15018,6 @@ Transform:
   m_Father: {fileID: 1875477386}
   m_RootOrder: 140
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &403603128
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ' (Instance)'
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1 &423281222
 GameObject:
   m_ObjectHideFlags: 0
@@ -15591,7 +15579,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -15628,7 +15616,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428750574}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -15642,7 +15630,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428750574}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -20085,7 +20073,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -20122,7 +20110,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486352326}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20136,7 +20124,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486352326}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -22991,7 +22979,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -23028,7 +23016,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643109944}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -23042,7 +23030,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643109944}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -23166,7 +23154,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -23203,7 +23191,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651509902}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -23217,7 +23205,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651509902}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -25976,7 +25964,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -26013,7 +26001,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840445020}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -26027,7 +26015,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840445020}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -26480,7 +26468,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869039706}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -26494,7 +26482,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869039706}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -30410,7 +30398,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -30447,7 +30435,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004073939}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -30461,7 +30449,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004073939}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -31475,7 +31463,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -31512,7 +31500,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063879422}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -31526,7 +31514,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063879422}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -34254,7 +34242,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -34291,7 +34279,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164715583}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -34305,7 +34293,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164715583}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -35380,7 +35368,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -35417,7 +35405,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211266144}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -35431,7 +35419,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211266144}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -35555,7 +35543,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -35592,7 +35580,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213875034}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -35606,7 +35594,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213875034}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -36175,7 +36163,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -36212,7 +36200,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239550438}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -36226,7 +36214,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239550438}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -36350,7 +36338,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -36387,7 +36375,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245425744}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -36401,7 +36389,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245425744}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -36778,7 +36766,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -36815,7 +36803,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269158806}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -36829,7 +36817,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269158806}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -37939,7 +37927,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -37976,7 +37964,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288305096}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -37990,7 +37978,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288305096}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -38696,6 +38684,18 @@ Transform:
   m_Father: {fileID: 1875477386}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &1308376135
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ' (Instance) (Instance) (Instance) (Instance)'
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1 &1313402747
 GameObject:
   m_ObjectHideFlags: 0
@@ -39161,7 +39161,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -39198,7 +39198,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322562188}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -39212,7 +39212,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322562188}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -40226,7 +40226,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -40263,7 +40263,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333244087}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -40277,7 +40277,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333244087}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -41195,7 +41195,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -41232,7 +41232,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349351270}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -41246,7 +41246,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349351270}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -41427,7 +41427,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -41464,7 +41464,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352471639}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -41478,7 +41478,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352471639}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -43731,7 +43731,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -43768,7 +43768,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384780871}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -43782,7 +43782,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384780871}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -48295,7 +48295,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -48332,7 +48332,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483168473}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -48346,7 +48346,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483168473}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -51489,7 +51489,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -51526,7 +51526,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592556094}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -51540,7 +51540,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592556094}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -51664,7 +51664,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -51701,7 +51701,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611559315}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -51715,7 +51715,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611559315}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -56097,7 +56097,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -56134,7 +56134,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762118675}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -56148,7 +56148,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762118675}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -56272,7 +56272,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -56309,7 +56309,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770218556}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -56323,7 +56323,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770218556}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -60608,7 +60608,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -60645,7 +60645,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917066142}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -60659,7 +60659,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917066142}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -62624,7 +62624,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -62661,7 +62661,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990834751}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -62675,7 +62675,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990834751}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
@@ -67838,7 +67838,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
+    positionSpring: 40
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
@@ -67875,7 +67875,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111446899}
-  m_Material: {fileID: 403603128}
+  m_Material: {fileID: 1308376135}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -67889,7 +67889,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111446899}
   serializedVersion: 2
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0.5
   m_AngularDrag: 0.5
   m_UseGravity: 0
