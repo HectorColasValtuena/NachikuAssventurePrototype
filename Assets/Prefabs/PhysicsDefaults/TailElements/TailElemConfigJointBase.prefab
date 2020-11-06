@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5014515050089471984}
   - component: {fileID: -1953953471472975106}
   m_Layer: 0
-  m_Name: TailConfigJointBase
+  m_Name: TailElemConfigJointBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f385fb4397f45447b47e94b046bbbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationMax: 15
-  rotationSoftLimit: 10
-  baseRotationFromStartingRotation: 1
-  lerpRate: 0.1
+  _rotationMax: 15
+  _rotationSoftLimit: 15
+  _lerpRate: 0.1
