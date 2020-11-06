@@ -8,6 +8,7 @@ namespace ASSPhysics.PulseSystem.PulseData
 	public class PulseDataSignedWaving : PulseDataSignedIntensityBase
 	{
 	//private fields and properties
+		private float targetIntensity { get { return pulseMaximumIntensity * Mathf.Sign(pulseSign); } }
 		private int pulseSign;	//direction of the effects of the pulse. 1 positive -1 negative 0 default/random
 		private RandomRangeInt segmentLengthRange;	//random number of segments before sign change
 		private float pulseMaximumIntensity;	//maximum intensity of the pulse
@@ -29,7 +30,9 @@ namespace ASSPhysics.PulseSystem.PulseData
 			__propagationDirection
 		) {
 			segmentLengthRange = __segmentLengthRange;
-			pulseSign = __pulseSign;
+			pulseSign = (__pulseSign != 0)
+				? __pulseSign
+				: GenerateSegmentSign(); //if a pulseSign is not provided generate a random sign
 			pulseMaximumIntensity = __pulseMaximumIntensity;
 			pulseChangeSpeed = __pulseChangeSpeed;
 		}
@@ -63,15 +66,20 @@ namespace ASSPhysics.PulseSystem.PulseData
 		{
 			//step sign towards zero
 			int newSign = IntStepTowards(sign, 0);
-			
-			//if we depleted sign segment length, generate a new sign and length
-			if (newSign == 0) 
-			{
-				newSign = segmentLengthRange.Generate() * RandomSign.Generate();
-			}
-			return newSign;
+
+			return (newSign != 0)		//if segment sign is depleted generate a new sign counter
+				? newSign
+				: GenerateSegmentSign();
 		}
 
+		//generates a segment sign counter using a random sign and segment length
+		private int GenerateSegmentSign ()
+		{
+			return segmentLengthRange.Generate() * RandomSign.Generate();
+		}
+
+		////////////////////////////////////////////////////////////////////////////////
+		//[TO-DO]: move dis elsewhere
 		private int IntStepTowards (int value, int target)
 		{
 			return (value > target)	
