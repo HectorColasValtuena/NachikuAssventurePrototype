@@ -12,8 +12,8 @@ using static ASSistant.ReflectionAssistant;
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
-	[CustomEditor(typeof(TailRootRiggerInspector))]
-	public class TailRootRiggerEditor : RiggerEditorBase<TailRootRiggerInspector>
+	[CustomEditor(typeof(TailRootRiggerInspectorSimple))]
+	public class TailRootRiggerEditorSimple : RiggerEditorBase<TailRootRiggerInspector>
 	{
 	//constant definitions
 		private static readonly BindingFlags privateMethodBindings =
