@@ -266,7 +266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &2208088
 SphereCollider:
@@ -275,7 +276,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2208084}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1679,7 +1680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &42246683
 SphereCollider:
@@ -1688,7 +1690,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42246679}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3284,7 +3286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &52164897
 SphereCollider:
@@ -3293,7 +3296,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52164893}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4601,7 +4604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &124842118
 SphereCollider:
@@ -4610,7 +4614,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124842114}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8553,7 +8557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &169808931
 SphereCollider:
@@ -8562,7 +8567,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169808927}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10062,7 +10067,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &230180585
 SphereCollider:
@@ -10071,7 +10077,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230180581}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10236,7 +10242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &245923567
 SphereCollider:
@@ -10245,7 +10252,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245923563}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11649,7 +11656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &308838831
 SphereCollider:
@@ -11658,7 +11666,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308838827}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13660,7 +13668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &372823816
 SphereCollider:
@@ -13669,7 +13678,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372823812}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -14183,7 +14192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &382659170
 SphereCollider:
@@ -14192,7 +14202,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382659166}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -15008,6 +15018,18 @@ Transform:
   m_Father: {fileID: 1875477386}
   m_RootOrder: 140
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &403603128
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ' (Instance)'
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1 &423281222
 GameObject:
   m_ObjectHideFlags: 0
@@ -15596,7 +15618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &428750578
 SphereCollider:
@@ -15605,7 +15628,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428750574}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20089,7 +20112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &486352330
 SphereCollider:
@@ -20098,7 +20122,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486352326}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -22502,18 +22526,6 @@ Transform:
   m_Father: {fileID: 1875477386}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!134 &621994603
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ' (Instance) (Instance) (Instance)'
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1 &628549770
 GameObject:
   m_ObjectHideFlags: 0
@@ -23006,7 +23018,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &643109948
 SphereCollider:
@@ -23015,7 +23028,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643109944}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -23180,7 +23193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &651509906
 SphereCollider:
@@ -23189,7 +23203,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651509902}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -25989,7 +26003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &840445024
 SphereCollider:
@@ -25998,7 +26013,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840445020}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -26465,7 +26480,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869039706}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -30422,7 +30437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1004073943
 SphereCollider:
@@ -30431,7 +30447,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004073939}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -31486,7 +31502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1063879426
 SphereCollider:
@@ -31495,7 +31512,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063879422}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -34264,7 +34281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1164715587
 SphereCollider:
@@ -34273,7 +34291,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164715583}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -35389,7 +35407,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1211266148
 SphereCollider:
@@ -35398,7 +35417,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211266144}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -35563,7 +35582,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1213875038
 SphereCollider:
@@ -35572,7 +35592,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213875034}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -36182,7 +36202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1239550442
 SphereCollider:
@@ -36191,7 +36212,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239550438}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -36356,7 +36377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1245425748
 SphereCollider:
@@ -36365,7 +36387,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245425744}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -36783,7 +36805,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1269158810
 SphereCollider:
@@ -36792,7 +36815,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269158806}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -37943,7 +37966,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1288305100
 SphereCollider:
@@ -37952,7 +37976,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288305096}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -39164,7 +39188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1322562192
 SphereCollider:
@@ -39173,7 +39198,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322562188}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -40228,7 +40253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1333244091
 SphereCollider:
@@ -40237,7 +40263,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333244087}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -41196,7 +41222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1349351274
 SphereCollider:
@@ -41205,7 +41232,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349351270}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -41427,7 +41454,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1352471643
 SphereCollider:
@@ -41436,7 +41464,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352471639}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -43730,7 +43758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1384780875
 SphereCollider:
@@ -43739,7 +43768,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384780871}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -48293,7 +48322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1483168477
 SphereCollider:
@@ -48302,7 +48332,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483168473}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -51486,7 +51516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1592556098
 SphereCollider:
@@ -51495,7 +51526,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592556094}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -51660,7 +51691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1611559319
 SphereCollider:
@@ -51669,7 +51701,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611559315}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -56092,7 +56124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1762118679
 SphereCollider:
@@ -56101,7 +56134,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762118675}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -56266,7 +56299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1770218560
 SphereCollider:
@@ -56275,7 +56309,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770218556}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -56472,12 +56506,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstTailElement: {fileID: 372823815}
-  baseRandomInterval: 10
+  baseRandomInterval: 2
   segmentLengthRange:
     min: 6
     max: 18
   pulseIntensityRange:
-    min: 0.5
+    min: -1
     max: 1
   pulseChangeSpeed: 1
   pulseMaximumIntensity: 1
@@ -60601,7 +60635,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1917066146
 SphereCollider:
@@ -60610,7 +60645,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917066142}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -62616,7 +62651,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &1990834755
 SphereCollider:
@@ -62625,7 +62661,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990834751}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -67829,7 +67865,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationMax: 15
-  _rotationSoftLimit: 10
+  _rotationSoftLimit: 15
+  _rotationRate: 90
   _lerpRate: 0.1
 --- !u!135 &2111446903
 SphereCollider:
@@ -67838,7 +67875,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111446899}
-  m_Material: {fileID: 621994603}
+  m_Material: {fileID: 403603128}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
