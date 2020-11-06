@@ -11,7 +11,7 @@ namespace ASSpriteRigging.Riggers
 {
 	[RequireComponent(typeof(SpriteSkin))]
 	//[RequireComponent(typeof(TailRootWiggle))]
-	public class TailRootRiggerInspectorSimple : SpriteSkinRiggerInspectorBase
+	public class TailRootRiggerInspectorBase : SpriteSkinRiggerInspectorBase
 	{
 		public Rigidbody defaultRigidbody; //Sample rigidbody configuration
 		public Collider defaultCollider;

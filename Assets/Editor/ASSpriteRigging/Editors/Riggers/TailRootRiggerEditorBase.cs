@@ -12,8 +12,8 @@ using static ASSistant.ReflectionAssistant;
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
-	[CustomEditor(typeof(TailRootRiggerInspectorSimple))]
-	public class TailRootRiggerEditorSimple : RiggerEditorBase<TailRootRiggerInspector>
+	[CustomEditor(typeof(TailRootRiggerInspectorBase))]
+	public class TailRootRiggerEditorBase : RiggerEditorBase<TailRootRiggerInspectorBase>
 	{
 	//constant definitions
 		private static readonly BindingFlags privateMethodBindings =
@@ -31,7 +31,7 @@ namespace ASSpriteRigging.Editors
 
 	//private methods
 		//extracts all the data from rigger object and calls a properly parametrized RigTailBoneRecursive
-		private void RigTail (TailRootRiggerInspector inspector)
+		private void RigTail (TailRootRiggerInspectorBase inspector)
 		{	
 			//generate a type footprint from the component types of target rigger
 			System.Type[] typeList =
@@ -89,9 +89,6 @@ namespace ASSpriteRigging.Editors
 			//last element of the chain doesn't need controller or joint. abort if no more descendants
 			if (bone.childCount < 1) return;
 
-			//create the element controller
-			TTailElement newElement = BoneRigging.BoneSetupComponent<TTailElement>(bone, defaultTailElement);
-			//newElement.SetParent(bone.parent.GetComponent<TTailElement>());
 
 			//loop over this element's transform children, recursively rigging each of them
 			for (int i = 0, iLimit = bone.childCount; i < iLimit; i++)
@@ -114,6 +111,10 @@ namespace ASSpriteRigging.Editors
 
 				//finally connect the joint to the next element so child rigidbody now exists
 				BoneRigging.BoneConnectJoint<TChainJoint>(bone, next, defaultChainJoint);
+				
+				//create the element controller
+				TTailElement newElement = BoneRigging.BoneSetupComponent<TTailElement>(bone, defaultTailElement);
+				//newElement.SetParent(bone.parent.GetComponent<TTailElement>());
 			}
 		}
 	//ENDOF private methods

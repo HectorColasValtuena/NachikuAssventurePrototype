@@ -11,7 +11,7 @@ namespace ASSpriteRigging.Riggers
 {
 	[RequireComponent(typeof(SpriteSkin))]
 	//[RequireComponent(typeof(TailRootWiggle))]
-	public class TailRootRiggerInspectorSingleJointElement : TailRootRiggerInspectorSimple
+	public class TailRootRiggerInspectorSingleJointElement : TailRootRiggerInspectorBase
 	{
 		public TailElementSingleJoint defaultTailElement;	//default tail element controller
 	}
