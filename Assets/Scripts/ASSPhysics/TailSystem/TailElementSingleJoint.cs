@@ -8,18 +8,18 @@ namespace ASSPhysics.TailSystem
 	{
 	//serialized fields and properties
 		[SerializeField]
-		private float _rotationRate = 45f;
+		private float _rotationRate = 90f;
 		public float rotationRate { get { return _rotationRate; } set { _rotationRate = value; } }
 
 		[SerializeField]
-		private float _lerpRate = 0.05f;
+		private float _lerpRate = 0.1f;
 		public float lerpRate { get { return _lerpRate; } set { _lerpRate = value; } }
 
 	//ENDOF serialized fields and properties
 
 	//private fields and properties
 		private ConfigurableJoint joint;	//managed joint. can only handle one joint, so single thread tails for this class
-		private Quaternion desiredRotation;	//target rotation to reach
+		private Quaternion targetRotation;	//target rotation to reach
 		private Quaternion expectedRotation;	//angle currently trying to achieve
 		private Quaternion jointRotation	//current joint target rotation. We'll slerp this into our target rotation
 		{
@@ -38,10 +38,21 @@ namespace ASSPhysics.TailSystem
 
 	//TailElementBase abstract method implementation
 		//attempts to match current rotation with target rotation
-		protected override void MatchRotation ()
+		protected override void UpdateRotation (float timeDelta)
 		{
+			//uniformly rotate a dummy rotation towards target rotation
+			expectedRotation = Quaternion.RotateTowards(
+				from: expectedRotation,
+				to: targetRotation,
+				maxDegreesDelta: rotationRate * timeDelta
+			);
 
-			//jointRotation = Quaternion.Slerp(jointRotation, desiredRotation, lerpRate);
+			//then slerp the joint towards dummy rotation so as to smooth movement
+			jointRotation = Quaternion.Slerp(
+				a: jointRotation,
+				b: expectedRotation,
+				t: lerpRate
+			);
 		}
 	//ENDOF TailElementBase abstract method implementation
 
@@ -50,8 +61,8 @@ namespace ASSPhysics.TailSystem
 			//jointed element handles the pulse by setting its rotation 
 		protected override void DoPulse (IPulseData pulseData)
 		{
-			Debug.Log("pulse");
-			desiredRotation = PulseToQuaternion(pulseData); // * BaseRotation;
+			Debug.Log("pulse: " + pulseData.computedValue);
+			targetRotation = PulseToQuaternion(pulseData); // * BaseRotation;
 		}
 	//ENDOF IPulsePropagator abstract method implementation
 
