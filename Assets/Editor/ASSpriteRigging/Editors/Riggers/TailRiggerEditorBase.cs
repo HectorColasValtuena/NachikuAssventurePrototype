@@ -13,9 +13,9 @@ namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
 	//[CustomEditor(typeof(TailRootRiggerInspectorBase))]
-	public abstract class TailRootRiggerEditorBase<TTailRootRiggerInspector>
+	public abstract class TailRiggerEditorBase<TTailRootRiggerInspector>
 		: RiggerEditorBase<TTailRootRiggerInspector>
-		where TTailRootRiggerInspector : TailRootRiggerInspectorBase
+		where TTailRootRiggerInspector : TailRiggerInspectorBase
 	{
 	//inherited abstract method implementation
 		protected override void RigBones ()
@@ -48,7 +48,11 @@ namespace ASSpriteRigging.Editors
 
 
 	//abstract method declaration
+		//rig the base/root of the transform chain
 		protected abstract void RigTailRoot (Transform rootBone, TTailRootRiggerInspector inspector);
+
+		//rig an individual element of the transform chain
 		protected abstract void RigTailBoneElement (Transform bone, TTailRootRiggerInspector inspector);
+	//abstract method declaration
 	}
 }
