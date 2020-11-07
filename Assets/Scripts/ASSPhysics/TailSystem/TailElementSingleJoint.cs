@@ -7,10 +7,17 @@ namespace ASSPhysics.TailSystem
 	public class TailElementSingleJoint : TailElementBase
 	{
 	//serialized fields and properties
+		//managed joint. can only handle one joint, so single thread tails for this class
+		[SerializeField]
+		private ConfigurableJoint _joint;	
+		public ConfigurableJoint joint { get { return _joint; } set { _joint = value; } }
+
+		//maximum flat rotation speed
 		[SerializeField]
 		private float _rotationRate = 90f;
 		public float rotationRate { get { return _rotationRate; } set { _rotationRate = value; } }
 
+		//rate of lerp towards target rotation
 		[SerializeField]
 		private float _lerpRate = 0.1f;
 		public float lerpRate { get { return _lerpRate; } set { _lerpRate = value; } }
@@ -18,7 +25,6 @@ namespace ASSPhysics.TailSystem
 	//ENDOF serialized fields and properties
 
 	//private fields and properties
-		private ConfigurableJoint joint;	//managed joint. can only handle one joint, so single thread tails for this class
 		private Quaternion targetRotation;	//target rotation to reach
 		private Quaternion expectedRotation;	//angle currently trying to achieve
 		private Quaternion jointRotation	//current joint target rotation. We'll slerp this into our target rotation
@@ -27,14 +33,6 @@ namespace ASSPhysics.TailSystem
 			set { joint.targetRotation = value; }
 		}
 	//ENDOF private fields and properties
-
-	//MonoBehaviour lifecycle implementation
-		public override void Awake ()
-		{
-			base.Awake();
-			joint = GetComponent<ConfigurableJoint>();
-		}
-	//ENDOF MonoBehaviour lifecycle implementation
 
 	//TailElementBase abstract method implementation
 		//attempts to match current rotation with target rotation
