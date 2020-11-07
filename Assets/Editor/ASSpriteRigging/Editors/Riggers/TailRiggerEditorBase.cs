@@ -1,18 +1,10 @@
-using System.Reflection;
-
 using UnityEngine;
-using UnityEditor;
 
-using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
-using ASSpriteRigging.Riggers;	//TailRigger
-using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
-
-using static ASSistant.ReflectionAssistant;
+using TailRiggerInspectorBase = ASSpriteRigging.Riggers.TailRiggerInspectorBase;
 
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
-	//[CustomEditor(typeof(TailRootRiggerInspectorBase))]
 	public abstract class TailRiggerEditorBase<TTailRootRiggerInspector>
 		: RiggerEditorBase<TTailRootRiggerInspector>
 		where TTailRootRiggerInspector : TailRiggerInspectorBase
@@ -45,7 +37,6 @@ namespace ASSpriteRigging.Editors
 			}
 		}
 	//ENDOF private methods
-
 
 	//abstract method declaration
 		//rig the base/root of the transform chain

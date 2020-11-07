@@ -1,16 +1,8 @@
 using UnityEngine;
 
-using UnityEngine.U2D.Animation; //SpriteSkin
-
-using IPulsePropagator = ASSPhysics.PulseSystem.PulsePropagators.IPulsePropagator;
-
-using TailElementSingleJoint = ASSPhysics.TailSystem.TailElementSingleJoint;
-//using ASSPhysics.TailSystem;	//TailRootWiggle
-
 namespace ASSpriteRigging.Riggers
 {
-	[RequireComponent(typeof(SpriteSkin))]
-	//[RequireComponent(typeof(TailRootWiggle))]
+	[RequireComponent(typeof(UnityEngine.U2D.Animation.SpriteSkin))]
 	public class TailRiggerInspectorBase : SpriteSkinRiggerInspectorBase
 	{
 		public Rigidbody defaultRigidbody; //Sample rigidbody configuration

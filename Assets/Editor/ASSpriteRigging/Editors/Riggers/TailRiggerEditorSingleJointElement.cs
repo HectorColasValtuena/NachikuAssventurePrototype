@@ -3,18 +3,16 @@ using System.Reflection;
 using UnityEngine;
 using UnityEditor;
 
-using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
-//using ASSpriteRigging.Riggers;	//TailRigger
+//using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
 
-using static ASSistant.ReflectionAssistant;
-
+//TInspector must be initialized as the desired inspector type
 using TInspector = ASSpriteRigging.Riggers.TailRiggerInspectorSingleJointElement;
 
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
-	//[CustomEditor(typeof(TailRootRiggerInspectorBase))]
+	//[CustomEditor(typeof(TInspector))]
 	public abstract class TailRiggerEditorSingleJointElement
 		: TailRiggerEditorBase<TInspector>
 	{
