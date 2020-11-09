@@ -519,6 +519,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SpriteSkinRiggerInspectorBase.cs",
+			"settings":
+			{
+				"buffer_size": 1102,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorSmoothFollowController.cs",
+			"settings":
+			{
+				"buffer_size": 401,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorJointChain.cs",
+			"settings":
+			{
+				"buffer_size": 544,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorJointChainBase.cs",
+			"settings":
+			{
+				"buffer_size": 1591,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -574,9 +609,13 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/SlicedRigs/AssTail/TailPuft.png.meta",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Interface/SpeechBubbles/SpeechBubbleSolid.png.meta",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Interface/SpeechBubbles/SpeechBubbleOutline.png.meta",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorJointChain.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SpriteSkinRiggerInspectorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorJointChainBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorJointChain.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorNoController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorSmoothFollowController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorNoController.cs",
@@ -591,7 +630,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailElementJointChainBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailElementSingleJoint.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/PulsePropagators/ChainElementPulsePropagatorBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SpriteSkinRiggerInspectorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/RiggerEditorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorSingleJointElement.cs",
@@ -608,7 +646,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRootRiggerEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRootRiggerInspectorJointElement.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRootRiggerInspector.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/SlicedRigs/AssTail/TailPuft.png.meta",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/PulseData/PulseDataSignedIntensityBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailControllerPeriodicWaving.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/PulseData/PulseDataSignedWaving.cs",
@@ -699,9 +736,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Experiments/CurtainToggler.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/TextMesh Pro/.gitignore.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/.gitignore",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverManyToOneEditor.cs",
-		"/D/Projects/CatAttack/CatAttackUnityProject/Assets/ImportedAssets/Procedural fire-Hovl Studio/Shaders/FireSphere.shader.meta",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Interface/SummoningCircles/DoorIcon.png.meta"
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverManyToOneEditor.cs"
 	],
 	"find":
 	{
@@ -720,6 +755,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"13",
+			"14",
+			"15",
+			"16",
 			"TTailRiggerInspector",
 			"targetInspector",
 			"TTailRootRiggerInspector",
@@ -818,14 +857,129 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SpriteSkinRiggerInspectorBase.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								342,
+								342
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorSmoothFollowController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								280,
+								280
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorJointChain.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorJointChainBase.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								826,
+								826
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -910,7 +1064,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 366.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
