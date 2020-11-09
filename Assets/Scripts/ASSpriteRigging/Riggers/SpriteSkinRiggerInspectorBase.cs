@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.U2D.Animation;
+//using SpriteRenderer = UnityEngine.U2D.Animation.SpriteRenderer;
+using SpriteSkin = UnityEngine.U2D.Animation.SpriteSkin;
 
 namespace ASSpriteRigging.Riggers
 {
@@ -14,7 +15,7 @@ namespace ASSpriteRigging.Riggers
 		}}
 		
 		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
-		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<UnityEngine.U2D.Animation.SpriteSkin>(); }}
+		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<SpriteSkin>(); }}
 
 		public GameObject defaultLayerSample; //gameobject with sample of layer tag
 		public int defaultLayer { get { return (defaultLayerSample != null) ? defaultLayerSample.layer : -1; }}
