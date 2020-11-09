@@ -1,33 +1,31 @@
 using UnityEngine;
 
-using TailRiggerInspectorBase = ASSpriteRigging.Riggers.TailRiggerInspectorBase;
-
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
-	public abstract class TailRiggerEditorBase<TTailRiggerInspector>
-		: RiggerEditorBase<TTailRiggerInspector>
-		where TTailRiggerInspector : TailRiggerInspectorBase
+	public abstract class TailRiggerEditorBase<TInspector>
+		: RiggerEditorBase<TInspector>
+		where TInspector : ASSpriteRigging.Riggers.SpriteSkinRiggerInspectorBase
 	{
 	//inherited abstract method implementation
 		protected override void RigBones ()
 		{
-			RigTail();
+			RigTail(targetInspector);
 			Debug.Log("Rigged bones of " + targetInspector.name);
 		}
 	//ENDOF inherited abstract method implementation
 
 	//private methods
 		//extracts all the data from rigger object and calls a properly parametrized RigTailBoneRecursive
-		private void RigTail (TTailRiggerInspector inspector = null)
+		private void RigTail (TInspector inspector = null)
 		{	
 			if (inspector == null) { inspector = targetInspector; }
-			RigTailRoot(inspector.spriteSkin.rootBone);
-			RigTailBoneElementRecursive(inspector.spriteSkin.rootBone);
+			RigTailRoot(inspector.spriteSkin.rootBone, inspector);
+			RigTailBoneElementRecursive(inspector.spriteSkin.rootBone, inspector);
 		}
 
 		//Recursively populate every transform with adequate controller and components
-		private	void RigTailBoneElementRecursive (Transform bone, TTailRiggerInspector inspector)
+		private	void RigTailBoneElementRecursive (Transform bone, TInspector inspector)
 		{
 			Debug.Log("Rigging tail bone: "); Debug.LogWarning(bone);
 			RigTailBone(bone, inspector);
@@ -45,13 +43,13 @@ namespace ASSpriteRigging.Editors
 
 	//abstract method declaration
 		//rig the base/root of the transform chain
-		protected abstract void RigTailRoot (Transform rootBone, TTailRiggerInspector inspector);
+		protected abstract void RigTailRoot (Transform rootBone, TInspector inspector);
 
 		//rig an individual element of the transform chain
-		protected abstract void RigTailBone (Transform bone, TTailRiggerInspector inspector);
+		protected abstract void RigTailBone (Transform bone, TInspector inspector);
 
 		//rig a connection between two elements
-		protected abstract void RigTailBonePairConnection (Transform bone, Transform nextBone, TTailRiggerInspector inspector);
+		protected abstract void RigTailBonePairConnection (Transform bone, Transform nextBone, TInspector inspector);
 	//ENDOF abstract method declaration
 	}
 }

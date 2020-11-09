@@ -1,10 +1,10 @@
-using TailElementSingleJoint = ASSPhysics.TailSystem.TailElementSingleJoint;
+using TailElementSingleJointChain = ASSPhysics.TailSystem.TailElementSingleJointChain;
 
 namespace ASSpriteRigging.Riggers
 {
 	[UnityEngine.RequireComponent(typeof(UnityEngine.U2D.Animation.SpriteSkin))]
-	public class TailRiggerInspectorSingleJointElement : TailRiggerInspectorBase
+	public class TailRiggerInspectorSingleJointElement : TailRiggerInspectorJointChain
 	{
-		public TailElementSingleJoint defaultTailElement;	//default tail element controller
+		public TailElementSingleJointChain defaultTailElementController;	//default tail element controller
 	}
 }

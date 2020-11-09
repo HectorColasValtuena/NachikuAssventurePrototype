@@ -4,7 +4,7 @@ using IPulseData = ASSPhysics.PulseSystem.PulseData.IPulseData;
 
 namespace ASSPhysics.TailSystem
 {
-	public class TailElementSingleJoint : TailElementBase
+	public class TailElementSingleJointChain : TailElementBase
 	{
 	//serialized fields and properties
 		//managed joint. can only handle one joint, so single thread tails for this class
