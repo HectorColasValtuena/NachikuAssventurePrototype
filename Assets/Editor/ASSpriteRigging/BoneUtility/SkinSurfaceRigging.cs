@@ -6,6 +6,8 @@ using ASSpriteRigging.Riggers; //SkinSurfaceRiggerInspector
 
 namespace ASSpriteRigging.BoneUtility
 {
+	////////////////////////////////////////////////////////////////
+	//[TO-DO] move this to editor class hierarchy
 	public static class SkinSurfaceRigging
 	{
 		public static void RigBones (SkinSurfaceRiggerInspector target)
