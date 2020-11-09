@@ -17,11 +17,14 @@ namespace ASSpriteRigging.Editors
 		{
 			if (inspector.defaultTailAnchorJoint != null)
 			{
-				BoneRigging.BoneConnectJoint<ConfigurableJoint>(
-					bone: rootBone,
-					targetRigidbody: inspector.targetAnchor,
-					sample: inspector.defaultTailAnchorJoint
-				);
+				foreach (Rigidbody tailAnchor in inspector.tailAnchorList)
+				{
+					BoneRigging.BoneConnectJoint<ConfigurableJoint>(
+						bone: rootBone,
+						targetRigidbody: tailAnchor,
+						sample: inspector.defaultTailAnchorJoint
+					);
+				}
 			}
 		}
 

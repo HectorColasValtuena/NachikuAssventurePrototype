@@ -6,6 +6,7 @@ namespace ASSpriteRigging.Riggers
 {
 	public class SpriteSkinRiggerInspectorBase : ASSpriteRigging.BaseInspectors.ArmableInspectorBase
 	{
+		//[TO-DO]: move this declaration higher up in the hierarchy
 		public Rigidbody targetAnchor;
 		public Rigidbody anchorRigidbody { get {
 			//return this rigidbody if no target anchor is set
