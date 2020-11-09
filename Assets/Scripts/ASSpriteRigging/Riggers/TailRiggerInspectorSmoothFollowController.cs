@@ -3,7 +3,7 @@ using TailElementJointSmoothFollow = ASSPhysics.TailSystem.TailElementJointSmoot
 namespace ASSpriteRigging.Riggers
 {
 	[UnityEngine.RequireComponent(typeof(UnityEngine.U2D.Animation.SpriteSkin))]
-	public class TailRiggerInspectorSingleJointElement : TailRiggerInspectorJointChain
+	public class TailRiggerInspectorSmoothFollowController : TailRiggerInspectorJointChain
 	{
 		public TailElementJointSmoothFollow defaultTailElementController;	//default tail element controller
 	}

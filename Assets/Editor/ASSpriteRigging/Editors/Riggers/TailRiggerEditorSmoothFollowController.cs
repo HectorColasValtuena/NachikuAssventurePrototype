@@ -4,7 +4,7 @@ using UnityEditor;
 //using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
 
-using TInspector = ASSpriteRigging.Riggers.TailRiggerInspectorSingleJointElement;
+using TInspector = ASSpriteRigging.Riggers.TailRiggerInspectorSmoothFollowController;
 
 using TElementController = ASSPhysics.TailSystem.TailElementJointSmoothFollow;
 
@@ -12,7 +12,7 @@ namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
 	[CustomEditor(typeof(TInspector))]
-	public class TailRiggerEditorSingleElementController
+	public class TailRiggerEditorSmoothFollowController
 		: TailRiggerEditorJointChainBase<TInspector>
 	{
 	//overrides
