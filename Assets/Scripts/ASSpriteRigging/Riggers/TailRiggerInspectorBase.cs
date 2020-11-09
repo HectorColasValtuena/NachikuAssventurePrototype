@@ -8,5 +8,6 @@ namespace ASSpriteRigging.Riggers
 		public Rigidbody defaultRigidbody; //Sample rigidbody configuration
 		public Collider defaultCollider;
 		public Joint defaultChainJoint; //Sample spring configuration
+		public Joint defaultTailAnchorJoint; //Sample spring configuration
 	}
 }
