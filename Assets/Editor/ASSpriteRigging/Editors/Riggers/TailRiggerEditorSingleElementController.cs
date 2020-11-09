@@ -6,7 +6,7 @@ using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
 
 using TInspector = ASSpriteRigging.Riggers.TailRiggerInspectorSingleJointElement;
 
-using TElementController = ASSPhysics.TailSystem.TailElementSingleJointChain;
+using TElementController = ASSPhysics.TailSystem.TailElementJointSmoothFollow;
 
 namespace ASSpriteRigging.Editors
 {
@@ -20,7 +20,11 @@ namespace ASSpriteRigging.Editors
 		protected override void RigTailBone (Transform bone, TInspector inspector)
 		{
 			base.RigTailBone(bone, inspector);
-			BoneRigging.BoneSetupComponent<TElementController>(bone, inspector.defaultTailElementController);
+			//after rigging physics components create a chain element controller unless this is the last element in chain
+			if (bone.childCount > 0)
+			{
+				BoneRigging.BoneSetupComponent<TElementController>(bone, inspector.defaultTailElementController);
+			}
 		}
 
 		//rig a connection between two elements. also store the joint in the controller

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1022389837170255954, guid: b6f8e48ea8e4ddf4794a66a394847e05, type: 3}
       propertyPath: m_Name
-      value: BreastRigidbody
+      value: BaseSurfaceRigidbody
       objectReference: {fileID: 0}
     - target: {fileID: 3774033289304470433, guid: b6f8e48ea8e4ddf4794a66a394847e05, type: 3}
       propertyPath: m_AngularDrag
