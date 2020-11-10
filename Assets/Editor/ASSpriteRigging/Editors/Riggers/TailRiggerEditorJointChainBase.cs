@@ -33,7 +33,8 @@ namespace ASSpriteRigging.Editors
 		{
 			BoneRigging.BoneSetTagAndLayer(bone, inspector.defaultTag, inspector.defaultLayer);
 			BoneRigging.BoneSetupComponent<Rigidbody>(bone, inspector.defaultRigidbody);
-			BoneRigging.BoneSetupComponent<SphereCollider>(bone, inspector.defaultCollider);
+			if (inspector.defaultCollider)
+			{ BoneRigging.BoneSetupComponent<SphereCollider>(bone, inspector.defaultCollider); }
 		}
 
 		//rig a connection between two elements
