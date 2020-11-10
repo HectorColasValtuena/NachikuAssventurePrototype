@@ -9,15 +9,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1107719812963695085, guid: 179b0521d222ec7429c3db890f596625, type: 3}
       propertyPath: m_Drag
-      value: 0.1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1107719812963695085, guid: 179b0521d222ec7429c3db890f596625, type: 3}
       propertyPath: m_AngularDrag
-      value: 0.1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1107719812963695085, guid: 179b0521d222ec7429c3db890f596625, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1107719812963695085, guid: 179b0521d222ec7429c3db890f596625, type: 3}
       propertyPath: m_Mass

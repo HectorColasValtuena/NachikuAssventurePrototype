@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 6896416}
   - component: {fileID: 6896415}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -371,14 +371,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -413,8 +413,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -2347,7 +2347,7 @@ GameObject:
   - component: {fileID: 160321787}
   - component: {fileID: 160321786}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2407,14 +2407,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -2449,8 +2449,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -3150,7 +3150,7 @@ MonoBehaviour:
   - {fileID: 2008220827}
   defaultRigidbody: {fileID: 6723239403368692270, guid: 75906f526adf9214c9d1a884e4f22e53, type: 3}
   defaultCollider: {fileID: 0}
-  defaultChainJoint: {fileID: 8499563560279178686, guid: f19364dd18e800a40b09559b73b40376, type: 3}
+  defaultChainJoint: {fileID: 3290028607629806108, guid: d0e4d2aa73428364eb5eacf41e4b01e2, type: 3}
   defaultTailAnchorJoint: {fileID: 4276589577963582273, guid: 1694d6bfd619aa646b22f8f3884b4e14, type: 3}
 --- !u!114 &206203949
 MonoBehaviour:
@@ -3634,7 +3634,7 @@ GameObject:
   - component: {fileID: 232431510}
   - component: {fileID: 232431509}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3694,14 +3694,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -3736,8 +3736,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -3811,7 +3811,7 @@ GameObject:
   - component: {fileID: 255536828}
   - component: {fileID: 255536827}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3871,14 +3871,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -3913,8 +3913,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -4566,7 +4566,7 @@ GameObject:
   - component: {fileID: 322242949}
   - component: {fileID: 322242948}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4626,14 +4626,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -4668,8 +4668,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -6585,7 +6585,7 @@ GameObject:
   - component: {fileID: 478624993}
   - component: {fileID: 478624992}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6645,14 +6645,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -6687,8 +6687,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -9328,7 +9328,7 @@ GameObject:
   - component: {fileID: 639916457}
   - component: {fileID: 639916456}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9388,14 +9388,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -9430,8 +9430,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -11361,7 +11361,7 @@ GameObject:
   - component: {fileID: 744907473}
   - component: {fileID: 744907472}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11421,14 +11421,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -11463,8 +11463,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -11507,7 +11507,7 @@ GameObject:
   - component: {fileID: 784978034}
   - component: {fileID: 784978033}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11569,14 +11569,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -11611,8 +11611,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -11664,14 +11664,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -11706,8 +11706,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -11759,14 +11759,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -11801,8 +11801,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -16680,7 +16680,7 @@ GameObject:
   - component: {fileID: 1151634991}
   - component: {fileID: 1151634990}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16740,14 +16740,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -16782,8 +16782,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -17013,7 +17013,7 @@ GameObject:
   - component: {fileID: 1178856804}
   - component: {fileID: 1178856803}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17073,14 +17073,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -17115,8 +17115,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -18085,7 +18085,7 @@ GameObject:
   - component: {fileID: 1270694414}
   - component: {fileID: 1270694413}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18145,14 +18145,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -18187,8 +18187,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -21355,7 +21355,7 @@ GameObject:
   - component: {fileID: 1457135060}
   - component: {fileID: 1457135059}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21415,14 +21415,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -21457,8 +21457,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -21642,7 +21642,7 @@ GameObject:
   - component: {fileID: 1482779749}
   - component: {fileID: 1482779748}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21702,14 +21702,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -21744,8 +21744,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -23530,7 +23530,7 @@ GameObject:
   - component: {fileID: 1618055836}
   - component: {fileID: 1618055835}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23590,14 +23590,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -23632,8 +23632,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -27061,7 +27061,7 @@ GameObject:
   - component: {fileID: 1862906725}
   - component: {fileID: 1862906724}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27121,14 +27121,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -27163,8 +27163,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -27381,7 +27381,7 @@ GameObject:
   - component: {fileID: 1870668525}
   - component: {fileID: 1870668524}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27441,14 +27441,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -27483,8 +27483,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -30967,7 +30967,7 @@ GameObject:
   - component: {fileID: 2006858780}
   - component: {fileID: 2006858779}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31027,14 +31027,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -31069,8 +31069,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
@@ -32946,7 +32946,7 @@ GameObject:
   - component: {fileID: 2120413795}
   - component: {fileID: 2120413794}
   m_Layer: 0
-  m_Name: MenuHairPuftTailJoint
+  m_Name: HairPuftTailJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33006,14 +33006,14 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
+    spring: 5
+    damper: 5
   m_AngularYLimit:
     limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 25
+    limit: 135
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -33048,8 +33048,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5
+    positionDamper: 5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
