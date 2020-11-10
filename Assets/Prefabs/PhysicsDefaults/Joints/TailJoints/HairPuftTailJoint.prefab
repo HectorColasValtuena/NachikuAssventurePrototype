@@ -57,23 +57,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_AngularZLimit.limit
-      value: 135
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_SlerpDrive.positionSpring
-      value: 5
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_AngularYZLimitSpring.spring
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_SlerpDrive.positionDamper
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_AngularYZLimitSpring.damper
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
+      propertyPath: m_ConnectedMassScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
