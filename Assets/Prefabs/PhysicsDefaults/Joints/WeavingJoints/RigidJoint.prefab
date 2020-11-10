@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4231269617543097262, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_Name
-      value: RigidJoint
+      value: RigidJoint Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_XMotion
@@ -70,14 +70,6 @@ PrefabInstance:
     - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_AutoConfigureConnectedAnchor
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
-      propertyPath: m_ProjectionAngle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
-      propertyPath: m_ProjectionDistance
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2857b3982ea1781438dae604a583aea1, type: 3}

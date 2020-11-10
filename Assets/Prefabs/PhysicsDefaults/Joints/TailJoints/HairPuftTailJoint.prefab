@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_AngularZLimit.limit
-      value: 10
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_SlerpDrive.positionSpring
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_AngularYZLimitSpring.spring
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_SlerpDrive.positionDamper
@@ -73,19 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
       propertyPath: m_AngularYZLimitSpring.damper
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
-      propertyPath: m_ConnectedMassScale
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
-      propertyPath: m_ProjectionDistance
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
-      propertyPath: m_ProjectionAngle
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
