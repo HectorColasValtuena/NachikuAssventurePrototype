@@ -83,5 +83,9 @@ PrefabInstance:
       propertyPath: m_ProjectionMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
+      propertyPath: m_MassScale
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35b2afadae7ca1c4282ba5660e820cfe, type: 3}
