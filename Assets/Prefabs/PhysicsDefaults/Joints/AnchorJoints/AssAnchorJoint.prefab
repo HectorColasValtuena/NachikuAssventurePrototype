@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 862743949859629513, guid: eb6d2a9ba34cc6c4c8be8fe3a383bcfd, type: 3}
       propertyPath: m_LinearLimitSpring.spring
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 862743949859629513, guid: eb6d2a9ba34cc6c4c8be8fe3a383bcfd, type: 3}
       propertyPath: m_LinearLimitSpring.damper
