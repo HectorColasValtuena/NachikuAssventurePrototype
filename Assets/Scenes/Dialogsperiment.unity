@@ -470,6 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogsPanelBase
       objectReference: {fileID: 0}
+    - target: {fileID: 1750951193356507739, guid: ce12a42bee2700e44850968122027367, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce12a42bee2700e44850968122027367, type: 3}
 --- !u!1001 &1974007838

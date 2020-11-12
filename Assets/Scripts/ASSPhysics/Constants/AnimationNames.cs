@@ -24,5 +24,10 @@ namespace ASSPhysics.Constants
 			public const string spotlightFocused = "SpotlightFocused";
 			public const string drumrollFinalClash = "FinalClash";
 		}
+
+		public static class Dialog
+		{
+			public const string close = "Close";
+		}
 	}
 }
