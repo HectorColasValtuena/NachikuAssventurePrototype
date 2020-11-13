@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+using IEnumerator = System.Collections.IEnumerator;
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
 namespace ASSPhysics.DialogSystem.DialogControllers
@@ -53,12 +54,21 @@ namespace ASSPhysics.DialogSystem.DialogControllers
 		public void ClosingAnimationFinishedCallback ()
 		{
 			Debug.Log("Closing animation finished");
+			StartCoroutine(FinalizeClosing());
+		}
+	//ENDOF public methods
+
+	//private methods
+		private IEnumerator FinalizeClosing ()
+		{
+			//one-frame delay introduced to guarantee next dialog's animator has a chance to resize the panel before frame
+			yield return new WaitForEndOfFrame();
 			gameObject.SetActive(false);
 			if (queuedCallback != null)
 			{
 				queuedCallback.Invoke();
 			}
 		}
-	//ENDOF public methods
+	//ENDOF private methods
 	}
 }

@@ -29,12 +29,13 @@ namespace ASSPhysics.DialogSystem
 		//IDialogManager implementation
 			public void SetActiveDialog (IDialogController targetDialog)
 			{
+				Debug.Log("DialogManagerBase.SetActiveDialog()");
 				//if already changing dialogs ignore change request
 				if (waitingDialog != null) { return; }
 
 				waitingDialog = targetDialog;
 				//if there's another dialog active, request it closes
-				if (activeDialog != null) 
+				if (activeDialog != null)
 				{
 					activeDialog.AnimatedDisable(DelegateOpenNextDialog);
 				}
@@ -62,8 +63,11 @@ namespace ASSPhysics.DialogSystem
 			{
 				Debug.Log("Dialog closed callback");
 				activeDialog = waitingDialog;
-				if (waitingDialog == null) { return; }
-				waitingDialog.Enable();
+				if (waitingDialog != null)
+				{
+					waitingDialog.Enable();
+					waitingDialog = null;
+				}
 			}
 		//ENDOF private method definition
 	}

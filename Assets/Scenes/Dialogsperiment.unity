@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
@@ -568,13 +568,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1627461286}
     m_Modifications:
+    - target: {fileID: 1541239894359004965, guid: 94cfa7557004f5c4ba652539ce3e5dd4, type: 3}
+      propertyPath: defaultTargetDialog
+      value: 
+      objectReference: {fileID: 2019445977}
     - target: {fileID: 3924738085069636419, guid: 94cfa7557004f5c4ba652539ce3e5dd4, type: 3}
       propertyPath: m_Name
       value: Dialog2
       objectReference: {fileID: 0}
     - target: {fileID: 3924738085069636419, guid: 94cfa7557004f5c4ba652539ce3e5dd4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3924738085069636420, guid: 94cfa7557004f5c4ba652539ce3e5dd4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -897,7 +901,7 @@ PrefabInstance:
     - target: {fileID: 2121962762687237658, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: defaultTargetDialog
       value: 
-      objectReference: {fileID: 2019445977}
+      objectReference: {fileID: 0}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
       value: "PORQUE ME MET\xCD LA ESPADA EN EL OOOOORRRRTOOOOO"
@@ -992,7 +996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
