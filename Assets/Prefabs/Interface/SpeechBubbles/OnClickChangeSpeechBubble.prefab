@@ -25,6 +25,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d974c645e28c5424fbbeaa39f65621c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8284024599771159904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3924738085069636419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee1c627f2b74e9428ac875a12e8fa07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callback:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &3219319139380730047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32,6 +47,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1934904952703788774, guid: 2f5082dd5ba2d1a428ac51a224820320, type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1934904954051517435, guid: 2f5082dd5ba2d1a428ac51a224820320, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
