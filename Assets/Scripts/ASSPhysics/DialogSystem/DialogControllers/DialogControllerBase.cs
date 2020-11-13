@@ -24,6 +24,7 @@ namespace ASSPhysics.DialogSystem.DialogControllers
 
 		public void AnimatedDisable (DParameterlessDelegate finishingCallback)
 		{
+			Debug.Log("activeDialog.AnimatedDisable");
 			if (closing) { return; }
 			closing = true;
 			queuedCallback = finishingCallback;
@@ -51,6 +52,7 @@ namespace ASSPhysics.DialogSystem.DialogControllers
 	//public methods
 		public void ClosingAnimationFinishedCallback ()
 		{
+			Debug.Log("Closing animation finished");
 			gameObject.SetActive(false);
 			if (queuedCallback != null)
 			{

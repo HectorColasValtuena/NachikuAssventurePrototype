@@ -31,6 +31,7 @@ namespace ASSPhysics.DialogSystem
 		public void ChangeDialog () { ChangeDialog(defaultTargetDialog); }
 		public void ChangeDialog (TDialogController dialog)
 		{
+			Debug.Log("Changing dialog");
 			dialogManager.SetActiveDialog(dialog);
 		}
 	//ENDOF public methods
