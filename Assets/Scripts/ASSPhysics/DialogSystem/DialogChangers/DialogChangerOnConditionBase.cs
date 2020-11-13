@@ -1,6 +1,6 @@
 ﻿namespace ASSPhysics.DialogSystem
 {
-	public abstract class DialogChangerOnCondition : DialogChangerBase
+	public abstract class DialogChangerOnConditionBase : DialogChangerBase
 	{
 	//MonoBehaviour lifecycle
 		public void Update ()
