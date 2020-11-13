@@ -10,11 +10,11 @@ namespace ASSPhysics.DialogSystem
 	//serialized fields
 		[SerializeField]
 		[Tooltip("IDialogController to activate on call")]
-		protected TDialogController defaultTargetDialog;
+		protected TDialogController defaultTargetDialog = null;
 
 		//if no dialog manager has been set try to find one in our parents or children
 		[SerializeField]
-		private TDialogManager _dialogManager;
+		private TDialogManager _dialogManager = null;
 		protected TDialogManager dialogManager
 		{
 			get
