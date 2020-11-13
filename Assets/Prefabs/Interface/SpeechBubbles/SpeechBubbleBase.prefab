@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 3}
-  m_SizeDelta: {x: -4, y: -10}
+  m_SizeDelta: {x: -6, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1934904952703788771
 CanvasRenderer:
@@ -90,6 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1934904954051517435}
+  - component: {fileID: 1183300820362168803}
   - component: {fileID: 1934904954051517433}
   - component: {fileID: 1934904954051517434}
   - component: {fileID: 7412879473399789230}
@@ -120,6 +121,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 4}
   m_SizeDelta: {x: 120, y: 35}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1183300820362168803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934904954051517436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543802c2b0f1dfd4c84f9de30b20987f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7412879473399789230}
 --- !u!222 &1934904954051517433
 CanvasRenderer:
   m_ObjectHideFlags: 0
