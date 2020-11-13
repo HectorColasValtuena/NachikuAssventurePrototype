@@ -3,7 +3,7 @@
 using IDialogController = ASSPhysics.DialogSystem.DialogControllers.IDialogController;
 namespace ASSPhysics.DialogSystem
 {
-	public class DialogManagerBase : MonoBehaviour
+	public class DialogManagerBase : MonoBehaviour, IDialogManager
 	{
 		//static namespace
 			public static DialogManagerBase instance;
@@ -26,14 +26,14 @@ namespace ASSPhysics.DialogSystem
 			}
 		//ENDOF MonoBehaviour lifecycle
 
-		//public methods
+		//IDialogManager implementation
 			public void SetActiveDialog (IDialogController targetDialog)
 			{
 				if (waitingDialog != null) { return; }
 				activeDialog.AnimatedDisable(DelegateDialogClosedCallback);
 				waitingDialog = targetDialog;
 			}
-		//ENDOF public methods
+		//ENDOF IDialogManager implementation
 
 		//private method definition
 			private void ResetDialogs ()
