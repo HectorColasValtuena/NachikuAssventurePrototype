@@ -14,8 +14,8 @@ namespace ASSPhysics.Constants
 
 		public static class Interactable
 		{
-			public const string highlighted = "Highlighted";
-			public const string pressed = "Pressed";
+			public const string highlighted = "Highlighted"; //Bool
+			public const string pressed = "Pressed"; //Bool
 		}
 
 		public static class Curtains
