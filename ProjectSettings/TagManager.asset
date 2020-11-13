@@ -54,9 +54,6 @@ TagManager:
   - name: MidgroundInterface
     uniqueID: 2083132001
     locked: 0
-  - name: HandCursor
-    uniqueID: 2910087449
-    locked: 0
   - name: Dialogs
     uniqueID: 143870591
     locked: 0
@@ -65,4 +62,7 @@ TagManager:
     locked: 0
   - name: Curtain
     uniqueID: 20762165
+    locked: 0
+  - name: HandCursor
+    uniqueID: 2910087449
     locked: 0
