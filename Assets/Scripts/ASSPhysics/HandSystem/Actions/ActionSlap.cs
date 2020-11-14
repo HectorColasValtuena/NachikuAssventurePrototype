@@ -1,6 +1,7 @@
 using UnityEngine;
 
-using ActionSettings = ASSPhysics.SettingSystem.ActionSettings; //
+using ActionSettings = ASSPhysics.SettingSystem.ActionSettings;
+using AnimationNames = ASSPhysics.Constants.AnimationNames;
 using EInputState = ASSPhysics.InputSystem.EInputState;
 
 namespace ASSPhysics.HandSystem.Actions
@@ -35,6 +36,9 @@ namespace ASSPhysics.HandSystem.Actions
 		//execute the slapping action
 		private void PerformSlap ()
 		{
+			//set the animation state
+			tool.SetAnimationState(AnimationNames.Tool.stateSlap);
+
 			//fetch colliders in range around the tool
 			Collider[] colliderList = ActionSettings.slapAreaSettings.GetCollidersInRange(tool.transform);
 			//add a force to each collider in range

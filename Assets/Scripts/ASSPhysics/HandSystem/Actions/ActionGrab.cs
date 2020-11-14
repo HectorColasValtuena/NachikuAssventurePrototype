@@ -1,6 +1,6 @@
 using UnityEngine; //Physics, Transform, SpringJoint, ...
 
-using ASSPhysics.Constants;	//AnimationNames
+using AnimationNames = ASSPhysics.Constants.AnimationNames;
 using ActionSettings = ASSPhysics.SettingSystem.ActionSettings; //tailGrabSettings, surfaceGrabSettings
 using EInputState = ASSPhysics.InputSystem.EInputState;
 
