@@ -54,7 +54,7 @@ namespace ASSPhysics.HandSystem.Actions
 		//clears and finishes the action
 		public virtual void Clear ()
 		{
-			//auto = false; //unnecessary the tool is gonna be destroyed anyway
+			//auto = false; //unnecessary the action is gonna be destroyed anyway
 			tool.ActionEnded();
 		}
 

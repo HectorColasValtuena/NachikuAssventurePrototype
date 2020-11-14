@@ -42,5 +42,14 @@ namespace ASSPhysics.SettingSystem
 				? _interactorCheckSettings
 				: _interactorCheckSettings = Resources.Load<ActionSettingCollisionRadius>(interactorAreaCheckSettingsPath);
 		}}
+
+		private const string slapAreaSettingsPath = "SlapAreaSettings";
+		private static ActionSettingCollisionRadius _slapAreaSettings;
+		public static ActionSettingCollisionRadius slapAreaSettings
+		{ get {
+			return (_slapAreaSettings != null)	//if cache is null, load from UnityEngine.Resources
+				? _slapAreaSettings
+				: _slapAreaSettings = Resources.Load<ActionSettingCollisionRadius>(slapAreaSettingsPath);
+		}}
 	}
 }

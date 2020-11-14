@@ -1,30 +1,14 @@
 ﻿using UnityEngine;
 
-using InputSettings = ASSPhysics.SettingSystem.InputSettings; //InputSettings
-using AnimationNames = ASSPhysics.Constants.AnimationNames;	//AnimationNames
-using ASSPhysics.HandSystem.Actions; //IAction, ActionGrab, ActionUseInteractor
+using InputSettings = ASSPhysics.SettingSystem.InputSettings;
+using AnimationNames = ASSPhysics.Constants.AnimationNames;
+using ASSPhysics.HandSystem.Actions; //IAction, ActionGrab, ActionSlap ActionUseInteractor
 
 namespace ASSPhysics.HandSystem.Tools
 {
 	public class Hand : ToolBase
 	{
 	//MonoBehaviour Lifecycle implementation
-/*
-		public void Awake ()
-		{
-			base.Awake();
-		//=============================================================================
-		//[TO-DO]
-		//=============================================================================
-		}
-		public void Update ()
-		{
-			base.Update();
-		//=============================================================================
-		//[TO-DO]
-		//=============================================================================			
-		}
-*/
 	//ENDOF MonoBehaviour Lifecycle implementation
 
 	//ToolBase abstract implementation
@@ -47,7 +31,7 @@ namespace ASSPhysics.HandSystem.Tools
 		{
 			if (inputHeldTime <= InputSettings.maximumTimeHeldForSlap)
 			{
-				//SetAction<ActionSlap>();//InitiateSlap();
+				SetAction<ActionSlap>();//InitiateSlap();
 				Debug.Log("Slappin'");
 			}
 		}
