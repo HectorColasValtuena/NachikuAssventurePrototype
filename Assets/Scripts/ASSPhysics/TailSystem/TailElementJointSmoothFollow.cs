@@ -59,7 +59,7 @@ namespace ASSPhysics.TailSystem
 			//jointed element handles the pulse by setting its rotation 
 		protected override void DoPulse (IPulseData pulseData)
 		{
-			Debug.Log("pulse: " + pulseData.computedValue);
+			//Debug.Log("pulse: " + pulseData.computedValue);
 			targetRotation = PulseToQuaternion(pulseData); // * BaseRotation;
 		}
 	//ENDOF IPulsePropagator abstract method implementation
