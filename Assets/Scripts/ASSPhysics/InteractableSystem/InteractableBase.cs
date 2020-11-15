@@ -10,7 +10,9 @@ namespace ASSPhysics.InteractableSystem
 	public abstract class InteractableBase : MonoBehaviour, IInteractable
 	{
 	//serialized fields and properties
-		public UnityEvent callback;
+		//callback stack to execute upon triggering
+		[SerializeField]
+		private UnityEvent callback;
 	//serialized fields and properties
 
 	//private fields and properties
@@ -33,6 +35,11 @@ namespace ASSPhysics.InteractableSystem
 	//ENDOF private fields and properties
 
 	//IInteractable implementation
+		//interactable with highest priority will be called when several in range
+		[SerializeField]
+		private int _priority;
+		public int priority { get { return _priority; }}
+
 		public abstract void Interact (EInputState state);
 	//ENDOF IInteractable implementation
 
