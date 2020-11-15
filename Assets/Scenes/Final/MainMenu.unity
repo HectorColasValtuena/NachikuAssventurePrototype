@@ -17447,8 +17447,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
-      value: "Jiji Espero que te guste \xA1Tirame de la colita!\nCuando quieras pulsa
-        jugar (el l\xE1tigo enrollado) y te mostrar\xE9 el resto :3"
+      value: "Jiji Espero que te guste \xA1Prueba a tirame de la colita!\nCuando
+        quieras pulsa jugar (el l\xE1tigo enrollado) y te mostrar\xE9 el resto :3"
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18801,7 +18801,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3080553169204151112, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
       propertyPath: m_Text
-      value: "Mueve la manita sobre cualquier parte de mi cuerpo (p.ej. mi cabeza).\r\nLuegho
+      value: "Mueve la manita sobre cualquier parte de mi cuerpo (p.ej. mi cabeza).\r\nLuego
         haz click (ver\xE1s la mano cerrarse), y sin soltar el click, \xA1arrastra
         en la direcci\xF3n que quieras!"
       objectReference: {fileID: 0}
