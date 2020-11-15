@@ -1,0 +1,13 @@
+!Hola! Lo primero, gracias por haberme abierto y darme una oportunidad ^^
+Esta es una demo práctica/prototipo creada para los ojos de Paula Valiente. Llevo tres meses trabajando en esto para que lo veas :3
+Es una demostración del tipo de escenas con animación física que puedo montar. Podemos crear algo muy brutal con muy poco más que lo que ya tengo implementado.
+
+Disclaimers importantes:
+>El arte aquí representado pertenece enteramente a Nasuki/Paula Valiente. Esta demo es sólo para ti, y NUNCA, JAMÁS pienso distribuir tu arte (ni el de otros artistas) sin tu consentimiento explícito ni tu parte en el reparto de los beneficios.
+De hecho la idea es específicamente que cada artista venda sus videojuegos sobre sus personajes usándome como plataforma para el desarrollo y distribución.
+
+> Esto es una demo. Ningún comportamiento es su versión final, sólo pretende demostrar que funciona. 
+Además... Soy programador, no artista... así que he adaptado tu arte como buenamente he podido apañarme con GIMP >w<
+
+Espero con ilusión que te guste y que te interese desarrollar algún videojuego a partir de ésto.
+Te ruego muy MUY fuerte que te pongas en contacto conmigo cuando lo hayas visto
