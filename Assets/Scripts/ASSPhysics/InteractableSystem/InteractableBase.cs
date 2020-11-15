@@ -12,7 +12,7 @@ namespace ASSPhysics.InteractableSystem
 	//serialized fields and properties
 		//callback stack to execute upon triggering
 		[SerializeField]
-		private UnityEvent callback;
+		private UnityEvent callback = null;
 	//serialized fields and properties
 
 	//private fields and properties
@@ -37,7 +37,7 @@ namespace ASSPhysics.InteractableSystem
 	//IInteractable implementation
 		//interactable with highest priority will be called when several in range
 		[SerializeField]
-		private int _priority;
+		private int _priority = 0;
 		public int priority { get { return _priority; }}
 
 		public abstract void Interact (EInputState state);
