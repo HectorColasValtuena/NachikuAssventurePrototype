@@ -32,7 +32,7 @@
 	//ENDOF base class abstract implementation
 
 	//abstract method declaration
-		protected abstract bool CheckHeldCondition () ;
+		protected abstract bool CheckHeldCondition ();
 	//ENDOF abstract method declaration
 	}
 }
