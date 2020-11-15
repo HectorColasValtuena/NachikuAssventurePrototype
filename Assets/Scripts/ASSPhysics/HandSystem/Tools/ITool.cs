@@ -3,6 +3,8 @@
 using EInputState = ASSPhysics.InputSystem.EInputState;
 using IInteractor = ASSPhysics.InteractableSystem.IInteractor;
 
+using IAction = ASSPhysics.HandSystem.Actions.IAction;
+
 namespace ASSPhysics.HandSystem.Tools
 {
 	public interface ITool
@@ -10,6 +12,7 @@ namespace ASSPhysics.HandSystem.Tools
 		Transform transform {get;}
 		GameObject gameObject {get;}
 		IInteractor interactor {get;}
+		IAction activeAction {get;}
 
 		Vector3 position {get; set;}	//position of the hand
 		bool focused {get; set;}		//wether the hand is on focus or not

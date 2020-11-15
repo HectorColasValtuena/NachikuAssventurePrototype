@@ -52,6 +52,8 @@ namespace ASSPhysics.HandSystem.Tools
 		//private IInteractor _interactor;
 		public IInteractor interactor {get; private set;}
 
+		public IAction activeAction { get { return action; } }
+
 		public Vector3 position
 		{
 			set 
