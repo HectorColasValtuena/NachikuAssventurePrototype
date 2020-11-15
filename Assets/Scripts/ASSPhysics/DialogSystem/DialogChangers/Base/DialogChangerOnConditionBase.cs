@@ -1,4 +1,4 @@
-﻿namespace ASSPhysics.DialogSystem
+﻿namespace ASSPhysics.DialogSystem.DialogChangers
 {
 	public abstract class DialogChangerOnConditionBase : DialogChangerBase
 	{

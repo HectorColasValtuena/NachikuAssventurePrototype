@@ -3,7 +3,7 @@
 using TDialogController = ASSPhysics.DialogSystem.DialogControllers.DialogControllerBase;
 using TDialogManager = ASSPhysics.DialogSystem.DialogManagerBase;
 
-namespace ASSPhysics.DialogSystem
+namespace ASSPhysics.DialogSystem.DialogChangers
 {
 	public class DialogChangerBase : MonoBehaviour
 	{
