@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
-using ASSPhysics.HandSystem.Tools; //ITool
+using ITool = ASSPhysics.HandSystem.Tools.ITool;
+using ToolBase = ASSPhysics.HandSystem.Tools.ToolBase;
+
 using ASSPhysics.InputSystem; //MouseInput, EInputState
 
 namespace ASSPhysics.HandSystem.Managers
@@ -21,11 +23,20 @@ namespace ASSPhysics.HandSystem.Managers
 		}
 	//ENDOF MonoBehaviour Lifecycle implementation
 
+	//serialized fields
 		[SerializeField]
-		public ITool[] toolList;	//list of hands
+		private ITool[] toolList;	//list of hands
+	//ENDOF serialized fields
 
-		private int focusedTool;		//highligted and active hand
+	//private fields and properties
+		private int focusedToolIndex;		//highligted and active hand
+	//ENDOF private fields and properties
 
+	//IToolManager implementation
+		public override ITool activeTool { get { return toolList[focusedToolIndex]; }}
+	//ENDOF IToolManager implementation
+
+	//private method implementation
 		//finds all tools in the scene and save them to our list
 		private void RallyTools ()
 		{
@@ -42,12 +53,12 @@ namespace ASSPhysics.HandSystem.Managers
 				target = ((target * (int) Mathf.Sign((float) target))) % toolList.Length;
 			}
 
-			focusedTool = target;
+			focusedToolIndex = target;
 
 			//send every know tool an update on its status - true if they're focused false otherwise
 			for (int i = 0, iLimit = toolList.Length; i < iLimit; i++)
 			{
-				toolList[i].focused = (i == focusedTool);
+				toolList[i].focused = (i == focusedToolIndex);
 			}
 		}
 
@@ -57,13 +68,13 @@ namespace ASSPhysics.HandSystem.Managers
 			//[TO-DO] MouseInput should answer wether or not to swap active hands, not be directly requested the button input
 			if (MouseInput.GetButtonDown(1))
 			{
-				SetFocused(focusedTool+1);
+				SetFocused(focusedToolIndex+1);
 			}
 		}
 
 		private void UpdateFocusedToolPosition ()
 		{
-			toolList[focusedTool].Move(MouseInput.scaledDelta);
+			toolList[focusedToolIndex].Move(MouseInput.scaledDelta);
 		}
 
 		//checks for input corresponding to main action, sends the correct state to the tool
@@ -73,16 +84,17 @@ namespace ASSPhysics.HandSystem.Managers
 			bool buttonFirstDown = Input.GetMouseButtonDown(0);
 			if (button && !buttonFirstDown)
 			{
-				toolList[focusedTool].MainInput(EInputState.Held);
+				toolList[focusedToolIndex].MainInput(EInputState.Held);
 			}
 			else if (buttonFirstDown)
 			{
-				toolList[focusedTool].MainInput(EInputState.Started);
+				toolList[focusedToolIndex].MainInput(EInputState.Started);
 			}
 			else if (Input.GetMouseButtonUp(0))
 			{
-				toolList[focusedTool].MainInput(EInputState.Ended);
+				toolList[focusedToolIndex].MainInput(EInputState.Ended);
 			}
 		}
+	//ENDOF private method implementation
 	}
 }
