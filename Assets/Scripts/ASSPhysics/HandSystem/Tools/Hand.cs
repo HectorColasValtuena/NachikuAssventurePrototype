@@ -8,12 +8,14 @@ namespace ASSPhysics.HandSystem.Tools
 {
 	public class Hand : ToolBase
 	{
+	//private fields and properties
+		private float inputHeldTime = 0.0f;
+	//ENDOF private fields and proerties
+
 	//MonoBehaviour Lifecycle implementation
 	//ENDOF MonoBehaviour Lifecycle implementation
-
-	//ToolBase abstract implementation
-		private float inputHeldTime = 0.0f;
 		
+	//ToolBase implementation
 		protected override void InputStarted ()
 		{
 			//upon first starting an input, try to determine if an special zone action is required
@@ -42,7 +44,7 @@ namespace ASSPhysics.HandSystem.Tools
 			if (triggerName == null) { triggerName = AnimationNames.Tool.stateFlat; }
 			base.SetAnimationState(triggerName);
 		}
-	//ENDOF ToolBase abstract implementation
+	//ENDOF ToolBase implementation
 
 	//private method implementation
 		private void TryActions ()
@@ -50,6 +52,7 @@ namespace ASSPhysics.HandSystem.Tools
 			if (SetAction<ActionUseInteractor>()) return;
 			if (SetAction<ActionGrab>()) return;
 		}
+	//ENDOF private method implementation
 	}
 }
 
