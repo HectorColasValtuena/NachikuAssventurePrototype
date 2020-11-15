@@ -25,6 +25,7 @@ namespace ASSPhysics.SceneSystem
 			if (!done && !CurtainsController.isCompletelyClosed)
 			{
 				animator.SetBool(AnimationNames.Curtains.drumrollFinalClash, true);
+				GetComponent<IntroController>().KickIntro();
 				done = true;
 			}
 		}

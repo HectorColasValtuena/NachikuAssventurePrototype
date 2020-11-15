@@ -24,6 +24,9 @@ namespace ASSPhysics.DialogSystem.DialogChangers
 							: transform.root.GetComponentInChildren<TDialogManager>();
 			}
 		}
+
+		[SerializeField]
+		private float delay = 0.0f;
 	//ENDOF serialized fields
 
 	//public methods
@@ -31,7 +34,19 @@ namespace ASSPhysics.DialogSystem.DialogChangers
 		public void ChangeDialog () { ChangeDialog(defaultTargetDialog); }
 		public void ChangeDialog (TDialogController dialog)
 		{
-			Debug.Log("Changing dialog");
+			//Debug.Log("Changing dialog");
+			if (delay <= 0){ DoChangeDialog(dialog); }
+			else { StartCoroutine(DelayedChangeDialog(dialog, delay)); }
+		}
+
+		private System.Collections.IEnumerator DelayedChangeDialog (TDialogController dialog, float delayLength)
+		{
+			yield return new UnityEngine.WaitForSeconds(delayLength);
+			DoChangeDialog(dialog);
+		}
+
+		private void DoChangeDialog (TDialogController dialog)
+		{
 			dialogManager.SetActiveDialog(dialog);
 		}
 	//ENDOF public methods
