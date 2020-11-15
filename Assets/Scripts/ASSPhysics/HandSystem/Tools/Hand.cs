@@ -31,11 +31,7 @@ namespace ASSPhysics.HandSystem.Tools
 
 		protected override void InputEnded ()
 		{
-			if (inputHeldTime <= InputSettings.maximumTimeHeldForSlap)
-			{
-				SetAction<ActionSlap>();//InitiateSlap();
-				Debug.Log("Slappin'");
-			}
+			TrySlap();
 		}
 
 		//sets the animator
@@ -51,6 +47,18 @@ namespace ASSPhysics.HandSystem.Tools
 		{
 			if (SetAction<ActionUseInteractor>()) return;
 			if (SetAction<ActionGrab>()) return;
+		}
+
+		//upon release perform a slap if input was held for short enough and previous action is not an ActionUseInteractor
+		private void TrySlap ()
+		{
+			if (inputHeldTime <= InputSettings.maximumTimeHeldForSlap)
+			{
+				if ((action as ActionUseInteractor)?.IsValid() == true)
+				{ return; }	//if previous action is a valid UseInteractor forgo slap
+				SetAction<ActionSlap>();
+				Debug.Log("Slappin'");
+			}
 		}
 	//ENDOF private method implementation
 	}
