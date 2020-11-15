@@ -49,7 +49,7 @@ namespace ASSPhysics.TailSystem
 		//when initiating a waving movement, create a new pulse and start its propagation
 		private void WaveTail ()
 		{
-			Debug.Log("Waving");
+			//Debug.Log("Waving");
 			firstTailElement.Pulse(new PulseDataSignedWaving(
 				__segmentLengthRange: segmentLengthRange, //RandomRangeInt
 				__pulseIntensity: pulseIntensityRange.Generate(), //float
