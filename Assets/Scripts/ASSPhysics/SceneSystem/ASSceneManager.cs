@@ -13,6 +13,7 @@ namespace ASSPhysics.SceneSystem
 			public static int LAUNCHER = 0;	//unused, included for consistency
 			public static int CURTAINS = 1;
 			public static int MAINMENU = 2;
+			public static int QUITTER = 3;
 		}
 	//ENDOF Constants and enum definitions
 
