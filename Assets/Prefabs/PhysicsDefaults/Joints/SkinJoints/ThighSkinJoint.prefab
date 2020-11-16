@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184607161702151015, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_Name
-      value: LowerBackSkinJoint
+      value: ThighSkinJoint
       objectReference: {fileID: 0}
     - target: {fileID: 2386153979653544477, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53,6 +53,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2386153979653544477, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_RotationDriveMode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
