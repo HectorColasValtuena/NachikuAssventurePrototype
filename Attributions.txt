@@ -2,8 +2,11 @@ potenciales
 ==========================
 menu iconography
 	AlchemyCirclesGenerator by Ciacco Davide
+
+	https://thenounproject.com/
 	Whip by Joab Penalva from the Noun Project
 	Door by Deemak Daksina from the Noun Project
+	Back Arrow by Alice Design from the Noun Project
 	Diskette by throwaway icons from the Noun Project
 	Cut Scene by Gilang Abiogi Umri from the Noun Project
 	Tools by logan from the Noun Project
