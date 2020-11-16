@@ -91,7 +91,10 @@ namespace ASSpriteRigging.BoneUtility
 			BoneRigging.BoneSetupComponent<TCollider>(bone, defaultCollider);
 
 			//create a joint anchoring the bone to target anchor rigidbody
-			BoneRigging.BoneConnectJoint<TAnchorJoint>(bone, anchorRigidbody, defaultAnchorJoint);
+			if (defaultAnchorJoint != null)
+			{
+				BoneRigging.BoneConnectJoint<TAnchorJoint>(bone, anchorRigidbody, defaultAnchorJoint);
+			}
 		}
 
 		//Generate springs between bones connected according to a triangle list
