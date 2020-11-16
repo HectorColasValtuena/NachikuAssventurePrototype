@@ -2,7 +2,7 @@
 
 using ASSceneManager = ASSPhysics.SceneSystem.ASSceneManager;
 
-public class TMPSceneChange : MonoBehaviour
+public class SceneChanger : MonoBehaviour
 {
 	public void GoToScene (int targetScene)
 	{
