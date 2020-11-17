@@ -27,7 +27,7 @@ Yo quiero crear un portal donde los artistas puedan:
 
 
 
-Llevo 3 meses trabajando en un prototipo/demo técnica de un sofisticado sistema de físicas con el que dar vida a tus dibujos. Perdón por la inmodestia pero es la hostia, creo que te gustaría.
+Llevo 3 meses trabajando en un prototipo/demo técnica de un sofisticado sistema de físicas con el que dar vida a tus dibujos. Creo que te gustará.
 Me gustaría que lo probaras y me contaras qué te parece y si te interesaría publicar algún videojuego conmigo.
 
 Para no hacerte descargar ningun ejecutable, por si te da desconfianza, te he subido una build para navegador:
