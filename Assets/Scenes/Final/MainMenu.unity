@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 120942804}
   - component: {fileID: 120942803}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1196,10 +1196,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -1245,7 +1245,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1258,8 +1258,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -1291,10 +1291,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -1340,7 +1340,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1353,8 +1353,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -1386,10 +1386,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -1435,7 +1435,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1448,8 +1448,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -1483,8 +1483,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -1564,11 +1564,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120942800}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &134823472
 GameObject:
@@ -1586,7 +1586,7 @@ GameObject:
   - component: {fileID: 134823476}
   - component: {fileID: 134823475}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1641,10 +1641,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -1690,7 +1690,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1703,8 +1703,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -1736,10 +1736,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -1785,7 +1785,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1798,8 +1798,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -1831,10 +1831,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -1880,7 +1880,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1893,8 +1893,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -1928,8 +1928,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -2009,11 +2009,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134823472}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &144345994
 GameObject:
@@ -3325,7 +3325,7 @@ GameObject:
   - component: {fileID: 222052696}
   - component: {fileID: 222052695}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3380,10 +3380,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -3429,7 +3429,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -3442,8 +3442,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -3558,11 +3558,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222052692}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &223248472
 GameObject:
@@ -4673,7 +4673,7 @@ GameObject:
   - component: {fileID: 290113283}
   - component: {fileID: 290113282}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4728,10 +4728,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -4777,7 +4777,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -4790,8 +4790,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -4906,11 +4906,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290113279}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &295112767
 GameObject:
@@ -5988,7 +5988,7 @@ GameObject:
   - component: {fileID: 357197551}
   - component: {fileID: 357197550}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6043,10 +6043,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -6092,7 +6092,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -6105,8 +6105,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -6138,10 +6138,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -6187,7 +6187,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -6200,8 +6200,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -6233,10 +6233,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -6282,7 +6282,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -6295,8 +6295,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -6328,10 +6328,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -6377,7 +6377,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -6390,8 +6390,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -6425,8 +6425,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -6506,11 +6506,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357197547}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &372887913
 GameObject:
@@ -6759,7 +6759,7 @@ GameObject:
   - component: {fileID: 384073458}
   - component: {fileID: 384073459}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6814,10 +6814,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -6863,7 +6863,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -6876,8 +6876,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -6909,10 +6909,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -6958,7 +6958,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -6971,8 +6971,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -7006,8 +7006,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -7087,11 +7087,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384073455}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &385455154 stripped
 Transform:
@@ -8624,7 +8624,7 @@ GameObject:
   - component: {fileID: 534427248}
   - component: {fileID: 534427247}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8679,10 +8679,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -8728,7 +8728,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -8741,8 +8741,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -8774,10 +8774,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -8823,7 +8823,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -8836,8 +8836,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -8869,10 +8869,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -8918,7 +8918,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -8931,8 +8931,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -8966,8 +8966,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -9047,11 +9047,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534427244}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &556764422
 GameObject:
@@ -9243,7 +9243,7 @@ GameObject:
   - component: {fileID: 560229045}
   - component: {fileID: 560229044}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9298,10 +9298,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -9347,7 +9347,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -9360,8 +9360,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -9395,8 +9395,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -9476,11 +9476,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560229041}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &568553565
 GameObject:
@@ -9734,7 +9734,7 @@ GameObject:
   - component: {fileID: 613522508}
   - component: {fileID: 613522507}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9789,10 +9789,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -9838,7 +9838,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -9851,8 +9851,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -9886,8 +9886,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -9967,11 +9967,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613522504}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &619378955
 GameObject:
@@ -10294,7 +10294,7 @@ GameObject:
   - component: {fileID: 679686703}
   - component: {fileID: 679686702}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10349,10 +10349,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -10398,7 +10398,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -10411,8 +10411,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -10444,10 +10444,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -10493,7 +10493,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -10506,8 +10506,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -10541,8 +10541,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -10622,11 +10622,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679686699}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &680098975
 GameObject:
@@ -11038,7 +11038,7 @@ GameObject:
   - component: {fileID: 716094858}
   - component: {fileID: 716094857}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11093,10 +11093,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -11142,7 +11142,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -11155,8 +11155,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -11188,10 +11188,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -11237,7 +11237,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -11250,8 +11250,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -11283,10 +11283,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -11332,7 +11332,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -11345,8 +11345,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -11380,8 +11380,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -11461,11 +11461,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716094854}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &723334855
 GameObject:
@@ -11482,7 +11482,7 @@ GameObject:
   - component: {fileID: 723334859}
   - component: {fileID: 723334858}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11537,10 +11537,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -11586,7 +11586,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -11599,8 +11599,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -11632,10 +11632,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -11681,7 +11681,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -11694,8 +11694,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -11810,11 +11810,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723334855}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &771045609
 GameObject:
@@ -12782,7 +12782,7 @@ GameObject:
   - component: {fileID: 868496065}
   - component: {fileID: 868496064}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12837,10 +12837,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -12886,7 +12886,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -12899,8 +12899,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -12932,10 +12932,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -12981,7 +12981,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -12994,8 +12994,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -13027,10 +13027,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13076,7 +13076,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -13089,8 +13089,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -13122,10 +13122,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13171,7 +13171,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -13184,8 +13184,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -13219,8 +13219,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13300,11 +13300,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868496061}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &882966818
 GameObject:
@@ -13321,7 +13321,7 @@ GameObject:
   - component: {fileID: 882966822}
   - component: {fileID: 882966821}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13376,10 +13376,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13425,7 +13425,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -13438,8 +13438,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -13471,10 +13471,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13520,7 +13520,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -13533,8 +13533,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -13649,11 +13649,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882966818}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &885115763
 GameObject:
@@ -13670,7 +13670,7 @@ GameObject:
   - component: {fileID: 885115767}
   - component: {fileID: 885115766}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13725,10 +13725,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13774,7 +13774,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -13787,8 +13787,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -13820,10 +13820,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13869,7 +13869,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -13882,8 +13882,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -13917,8 +13917,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -13998,11 +13998,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885115763}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &885323443
 GameObject:
@@ -14019,7 +14019,7 @@ GameObject:
   - component: {fileID: 885323447}
   - component: {fileID: 885323446}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14074,10 +14074,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -14123,7 +14123,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -14136,8 +14136,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -14169,10 +14169,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -14218,7 +14218,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -14231,8 +14231,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -14266,8 +14266,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -14347,11 +14347,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885323443}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &931475667
 GameObject:
@@ -14368,7 +14368,7 @@ GameObject:
   - component: {fileID: 931475671}
   - component: {fileID: 931475670}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14423,10 +14423,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -14472,7 +14472,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -14485,8 +14485,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -14518,10 +14518,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -14567,7 +14567,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -14580,8 +14580,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -14696,11 +14696,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931475667}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &933625453 stripped
 Transform:
@@ -15231,7 +15231,7 @@ GameObject:
   - component: {fileID: 977080786}
   - component: {fileID: 977080785}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15286,10 +15286,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -15335,7 +15335,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -15348,8 +15348,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -15381,10 +15381,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -15430,7 +15430,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -15443,8 +15443,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -15559,11 +15559,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977080782}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &998766496
 GameObject:
@@ -15579,7 +15579,7 @@ GameObject:
   - component: {fileID: 998766500}
   - component: {fileID: 998766499}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15634,10 +15634,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -15683,7 +15683,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -15696,8 +15696,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -15812,11 +15812,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998766496}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &999776517
 GameObject:
@@ -15915,7 +15915,7 @@ GameObject:
   - component: {fileID: 1017565573}
   - component: {fileID: 1017565574}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15970,10 +15970,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -16019,7 +16019,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -16032,8 +16032,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -16065,10 +16065,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -16114,7 +16114,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -16127,8 +16127,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -16162,8 +16162,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -16243,11 +16243,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017565570}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1039754360 stripped
 Transform:
@@ -16805,7 +16805,7 @@ GameObject:
   - component: {fileID: 1099326393}
   - component: {fileID: 1099326392}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16860,10 +16860,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -16909,7 +16909,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -16922,8 +16922,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -16955,10 +16955,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -17004,7 +17004,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -17017,8 +17017,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -17052,8 +17052,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -17133,11 +17133,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099326389}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!134 &1111775075
 PhysicMaterial:
@@ -17340,7 +17340,7 @@ GameObject:
   - component: {fileID: 1142763363}
   - component: {fileID: 1142763362}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17395,10 +17395,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -17444,7 +17444,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -17457,8 +17457,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -17490,10 +17490,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -17539,7 +17539,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -17552,8 +17552,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -17585,10 +17585,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -17634,7 +17634,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -17647,8 +17647,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -17682,8 +17682,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -17763,11 +17763,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142763359}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1153459121
 PrefabInstance:
@@ -18006,18 +18006,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!134 &1156455730
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ' (Instance)'
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1 &1203172501
 GameObject:
   m_ObjectHideFlags: 0
@@ -18385,7 +18373,7 @@ GameObject:
   - component: {fileID: 1252275219}
   - component: {fileID: 1252275218}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18440,10 +18428,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -18489,7 +18477,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -18502,8 +18490,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -18535,10 +18523,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -18584,7 +18572,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -18597,8 +18585,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -18713,11 +18701,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252275215}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1263986956
 GameObject:
@@ -19272,7 +19260,7 @@ GameObject:
   - component: {fileID: 1319287290}
   - component: {fileID: 1319287289}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19327,10 +19315,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -19376,7 +19364,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -19389,8 +19377,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -19422,10 +19410,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -19471,7 +19459,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -19484,8 +19472,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -19517,10 +19505,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -19566,7 +19554,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -19579,8 +19567,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -19614,8 +19602,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -19695,11 +19683,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319287286}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1320590706
 GameObject:
@@ -19923,7 +19911,7 @@ GameObject:
   - component: {fileID: 1342338711}
   - component: {fileID: 1342338710}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19978,10 +19966,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -20027,7 +20015,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -20040,8 +20028,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -20073,10 +20061,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -20122,7 +20110,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -20135,8 +20123,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -20168,10 +20156,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -20217,7 +20205,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -20230,8 +20218,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -20265,8 +20253,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -20346,11 +20334,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342338707}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1350103617
 GameObject:
@@ -21137,7 +21125,7 @@ GameObject:
   - component: {fileID: 1451558403}
   - component: {fileID: 1451558402}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21192,10 +21180,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -21241,7 +21229,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -21254,8 +21242,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -21289,8 +21277,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -21370,11 +21358,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451558399}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1482003675
 GameObject:
@@ -22047,7 +22035,7 @@ GameObject:
   - component: {fileID: 1565360497}
   - component: {fileID: 1565360496}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22102,10 +22090,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -22151,7 +22139,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -22164,8 +22152,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -22197,10 +22185,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -22246,7 +22234,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -22259,8 +22247,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -22292,10 +22280,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -22341,7 +22329,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -22354,8 +22342,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -22389,8 +22377,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -22470,11 +22458,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565360493}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1573688321
 GameObject:
@@ -22652,18 +22640,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!134 &1628275900
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1 &1637998217
 GameObject:
   m_ObjectHideFlags: 0
@@ -23332,6 +23308,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!134 &1715365426
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ' (Instance) (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance) (Instance) (Instance) (Instance)'
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1 &1745674392
 GameObject:
   m_ObjectHideFlags: 0
@@ -23347,7 +23336,7 @@ GameObject:
   - component: {fileID: 1745674396}
   - component: {fileID: 1745674395}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23402,10 +23391,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -23451,7 +23440,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -23464,8 +23453,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -23497,10 +23486,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -23546,7 +23535,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -23559,8 +23548,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -23675,11 +23664,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745674392}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1748089399
 GameObject:
@@ -23872,7 +23861,7 @@ GameObject:
   - component: {fileID: 1754974234}
   - component: {fileID: 1754974235}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23911,10 +23900,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -23960,7 +23949,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -23973,8 +23962,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -24006,10 +23995,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -24055,7 +24044,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -24068,8 +24057,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -24184,11 +24173,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754974232}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1754974238
 Rigidbody:
@@ -24681,7 +24670,7 @@ MonoBehaviour:
   defaultLayerSample: {fileID: 8541402150558816336, guid: 4c39341bdb841fc428c3ebe365659bbe, type: 3}
   defaultRigidbody: {fileID: 1095258344495953599, guid: 845656aff5b26644db00888631e26dcc, type: 3}
   defaultCollider: {fileID: 7892877375867828106, guid: 269919ecddc5c274fa7f2783414b28c4, type: 3}
-  defaultAnchorJoint: {fileID: 862743949859629513, guid: eb6d2a9ba34cc6c4c8be8fe3a383bcfd, type: 3}
+  defaultAnchorJoint: {fileID: 6026185061708921924, guid: 82edb6db44ac7174e9609e2af19f7f4e, type: 3}
   defaultMeshJoint: {fileID: 862743949859629513, guid: 7de73f8f9ab37614daf636e64cafdfdd, type: 3}
 --- !u!114 &1803981750
 MonoBehaviour:
@@ -24880,7 +24869,7 @@ GameObject:
   - component: {fileID: 1822591493}
   - component: {fileID: 1822591492}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24935,10 +24924,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -24984,7 +24973,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -24997,8 +24986,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -25113,11 +25102,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822591489}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1823720393
 GameObject:
@@ -25406,7 +25395,7 @@ GameObject:
   - component: {fileID: 1862419813}
   - component: {fileID: 1862419812}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25461,10 +25450,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -25510,7 +25499,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -25523,8 +25512,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -25556,10 +25545,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -25605,7 +25594,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -25618,8 +25607,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -25651,10 +25640,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -25700,7 +25689,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -25713,8 +25702,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -25746,10 +25735,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -25795,7 +25784,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -25808,8 +25797,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -25843,8 +25832,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -25924,11 +25913,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862419809}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1870898632
 GameObject:
@@ -26093,7 +26082,7 @@ MonoBehaviour:
   defaultLayerSample: {fileID: 8541402150558816336, guid: 4c39341bdb841fc428c3ebe365659bbe, type: 3}
   defaultRigidbody: {fileID: 1095258344495953599, guid: 845656aff5b26644db00888631e26dcc, type: 3}
   defaultCollider: {fileID: 7892877375867828106, guid: 269919ecddc5c274fa7f2783414b28c4, type: 3}
-  defaultAnchorJoint: {fileID: 862743949859629513, guid: eb6d2a9ba34cc6c4c8be8fe3a383bcfd, type: 3}
+  defaultAnchorJoint: {fileID: 6026185061708921924, guid: 82edb6db44ac7174e9609e2af19f7f4e, type: 3}
   defaultMeshJoint: {fileID: 862743949859629513, guid: 7de73f8f9ab37614daf636e64cafdfdd, type: 3}
 --- !u!114 &1870898637
 MonoBehaviour:
@@ -26277,7 +26266,7 @@ GameObject:
   - component: {fileID: 1873305396}
   - component: {fileID: 1873305395}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26332,10 +26321,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -26381,7 +26370,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -26394,8 +26383,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -26427,10 +26416,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -26476,7 +26465,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -26489,8 +26478,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -26522,10 +26511,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -26571,7 +26560,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -26584,8 +26573,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -26619,8 +26608,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -26700,11 +26689,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873305392}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1895483972
 GameObject:
@@ -27279,7 +27268,7 @@ GameObject:
   - component: {fileID: 1926413928}
   - component: {fileID: 1926413927}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27334,10 +27323,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -27383,7 +27372,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -27396,8 +27385,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -27429,10 +27418,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -27478,7 +27467,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -27491,8 +27480,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -27607,11 +27596,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926413924}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1946316527
 GameObject:
@@ -27629,7 +27618,7 @@ GameObject:
   - component: {fileID: 1946316531}
   - component: {fileID: 1946316530}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27684,10 +27673,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -27733,7 +27722,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -27746,8 +27735,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -27779,10 +27768,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -27828,7 +27817,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -27841,8 +27830,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -27874,10 +27863,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -27923,7 +27912,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -27936,8 +27925,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -27971,8 +27960,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -28052,11 +28041,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946316527}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1954892775
 GameObject:
@@ -28517,7 +28506,7 @@ GameObject:
   - component: {fileID: 1998690304}
   - component: {fileID: 1998690303}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28572,10 +28561,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -28621,7 +28610,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -28634,8 +28623,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -28667,10 +28656,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -28716,7 +28705,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -28729,8 +28718,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -28845,11 +28834,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998690300}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2001380358
 GameObject:
@@ -29042,7 +29031,7 @@ GameObject:
   - component: {fileID: 2002996966}
   - component: {fileID: 2002996965}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29097,10 +29086,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -29146,7 +29135,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -29159,8 +29148,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -29192,10 +29181,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -29241,7 +29230,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -29254,8 +29243,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -29289,8 +29278,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -29370,11 +29359,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002996962}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2005358964
 GameObject:
@@ -29392,7 +29381,7 @@ GameObject:
   - component: {fileID: 2005358968}
   - component: {fileID: 2005358967}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29447,10 +29436,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -29496,7 +29485,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -29509,8 +29498,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -29542,10 +29531,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -29591,7 +29580,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -29604,8 +29593,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -29637,10 +29626,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -29686,7 +29675,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -29699,8 +29688,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -29734,8 +29723,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -29815,11 +29804,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005358964}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2009301296
 GameObject:
@@ -30335,7 +30324,7 @@ GameObject:
   - component: {fileID: 2015222462}
   - component: {fileID: 2015222461}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30390,10 +30379,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -30439,7 +30428,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -30452,8 +30441,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -30485,10 +30474,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -30534,7 +30523,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -30547,8 +30536,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -30580,10 +30569,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -30629,7 +30618,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -30642,8 +30631,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -30675,10 +30664,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -30724,7 +30713,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -30737,8 +30726,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -30770,10 +30759,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -30819,7 +30808,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -30832,8 +30821,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -30867,8 +30856,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -30948,11 +30937,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015222458}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2020359812
 GameObject:
@@ -31579,7 +31568,7 @@ GameObject:
   - component: {fileID: 2062614726}
   - component: {fileID: 2062614725}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31634,10 +31623,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -31683,7 +31672,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -31696,8 +31685,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -31729,10 +31718,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -31778,7 +31767,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -31791,8 +31780,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -31826,8 +31815,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -31907,11 +31896,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062614722}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2075345811
 GameObject:
@@ -31927,7 +31916,7 @@ GameObject:
   - component: {fileID: 2075345815}
   - component: {fileID: 2075345814}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31982,10 +31971,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -32031,7 +32020,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -32044,8 +32033,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -32079,8 +32068,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -32160,11 +32149,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075345811}
-  m_Material: {fileID: 1628275900}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2082526535
 GameObject:
@@ -32287,7 +32276,7 @@ GameObject:
   - component: {fileID: 2090135189}
   - component: {fileID: 2090135188}
   m_Layer: 8
-  m_Name: RigidJoint Variant
+  m_Name: RigidJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32326,10 +32315,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -32375,7 +32364,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -32388,8 +32377,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -32504,11 +32493,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090135186}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2090135191
 Rigidbody:
@@ -32588,7 +32577,7 @@ GameObject:
   - component: {fileID: 2145439057}
   - component: {fileID: 2145439056}
   m_Layer: 8
-  m_Name: BaseSurfaceJoint
+  m_Name: MenuBreastSkinJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32643,10 +32632,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -32692,7 +32681,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -32705,8 +32694,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -32738,10 +32727,10 @@ ConfigurableJoint:
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 40
+    damper: 4
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -32787,7 +32776,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
+  m_RotationDriveMode: 1
   m_AngularXDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -32800,8 +32789,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 40
+    positionDamper: 4
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -32835,8 +32824,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 10
-    damper: 0.25
+    spring: 25
+    damper: 2
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -32916,11 +32905,11 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145439053}
-  m_Material: {fileID: 1156455730}
+  m_Material: {fileID: 1715365426}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2146415470
 GameObject:

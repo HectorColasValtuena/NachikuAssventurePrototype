@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184607161702151015, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_Name
-      value: LowerBackSkinJoint
+      value: MenuBreastSkinJoint
       objectReference: {fileID: 0}
     - target: {fileID: 2386153979653544477, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,6 +54,30 @@ PrefabInstance:
     - target: {fileID: 2386153979653544477, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_LinearLimitSpring.damper
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_RotationDriveMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_SlerpDrive.positionSpring
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_SlerpDrive.positionDamper
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_LinearLimitSpring.spring
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_AngularZMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
