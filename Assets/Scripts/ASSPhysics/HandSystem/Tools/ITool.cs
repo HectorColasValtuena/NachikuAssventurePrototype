@@ -16,6 +16,7 @@ namespace ASSPhysics.HandSystem.Tools
 
 		Vector3 position {get; set;}	//position of the hand
 		bool focused {get; set;}		//wether the hand is on focus or not
+		bool auto {get;}
 
 		//move the hand
 		void Move (Vector3 delta);

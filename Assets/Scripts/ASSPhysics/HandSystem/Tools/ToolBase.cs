@@ -16,20 +16,6 @@ namespace ASSPhysics.HandSystem.Tools
 		protected Animator animator;
 		//current action
 		protected IAction action = null;
-		//is this tool in auto mode
-		protected bool auto
-		{
-			get
-			{
-				return _auto;
-			}
-			set
-			{
-				_auto = value;
-				animator.SetBool(AnimationNames.Tool.automated, value);
-			}
-		}
-		private bool _auto = false;
 	//ENDOF Local variables
 
 	//MonoBehaviour lifecycle Implementation
@@ -49,6 +35,18 @@ namespace ASSPhysics.HandSystem.Tools
 	//MonoBehaviour LifeCycle Implementation
 
 	//ITool implementation
+		//is this tool in auto mode
+		private bool _auto = false;
+		public bool auto
+		{
+			get { return _auto;	}
+			protected set
+			{
+				_auto = value;
+				animator.SetBool(AnimationNames.Tool.automated, value);
+			}
+		}
+
 		//private IInteractor _interactor;
 		public IInteractor interactor {get; private set;}
 
