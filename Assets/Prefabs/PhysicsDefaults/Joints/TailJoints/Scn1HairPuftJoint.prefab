@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3290028607629806108, guid: d0e4d2aa73428364eb5eacf41e4b01e2, type: 3}
+      propertyPath: m_MassScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5776201449629199079, guid: d0e4d2aa73428364eb5eacf41e4b01e2, type: 3}
       propertyPath: m_Name
       value: Scn1HairPuftJoint
