@@ -8019,8 +8019,8 @@ MonoBehaviour:
     max: 80
   targetRigidbody: {fileID: 0}
   randomDelay:
-    min: -0.5
-    max: 0
+    min: 0
+    max: 0.5
   direction: 0
 --- !u!1 &480238886
 GameObject:
@@ -19565,8 +19565,8 @@ MonoBehaviour:
     max: 8
   targetRigidbody: {fileID: 0}
   randomDelay:
-    min: -0.4
-    max: 0.4
+    min: 0
+    max: 0
   direction: 0
 --- !u!1 &1328651882
 GameObject:
