@@ -2,7 +2,7 @@ Proposición de desarrollar un videojuego
 
 ¡Hola Paula!
 Soy Héctor Colás Valtueña, de Zaragoza. Soy un desarrollador de videojuegos independiente. Me hace mucha ilusión hablar contigo :).
-Llevo siguiéndote desde hace tiempo y me encanta tu arte. He de admitir que me enamoré muy fuerte de Cu4rt4 con su episodio de "S.O.S. from god". 
+Llevo siguiéndote desde hace tiempo y me encanta tu arte. He de admitir que me enamoré muy fuerte de Cu4rt4 con su episodio de "S.O.S. from god". Hay mucha alma en tu trabajo y eso se nota.
 
 Como referencia sobre mi trabajo, como Mapache Estudio publiqué Maze Razer con un amigo y artista freelancer, Sgto. Tajone:
 	Video promocional:
@@ -32,10 +32,10 @@ Me gustaría que lo probaras y me contaras qué te parece y si te interesaría p
 
 Para no hacerte descargar ningun ejecutable, por si te da desconfianza, te he subido una build para navegador:
 	
-	elmejorjuegodelmundo.com
-	(sí, en serio XD)
+	https://hector.devtrance.com/NachikuPrototypeWebBuild/
+	(a lo mejor tarda un ratito en cargar, paciencia)
 
-Si te sigue dando miedo abrirlo te puedo pasar una grabación, pero te va a molar más verlo. Además, ya has visto mi cara y sabes donde vivo, no soy tan idiota como para intentar estafar a Paula Monja que te atiza con su rodillo después de hacer eso XD
+Si te sigue dando miedo abrirlo te puedo pasar una grabación en vídeo, pero te va a molar más verlo. Además, ya has visto mi cara y sabes donde vivo, no soy tan idiota como para intentar estafar a Paula Monja que te atiza con su rodillo después de hacer eso XD
 
 ¡Un millón de gracias por haber dedicado el tiempo para leerme y ver mi demo! Me darías la vida con que tan sólo me dieras tu opinión :)
 
