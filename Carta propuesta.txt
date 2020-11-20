@@ -21,14 +21,34 @@ Quiero montar una plataforma de desarrollo y distribución de videojuegos eróti
 El núcleo de mi filosofía es ensalzar al artista y su obra y creación personal.
 Otros estudios ofrecen una imagen única y común, ocultando y practicamente devorando a los artistas implicados
 Yo quiero crear un portal donde los artistas puedan:
-	> Ofrecer su obra directamente a su público
+	> Ofrecer su obra directamente a su público (en forma de videojuego)
 	> Desarrollar libremente su creación y estilo personal
 	> Y, sobre todo, beneficiarse del fruto de su trabajo sin condiciones draconianas ni explotatorias
 
+La idea es trabajar con muchos artistas pero me haría particular ilusión comenzar a trabajar contigo porque le tengo especial cariño a tu arte desde que me ayudó a salir adelante en un momento personal dificil.
 
 
-Llevo 3 meses trabajando en un prototipo/demo técnica de un sofisticado sistema de físicas con el que dar vida a tus dibujos. Creo que te gustará.
-Me gustaría que lo probaras y me contaras qué te parece y si te interesaría publicar algún videojuego conmigo.
+Llevo 3 meses trabajando en un prototipo/demo técnica de un sofisticado sistema de físicas con el que dar vida a tus dibujos. Creo que te gustará. Me gustaría que lo probaras y me contaras qué te parece y si te interesaría publicar algún videojuego conmigo.
+
+Estaba intentando hacer funcionar una versión para navegador para no hacerte descargar nada, pero por alguna razón en unity web no me funciona una de las características más importantes del juego. Además, va lento y me gustaría que lo vieras en condiciones.
+Me he frustrado muchísimo, y necesitaba ponerme en contacto contigo de una vez.
+
+¿Te puedo pasar una demo para Windows? Te mando un enlace si me dices que te parece bien. Si te da palo, dime y vuelvo a intentar hacer funcionar la versión para web. Hasta te podría grabar un video si te sigue dando desconfianza, pero te iba a gustar más probarlo.
+Además, ya has visto mi cara y sabes donde vivo, no soy tan idiota como para intentar estafar a Paula Monja que te atiza con su rodillo después de hacer eso XD
+
+¡Un millón de gracias por haber dedicado el tiempo para leerme! Me darías la vida con que tan sólo vieras mi demo :)
+
+Mantente fuerte.
+	- Héctor
+
+
+
+
+
+
+==============================
+VIEHO
+
 
 Para no hacerte descargar ningun ejecutable, por si te da desconfianza, te he subido una build para navegador:
 	
@@ -36,8 +56,3 @@ Para no hacerte descargar ningun ejecutable, por si te da desconfianza, te he su
 	(a lo mejor tarda un ratito en cargar, paciencia)
 
 Si te sigue dando miedo abrirlo te puedo pasar una grabación en vídeo, pero te va a molar más verlo. Además, ya has visto mi cara y sabes donde vivo, no soy tan idiota como para intentar estafar a Paula Monja que te atiza con su rodillo después de hacer eso XD
-
-¡Un millón de gracias por haber dedicado el tiempo para leerme y ver mi demo! Me darías la vida con que tan sólo me dieras tu opinión :)
-
-Mantente fuerte.
-	- Héctor
