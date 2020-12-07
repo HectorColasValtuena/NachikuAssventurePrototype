@@ -5,6 +5,8 @@ using AnimationNames = ASSPhysics.Constants.AnimationNames;
 using EInputState = ASSPhysics.InputSystem.EInputState;
 using IInteractor = ASSPhysics.InteractableSystem.IInteractor;
 
+using static ASSPhysics.CameraSystem.CameraExtensions;
+
 
 namespace ASSPhysics.HandSystem.Tools
 {
@@ -185,21 +187,12 @@ namespace ASSPhysics.HandSystem.Tools
 		//clamp a position within viewing range of Camera.main
 		private Vector3 ClampPositionToCamera (Vector3 position)
 		{
+			Rect cameraRect = Camera.main.EMRectFromOrthographicCamera();
 			return new Vector3
 			(
-				Mathf.Clamp
-				(
-					position.x,
-					(-1 * Camera.main.orthographicSize * Camera.main.aspect) + Camera.main.transform.position.x,
-					(Camera.main.orthographicSize * Camera.main.aspect) + Camera.main.transform.position.x
-				),
-				Mathf.Clamp
-				(
-					position.y,
-					(-1 * Camera.main.orthographicSize) + Camera.main.transform.position.y,
-					Camera.main.orthographicSize + Camera.main.transform.position.y
-				),
-				position.z
+				x: Mathf.Clamp(position.x, cameraRect.xMin, cameraRect.xMax),
+				y: Mathf.Clamp(position.y, cameraRect.yMin, cameraRect.yMax),
+				z: position.z
 			);
 		}
 		//=============================================================================
