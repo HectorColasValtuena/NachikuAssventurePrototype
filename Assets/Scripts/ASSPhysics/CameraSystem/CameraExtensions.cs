@@ -10,8 +10,8 @@ namespace ASSPhysics.CameraSystem
 			float height = camera.orthographicSize * 2;
 			float width = height * camera.aspect;
 			return new Rect(
-				x: camera.position.x - (width / 2),
-				y: camera.position.y - (height / 2),
+				x: camera.transform.position.x - (width / 2),
+				y: camera.transform.position.y - (height / 2),
 				width: width,
 				height: height
 			);
