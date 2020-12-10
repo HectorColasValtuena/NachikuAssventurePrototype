@@ -2,6 +2,9 @@
 
 using InputSettings = ASSPhysics.SettingSystem.InputSettings; //InputSettings
 
+using IViewportController = ASSPhysics.CameraSystem.IViewportController;
+using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
+
 namespace ASSPhysics.InputSystem
 {
 	public class MouseInputController : IInputController
@@ -14,7 +17,9 @@ namespace ASSPhysics.InputSystem
 	//IInputController implementation
 		//returns a vector3 representing the movement of the mouse during the last frame
 		public Vector3 delta { get { return new Vector3 (UnityEngine.Input.GetAxis(mouseXAxisName), UnityEngine.Input.GetAxis(mouseYAxisName), 0f); }}
-		public Vector3 screenSpaceDelta { get { return ScreenSpaceToWorldSpace(delta); }}
+		public Vector3 screenSpaceDelta { get { 
+			return ControllerProvider.GetController<IViewportController>().ScreenSpaceToWorldSpace(delta);
+		}}
 
 		//scaled delta for configurable controls
 		public Vector3 scaledDelta { get { return delta * InputSettings.mouseDeltaScale; }}
