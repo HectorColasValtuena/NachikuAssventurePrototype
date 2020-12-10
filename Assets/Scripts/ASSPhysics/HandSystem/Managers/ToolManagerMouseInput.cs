@@ -3,13 +3,21 @@
 using ITool = ASSPhysics.HandSystem.Tools.ITool;
 using ToolBase = ASSPhysics.HandSystem.Tools.ToolBase;
 
-using ASSPhysics.InputSystem; //MouseInput, EInputState
+using EInputState = ASSPhysics.InputSystem.EInputState;
+using IInputController = ASSPhysics.InputSystem.IInputController;
 
 namespace ASSPhysics.HandSystem.Managers
 {
 	public class ToolManagerMouseInput : ToolManagerBase
 	{
 	//MonoBehaviour Lifecycle implementation
+		//create a mouse input controller for oneself on start, and register with the central controller
+		public void Awake ()
+		{
+			inputController = new ASSPhysics.InputSystem.MouseInputController();
+			ControllerProvider.RegisterController<IInputController>(inputController);
+		}
+
 		public void Start ()
 		{
 			RallyTools();
@@ -21,6 +29,11 @@ namespace ASSPhysics.HandSystem.Managers
 			UpdateFocusedToolPosition();
 			UpdateFocusedToolInput();
 		}
+
+		public void OnDestroy ()
+		{
+			ControllerProvider.DisposeController<IInputController>(inputController);
+		}
 	//ENDOF MonoBehaviour Lifecycle implementation
 
 	//serialized fields
@@ -30,6 +43,7 @@ namespace ASSPhysics.HandSystem.Managers
 
 	//private fields and properties
 		private int focusedToolIndex;		//highligted and active hand
+		private IInputController inputController;	//input controller
 	//ENDOF private fields and properties
 
 	//IToolManager implementation
