@@ -32,6 +32,7 @@ namespace ASSPhysics.ControllerSystem
 
 		//remove the controller of type TController. if a controller parameter is passed, removal will only be performed if controllers coincide
 		public static void DisposeController <TController> (TController controller)
+			where TController : class
 		{
 			if (GetController<TController>() == controller)
 			{
