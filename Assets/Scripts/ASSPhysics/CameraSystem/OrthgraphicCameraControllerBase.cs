@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
+
 namespace ASSPhysics.CameraSystem
 {
 	public abstract class OrthgraphicCameraControllerBase : MonoBehaviour, IViewportController
@@ -44,11 +46,15 @@ namespace ASSPhysics.CameraSystem
 		//MonoBehaviour lifecycle implementation
 			public void Awake ()
 			{
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// [TO-DO] add oneself to the controller finder				
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				if (camera == null) { camera = GetComponent<Camera>(); }
 				currentViewport = camera.EMRectFromOrthographicCamera();
+
+				ControllerProvider.RegisterController<IViewportController>(this);
+			}
+
+			public void OnDestroy ()
+			{
+				ControllerProvider.DisposeController<IViewportController>(this);
 			}
 		//ENDOF MonoBehaviour lifecycle implementation
 
