@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
+
 using ITool = ASSPhysics.HandSystem.Tools.ITool;
 using ToolBase = ASSPhysics.HandSystem.Tools.ToolBase;
 
@@ -79,8 +81,8 @@ namespace ASSPhysics.HandSystem.Managers
 		//checks for input corresponding to hand swap, and performs the action if necessa
 		private void ToolCycleCheck ()
 		{
-			//[TO-DO] MouseInput should answer wether or not to swap active hands, not be directly requested the button input
-			if (MouseInput.GetButtonDown(1))
+			//[TO-DO] inputController should answer wether or not to swap active hands, not be directly requested the button input
+			if (inputController.GetButtonDown(1))
 			{
 				SetFocused(focusedToolIndex+1);
 			}
@@ -88,7 +90,7 @@ namespace ASSPhysics.HandSystem.Managers
 
 		private void UpdateFocusedToolPosition ()
 		{
-			toolList[focusedToolIndex].Move(MouseInput.scaledDelta);
+			toolList[focusedToolIndex].Move(inputController.scaledDelta);
 		}
 
 		//checks for input corresponding to main action, sends the correct state to the tool
