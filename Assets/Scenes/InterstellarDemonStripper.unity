@@ -41632,6 +41632,10 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.b
       value: 0.39498726
       objectReference: {fileID: 0}
+    - target: {fileID: 8168265856185424454, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8168265856185424455, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
