@@ -15,7 +15,7 @@ namespace ASSPhysics.InputSystem
 	//ENDOF const definitions
 
 	//private properties
-		private float screenSizeFactor { get { return ControllerCache.viewportController.viewportHeight; }}
+		private float screenSizeFactor { get { return ControllerCache.viewportController.size; }}
 	//ENDOF private properties
 
 	//IInputController implementation
