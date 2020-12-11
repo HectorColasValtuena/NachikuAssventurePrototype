@@ -6,12 +6,12 @@ namespace ASSPhysics.CameraSystem
 {
 	public interface IViewportController
 	{
-		Rect baseViewport {get;}		//original size of the viewport
-		Rect currentViewport {get;}		//current size of the viewport
-		float viewportHeight {get;}	//current height value of the viewport
+		Rect rect {get;}		//current size of the viewport
+		float size {get; set;}		//current height value of the viewport
+		Vector3 position {get; set;}	//world-space position of the camera
 
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 		//if worldSpace is false, the returned Vector3 ignores camera transform position
-		Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, Camera pivotCamera = null, bool worldSpace = true);
+		Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, bool worldSpace = true);
 	}
 }
