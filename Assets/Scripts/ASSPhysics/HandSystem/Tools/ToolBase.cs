@@ -10,11 +10,12 @@ using static ASSPhysics.CameraSystem.CameraExtensions;
 
 namespace ASSPhysics.HandSystem.Tools
 {
-	[RequireComponent(typeof(Animator))]
+	//[RequireComponent(typeof(Animator))]
 	public abstract class ToolBase : MonoBehaviour, ITool
 	{
 	//Local variables
 		//cached reference to animator component
+		[SerializeField]
 		protected Animator animator;
 		//current action
 		protected IAction action = null;
@@ -23,7 +24,7 @@ namespace ASSPhysics.HandSystem.Tools
 	//MonoBehaviour lifecycle Implementation
 		public virtual void Awake ()
 		{
-			animator = gameObject.GetComponent<Animator>();
+			if (animator == null) { animator = gameObject.GetComponentInChildren<Animator>(); }
 			interactor = GetComponentInChildren<IInteractor>();
 		}
 
