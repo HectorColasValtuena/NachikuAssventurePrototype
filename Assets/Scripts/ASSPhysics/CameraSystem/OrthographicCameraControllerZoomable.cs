@@ -6,7 +6,7 @@ using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
 namespace ASSPhysics.CameraSystem
 {
-	public class OrthographicCameraControllerZoomable : OrthographicCameraControllerBase
+	public class OrthographicCameraControllerZoomable : OrthoCameraControllerBase
 	{
 	//serialized fields
 		[SerializeField]

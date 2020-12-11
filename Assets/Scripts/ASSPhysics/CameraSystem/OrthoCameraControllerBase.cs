@@ -4,7 +4,7 @@ using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
 
 namespace ASSPhysics.CameraSystem
 {
-	public abstract class OrthographicCameraControllerBase : MonoBehaviour, IViewportController
+	public abstract class OrthoCameraControllerBase : MonoBehaviour, IViewportController
 	{
 		//serialized fields
 			[SerializeField]
