@@ -17,6 +17,7 @@ namespace ASSPhysics.CameraSystem
 		//IViewportController implementation
 			public abstract Rect baseViewport { get; } //original size of the viewport
 			public virtual Rect currentViewport { get; protected set; } //current size of the viewport
+			public float viewportHeight { get { return camera.orthographicSize * 2; } }	//current height value of the viewport
 
 			//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 			//if originIsCamera is true, the returned Vector3 originates in the camera's position

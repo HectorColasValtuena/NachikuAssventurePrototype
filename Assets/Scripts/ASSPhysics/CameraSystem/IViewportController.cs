@@ -8,6 +8,7 @@ namespace ASSPhysics.CameraSystem
 	{
 		Rect baseViewport {get;}		//original size of the viewport
 		Rect currentViewport {get;}		//current size of the viewport
+		float viewportHeight {get;}	//current height value of the viewport
 
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 		//if worldSpace is false, the returned Vector3 originates in the camera's position
