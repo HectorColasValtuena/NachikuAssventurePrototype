@@ -11,7 +11,7 @@ namespace ASSPhysics.CameraSystem
 		float viewportHeight {get;}	//current height value of the viewport
 
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
-		//if worldSpace is false, the returned Vector3 originates in the camera's position
+		//if worldSpace is false, the returned Vector3 ignores camera transform position
 		Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, Camera pivotCamera = null, bool worldSpace = true);
 	}
 }

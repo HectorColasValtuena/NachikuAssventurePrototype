@@ -20,11 +20,11 @@ namespace ASSPhysics.CameraSystem
 			public float viewportHeight { get { return camera.orthographicSize * 2; } }	//current height value of the viewport
 
 			//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
-			//if originIsCamera is true, the returned Vector3 originates in the camera's position
+			//if worldSpace is false, the returned Vector3 ignores camera transform position
 			public Vector3 ScreenSpaceToWorldSpace (
 				Vector3 screenPosition,
-				Camera pivotCamera = null,
-				bool originIsCamera = false
+				Camera pivotCamera,
+				bool worldSpace
 			) {
 				if (pivotCamera == null) { pivotCamera = Camera.main; }	
 
@@ -35,7 +35,7 @@ namespace ASSPhysics.CameraSystem
 				position = Vector3.Scale(position, GetCameraSize(pivotCamera));
 
 				//finally correct world position if necessary
-				if (!originIsCamera)
+				if (worldSpace)
 				{
 					position = position + pivotCamera.transform.position + cameraDepthCorrection - (GetCameraSize(pivotCamera)/2);
 				}
