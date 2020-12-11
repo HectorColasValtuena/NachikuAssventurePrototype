@@ -2,10 +2,10 @@
 
 namespace ASSPhysics.CameraSystem
 {
-	public class OrthographicCameraControllerZoomless : OrthgraphicCameraControllerBase
+	public class OrthographicCameraControllerZoomless : OrthographicCameraControllerBase
 	{
 		//abstract property implementation
-			public override Rect baseViewport { get { return currentViewport; }}
+			public override Rect currentViewport { get { return baseViewport; } protected set {} }
 		//ENDOF abstract property implementation
 	}
 }

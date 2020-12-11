@@ -28,12 +28,11 @@ namespace ASSPhysics.InputSystem
 		//scaled delta for configurable controls
 		public Vector3 scaledDelta { get { return delta * InputSettings.mouseDeltaScale * screenSizeFactor; }}
 
+		//gets zoom input
+		public float zoomDelta { get { return Input.mouseScrollDelta.y * InputSettings.mouseScrollDeltaScale; }}
+
 		//gets button pressed
 		public bool GetButtonDown (int buttonID) { return Input.GetMouseButtonDown(buttonID); }
-
-		//gets zoom input
-		public float GetZoomDelta () { return Input.mouseScrollDelta.y; }
 	//IInputController implementation
-
 	}
 }

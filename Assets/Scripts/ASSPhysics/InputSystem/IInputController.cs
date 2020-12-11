@@ -9,13 +9,13 @@ namespace ASSPhysics.InputSystem
 		Vector3 screenSpaceDelta { get; }
 
 		//scaled delta for configurable controls
-
 		Vector3 scaledDelta { get; }
+
+		//gets zoom input
+		float zoomDelta { get; }
 
 		//gets button pressed
 		bool GetButtonDown (int buttonID);
 
-		//gets zoom input
-		float GetZoomDelta ();
 	}
 }

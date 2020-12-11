@@ -4,20 +4,20 @@ using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
 
 namespace ASSPhysics.CameraSystem
 {
-	public abstract class OrthgraphicCameraControllerBase : MonoBehaviour, IViewportController
+	public abstract class OrthographicCameraControllerBase : MonoBehaviour, IViewportController
 	{
 		//serialized fields
 			[SerializeField]
-			new private Camera camera; //cached reference to the camera this controller handles
+			protected Camera cameraComponent; //cached reference to the camera this controller handles
 
 			[SerializeField]
 			private Vector3 cameraDepthCorrection = new Vector3 (0f, 0f, 10f); //camera Z depth correction
 		//ENDOF serialized fields
 
 		//IViewportController implementation
-			public abstract Rect baseViewport { get; } //original size of the viewport
-			public virtual Rect currentViewport { get; protected set; } //current size of the viewport
-			public float viewportHeight { get { return camera.orthographicSize * 2; } }	//current height value of the viewport
+			public virtual Rect baseViewport { get; private set; } //original size of the viewport
+			public abstract Rect currentViewport { get; protected set; } //current size of the viewport
+			public float viewportHeight { get { return cameraComponent.orthographicSize * 2; } }	//current height value of the viewport
 
 			//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 			//if worldSpace is false, the returned Vector3 ignores camera transform position
@@ -26,7 +26,7 @@ namespace ASSPhysics.CameraSystem
 				Camera pivotCamera,
 				bool worldSpace
 			) {
-				if (pivotCamera == null) { pivotCamera = Camera.main; }	
+				if (pivotCamera == null) { pivotCamera = cameraComponent; }	
 
 				//normalize position into a 0-1 range
 				Vector3 position = Vector3.Scale(screenPosition, new Vector3 (1/Screen.width, 1/Screen.height, 0f));
@@ -47,10 +47,13 @@ namespace ASSPhysics.CameraSystem
 		//MonoBehaviour lifecycle implementation
 			public void Awake ()
 			{
-				if (camera == null) { camera = GetComponent<Camera>(); }
-				currentViewport = camera.EMRectFromOrthographicCamera();
-
+				if (cameraComponent == null) { cameraComponent = GetComponent<Camera>(); }
 				ControllerProvider.RegisterController<IViewportController>(this);
+			}
+
+			public virtual void Start ()
+			{
+				baseViewport = cameraComponent.EMRectFromOrthographicCamera();
 			}
 
 			public void OnDestroy ()
@@ -60,12 +63,13 @@ namespace ASSPhysics.CameraSystem
 		//ENDOF MonoBehaviour lifecycle implementation
 
 		//private methods
+			/*
 			//updates the cached viewport for the active camera			
 			protected void UpdateCurrentViewport ()
 			{
 				currentViewport = camera.EMRectFromOrthographicCamera();
 			}
-
+			*/
 			//calculates cameraSize
 			private static Vector3 GetCameraSize (Camera pivotCamera) 
 			{
