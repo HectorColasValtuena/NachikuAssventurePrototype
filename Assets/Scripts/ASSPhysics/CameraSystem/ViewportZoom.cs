@@ -1,12 +1,11 @@
-﻿using Rect = UnityEngine.Rect;
-using SerializeField = UnityEngine.SerializeField;
-using Mathf = UnityEngine.Mathf;
+﻿using UnityEngine;
 
 using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
 namespace ASSPhysics.CameraSystem
 {
-	public class OrthographicCameraControllerZoomable : OrthoCameraControllerBase
+	//[RequireComponent(typeof(IViewportController))]
+	public class ViewportZoom : MonoBehaviour
 	{
 	//serialized fields
 		[SerializeField]
@@ -20,27 +19,32 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF serialized fields
 
 	//inherited property override
-		public override Rect currentViewport { get; protected set; }
 	//ENDOF inherited property override
 
 	//private fields
 		private float currentSize;
 		private float targetSize;
+		
+		protected IViewportController viewport; //cached reference to the camera this controller handles
 	//ENDOF private fields
 
 	//MonoBehaviour lifecycle
-		public override void Start ()
+		public void Awake ()
 		{
-			base.Start();
-			if (maxSizeFromSceneValue) { maxSize = cameraComponent.orthographicSize; }
-			currentSize = cameraComponent.orthographicSize;
-			targetSize = cameraComponent.orthographicSize;
+			viewport = GetComponent<IViewportController>();
+		}
+
+		public void Start ()
+		{
+			if (maxSizeFromSceneValue) { maxSize = viewport.size; }
+			currentSize = viewport.size;
+			targetSize = currentSize;
 		}
 
 		public void Update ()
 		{
 			UpdateTargetSize();
-			UpdateCameraSize();
+			LerpCameraSize();
 		}
 	//ENDOF MonoBehaviour lifecycle
 
@@ -51,16 +55,10 @@ namespace ASSPhysics.CameraSystem
 			targetSize = Mathf.Clamp(targetSize, minSize, maxSize);
 		}
 
-		private void UpdateCameraSize ()
+		private void LerpCameraSize ()
 		{
 			currentSize = Mathf.Lerp(currentSize, targetSize, zoomLerpRate);
-			ApplyCameraSize(currentSize);
-		}
-
-		private void ApplyCameraSize (float targetSize)
-		{
-			cameraComponent.orthographicSize = targetSize;
-			currentViewport = cameraComponent.EMRectFromOrthographicCamera();
+			viewport.size = currentSize;
 		}
 	//ENDOF private methods
 	}	
