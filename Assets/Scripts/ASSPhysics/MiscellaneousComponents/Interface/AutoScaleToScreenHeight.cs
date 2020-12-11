@@ -28,7 +28,7 @@ namespace ASSPhysics.MiscellaneousComponents
 	//private methods
 		private void UpdateScale()
 		{ 	
-			transform.localScale = baseScale * (ControllerCache.viewportController.viewportHeight / baseScreenHeight);
+			transform.localScale = baseScale * (ControllerCache.viewportController.size / baseScreenHeight);
 		}
 	//ENDOF private methods
 	}
