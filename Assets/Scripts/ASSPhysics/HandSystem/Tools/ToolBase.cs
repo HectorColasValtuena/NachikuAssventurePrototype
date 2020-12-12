@@ -59,7 +59,7 @@ namespace ASSPhysics.HandSystem.Tools
 			set 
 			{
 				if (auto) return;
-				transform.position = ClampPositionToCamera(value);
+				transform.position = ControllerCache.viewportController.ClampPositionToViewport(value);
 			}
 			get { return transform.position; }
 		}
@@ -180,24 +180,6 @@ namespace ASSPhysics.HandSystem.Tools
 			}
 			auto = false;
 		}
-
-	//=============================================================================
-		//[TO-DO] Move this elsewhere
-		//=============================================================================
-		//clamp a position within viewing range of Camera.main
-		private Vector3 ClampPositionToCamera (Vector3 position)
-		{
-			Rect limitsRect = ControllerCache.viewportController.rect;
-			return new Vector3
-			(
-				x: Mathf.Clamp(position.x, limitsRect.xMin, limitsRect.xMax),
-				y: Mathf.Clamp(position.y, limitsRect.yMin, limitsRect.yMax),
-				z: position.z
-			);
-		}
-		//=============================================================================
-		//[TO-DO] Move this elsewhere
-	//=============================================================================
 	//ENDOF Private functionality
 
 	//Protected abstract method exposed for implementation

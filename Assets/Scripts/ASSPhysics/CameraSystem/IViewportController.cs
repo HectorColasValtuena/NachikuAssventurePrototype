@@ -13,5 +13,8 @@ namespace ASSPhysics.CameraSystem
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
 		//if worldSpace is false, the returned Vector3 ignores camera transform position
 		Vector3 ScreenSpaceToWorldSpace (Vector3 mousePosition, bool worldSpace = true);
+
+		//Prevents position from going outside of this camera's boundaries
+		Vector3 ClampPositionToViewport (Vector3 position);
 	}
 }

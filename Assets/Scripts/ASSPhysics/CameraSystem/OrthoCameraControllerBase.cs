@@ -60,6 +60,12 @@ namespace ASSPhysics.CameraSystem
 
 				return position;
 			}
+
+			//Prevents position from going outside of this camera's boundaries
+			public Vector3 ClampPositionToViewport (Vector3 position)
+			{
+				return ClampPositionToRect(position, rect);
+			}
 		//ENDOF IViewportController implementation
 
 		//MonoBehaviour lifecycle implementation
@@ -81,12 +87,29 @@ namespace ASSPhysics.CameraSystem
 		//ENDOF MonoBehaviour lifecycle implementation
 
 		//private methods
-			
 			//updates the cached viewport for the active camera			
 			protected void UpdateRect ()
 			{
 				rect = cameraComponent.EMRectFromOrthographicCamera();
 			}
+
+
+	//=============================================================================
+		//[TO-DO] Move this elsewhere
+		//=============================================================================
+		//clamp a position within viewing range of Camera.main
+		private Vector3 ClampPositionToRect (Vector3 position, Rect limitsRect)
+		{
+			return new Vector3
+			(
+				x: Mathf.Clamp(position.x, limitsRect.xMin, limitsRect.xMax),
+				y: Mathf.Clamp(position.y, limitsRect.yMin, limitsRect.yMax),
+				z: position.z
+			);
+		}
+		//=============================================================================
+		//[TO-DO] Move this elsewhere
+	//=============================================================================
 		//ENDOF private methods
 	}
 }
