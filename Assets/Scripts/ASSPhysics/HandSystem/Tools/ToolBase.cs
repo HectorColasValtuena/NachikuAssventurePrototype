@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 
+using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
+
 using ASSPhysics.HandSystem.Actions; //IAction
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
 using EInputState = ASSPhysics.InputSystem.EInputState;
 using IInteractor = ASSPhysics.InteractableSystem.IInteractor;
-
-using static ASSPhysics.CameraSystem.CameraExtensions;
-
 
 namespace ASSPhysics.HandSystem.Tools
 {
@@ -188,11 +187,11 @@ namespace ASSPhysics.HandSystem.Tools
 		//clamp a position within viewing range of Camera.main
 		private Vector3 ClampPositionToCamera (Vector3 position)
 		{
-			Rect cameraRect = Camera.main.EMRectFromOrthographicCamera();
+			Rect limitsRect = ControllerCache.viewportController.rect;
 			return new Vector3
 			(
-				x: Mathf.Clamp(position.x, cameraRect.xMin, cameraRect.xMax),
-				y: Mathf.Clamp(position.y, cameraRect.yMin, cameraRect.yMax),
+				x: Mathf.Clamp(position.x, limitsRect.xMin, limitsRect.xMax),
+				y: Mathf.Clamp(position.y, limitsRect.yMin, limitsRect.yMax),
 				z: position.z
 			);
 		}
