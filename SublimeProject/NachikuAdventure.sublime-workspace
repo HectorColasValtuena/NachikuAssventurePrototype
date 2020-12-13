@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Control",
+				"ControllerCache"
+			],
+			[
+				"upda",
+				"UpdateViewportRect"
+			],
+			[
+				"camera",
+				"cameraComponent"
+			],
+			[
 				"curre",
 				"currentViewport"
 			],
@@ -502,55 +514,52 @@
 			[
 				"rt",
 				"return"
-			],
-			[
-				"ver",
-				"vertexList"
-			],
-			[
-				"veer",
-				"vertexIndex"
-			],
-			[
-				"C",
-				"CreateBoneForVertex"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerZoomable.cs",
-			"settings":
-			{
-				"buffer_size": 1723,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerBase.cs",
-			"settings":
-			{
-				"buffer_size": 2718,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerZoomless.cs",
-			"settings":
-			{
-				"buffer_size": 331,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/IViewportController.cs",
 			"settings":
 			{
-				"buffer_size": 667,
+				"buffer_size": 757,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthoCameraControllerBase.cs",
+			"settings":
+			{
+				"buffer_size": 4132,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerScrollable.cs",
+			"settings":
+			{
+				"buffer_size": 715,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/CameraExtensions.cs",
+			"settings":
+			{
+				"buffer_size": 492,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ToolBase.cs",
+			"settings":
+			{
+				"buffer_size": 4796,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -617,15 +626,24 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerSimple.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthoCameraControllerBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/MouseInputController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/DialogChangerOnActionGrabAutomated.cs",
+		"/D/Juegos/MD/README.txt",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/ViewportZoom.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/CameraZoomOrtho.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerZoomable.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/AutoScaleToScreenHeight.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerZoomless.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthgraphicCameraControllerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerCache.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/MouseInputController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/IInputController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/InputSettings.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ToolBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Managers/ToolManagerMouseInput.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/IViewportController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/AutoScaleToScreenHeight.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/Hand.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/DialogColliderResizerOnAwake.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerProvider.cs",
@@ -735,16 +753,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ChainSystem/ChainElementAutoFindParentBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailElementConfigurableJoint.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/PulseData/IPulseData.cs",
-		"/D/Projects/Nachiku Adventure Prototype/DEPRECATEDTailSystem/TailRootWiggle.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ASSRandom/RandomRangeInt.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailControllerPeriodicWavingPulse.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/SlicedRigs/AssTail/Tail.png.meta",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/SkinSurfaceRiggerEditor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRigging.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/TailRigging.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/PulsePropagators/EPulseDirection.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/PulseData/PulseDataSignedImmutable.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/EPulseDirection.cs"
+		"/D/Projects/Nachiku Adventure Prototype/DEPRECATEDTailSystem/TailRootWiggle.cs"
 	],
 	"find":
 	{
@@ -763,6 +772,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"ControllerCache",
+			"ClampPositionToCamera",
+			"viewportHeight",
+			"GetCameraSize",
 			"GetComponent",
 			"camera",
 			"IViewportController",
@@ -881,109 +894,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerZoomable.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1723,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1325,
-								1325
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerBase.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2718,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1898,
-								1910
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 747.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerZoomless.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 331,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								282,
-								282
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/IViewportController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 667,
+						"buffer_size": 757,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								158,
-								158
+								755,
+								755
 							]
 						],
 						"settings":
@@ -995,6 +923,121 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthoCameraControllerBase.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3781,
+								3812
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1797.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerScrollable.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/CameraExtensions.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ToolBase.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1547,
+								1547
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2716.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
