@@ -532,8 +532,7 @@
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthoCameraControllerBase.cs",
 			"settings":
 			{
-				"buffer_size": 4132,
-				"encoding": "UTF-8 with BOM",
+				"buffer_size": 4893,
 				"line_ending": "Windows"
 			}
 		},
@@ -626,8 +625,9 @@
 	],
 	"file_history":
 	[
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerSimple.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthoCameraControllerBase.cs",
+		"/C/Users/Mephi/Desktop/81-C# Script-NewBehaviourScript.cs.txt",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/OrthographicCameraControllerSimple.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/MouseInputController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/DialogChangerOnActionGrabAutomated.cs",
 		"/D/Juegos/MD/README.txt",
@@ -699,7 +699,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogSimpleBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogManager.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Camera/ZoomableCameraController.cs",
-		"/C/Users/Mephi/Desktop/81-C# Script-NewBehaviourScript.cs.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/DialogColliderResizer.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorJointChainBase.cs",
@@ -772,6 +771,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"}\n",
 			"ControllerCache",
 			"ClampPositionToCamera",
 			"viewportHeight",
@@ -922,7 +922,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -931,15 +931,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4132,
+						"buffer_size": 4893,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3781,
-								3812
+								0,
+								0
 							]
 						],
 						"settings":
@@ -948,7 +948,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1797.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -979,7 +979,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1037,7 +1037,7 @@
 						"translation.y": 2716.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
