@@ -6,11 +6,13 @@ namespace ASSPhysics.MiscellaneousComponents
 	{
 		[SerializeField]
 		private bool forceRestart = true;
+		[SerializeField]
+		private bool propagateToChildren = true;
 
 		protected override void Play (ParticleSystem particleSystem)
 		{
-			if (forceRestart) { particleSystem.Stop(); }
-			particleSystem.Play();
+			if (forceRestart) { particleSystem.Stop(withChildren: propagateToChildren); }
+			particleSystem.Play(withChildren: propagateToChildren);
 		}
 	}
 }
