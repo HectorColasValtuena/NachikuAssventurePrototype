@@ -9,5 +9,11 @@ namespace ASSPhysics.HandSystem.Managers
 	//IToolManager implementation
 		public abstract ITool activeTool {get;}
 	//ENDOF IToolManager implementation
+
+	//MonoBehaviour lifecycle
+		public virtual void Awake ()
+		{
+			ControllerProvider.RegisterController<IToolManager>(this);
+		}
 	}
 }

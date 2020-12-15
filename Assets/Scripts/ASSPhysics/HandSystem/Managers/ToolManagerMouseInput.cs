@@ -14,8 +14,9 @@ namespace ASSPhysics.HandSystem.Managers
 	{
 	//MonoBehaviour Lifecycle implementation
 		//create a mouse input controller for oneself on start, and register with the central controller
-		public void Awake ()
+		public override void Awake ()
 		{
+			base.Awake();
 			inputController = new ASSPhysics.InputSystem.MouseInputController();
 			ControllerProvider.RegisterController<IInputController>(inputController);
 		}

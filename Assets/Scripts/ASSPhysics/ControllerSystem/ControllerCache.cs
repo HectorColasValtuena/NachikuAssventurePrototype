@@ -30,5 +30,18 @@ namespace ASSPhysics.ControllerSystem
 			}
 		}
 	//ENDOF input controller
+
+	//toolManager
+		private static IToolManager _toolManager;
+		public static IToolManager toolManager
+		{
+			get
+			{
+				if (_toolManager == null)
+					{ _toolManager = ControllerProvider.GetController<IToolManager>(); }
+				return _toolManager;
+			}
+		}
+	//ENDOF input controller	
 	}
 }
