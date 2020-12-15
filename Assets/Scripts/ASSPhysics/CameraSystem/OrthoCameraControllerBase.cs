@@ -24,12 +24,8 @@ namespace ASSPhysics.CameraSystem
 				UpdateRect();
 			}
 		}
-	//ENDOF private fields
 
-	//IViewportController implementation
-		public virtual Rect rect { get; protected set; } //current size of the viewport
-
-		public virtual float size //current height value of the viewport
+		protected float cameraSize 
 		{
 			get { return cameraComponent.orthographicSize; }
 			set
@@ -38,14 +34,21 @@ namespace ASSPhysics.CameraSystem
 				UpdateRect();
 			}
 		}
+	//ENDOF private fields
+
+	//IViewportController implementation
+		public virtual Rect rect { get; protected set; } //current size of the viewport
+
+		public virtual float size //current height value of the viewport
+		{
+			get { return cameraSize; }
+			set { cameraSize = value; }
+		}
 
 		public virtual Vector3 position
 		{
 			get { return transformPosition; }
-			set 
-			{
-				transformPosition = value;
-			}
+			set { transformPosition = value; }
 		}
 
 		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
