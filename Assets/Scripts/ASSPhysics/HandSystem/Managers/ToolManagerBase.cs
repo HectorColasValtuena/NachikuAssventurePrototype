@@ -1,5 +1,7 @@
 using MonoBehaviour = UnityEngine.MonoBehaviour;
 
+using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
+
 using ITool = ASSPhysics.HandSystem.Tools.ITool;
 
 namespace ASSPhysics.HandSystem.Managers
