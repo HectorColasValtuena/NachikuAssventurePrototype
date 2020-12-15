@@ -14,6 +14,18 @@ namespace ASSPhysics.CameraSystem
 		private Vector3 cameraDepthCorrection = new Vector3 (0f, 0f, 10f); //camera Z depth correction
 	//ENDOF serialized fields
 
+	//private fields
+		protected Vector3 transformPosition
+		{
+			get { return cameraComponent.transform.position; }
+			set 
+			{
+				cameraComponent.transform.position = value;
+				UpdateRect();
+			}
+		}
+	//ENDOF private fields
+
 	//IViewportController implementation
 		public virtual Rect rect { get; protected set; } //current size of the viewport
 
@@ -29,11 +41,10 @@ namespace ASSPhysics.CameraSystem
 
 		public virtual Vector3 position
 		{
-			get { return cameraComponent.transform.position; }
+			get { return transformPosition; }
 			set 
 			{
-				cameraComponent.transform.position = value;
-				UpdateRect();
+				transformPosition = value;
 			}
 		}
 
@@ -86,7 +97,7 @@ namespace ASSPhysics.CameraSystem
 		}
 	//ENDOF MonoBehaviour lifecycle implementation
 
-	//private methods
+	//private class methods
 		//updates the cached viewport for the active camera			
 		protected void UpdateRect ()
 		{
@@ -97,7 +108,7 @@ namespace ASSPhysics.CameraSystem
 	  //[TO-DO] Move this elsewhere
 	  //=============================================================================
 		//clamp a x/y position within a rect
-		private Vector3 ClampPositionToRect (Vector3 position, Rect outerRect)
+		protected Vector3 ClampPositionToRect (Vector3 position, Rect outerRect)
 		{
 			return new Vector3
 			(
@@ -109,7 +120,7 @@ namespace ASSPhysics.CameraSystem
 
 		//ensures innerRect bounds stay within outerRect by moving innerRect if protruding.
 		//if innerRect dimensions exceed outerRect, they will be centered
-		private Rect ClampRectPositionToRect (rect innerRect, rect outerRect)
+		protected Rect ClampRectPositionToRect (Rect innerRect, Rect outerRect)
 		{
 			return new Rect (
 				x: (innerRect.width <= outerRect.width)
@@ -118,7 +129,7 @@ namespace ASSPhysics.CameraSystem
 							value: innerRect.x,
 							min: outerRect.xMin,
 							max: outerRect.xMax - innerRect.width
-						),
+						)
 					: //if innerRect is wider than outerRect, center their position
 						outerRect.x - ((innerRect.width - outerRect.width) / 2),
 				y: (innerRect.height <= outerRect.height)
@@ -127,7 +138,7 @@ namespace ASSPhysics.CameraSystem
 							value: innerRect.y,
 							min: outerRect.yMin,
 							max: outerRect.yMax - innerRect.height
-						),
+						)
 					: //if innerRect is taller than outerRect, center their position
 						innerRect.y - ((innerRect.height - outerRect.width) / 2),
 				width: innerRect.width,
@@ -137,7 +148,7 @@ namespace ASSPhysics.CameraSystem
 
 		//truncates innerRect dimensions to fit outerRect. may return the same rect if already small enough.
 		//only alters size, returned rect's position will be the same as innerRect's
-		private Rect ClampRectSizeToRect (rect innerRect, rect outerRect)
+		protected Rect ClampRectSizeToRect (Rect innerRect, Rect outerRect)
 		{
 			if (innerRect.width <= outerRect.width && innerRect.height <= outerRect.height)
 			{ return innerRect; }
@@ -152,7 +163,7 @@ namespace ASSPhysics.CameraSystem
 	  //=============================================================================
 	  //[TO-DO] Move this elsewhere
 	//=============================================================================
-
+		
 	//ENDOF private methods
 	}
 }
