@@ -29,7 +29,18 @@ namespace ASSPhysics.InputSystem
 		public Vector3 scaledDelta { get { return delta * InputSettings.mouseDeltaScale * screenSizeFactor; }}
 
 		//gets zoom input
-		public float zoomDelta { get { return Input.mouseScrollDelta.y * InputSettings.mouseScrollDeltaScale; }}
+		//public float zoomDelta { get { return Input.mouseScrollDelta.y * InputSettings.mouseScrollDeltaScale; }}
+		public float zoomDelta
+		{
+			get {
+				return (Input.mouseScrollDelta.y * InputSettings.mouseScrollDeltaScale) +
+				((Input.GetKey(KeyCode.R))
+					? (+ 0.1f)
+					: (Input.GetKey(KeyCode.F))
+						? (- 0.1f)
+						: 0);
+			}
+		}
 
 		//gets button pressed
 		public bool GetButtonDown (int buttonID) { return Input.GetMouseButtonDown(buttonID); }
