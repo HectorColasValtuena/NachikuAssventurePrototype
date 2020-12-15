@@ -1,5 +1,6 @@
 ﻿using IViewportController = ASSPhysics.CameraSystem.IViewportController;
 using IInputController = ASSPhysics.InputSystem.IInputController;
+using IToolManager = ASSPhysics.HandSystem.Managers.IToolManager;
 
 namespace ASSPhysics.ControllerSystem
 {
