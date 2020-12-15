@@ -51,8 +51,12 @@ namespace ASSPhysics.CameraSystem
 	//private methods
 		private void UpdateTargetSize ()
 		{
-			targetSize += ControllerCache.inputController.zoomDelta;
-			targetSize = Mathf.Clamp(targetSize, minSize, maxSize);
+			if (ControllerCache.inputController.zoomDelta != 0)
+			{
+				targetSize += ControllerCache.inputController.zoomDelta;
+				targetSize = Mathf.Clamp(targetSize, minSize, maxSize);
+				viewport.position = ControllerCache.toolManager.activeTool.position;
+			}
 		}
 
 		private void LerpCameraSize ()
