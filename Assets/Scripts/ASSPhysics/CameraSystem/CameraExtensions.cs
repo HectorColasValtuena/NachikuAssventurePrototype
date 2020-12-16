@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using RectMath = ASSistant.ASSMath.RectMath;
+
 namespace ASSPhysics.CameraSystem
 {
 	public static class CameraExtensions
@@ -9,9 +11,8 @@ namespace ASSPhysics.CameraSystem
 		{
 			float height = camera.orthographicSize * 2;
 			float width = height * camera.aspect;
-			return new Rect(
-				x: camera.transform.position.x - (width / 2),
-				y: camera.transform.position.y - (height / 2),
+			return RectMath.RectFromCenterAndSize(
+				position: camera.transform.position,
 				width: width,
 				height: height
 			);

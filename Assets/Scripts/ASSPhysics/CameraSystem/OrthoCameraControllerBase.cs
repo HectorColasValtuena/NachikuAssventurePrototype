@@ -2,6 +2,9 @@ using UnityEngine;
 
 using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
 
+using RectMath = ASSistant.ASSMath.RectMath;
+using static ASSPhysics.CameraSystem.CameraExtensions; //Camera.EMRectFromOrthographicCamera();
+
 namespace ASSPhysics.CameraSystem
 {
 	public abstract class OrthoCameraControllerBase : MonoBehaviour, IViewportController
@@ -78,7 +81,7 @@ namespace ASSPhysics.CameraSystem
 		//Prevents position from going outside of this camera's boundaries
 		public Vector3 ClampPositionToViewport (Vector3 position)
 		{
-			return ClampPositionToRect(position, rect);
+			return RectMath.ClampPositionToRect(position, rect);
 		}
 	//ENDOF IViewportController implementation
 
@@ -106,67 +109,6 @@ namespace ASSPhysics.CameraSystem
 		{
 			rect = cameraComponent.EMRectFromOrthographicCamera();
 		}
-
-	//=============================================================================
-	  //[TO-DO] Move this elsewhere
-	  //=============================================================================
-		//clamp a x/y position within a rect
-		protected Vector3 ClampPositionToRect (Vector3 position, Rect outerRect)
-		{
-			return new Vector3
-			(
-				x: Mathf.Clamp(position.x, outerRect.xMin, outerRect.xMax),
-				y: Mathf.Clamp(position.y, outerRect.yMin, outerRect.yMax),
-				z: position.z
-			);
-		}
-
-		//ensures innerRect bounds stay within outerRect by moving innerRect if protruding.
-		//if innerRect dimensions exceed outerRect, they will be centered
-		protected Rect ClampRectPositionToRect (Rect innerRect, Rect outerRect)
-		{
-			return new Rect (
-				x: (innerRect.width <= outerRect.width)
-					? //if innerRect is thinner than outerRect, clamp its position within outerRect
-						Mathf.Clamp(					
-							value: innerRect.x,
-							min: outerRect.xMin,
-							max: outerRect.xMax - innerRect.width
-						)
-					: //if innerRect is wider than outerRect, center their position
-						outerRect.x - ((innerRect.width - outerRect.width) / 2),
-				y: (innerRect.height <= outerRect.height)
-					? //if innerRect is shorter than outerRect clamp its position
-						Mathf.Clamp(
-							value: innerRect.y,
-							min: outerRect.yMin,
-							max: outerRect.yMax - innerRect.height
-						)
-					: //if innerRect is taller than outerRect, center their position
-						innerRect.y - ((innerRect.height - outerRect.width) / 2),
-				width: innerRect.width,
-				height: innerRect.height
-			);
-		}
-
-		//truncates innerRect dimensions to fit outerRect. may return the same rect if already small enough.
-		//only alters size, returned rect's position will be the same as innerRect's
-		protected Rect ClampRectSizeToRect (Rect innerRect, Rect outerRect)
-		{
-			if (innerRect.width <= outerRect.width && innerRect.height <= outerRect.height)
-			{ return innerRect; }
-			return new Rect (
-				x: innerRect.x,
-				y: innerRect.y,
-				width: Mathf.Clamp(innerRect.width, 0, outerRect.width),
-				height: Mathf.Clamp(innerRect.height, 0, outerRect.height)
-			);
-		}
-
-	  //=============================================================================
-	  //[TO-DO] Move this elsewhere
-	//=============================================================================
-		
 	//ENDOF private methods
 	}
 }

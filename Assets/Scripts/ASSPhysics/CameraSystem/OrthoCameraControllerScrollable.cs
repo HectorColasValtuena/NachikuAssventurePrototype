@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using RectMath = ASSistant.ASSMath.RectMath;
+
 namespace ASSPhysics.CameraSystem
 {
 	public class OrthoCameraControllerScrollable : OrthoCameraControllerBase
@@ -20,7 +22,7 @@ namespace ASSPhysics.CameraSystem
 			get { return base.position; }
 			set 
 			{
-				targetPosition = ClampPositionToRect(position: value, outerRect: containerRect);
+				targetPosition = RectMath.ClampPositionToRect(position: value, outerRect: containerRect);
 			}
 		}
 	//ENDOF base class overrides
@@ -61,7 +63,7 @@ namespace ASSPhysics.CameraSystem
 
 		private void ClampViewportToContainer ()
 		{
-			Vector3 newPosition = ClampRectPositionToRect(innerRect: rect, outerRect: containerRect).center;
+			Vector3 newPosition = RectMath.ClampRectPositionToRect(innerRect: rect, outerRect: containerRect).center;
 			newPosition.z = transformPosition.z;
 			transformPosition = newPosition;
 		}
