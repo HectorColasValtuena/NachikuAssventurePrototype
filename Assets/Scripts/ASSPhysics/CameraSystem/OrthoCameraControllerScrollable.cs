@@ -41,7 +41,7 @@ namespace ASSPhysics.CameraSystem
 
 		public virtual void Update ()
 		{
-			UpdateLerpPositionToTarget();
+			UpdateMoveTowardsTarget();
 		}
 
 		public void LateUpdate ()
@@ -56,7 +56,7 @@ namespace ASSPhysics.CameraSystem
 			containerRect = cameraComponent.EMRectFromOrthographicCamera();
 		}
 
-		private void UpdateLerpPositionToTarget ()
+		protected virtual void UpdateMoveTowardsTarget ()
 		{
 			transformPosition = Vector3.Lerp(a: transformPosition, b: targetPosition, t: lerpRate);
 		}
@@ -64,7 +64,7 @@ namespace ASSPhysics.CameraSystem
 		private void ClampViewportToContainer ()
 		{
 			Vector3 newPosition = RectMath.ClampRectPositionToRect(innerRect: rect, outerRect: containerRect).center;
-			newPosition.z = transformPosition.z;
+			newPosition -= cameraDepthCorrection;
 			transformPosition = newPosition;
 		}
 	//ENDOF private methods

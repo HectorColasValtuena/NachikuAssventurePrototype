@@ -14,7 +14,7 @@ namespace ASSPhysics.CameraSystem
 		protected Camera cameraComponent; //cached reference to the camera this controller handles
 
 		[SerializeField]
-		private Vector3 cameraDepthCorrection = new Vector3 (0f, 0f, 10f); //camera Z depth correction
+		protected Vector3 cameraDepthCorrection = new Vector3 (0f, 0f, 10f); //camera Z depth correction
 	//ENDOF serialized fields
 
 	//private fields
