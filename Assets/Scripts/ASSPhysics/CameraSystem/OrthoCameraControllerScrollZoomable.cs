@@ -54,12 +54,12 @@ namespace ASSPhysics.CameraSystem
 	//private methods
 		private void UpdateTargetSize (float zoomDelta, Vector3 centerPosition)
 		{
-			if (zoomDelta != 0)
-			{
-				size += zoomDelta;
-				size = Mathf.Clamp(targetSize, minSize, maxSize);
-				position = centerPosition;
-			}
+			if (zoomDelta == 0)
+			{ return; }
+
+			size += zoomDelta * size;
+			size = Mathf.Clamp(targetSize, minSize, maxSize);
+			position = centerPosition;
 		}
 
 		private void LerpCameraSize ()
