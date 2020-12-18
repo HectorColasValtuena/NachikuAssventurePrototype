@@ -24,7 +24,15 @@ namespace ASSistant.ASSMath
 
 	//Rect clamping and trimming methods 
 		//clamp a x/y position within a rect
-		public static Vector3 ClampPositionToRect (Vector3 position, Rect outerRect)
+		public static Vector2 ClampVector2WithinRect (Vector2 position, Rect outerRect)
+		{
+			return new Vector2
+			(
+				x: Mathf.Clamp(position.x, outerRect.xMin, outerRect.xMax),
+				y: Mathf.Clamp(position.y, outerRect.yMin, outerRect.yMax),
+			);
+		}
+		public static Vector3 ClampVector3WithinRect (Vector3 position, Rect outerRect)
 		{
 			return new Vector3
 			(
