@@ -1,6 +1,4 @@
-﻿using Rect = UnityEngine.Rect;
-using Vector3 = UnityEngine.Vector3;
-using Camera = UnityEngine.Camera;
+﻿using UnityEngine;
 
 namespace ASSPhysics.CameraSystem
 {

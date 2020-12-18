@@ -45,9 +45,9 @@ namespace ASSPhysics.CameraSystem
 			set { cameraSize = value; }
 		}
 
-		public virtual Vector3 position
+		public virtual Vector2 position
 		{
-			get { return transformPosition; }
+			get { return (Vector2) transformPosition; }
 			set { transformPosition = value; }
 		}
 
