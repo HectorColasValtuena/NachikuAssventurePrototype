@@ -15,12 +15,15 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF serialized fields
 
 	//private fields
-		protected Vector3 transformPosition
+		protected Vector2 transformPosition
 		{
-			get { return cameraComponent.transform.position; }
+			get { return (Vector2) cameraComponent.transform.position; }
 			set 
 			{
-				cameraComponent.transform.position = value;
+				//when setting position, add current Z position to target vector2 position
+				cameraComponent.transform.position =
+					(Vector3) value	+
+					Vector3.Scale(cameraComponent.transform.position, Vector3.forward);
 				UpdateRect();
 			}
 		}
@@ -47,7 +50,7 @@ namespace ASSPhysics.CameraSystem
 
 		public virtual Vector2 position
 		{
-			get { return (Vector2) transformPosition; }
+			get { return transformPosition; }
 			set { transformPosition = value; }
 		}
 
@@ -58,19 +61,19 @@ namespace ASSPhysics.CameraSystem
 			bool worldSpace
 		) {
 			//normalize position into a 0-1 range
-			Vector2 position = Vector2.Scale(screenPosition, new Vector2 (1/Screen.width, 1/Screen.height));
+			screenPosition = Vector2.Scale(screenPosition, new Vector2 (1/Screen.width, 1/Screen.height));
 
 			//multiply normalized position by camera size
 			Vector2 cameraSize = new Vector2 (rect.width, rect.height);
-			position = Vector2.Scale(position, cameraSize);
+			screenPosition = Vector2.Scale(screenPosition, cameraSize);
 
 			//finally correct world position if necessary
 			if (worldSpace)
 			{
-				position = position + cameraComponent.transform.position - (cameraSize/2);
+				screenPosition = screenPosition + transformPosition - (cameraSize/2);
 			}
 
-			return position;
+			return screenPosition;
 		}
 		public Vector3 ScreenSpaceToWorldSpace (
 			Vector3 screenPosition,

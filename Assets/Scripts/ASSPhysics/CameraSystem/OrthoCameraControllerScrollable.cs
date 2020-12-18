@@ -17,12 +17,15 @@ namespace ASSPhysics.CameraSystem
 
 	//base class overrides
 		//this extending class' position uses an intermediary target position for position lerping
-		public override Vector3 position
+		public override Vector2 position
 		{
 			get { return base.position; }
 			set 
 			{
-				targetPosition = RectMath.ClampPositionToRect(position: value, outerRect: containerRect);
+				targetPosition = RectMath.ClampVector2WithinRect(
+					position: value,
+					outerRect: containerRect
+				);
 			}
 		}
 	//ENDOF base class overrides
@@ -63,9 +66,7 @@ namespace ASSPhysics.CameraSystem
 
 		private void ClampViewportToContainer ()
 		{
-			Vector3 newPosition = RectMath.ClampRectPositionToRect(innerRect: rect, outerRect: containerRect).center;
-			newPosition -= cameraDepthCorrection;
-			transformPosition = newPosition;
+			transformPosition = RectMath.ClampRectPositionToRect(innerRect: rect, outerRect: containerRect).center;
 		}
 	//ENDOF private methods
 	}
