@@ -12,9 +12,6 @@ namespace ASSPhysics.CameraSystem
 	//serialized fields
 		[SerializeField]
 		protected Camera cameraComponent; //cached reference to the camera this controller handles
-
-		[SerializeField]
-		protected Vector3 cameraDepthCorrection = new Vector3 (0f, 0f, 10f); //camera Z depth correction
 	//ENDOF serialized fields
 
 	//private fields
@@ -54,35 +51,40 @@ namespace ASSPhysics.CameraSystem
 			set { transformPosition = value; }
 		}
 
-		//transforms a Vector3 representing a screen point into a Vector3 representing the 2d position
+		//transforms a screen point into a world position
 		//if worldSpace is false, the returned Vector3 ignores camera transform position
-		public Vector3 ScreenSpaceToWorldSpace (
-			Vector3 screenPosition,
+		public Vector2 ScreenSpaceToWorldSpace (
+			Vector2 screenPosition,
 			bool worldSpace
 		) {
-			//Vector3 cameraSize { get { return new Vector3 (rect.width, rect.height, 0f); }}
-
 			//normalize position into a 0-1 range
-			Vector3 position = Vector3.Scale(screenPosition, new Vector3 (1/Screen.width, 1/Screen.height, 0f));
+			Vector2 position = Vector2.Scale(screenPosition, new Vector2 (1/Screen.width, 1/Screen.height));
 
 			//multiply normalized position by camera size
-			Vector3 cameraSize = new Vector3 (rect.width, rect.height, 0f);
-			position = Vector3.Scale(position, cameraSize);
+			Vector2 cameraSize = new Vector2 (rect.width, rect.height);
+			position = Vector2.Scale(position, cameraSize);
 
 			//finally correct world position if necessary
 			if (worldSpace)
 			{
-				position = position + cameraComponent.transform.position + cameraDepthCorrection - (cameraSize/2);
+				position = position + cameraComponent.transform.position - (cameraSize/2);
 			}
 
 			return position;
 		}
+		public Vector3 ScreenSpaceToWorldSpace (
+			Vector3 screenPosition,
+			bool worldSpace
+		) {
+			Vector2 vector2Pos = ScreenSpaceToWorldSpace((Vector2) screenPosition, worldSpace);
+			return new Vector3 (vector2Pos.x, vector2Pos.y, screenPosition.z);
+		}
 
 		//Prevents position from going outside of this camera's boundaries
+		public Vector2 ClampPositionToViewport (Vector2 position)
+		{ return RectMath.ClampVector2WithinRect(position, rect); }
 		public Vector3 ClampPositionToViewport (Vector3 position)
-		{
-			return RectMath.ClampPositionToRect(position, rect);
-		}
+		{ return RectMath.ClampVector3WithinRect(position, rect); }
 	//ENDOF IViewportController implementation
 
 	//MonoBehaviour lifecycle implementation
