@@ -29,7 +29,7 @@ namespace ASSistant.ASSMath
 			return new Vector2
 			(
 				x: Mathf.Clamp(position.x, outerRect.xMin, outerRect.xMax),
-				y: Mathf.Clamp(position.y, outerRect.yMin, outerRect.yMax),
+				y: Mathf.Clamp(position.y, outerRect.yMin, outerRect.yMax)
 			);
 		}
 		public static Vector3 ClampVector3WithinRect (Vector3 position, Rect outerRect)
