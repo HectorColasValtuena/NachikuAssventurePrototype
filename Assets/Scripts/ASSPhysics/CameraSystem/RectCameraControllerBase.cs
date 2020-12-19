@@ -7,7 +7,8 @@ using static ASSPhysics.CameraSystem.CameraExtensions; //Camera.EMRectFromOrthog
 
 namespace ASSPhysics.CameraSystem
 {
-	public abstract class OrthoCameraControllerBase : MonoBehaviour, IViewportController
+	[RequireComponent(typeof(RectTransform))]
+	public abstract class RectCameraControllerBase : MonoBehaviour, IViewportController
 	{
 	//serialized fields
 		[SerializeField]
@@ -15,7 +16,7 @@ namespace ASSPhysics.CameraSystem
 
 		[SerializeField]
 		private Rect containerRect; //viewport limits
-		
+
 		[SerializeField]
 		private bool autoConfigureLimits = true; //if true gather limits from scene
 	//ENDOF serialized fields
