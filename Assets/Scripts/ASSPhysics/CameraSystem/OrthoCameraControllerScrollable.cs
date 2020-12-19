@@ -8,10 +8,6 @@ namespace ASSPhysics.CameraSystem
 	{
 	//serialized fields
 		[SerializeField]
-		private Rect containerRect; //current size of the viewport
-		[SerializeField]
-		private bool autoConfigureLimits = true;
-		[SerializeField]
 		private float lerpRate = 0.05f;
 	//ENDOF serialized fields
 
@@ -39,7 +35,6 @@ namespace ASSPhysics.CameraSystem
 		{
 			base.Start();
 			targetPosition = position;
-			if (autoConfigureLimits) { ConfigureLimitsFromCameraSize(); }
 		}
 
 		public virtual void Update ()
@@ -54,11 +49,6 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF MonoBehaviour Lifecycle
 
 	//private methods
-		private void ConfigureLimitsFromCameraSize ()
-		{
-			containerRect = cameraComponent.EMRectFromOrthographicCamera();
-		}
-
 		protected virtual void UpdateMoveTowardsTarget ()
 		{
 			transformPosition = Vector3.Lerp(a: transformPosition, b: targetPosition, t: lerpRate);

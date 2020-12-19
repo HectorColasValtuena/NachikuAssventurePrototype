@@ -12,6 +12,12 @@ namespace ASSPhysics.CameraSystem
 	//serialized fields
 		[SerializeField]
 		protected Camera cameraComponent; //cached reference to the camera this controller handles
+
+		[SerializeField]
+		private Rect containerRect; //viewport limits
+		
+		[SerializeField]
+		private bool autoConfigureLimits = true; //if true gather limits from scene
 	//ENDOF serialized fields
 
 	//private fields
@@ -99,6 +105,7 @@ namespace ASSPhysics.CameraSystem
 
 		public virtual void Start ()
 		{
+			if (autoConfigureLimits) { ConfigureLimitsFromCameraSize(); }
 			UpdateRect();
 		}
 
@@ -109,6 +116,12 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF MonoBehaviour lifecycle implementation
 
 	//private class methods
+		//auto configure camera container
+		private void ConfigureLimitsFromCameraSize ()
+		{
+			containerRect = cameraComponent.EMRectFromOrthographicCamera();
+		}
+		
 		//updates the cached viewport for the active camera			
 		protected void UpdateRect ()
 		{
