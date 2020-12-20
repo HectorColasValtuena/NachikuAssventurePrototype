@@ -44,7 +44,7 @@ namespace ASSistant.ASSMath
 
 		//ensures innerRect bounds stay within outerRect by moving innerRect if protruding.
 		//if innerRect dimensions exceed outerRect, they will be centered
-		public static Rect ClampRectPositionToRect (Rect innerRect, Rect outerRect)
+		public static Rect ClampRectPositionWithinRect (Rect innerRect, Rect outerRect)
 		{
 			return new Rect (
 				x: (innerRect.width <= outerRect.width)
@@ -81,6 +81,15 @@ namespace ASSistant.ASSMath
 				y: innerRect.y,
 				width: Mathf.Clamp(innerRect.width, 0, outerRect.width),
 				height: Mathf.Clamp(innerRect.height, 0, outerRect.height)
+			);
+		}
+
+		//fits a rect within another, trimming its size 
+		public static Rect TrimAndClampRectWithinRect (Rect innerRect, Rect outerRect)
+		{
+			return ClampRectPositionWithinRect(
+				innerRect: TrimRectSizeToRect(innerRect, outerRect),
+				outerRect: outerRect
 			);
 		}
 	//ENDOF Rect clamping and trimming methods
