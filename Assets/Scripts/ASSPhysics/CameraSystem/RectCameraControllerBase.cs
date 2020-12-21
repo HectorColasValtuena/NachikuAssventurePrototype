@@ -9,7 +9,7 @@ namespace ASSPhysics.CameraSystem
 {
 	[RequireComponent(typeof(RectTransform))]
 	[RequireComponent(typeof(Camera))]
-	public abstract class RectCameraControllerBase : MonoBehaviour, IViewportController
+	public abstract class RectCameraControllerBase : ViewportControllerBase
 	{
 	//serialized fields
 		[SerializeField]
@@ -24,11 +24,10 @@ namespace ASSPhysics.CameraSystem
 		private RectTransform rectTransform;
 	//ENDOF private fields
 
-	//public properties
-		public virtual Rect rect
-		{
+	//inherited property implementation
+		protected override Rect viewportRect {
 			get { return rectTransform.rect; }
-			protected set
+			set
 			{
 				//first ensure rect fulfills side ratio and clamp its position within viewport limits
 				Rect newRect = ClampRectWithinLimits(CreateCameraRect(sampleRect: value));
@@ -41,7 +40,15 @@ namespace ASSPhysics.CameraSystem
 				);
 			}
 		}
-	//ENDOF public properties
+	//ENDOF inherited property implementation
+
+	//protected class properties
+		protected virtual Rect rect
+		{
+			get { return viewportRect; }
+			set { viewportRect = value; }
+		}
+	//protected class properties
 
 	//private properties
 		private Vector2 position
@@ -55,56 +62,14 @@ namespace ASSPhysics.CameraSystem
 		}
 	//ENDOF private properties
 
-	//IViewportController implementation
-	  //dimensions and position of the viewport
-		Rect IViewportController.rect
+	//inherited method implementation
+		//moves and resizes camera viewport
+		//if only one of the parameters is used the other aspect of the viewport is unchanged
+		protected override void ChangeViewport (Vector2? position, float? size)
 		{
-			get { return rect; }
-			set { rect = value; }
+			viewportRect = CreateCameraRect(position: position, height: size);
 		}
-
-	  //current height value of the viewport
-		float IViewportController.size
-		{
-			get { return rect.height; }
-			set { rect = CreateCameraRect(height: value); }
-		}
-
-	  //current position
-		Vector2 IViewportController.position
-		{
-			get { return position; }
-			set { rect = CreateCameraRect(position: value); }
-		}
-
-		//transforms a screen point into a world position
-		//if worldSpace is false, the returned Vector3 ignores camera transform position
-		Vector2 IViewportController.ScreenSpaceToWorldSpace (
-			Vector2 screenPosition,
-			bool worldSpace
-		) {
-			//normalize position into a 0-1 range
-			screenPosition = Vector2.Scale(screenPosition, new Vector2 (1/Screen.width, 1/Screen.height));
-
-			//multiply normalized position by camera size
-			Vector2 cameraSize = new Vector2 (rect.width, rect.height);
-			screenPosition = Vector2.Scale(screenPosition, cameraSize);
-
-			//finally correct world position if necessary
-			if (worldSpace)
-			{
-				screenPosition = screenPosition + position - (cameraSize/2);
-			}
-
-			return screenPosition;
-		}
-
-		//Prevents position from going outside of this camera's boundaries
-		Vector2 IViewportController.ClampPositionToViewport (Vector2 position)
-		{ return RectMath.ClampVector2WithinRect(position, rect); }
-		Vector3 IViewportController.ClampPositionToViewport (Vector3 position)
-		{ return RectMath.ClampVector3WithinRect(position, rect); }
-	//ENDOF IViewportController implementation
+	//ENDOF inherited method implementation
 
 	//MonoBehaviour lifecycle implementation
 		public void Awake ()
@@ -144,7 +109,7 @@ namespace ASSPhysics.CameraSystem
 		}
 	//ENDOF private methods
 
-	//inheritable private methods
+	//protected class methods
 		//creates previewing camera dimensions at target position and height.
 		//non included parameters are filled with current camera values
 		//Rect width is inferred off of height and screen ratio.
