@@ -29,15 +29,10 @@ namespace ASSPhysics.CameraSystem
 			get { return rectTransform.rect; }
 			set
 			{
-				//first ensure rect fulfills side ratio and clamp its position within viewport limits
-				Rect newRect = ClampRectWithinLimits(CreateCameraRect(sampleRect: value));
-				//then apply validated rect to the transform
-				rectTransform.rect.Set(
-					x: newRect.x,
-					y: newRect.y,
-					width: newRect.width,
-					height: newRect.height
-				);
+				//apply a pre-validated rect to the transform
+				rectTransform.EMSetRect(
+					ClampRectWithinLimits( //clamp rect position within viewport limits
+						CreateCameraRect(sampleRect: value))); //ensure rect fulfills size ratio
 			}
 		}
 	//ENDOF inherited property implementation
