@@ -8,62 +8,78 @@ using static ASSPhysics.CameraSystem.CameraExtensions; //Camera.EMRectFromOrthog
 namespace ASSPhysics.CameraSystem
 {
 	[RequireComponent(typeof(RectTransform))]
+	[RequireComponent(typeof(Camera))]
 	public abstract class RectCameraControllerBase : MonoBehaviour, IViewportController
 	{
 	//serialized fields
 		[SerializeField]
-		protected Camera cameraComponent; //cached reference to the camera this controller handles
-
-		[SerializeField]
-		private Rect containerRect; //viewport limits
+		private Rect viewportLimits; //camera boundaries
 
 		[SerializeField]
 		private bool autoConfigureLimits = true; //if true gather limits from scene
 	//ENDOF serialized fields
 
 	//private fields
-		protected Vector2 transformPosition
-		{
-			get { return (Vector2) cameraComponent.transform.position; }
-			set 
-			{
-				//when setting position, add current Z position to target vector2 position
-				cameraComponent.transform.position =
-					(Vector3) value	+
-					Vector3.Scale(cameraComponent.transform.position, Vector3.forward);
-				UpdateRect();
-			}
-		}
-
-		protected float cameraSize 
-		{
-			get { return cameraComponent.orthographicSize; }
-			set
-			{
-				cameraComponent.orthographicSize = value; 
-				UpdateRect();
-			}
-		}
+		protected Camera cameraComponent; //cached reference to the camera this controller handles
+		private RectTransform rectTransform;
 	//ENDOF private fields
 
-	//IViewportController implementation
-		public virtual Rect rect { get; protected set; } //current size of the viewport
-
-		public virtual float size //current height value of the viewport
+	//public properties
+		public virtual Rect rect
 		{
-			get { return cameraSize; }
-			set { cameraSize = value; }
+			get { return rectTransform.rect; }
+			protected set
+			{
+				//first ensure rect fulfills side ratio and clamp its position within viewport limits
+				Rect newRect = ClampRectWithinLimits(CreateCameraRect(sampleRect: value));
+				//then apply validated rect to the transform
+				rectTransform.rect.Set(
+					x: newRect.x,
+					y: newRect.y,
+					width: newRect.width,
+					height: newRect.height
+				);
+			}
+		}
+	//ENDOF public properties
+
+	//private properties
+		private Vector2 position
+		{
+			get { return rect.position; }
 		}
 
-		public virtual Vector2 position
+		private float screenRatio
 		{
-			get { return transformPosition; }
-			set { transformPosition = value; }
+			get { return cameraComponent.pixelWidth / cameraComponent.pixelHeight; }
+		}
+	//ENDOF private properties
+
+	//IViewportController implementation
+	  //dimensions and position of the viewport
+		Rect IViewportController.rect
+		{
+			get { return rect; }
+			set { rect = value; }
+		}
+
+	  //current height value of the viewport
+		float IViewportController.size
+		{
+			get { return rect.height; }
+			set { rect = CreateCameraRect(height: value); }
+		}
+
+	  //current position
+		Vector2 IViewportController.position
+		{
+			get { return position; }
+			set { rect = CreateCameraRect(position: value); }
 		}
 
 		//transforms a screen point into a world position
 		//if worldSpace is false, the returned Vector3 ignores camera transform position
-		public Vector2 ScreenSpaceToWorldSpace (
+		Vector2 IViewportController.ScreenSpaceToWorldSpace (
 			Vector2 screenPosition,
 			bool worldSpace
 		) {
@@ -77,37 +93,28 @@ namespace ASSPhysics.CameraSystem
 			//finally correct world position if necessary
 			if (worldSpace)
 			{
-				screenPosition = screenPosition + transformPosition - (cameraSize/2);
+				screenPosition = screenPosition + position - (cameraSize/2);
 			}
 
 			return screenPosition;
 		}
-		public Vector3 ScreenSpaceToWorldSpace (
-			Vector3 screenPosition,
-			bool worldSpace
-		) {
-			Vector2 vector2Pos = ScreenSpaceToWorldSpace((Vector2) screenPosition, worldSpace);
-			return new Vector3 (vector2Pos.x, vector2Pos.y, screenPosition.z);
-		}
 
 		//Prevents position from going outside of this camera's boundaries
-		public Vector2 ClampPositionToViewport (Vector2 position)
+		Vector2 IViewportController.ClampPositionToViewport (Vector2 position)
 		{ return RectMath.ClampVector2WithinRect(position, rect); }
-		public Vector3 ClampPositionToViewport (Vector3 position)
+		Vector3 IViewportController.ClampPositionToViewport (Vector3 position)
 		{ return RectMath.ClampVector3WithinRect(position, rect); }
 	//ENDOF IViewportController implementation
 
 	//MonoBehaviour lifecycle implementation
 		public void Awake ()
 		{
-			if (cameraComponent == null) { cameraComponent = GetComponent<Camera>(); }
-			ControllerProvider.RegisterController<IViewportController>(this);
+			Initialize();
 		}
 
-		public virtual void Start ()
+		public void OnPreCull ()
 		{
-			if (autoConfigureLimits) { ConfigureLimitsFromCameraSize(); }
-			UpdateRect();
+			ApplyCameraSize();
 		}
 
 		public void OnDestroy ()
@@ -116,18 +123,59 @@ namespace ASSPhysics.CameraSystem
 		}
 	//ENDOF MonoBehaviour lifecycle implementation
 
-	//private class methods
-		//auto configure camera container
-		private void ConfigureLimitsFromCameraSize ()
+	//private methods
+		//Controller initialization
+		private void Initialize ()
 		{
-			containerRect = cameraComponent.EMRectFromOrthographicCamera();
+			//report this controller to the provider
+			ControllerProvider.RegisterController<IViewportController>(this);
+
+			//cache references to Camera and RectTransform components
+			cameraComponent = GetComponent<Camera>();
+			rectTransform = (RectTransform) transform;
+
+			//initialize limits
+			if (autoConfigureLimits) { viewportLimits = cameraComponent.EMRectFromOrthographicCamera(); }
 		}
-		
-		//updates the cached viewport for the active camera			
-		protected void UpdateRect ()
+
+		private void ApplyCameraSize ()
 		{
-			rect = cameraComponent.EMRectFromOrthographicCamera();
+			cameraComponent.orthographicSize = rect.height / 2;
 		}
 	//ENDOF private methods
+
+	//inheritable private methods
+		//creates previewing camera dimensions at target position and height.
+		//non included parameters are filled with current camera values
+		//Rect width is inferred off of height and screen ratio.
+		protected Rect CreateCameraRect (Vector2? position = null, float? height = null)
+		{
+			//first validate and complete inputs
+			Vector2 validPosition = (position != null) 
+				?	(Vector2) position
+				:	rect.position;
+			float validHeight = (height != null) 
+				?	(float) height
+				:	rect.height;
+
+			//now create and return a rect with proper dimensions and position
+			return new Rect(
+				x: validPosition.x,
+				y: validPosition.y,
+				width: validHeight * screenRatio,
+				height: validHeight
+			);
+		}
+		protected Rect CreateCameraRect (Rect sampleRect)
+		{
+			return CreateCameraRect(position: sampleRect.position, height: sampleRect.height);
+		}
+
+		//clamps a rect's height and position to make it fit within viewport limits
+		protected Rect ClampRectWithinLimits (Rect innerRect)
+		{
+			return RectMath.TrimAndClampRectWithinRect(innerRect: innerRect, outerRect: viewportLimits);			
+		}
+	//ENDOF inheritable private methods
 	}
 }
