@@ -25,7 +25,12 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF private fields
 
 	//inherited property implementation
-		protected override Rect viewportRect {
+		protected override Rect publicRect { get { return rect; } }
+	//ENDOF inherited property implementation
+
+	//protected class properties
+		protected virtual Rect rect
+		{
 			get { return rectTransform.rect; }
 			set
 			{
@@ -34,14 +39,6 @@ namespace ASSPhysics.CameraSystem
 					ClampRectWithinLimits( //clamp rect position within viewport limits
 						CreateCameraRect(sampleRect: value))); //ensure rect fulfills size ratio
 			}
-		}
-	//ENDOF inherited property implementation
-
-	//protected class properties
-		protected virtual Rect rect
-		{
-			get { return viewportRect; }
-			set { viewportRect = value; }
 		}
 	//protected class properties
 
@@ -62,7 +59,7 @@ namespace ASSPhysics.CameraSystem
 		//if only one of the parameters is used the other aspect of the viewport is unchanged
 		protected override void ChangeViewport (Vector2? position, float? size)
 		{
-			viewportRect = CreateCameraRect(position: position, height: size);
+			rect = CreateCameraRect(position: position, height: size);
 		}
 	//ENDOF inherited method implementation
 
