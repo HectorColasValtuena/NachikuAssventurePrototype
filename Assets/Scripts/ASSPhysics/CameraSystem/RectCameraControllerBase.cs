@@ -9,7 +9,7 @@ namespace ASSPhysics.CameraSystem
 {
 	[RequireComponent(typeof(RectTransform))]
 	[RequireComponent(typeof(Camera))]
-	public abstract class RectCameraControllerBase : ViewportControllerBase
+	public class RectCameraControllerBase : ViewportControllerBase
 	{
 	//serialized fields
 		[SerializeField]
@@ -38,16 +38,15 @@ namespace ASSPhysics.CameraSystem
 				rectTransform.EMSetRect(
 					ClampRectWithinLimits( //clamp rect position within viewport limits
 						CreateCameraRect(sampleRect: value))); //ensure rect fulfills size ratio
+				/////Maybe this doesn't need to create a new rect, only change rect width
 			}
 		}
+		
+		protected Vector2 rectPosition { get { return rect.position; }}
+		protected float rectHeight { get { return rect.height; }}
 	//protected class properties
 
 	//private properties
-		private Vector2 position
-		{
-			get { return rect.position; }
-		}
-
 		private float screenRatio
 		{
 			get { return cameraComponent.pixelWidth / cameraComponent.pixelHeight; }
@@ -95,9 +94,10 @@ namespace ASSPhysics.CameraSystem
 			if (autoConfigureLimits) { viewportLimits = cameraComponent.EMRectFromOrthographicCamera(); }
 		}
 
+		//applies the rect height to the camera component right before rendering
 		private void ApplyCameraSize ()
 		{
-			cameraComponent.orthographicSize = rect.height / 2;
+			cameraComponent.orthographicSize = rectHeight / 2;
 		}
 	//ENDOF private methods
 
@@ -110,7 +110,7 @@ namespace ASSPhysics.CameraSystem
 			//first validate and complete inputs
 			Vector2 validPosition = (position != null) 
 				?	(Vector2) position
-				:	rect.position;
+				:	rectPosition;
 			float validHeight = (height != null) 
 				?	(float) height
 				:	rect.height;
