@@ -5,11 +5,13 @@ using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 namespace ASSPhysics.CameraSystem
 {
 	//[RequireComponent(typeof(IViewportController))]
-	public class ViewportZoom : MonoBehaviour
+	public class ViewportZoomer : MonoBehaviour
 	{
 	//serialized fields
+		
 		[SerializeField]
 		private float zoomLerpRate = 0.1f;
+		
 		[SerializeField]
 		private float maxSize = 1f;
 		[SerializeField]
@@ -23,10 +25,17 @@ namespace ASSPhysics.CameraSystem
 
 	//private fields
 		private float currentSize;
-		private float targetSize;
-		
-		protected IViewportController viewport; //cached reference to the camera this controller handles
+		private float desiredSize;
+
+		private Vector2? currentPosition;
+
+		private IViewportController viewport; //cached reference to the camera this controller handles
 	//ENDOF private fields
+
+	//private properties
+		private float zoomDelta { get { return ControllerCache.inputController.zoomDelta; }}
+		private Vector2 inputPosition { get { return ControllerCache.toolManager.activeTool.position; }}
+	//ENDOF private properties
 
 	//MonoBehaviour lifecycle
 		public void Awake ()
@@ -36,33 +45,46 @@ namespace ASSPhysics.CameraSystem
 
 		public void Start ()
 		{
+			Debug.Log("start");
 			if (maxSizeFromSceneValue) { maxSize = viewport.size; }
 			currentSize = viewport.size;
-			targetSize = currentSize;
+			desiredSize = currentSize;
 		}
 
 		public void Update ()
 		{
-			UpdateTargetSize();
+			ProcessInput();
 			LerpCameraSize();
+			ApplyViewportChanges();
 		}
 	//ENDOF MonoBehaviour lifecycle
 
 	//private methods
-		private void UpdateTargetSize ()
+		private void ProcessInput ()
 		{
-			if (ControllerCache.inputController.zoomDelta != 0)
+			if (zoomDelta != 0)
 			{
-				targetSize += ControllerCache.inputController.zoomDelta;
-				targetSize = Mathf.Clamp(targetSize, minSize, maxSize);
-				viewport.position = ControllerCache.toolManager.activeTool.position;
+				desiredSize += zoomDelta;
+				currentPosition = inputPosition;
+			}
+			else
+			{
+				currentPosition = null;
 			}
 		}
 
 		private void LerpCameraSize ()
 		{
-			currentSize = Mathf.Lerp(currentSize, targetSize, zoomLerpRate);
-			viewport.size = currentSize;
+			desiredSize = Mathf.Clamp(desiredSize, minSize, maxSize);
+			currentSize = Mathf.Lerp(currentSize, desiredSize, zoomLerpRate);
+		}
+
+		private void ApplyViewportChanges ()
+		{
+			viewport.ChangeViewport(
+				position: currentPosition,
+				size: currentSize
+			);
 		}
 	//ENDOF private methods
 	}	
