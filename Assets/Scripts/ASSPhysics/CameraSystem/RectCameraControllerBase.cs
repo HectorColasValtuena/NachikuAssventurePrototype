@@ -116,16 +116,15 @@ namespace ASSPhysics.CameraSystem
 				:	rect.height;
 
 			//now create and return a rect with proper dimensions and position
-			return new Rect(
-				x: validPosition.x,
-				y: validPosition.y,
+			return RectMath.RectFromCenterAndSize(
+				position: validPosition,
 				width: validHeight * screenRatio,
 				height: validHeight
 			);
 		}
 		protected Rect CreateCameraRect (Rect sampleRect)
 		{
-			return CreateCameraRect(position: sampleRect.position, height: sampleRect.height);
+			return CreateCameraRect(position: sampleRect.center, height: sampleRect.height);
 		}
 
 		//clamps a rect's height and position to make it fit within viewport limits
