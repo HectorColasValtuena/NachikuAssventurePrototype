@@ -7,11 +7,11 @@ namespace ASSistant.ASSMath
 	{
 	//Rect creation methods
 		//Creates a new rect with given dimensions at target position
-		public static Rect RectFromCenterAndSize (Vector3 position, Vector3 size)
+		public static Rect RectFromCenterAndSize (Vector2 position, Vector3 size)
 		{ return RectFromCenterAndSize(position, size.x, size.y); }
-		public static Rect RectFromCenterAndSize (Vector3 position, Vector2 size)
+		public static Rect RectFromCenterAndSize (Vector2 position, Vector2 size)
 		{ return RectFromCenterAndSize(position, size.x, size.y); }
-		public static Rect RectFromCenterAndSize (Vector3 position, float width, float height)
+		public static Rect RectFromCenterAndSize (Vector2 position, float width, float height)
 		{
 			return new Rect(
 				x: position.x - (width / 2),
