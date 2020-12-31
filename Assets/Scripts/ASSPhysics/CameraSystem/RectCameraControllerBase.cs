@@ -24,12 +24,8 @@ namespace ASSPhysics.CameraSystem
 		private RectTransform rectTransform;
 	//ENDOF private fields
 
-	//inherited property implementation
-		protected override Rect publicRect { get { return rect; } }
-	//ENDOF inherited property implementation
-
 	//protected class properties
-		protected virtual Rect rect
+		protected override Rect rect
 		{
 			get { return rectTransform.rect; }
 			set

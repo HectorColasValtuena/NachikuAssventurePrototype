@@ -8,7 +8,7 @@ namespace ASSPhysics.CameraSystem
 	public abstract class ViewportControllerBase : MonoBehaviour, IViewportController
 	{
 	//abstract property declaration
-		protected abstract Rect publicRect { get; }
+		protected abstract Rect rect { get; }
 	//ENDOF abstract property declaration
 
 	//abstract method declaration
