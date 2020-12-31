@@ -25,7 +25,7 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF private fields
 
 	//abstract property implementation
-		protected abstract Rect viewportRect { get { return rect }; }
+		protected abstract Rect viewportRect { get { return rect; }}
 	//ENDOF abstract property implementation
 
 	//protected class properties
