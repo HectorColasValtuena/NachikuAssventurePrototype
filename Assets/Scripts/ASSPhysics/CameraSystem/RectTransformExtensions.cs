@@ -6,6 +6,16 @@ namespace ASSPhysics.CameraSystem
 {
 	public static class RectTransformExtensions
 	{
+		//returns this rectTransform's rect with its worldspace position applied
+		public static Rect EMGetWorldRect (this RectTransform rectTransform)
+		{
+			Rect rect = rectTransform.rect;
+
+			rect.position = rect.position + (Vector2) rectTransform.position;
+
+			return rect;
+		}
+
 		//alters rectTransform's dimensions and position according to given rect
 		public static void EMSetRect (this RectTransform rectTransform, Rect rect)
 		{
