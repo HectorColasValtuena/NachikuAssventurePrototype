@@ -31,7 +31,7 @@ namespace ASSPhysics.CameraSystem
 	//protected class properties
 		protected virtual Rect rect
 		{
-			get { return rectTransform.rect; }
+			get { return rectTransform.EMGetWorldRect(); }
 			set
 			{
 				//apply a pre-validated rect to the transform
