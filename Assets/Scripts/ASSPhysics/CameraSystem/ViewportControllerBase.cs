@@ -8,7 +8,7 @@ namespace ASSPhysics.CameraSystem
 	public abstract class ViewportControllerBase : MonoBehaviour, IViewportController
 	{
 	//abstract property declaration
-		protected abstract Rect rect { get; }
+		protected abstract Rect viewportRect { get; }
 	//ENDOF abstract property declaration
 
 	//abstract method declaration
@@ -19,19 +19,19 @@ namespace ASSPhysics.CameraSystem
 		//dimensions and position of the viewport
 		Rect IViewportController.rect
 		{
-			get { return publicRect; }
+			get { return viewportRect; }
 		}
 
 		//current height value of the viewport
 		float IViewportController.size
 		{
-			get { return publicRect.height; }
+			get { return viewportRect.height; }
 		}
 
 		//current position
 		Vector2 IViewportController.position
 		{
-			get { return publicRect.center; }
+			get { return viewportRect.center; }
 		}
 
 		//moves and resizes camera viewport
@@ -54,13 +54,13 @@ namespace ASSPhysics.CameraSystem
 			screenPosition = Vector2.Scale(screenPosition, new Vector2 (1/Screen.width, 1/Screen.height));
 
 			//multiply normalized position by camera size
-			Vector2 cameraSize = new Vector2 (publicRect.width, publicRect.height);
+			Vector2 cameraSize = new Vector2 (viewportRect.width, viewportRect.height);
 			screenPosition = Vector2.Scale(screenPosition, cameraSize);
 
 			//finally correct world position if necessary
 			if (worldSpace)
 			{
-				screenPosition = screenPosition + publicRect.center - (cameraSize/2);
+				screenPosition = screenPosition + viewportRect.center - (cameraSize/2);
 			}
 
 			return screenPosition;
@@ -68,9 +68,9 @@ namespace ASSPhysics.CameraSystem
 
 		//Prevents position from going outside of this camera's boundaries
 		Vector2 IViewportController.ClampPositionToViewport (Vector2 position)
-		{ return RectMath.ClampVector2WithinRect(position, publicRect); }
+		{ return RectMath.ClampVector2WithinRect(position, viewportRect); }
 		Vector3 IViewportController.ClampPositionToViewport (Vector3 position)
-		{ return RectMath.ClampVector3WithinRect(position, publicRect); }
+		{ return RectMath.ClampVector3WithinRect(position, viewportRect); }
 	//ENDOF IViewportController implementation
 	}
 }

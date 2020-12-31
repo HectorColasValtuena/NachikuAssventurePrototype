@@ -24,11 +24,15 @@ namespace ASSPhysics.CameraSystem
 		private RectTransform rectTransform;
 	//ENDOF private fields
 
+	//abstract property implementation
+		protected abstract Rect viewportRect { get { return rect }; }
+	//ENDOF abstract property implementation
+
 	//protected class properties
-		protected override Rect rect
+		protected virtual Rect rect
 		{
 			get { return rectTransform.rect; }
-			set
+			protected set
 			{
 				//apply a pre-validated rect to the transform
 				rectTransform.EMSetRect(
