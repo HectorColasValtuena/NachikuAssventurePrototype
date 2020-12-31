@@ -46,7 +46,7 @@ namespace ASSPhysics.CameraSystem
 	//private properties
 		private float screenRatio
 		{
-			get { return cameraComponent.pixelWidth / cameraComponent.pixelHeight; }
+			get { return cameraComponent.aspect; }
 		}
 	//ENDOF private properties
 
