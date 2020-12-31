@@ -41,9 +41,6 @@ namespace ASSPhysics.CameraSystem
 				/////Maybe this doesn't need to create a new rect, only change rect width
 			}
 		}
-		
-		protected Vector2 rectPosition { get { return rect.position; }}
-		protected float rectHeight { get { return rect.height; }}
 	//protected class properties
 
 	//private properties
@@ -97,7 +94,7 @@ namespace ASSPhysics.CameraSystem
 		//applies the rect height to the camera component right before rendering
 		private void ApplyCameraSize ()
 		{
-			cameraComponent.orthographicSize = rectHeight / 2;
+			cameraComponent.orthographicSize = rect.height / 2;
 		}
 	//ENDOF private methods
 
@@ -110,7 +107,7 @@ namespace ASSPhysics.CameraSystem
 			//first validate and complete inputs
 			Vector2 validPosition = (position != null) 
 				?	(Vector2) position
-				:	rectPosition;
+				:	rect.center;
 			float validHeight = (height != null) 
 				?	(float) height
 				:	rect.height;
