@@ -93,5 +93,17 @@ namespace ASSistant.ASSMath
 			);
 		}
 	//ENDOF Rect clamping and trimming methods
+
+	//Rect interpolation
+		public static Rect LerpRect (Rect from, Rect to, float positionLerpRate, float sizeLerpRate)
+		{
+			return RectFromCenterAndSize(
+				position: Vector2.Lerp(from.center, to.center, positionLerpRate),
+				width: Mathf.Lerp(from.width, to.width, sizeLerpRate),
+				height: Mathf.Lerp(from.height, to.height, sizeLerpRate)
+			);
+		}
+	//ENDOF Rect interpolation
+
 	}
 }
