@@ -35,9 +35,7 @@ namespace ASSPhysics.CameraSystem
 			set
 			{
 				//apply a pre-validated rect to the transform
-				rectTransform.EMSetRect(
-					ClampRectWithinLimits( //clamp rect position within viewport limits
-						CreateCameraRect(sampleRect: value))); //ensure rect fulfills size ratio
+				rectTransform.EMSetRect(ValidateCameraRect(value));
 				/////Maybe this doesn't need to create a new rect, only change rect width
 			}
 		}
@@ -99,11 +97,24 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF private methods
 
 	//protected class methods
+		//Clamps and properly sizes a rect for this camera ratio and limits
+		protected Rect ValidateCameraRect (Rect innerRect)
+		{
+			//clamp rect position within viewport limits
+			return ClampRectWithinLimits(
+				//ensure rect fulfills size ratio
+				CreateCameraRect(sampleRect: innerRect)
+			);
+		}
+
 		//creates previewing camera dimensions at target position and height.
 		//non included parameters are filled with current camera values
 		//Rect width is inferred off of height and screen ratio.
+		protected Rect CreateCameraRect (Rect sampleRect)
+		{ return CreateCameraRect(position: sampleRect.center, height: sampleRect.height); }
 		protected Rect CreateCameraRect (Vector2? position = null, float? height = null)
 		{
+			Debug.Log("CreateCameraRect(" + position + ", " + height + ")");
 			//first validate and complete inputs
 			Vector2 validPosition = (position != null) 
 				?	(Vector2) position
@@ -112,16 +123,16 @@ namespace ASSPhysics.CameraSystem
 				?	(float) height
 				:	rect.height;
 
+			Debug.Log(" validPosition: " + validPosition + "\n validHeight: " + validHeight);
+
+////////////////[TO-DO] this is a bit duplicate logic, condense this and CameraExtensions.EMRectFromOrthographicCamera()?
+			
 			//now create and return a rect with proper dimensions and position
 			return RectMath.RectFromCenterAndSize(
 				position: validPosition,
 				width: validHeight * screenRatio,
 				height: validHeight
 			);
-		}
-		protected Rect CreateCameraRect (Rect sampleRect)
-		{
-			return CreateCameraRect(position: sampleRect.center, height: sampleRect.height);
 		}
 
 		//clamps a rect's height and position to make it fit within viewport limits
