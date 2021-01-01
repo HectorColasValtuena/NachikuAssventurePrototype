@@ -7,11 +7,7 @@ namespace ASSPhysics.CameraSystem
 	//[RequireComponent(typeof(IViewportController))]
 	public class ViewportZoomer : MonoBehaviour
 	{
-	//serialized fields
-		
-		[SerializeField]
-		private float zoomLerpRate = 0.1f;
-		
+	//serialized fields		
 		[SerializeField]
 		private float maxSize = 1f;
 		[SerializeField]
@@ -24,10 +20,12 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF inherited property override
 
 	//private fields
-		private float currentSize;
-		private float desiredSize;
-
-		private Vector2? currentPosition;
+		private float _size;
+		private float size
+		{
+			get { return _size; }
+			set { _size = Mathf.Clamp(value: value, min: minSize, max: maxSize); }
+		}
 
 		private IViewportController viewport; //cached reference to the camera this controller handles
 	//ENDOF private fields
@@ -47,15 +45,12 @@ namespace ASSPhysics.CameraSystem
 		{
 			Debug.Log("start");
 			if (maxSizeFromSceneValue) { maxSize = viewport.size; }
-			currentSize = viewport.size;
-			desiredSize = currentSize;
+			size = viewport.size;
 		}
 
 		public void Update ()
 		{
 			ProcessInput();
-			LerpCameraSize();
-			ApplyViewportChanges();
 		}
 	//ENDOF MonoBehaviour lifecycle
 
@@ -64,27 +59,13 @@ namespace ASSPhysics.CameraSystem
 		{
 			if (zoomDelta != 0)
 			{
-				desiredSize += zoomDelta;
-				currentPosition = inputPosition;
-			}
-			else
-			{
-				currentPosition = null;
-			}
-		}
+				size = size + zoomDelta;
 
-		private void LerpCameraSize ()
-		{
-			desiredSize = Mathf.Clamp(desiredSize, minSize, maxSize);
-			currentSize = Mathf.Lerp(currentSize, desiredSize, zoomLerpRate);
-		}
-
-		private void ApplyViewportChanges ()
-		{
-			viewport.ChangeViewport(
-				position: currentPosition,
-				size: currentSize
-			);
+				viewport.ChangeViewport(
+					position: inputPosition,
+					size: size
+				);
+			}
 		}
 	//ENDOF private methods
 	}	
