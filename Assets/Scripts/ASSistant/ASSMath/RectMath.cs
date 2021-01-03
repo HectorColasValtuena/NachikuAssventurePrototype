@@ -94,7 +94,17 @@ namespace ASSistant.ASSMath
 		}
 	//ENDOF Rect clamping and trimming methods
 
-	//Rect interpolation
+	//Rect interpolation and movement
+		//moves a rect
+		public static Rect MoveRect (this Rect rect, Vector3 movement)
+		{ return MoveRect(rect: rect, movement: (Vector2) movement); }
+		public static Rect MoveRect (this Rect rect, Vector2 movement)
+		{
+			rect.position = rect.position + movement;
+			return rect;
+		}
+		
+		//interpolates position and size
 		public static Rect LerpRect (Rect from, Rect to, float positionLerpRate, float sizeLerpRate)
 		{
 			return RectFromCenterAndSize(
