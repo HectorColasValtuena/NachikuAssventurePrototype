@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
-
 using Axis = UnityEngine.RectTransform.Axis;
+
+using RectMath = ASSistant.ASSMath.RectMath;
 
 namespace ASSPhysics.CameraSystem
 {
@@ -9,11 +10,10 @@ namespace ASSPhysics.CameraSystem
 		//returns this rectTransform's rect with its worldspace position applied
 		public static Rect EMGetWorldRect (this RectTransform rectTransform)
 		{
-			Rect rect = rectTransform.rect;
-
-			rect.position = rect.position + (Vector2) rectTransform.position;
-
-			return rect;
+			return RectMath.MoveRect(
+				rect: rectTransform.rect,
+				movement: rectTransform.position
+			);
 		}
 
 		//alters rectTransform's dimensions and position according to given rect
