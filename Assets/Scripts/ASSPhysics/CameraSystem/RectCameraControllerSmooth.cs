@@ -15,7 +15,7 @@ namespace ASSPhysics.CameraSystem
 
 	//private properties
 		private Rect _targetRect;
-		private Rect targetRect
+		protected Rect targetRect
 		{
 			get { return _targetRect; }
 			set { _targetRect = ValidateCameraRect(value); }
