@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1305638602418378009}
   - component: {fileID: 8168265856185424454}
+  - component: {fileID: 329160487}
+  - component: {fileID: 329160488}
+  - component: {fileID: 329160489}
   m_Layer: 0
   m_Name: AssBaseCamera
   m_TagString: MainCamera
@@ -79,3 +82,53 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &329160487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8168265856185424448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51aa000b6ec36964281f7eaf066a1d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSize: 1
+  minSize: 0.25
+  maxSizeFromSceneValue: 1
+--- !u!114 &329160488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8168265856185424448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5468260514e0c3041862d02f9cc11986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollingRate: 1
+  borderScrollLimits: 0.05
+--- !u!114 &329160489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8168265856185424448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfa3042d31ba6e478a05b852f39ce8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewportLimits:
+    serializedVersion: 2
+    x: -6
+    y: -5
+    width: 12
+    height: 10
+  autoConfigureLimits: 0
+  positionLerpRate: 0.01
+  sizeLerpRate: 0.02
