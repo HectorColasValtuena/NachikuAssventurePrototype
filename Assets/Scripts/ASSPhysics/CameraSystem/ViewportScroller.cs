@@ -6,8 +6,13 @@ namespace ASSPhysics.CameraSystem
 {
 	public class ViewportScroller : MonoBehaviour
 	{
+	//serialized properties
+		[SerializeField]
+		private float scrollingRate = 1f;
+
 		[SerializeField]
 		private float borderScrollLimits = 0.05f;
+	//ENDOF serialized properties
 
 		private RectCameraControllerScrollable scrollable;
 
@@ -29,7 +34,7 @@ namespace ASSPhysics.CameraSystem
 
 			if (scrollingVector.magnitude > 0)
 			{
-				scrollable.Scroll(scrollingVector);
+				scrollable.Scroll(scrollingVector * scrollingRate);
 			}
 		}
 	//ENDOF MonoBehaviour lifecycle
@@ -49,11 +54,17 @@ namespace ASSPhysics.CameraSystem
 				((Vector2) ControllerCache.toolManager.activeTool.position - cameraRect.center)
 				/ cameraRect.size;
 
-			//distance beyond scrolling limits. 
+			//cut out the inner rectangle by moving towards 0 so centered hands don't move the camera 
+			Vector2 marginDistance = new Vector2(
+				x: Mathf.MoveTowards(current: normalizedDistance.x, target: 0, maxDelta: noScrollRadius),
+				y: Mathf.MoveTowards(current: normalizedDistance.y, target: 0, maxDelta: noScrollRadius)
+			);
+			/*
 			Vector2 marginDistance = new Vector2(
 				x: normalizedDistance.x - (Mathf.Sign(normalizedDistance.x) * noScrollRadius),
 				y: normalizedDistance.y - (Mathf.Sign(normalizedDistance.y) * noScrollRadius)
 			);
+			//*/
 
 			Vector2 scrollingMagnitude = marginDistance / borderScrollLimits;
 

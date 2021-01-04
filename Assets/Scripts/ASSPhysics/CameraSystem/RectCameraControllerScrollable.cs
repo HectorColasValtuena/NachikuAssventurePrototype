@@ -7,10 +7,6 @@ namespace ASSPhysics.CameraSystem
 {
 	public class RectCameraControllerScrollable : RectCameraControllerSmooth
 	{
-	//serialized properties
-		public float movementRate = 0.5f;
-	//ENDOF serialized properties
-
 	//public methods
 		public void Scroll (Vector2 direction)
 		{
@@ -24,7 +20,7 @@ namespace ASSPhysics.CameraSystem
 		//scales direction vector by screen size, time delta, and rate modifier
 		private Vector2 ScrollMovementFromDirection (Vector2 direction)
 		{
-			return direction * rect.height * Time.deltaTime * movementRate;
+			return direction * rect.height * Time.deltaTime;
 		}
 	//ENDOF private method
 	}
