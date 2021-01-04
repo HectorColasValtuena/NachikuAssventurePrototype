@@ -32872,6 +32872,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 329160487, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
+      propertyPath: maxSize
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 329160487, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
+      propertyPath: maxSizeFromSceneValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 329160489, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
+      propertyPath: autoConfigureLimits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8168265856185424448, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
       propertyPath: m_Name
       value: AssBaseCamera

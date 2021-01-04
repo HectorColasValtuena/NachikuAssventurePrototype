@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5468260514e0c3041862d02f9cc11986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollingRate: 1
+  scrollingRate: 2
   borderScrollLimits: 0.05
 --- !u!114 &329160489
 MonoBehaviour:
@@ -129,6 +129,6 @@ MonoBehaviour:
     y: -5
     width: 12
     height: 10
-  autoConfigureLimits: 0
+  autoConfigureLimits: 1
   positionLerpRate: 0.01
   sizeLerpRate: 0.02
