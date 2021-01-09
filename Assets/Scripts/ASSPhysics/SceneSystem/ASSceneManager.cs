@@ -68,9 +68,11 @@ namespace ASSPhysics.SceneSystem
 			}
 			//unload previous scene before deploying next
 			AsyncOperation unloadingScene =	UnloadActiveScene();
+			unloadingScene.allowSceneActivation = true;
 			if (unloadingScene != null)
 			{
 				while (!unloadingScene.isDone) { yield return null; }
+				Resources.UnloadUnusedAssets();
 			}
 			//start loading next scene
 			AsyncOperation loadingScene = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
