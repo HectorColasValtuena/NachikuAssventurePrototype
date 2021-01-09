@@ -104,6 +104,8 @@ namespace ASSPhysics.HandSystem.Actions
 		private void CreateJoints (Collider[] targets, ConfigurableJoint sampleSpring)
 		{
 			//clear joint list and create a new list
+			Debug.Log("ActionGrab.CreateJoints() " + targets.Length + " targets");
+			Debug.Log(sampleSpring);
 			RemoveJoints();
 			jointList = new ConfigurableJoint[targets.Length];
 			//create a joint for each target
@@ -121,9 +123,17 @@ namespace ASSPhysics.HandSystem.Actions
 			if (targetBody == null) { return null; }
 			//create the joint
 			ConfigurableJoint newJoint = tool.gameObject.AddComponent<ConfigurableJoint>();
+			Debug.Log("  created joint: " + newJoint);
 			//apply the sample settings and link target rigidbody
 			newJoint.EMApplySettings<ConfigurableJoint>(sampleSpring);
+
+			//
+			//&&&&&&&&&&&&&&&&&&&&
+			//web build grab problem seems to be somewhere around here. maybe extension methods?
+			//
+
 			newJoint.connectedBody = targetBody;
+			Debug.Log("  Connected body: " + newJoint.connectedBody);
 			//set connection offset according to collider position
 			newJoint.connectedAnchor = target.EMGetColliderTransformOffset();
 			//return the component
