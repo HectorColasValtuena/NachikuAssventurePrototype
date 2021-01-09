@@ -28217,7 +28217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7b555276051cd41bac905c1f34e277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playableList: []
+  playableList:
+  - {fileID: 1981982817}
 --- !u!95 &1981982820
 Animator:
   serializedVersion: 3
