@@ -114,7 +114,6 @@ namespace ASSPhysics.CameraSystem
 		{ return CreateCameraRect(position: sampleRect.center, height: sampleRect.height); }
 		protected Rect CreateCameraRect (Vector2? position = null, float? height = null)
 		{
-			Debug.Log("CreateCameraRect(" + position + ", " + height + ")");
 			//first validate and complete inputs
 			Vector2 validPosition = (position != null) 
 				?	(Vector2) position
@@ -123,7 +122,8 @@ namespace ASSPhysics.CameraSystem
 				?	(float) height
 				:	rect.height;
 
-			Debug.Log(" validPosition: " + validPosition + "\n validHeight: " + validHeight);
+			//Debug.Log("CreateCameraRect(" + position + ", " + height + ")");
+			//Debug.Log(" validPosition: " + validPosition + "\n validHeight: " + validHeight);
 
 ////////////////[TO-DO] this is a bit duplicate logic, condense this and CameraExtensions.EMRectFromOrthographicCamera()?
 			
