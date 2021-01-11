@@ -18,6 +18,7 @@ namespace ASSistant.ComponentConfiguration
 		//applies right-hand properties to left-hand objects. returns reference to altered object
 		public static T EMApplySettings <T> (this T _this, T sample) where T: Component
 		{
+			Debug.Log("EMApplySettings<" + typeof(T) + ">(" + _this + ", " + sample + ")");
 			PropertyInfo[] properties = _this.GetType().GetProperties(defaultBindingFlags);
 			foreach (PropertyInfo property in properties)
 			{
@@ -29,15 +30,23 @@ namespace ASSistant.ComponentConfiguration
 		//copies the value of one specific property from sample to target object
 		private static void ApplyProperty (PropertyInfo property, System.Object target, System.Object sample)
 		{
-			/*
 			Debug.Log("----\nproperty " + property);
-			Debug.Log("attributes " + property.Attributes);
+
+			if (!property.CanRead || !property.CanWrite)
+			{
+				Debug.Log("  Property is not read/write");
+				return;
+			}
+
+			//*
+			//Debug.Log("attributes " + property.Attributes);
 			//foreach (var attribute in property.Attributes) { Debug.Log("> " + attribute); }
-			Debug.Log("custom attributes: " + property.CustomAttributes);
-			foreach (var customAttribute in property.CustomAttributes) { Debug.Log("> " + customAttribute); }
+			//Debug.Log("custom attributes: " + property.CustomAttributes);
+			//foreach (var customAttribute in property.CustomAttributes) { Debug.Log("> " + customAttribute); }
+			Debug.Log("  original value: " + property.GetValue(target));
+			Debug.Log("  sample value: " + property.GetValue(sample));
 			//*/
 	
-			if (!property.CanRead || !property.CanWrite) { return; }
 			if (property.GetIndexParameters().Length == 0)
 			{
 				ApplyPropertyNonIndexed(property, target, sample);
@@ -46,6 +55,8 @@ namespace ASSistant.ComponentConfiguration
 			{
 				ApplyPropertyIndexed(property, target, sample);	
 			}
+
+			/**/Debug.Log("  modified value: " + property.GetValue(target));
 		}
 		private static void ApplyPropertyNonIndexed (PropertyInfo property, System.Object target, System.Object sample)
 		{

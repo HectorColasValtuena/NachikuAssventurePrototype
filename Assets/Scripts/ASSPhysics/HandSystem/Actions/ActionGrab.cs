@@ -133,7 +133,12 @@ namespace ASSPhysics.HandSystem.Actions
 			//
 
 			newJoint.connectedBody = targetBody;
-			Debug.Log("  Connected body: " + newJoint.connectedBody);
+				//*//[DEBUG]
+				Debug.Log("  Connected body: " + newJoint.connectedBody);
+				Debug.Log("  Linear limit spring: " + newJoint.linearLimitSpring.spring + " damper: " + newJoint.linearLimitSpring.damper);
+				Debug.Log("  X Drive spring: " + newJoint.xDrive.positionSpring + " damper: " + newJoint.xDrive.positionDamper + " maximumForce: " + newJoint.xDrive.maximumForce);
+				Debug.Log("  Y Drive spring: " + newJoint.yDrive.positionSpring + " damper: " + newJoint.yDrive.positionDamper + " maximumForce: " + newJoint.yDrive.maximumForce);
+				//*/
 			//set connection offset according to collider position
 			newJoint.connectedAnchor = target.EMGetColliderTransformOffset();
 			//return the component
