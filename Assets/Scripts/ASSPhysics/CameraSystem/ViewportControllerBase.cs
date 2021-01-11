@@ -2,10 +2,11 @@ using UnityEngine;
 
 using RectMath = ASSistant.ASSMath.RectMath;
 
-
 namespace ASSPhysics.CameraSystem
 {
-	public abstract class ViewportControllerBase : MonoBehaviour, IViewportController
+	public abstract class ViewportControllerBase :
+		ASSPhysics.ControllerSystem.MonoBehaviourControllerBase<IViewportController>,
+		IViewportController
 	{
 	//abstract property declaration
 		protected abstract Rect viewportRect { get; }

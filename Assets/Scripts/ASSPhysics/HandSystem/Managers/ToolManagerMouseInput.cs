@@ -32,11 +32,6 @@ namespace ASSPhysics.HandSystem.Managers
 			UpdateFocusedToolPosition();
 			UpdateFocusedToolInput();
 		}
-
-		public void OnDestroy ()
-		{
-			ControllerProvider.DisposeController<IInputController>(inputController);
-		}
 	//ENDOF MonoBehaviour Lifecycle implementation
 
 	//serialized fields

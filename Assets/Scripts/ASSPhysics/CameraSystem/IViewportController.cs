@@ -2,7 +2,7 @@
 
 namespace ASSPhysics.CameraSystem
 {
-	public interface IViewportController
+	public interface IViewportController : ASSPhysics.ControllerSystem.IController
 	{
 		Rect rect {get;}		//current size of the viewport
 		float size {get;}		//current height value of the viewport

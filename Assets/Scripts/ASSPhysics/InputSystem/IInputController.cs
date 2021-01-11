@@ -2,7 +2,7 @@
 
 namespace ASSPhysics.InputSystem
 {
-	public interface IInputController
+	public interface IInputController : ASSPhysics.ControllerSystem.IController
 	{
 		//input movement delta for last frame
 		Vector3 delta { get; }

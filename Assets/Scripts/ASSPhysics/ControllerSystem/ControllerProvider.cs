@@ -13,12 +13,14 @@ namespace ASSPhysics.ControllerSystem
 	//public methods
 		//return controller for type TController
 		public static TController GetController <TController> ()
+			where TController : IController
 		{
 			return (TController) serviceContainer?.GetService(typeof(TController));
 		}
 
 		//register a controller instance as TController type
-		public static void RegisterController <TController> (TController controller)
+		public static void RegisterController <TController> (IController controller)
+			where TController : IController
 		{
 			InitializeContainer();
 
@@ -31,15 +33,17 @@ namespace ASSPhysics.ControllerSystem
 		}
 
 		//remove the controller of type TController. if a controller parameter is passed, removal will only be performed if controllers coincide
-		public static void DisposeController <TController> (TController controller)
-			where TController : class
+		public static void DisposeController <TController> (IController controller)
+			where TController : class, IController
 		{
-			if (GetController<TController>() == controller)
+			TController castedController = (TController) controller;
+			if (GetController<TController>() == castedController)
 			{
 				DisposeController<TController>();
 			}
 		}
 		public static void DisposeController <TController> ()
+			where TController : IController
 		{
 			serviceContainer.RemoveService(typeof(TController));
 		}

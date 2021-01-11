@@ -7,7 +7,9 @@ using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
 namespace ASSPhysics.InputSystem
 {
-	public class MouseInputController : IInputController
+	public class MouseInputController :
+		ASSPhysics.ControllerSystem.IController,
+		IInputController
 	{
 	//const definitions
 		private const string mouseXAxisName = "Mouse X";

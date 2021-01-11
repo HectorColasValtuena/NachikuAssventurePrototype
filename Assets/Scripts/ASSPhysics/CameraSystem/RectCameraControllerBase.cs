@@ -58,8 +58,9 @@ namespace ASSPhysics.CameraSystem
 	//ENDOF inherited method implementation
 
 	//MonoBehaviour lifecycle implementation
-		public void Awake ()
+		public override void Awake ()
 		{
+			base.Awake();
 			Initialize();
 		}
 
@@ -67,20 +68,12 @@ namespace ASSPhysics.CameraSystem
 		{
 			ApplyCameraSize();
 		}
-
-		public void OnDestroy ()
-		{
-			ControllerProvider.DisposeController<IViewportController>(this);
-		}
 	//ENDOF MonoBehaviour lifecycle implementation
 
 	//private methods
 		//Controller initialization
 		private void Initialize ()
 		{
-			//report this controller to the provider
-			ControllerProvider.RegisterController<IViewportController>(this);
-
 			//cache references to Camera and RectTransform components
 			cameraComponent = GetComponent<Camera>();
 			rectTransform = (RectTransform) transform;
@@ -141,5 +134,7 @@ namespace ASSPhysics.CameraSystem
 			return RectMath.TrimAndClampRectWithinRect(innerRect: innerRect, outerRect: viewportLimits);			
 		}
 	//ENDOF inheritable private methods
+
+	//////////////////////////////////////////////////////////////////
 	}
 }
