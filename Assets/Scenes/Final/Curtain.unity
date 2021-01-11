@@ -801,6 +801,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2498800277638619433, guid: 3d28b38438e30304d9ff37c7cae77ae5, type: 3}
   m_PrefabInstance: {fileID: 1239027656}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1239027659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2498800279390977854, guid: 3d28b38438e30304d9ff37c7cae77ae5, type: 3}
+  m_PrefabInstance: {fileID: 1239027656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1313715701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,8 +1539,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotlightContainer: {fileID: 1342510}
-  rightSheetNode: {fileID: 1239027658}
-  leftSheetNode: {fileID: 2498800278712927824}
+  rightSheetUpperNode: {fileID: 1239027659}
+  leftSheetUpperNode: {fileID: 2498800278712927825}
+  rightSheetLowerNode: {fileID: 1239027658}
+  leftSheetLowerNode: {fileID: 2498800278712927824}
 --- !u!4 &1969755696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5548706526475424036, guid: c089ecc6cdddc8749a8bad0674765e57, type: 3}
@@ -1609,6 +1616,11 @@ PrefabInstance:
 --- !u!4 &2498800278712927824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2498800279101103578, guid: 3d28b38438e30304d9ff37c7cae77ae5, type: 3}
+  m_PrefabInstance: {fileID: 2498800278712927823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2498800278712927825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2498800279196456997, guid: 3d28b38438e30304d9ff37c7cae77ae5, type: 3}
   m_PrefabInstance: {fileID: 2498800278712927823}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5548706527932042900

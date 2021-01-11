@@ -9,8 +9,10 @@ namespace ASSPhysics.SceneSystem
 	//serialized properties
 		public GameObject spotlightContainer;
 
-		public Transform rightSheetNode;
-		public Transform leftSheetNode;
+		public Transform rightSheetUpperNode;
+		public Transform leftSheetUpperNode;
+		public Transform rightSheetLowerNode;
+		public Transform leftSheetLowerNode;
 	//ENDOF serialized properties
 
 	//static properties and methods
@@ -25,8 +27,11 @@ namespace ASSPhysics.SceneSystem
 		{
 			get
 			{
-				if (instance == null) { return true; }
-				return instance.rightSheetNode.position.x < instance.leftSheetNode.position.x;
+				//return true if there is no curtain controller instance
+				//Otherwise return true if both upper and lower nodes are beyond eachother
+				return	instance == null ||
+					(instance.rightSheetLowerNode.position.x < instance.leftSheetLowerNode.position.x &&
+					instance.rightSheetUpperNode.position.x < instance.leftSheetUpperNode.position.x);
 			}
 		}
 	//ENDOF static properties and methods
