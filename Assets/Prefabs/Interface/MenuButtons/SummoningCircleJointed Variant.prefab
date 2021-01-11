@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7b555276051cd41bac905c1f34e277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSources:
+  playableList:
   - {fileID: 8257237383608480857}
 --- !u!1001 &7821669532323249578
 PrefabInstance:
