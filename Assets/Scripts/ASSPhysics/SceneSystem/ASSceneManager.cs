@@ -57,15 +57,11 @@ namespace ASSPhysics.SceneSystem
 		{
 			busy = true;
 			CurtainsController.open = false;	//close the curtains
+
 			//wait until curtains are closed
-			while (
-				!CurtainsController.isCompletelyClosed
-				//&& loadingScene.progress < sceneLoadMinimum
-				//&& !loadingScene.isDone
-			) {
-				//Debug.Log("Load progress: " + loadingScene.progress);
-				yield return null;
-			}
+			while (!CurtainsController.isCompletelyClosed)
+			{ yield return null; }
+
 			//unload previous scene before deploying next
 			AsyncOperation unloadingScene =	UnloadActiveScene();
 			unloadingScene.allowSceneActivation = true;
@@ -74,6 +70,7 @@ namespace ASSPhysics.SceneSystem
 				while (!unloadingScene.isDone) { yield return null; }
 				Resources.UnloadUnusedAssets();
 			}
+
 			//start loading next scene
 			AsyncOperation loadingScene = SceneManager.LoadSceneAsync(targetScene, LoadSceneMode.Additive);
 
@@ -83,8 +80,12 @@ namespace ASSPhysics.SceneSystem
 			//once next scene is ready set it as active
 			SetActiveScene(targetScene);
 
-			//finally open the curtains
+			//finally open the curtains and wait until they're done
 			CurtainsController.open = true;
+
+			while (CurtainsController.isCompletelyClosed)
+			{ yield return null; }
+
 			busy = false;
 		}
 
