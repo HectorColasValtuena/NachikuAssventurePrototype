@@ -20,6 +20,13 @@ namespace ASSPhysics.InputSystem
 		private float screenSizeFactor { get { return ControllerCache.viewportController.size; }}
 	//ENDOF private properties
 
+	//IController implementation
+		public bool isValid
+		{
+			get { return true; }
+		}
+	//ENDOF IController implementation
+
 	//IInputController implementation
 		//returns a vector3 representing the movement of the mouse during the last frame
 		public Vector3 delta { get { return new Vector3 (UnityEngine.Input.GetAxis(mouseXAxisName), UnityEngine.Input.GetAxis(mouseYAxisName), 0f); }}

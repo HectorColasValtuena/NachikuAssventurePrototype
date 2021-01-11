@@ -6,13 +6,21 @@ namespace ASSPhysics.ControllerSystem
 {
 	public static class ControllerCache
 	{
+	//private methods
+		//will return false if controller needs to be refreshed
+		private static bool ControllerIsValid (IController controller)
+		{
+			return (controller != null && controller.isValid);
+		}
+	//ENDOF private methods
+
 	//viewport controller
 		private static IViewportController _viewportController;
 		public static IViewportController viewportController
 		{
 			get	
 			{
-				if (_viewportController == null)
+				if (!ControllerIsValid(_viewportController))
 					{ _viewportController = ControllerProvider.GetController<IViewportController>(); }
 				return _viewportController;
 			}
@@ -25,7 +33,7 @@ namespace ASSPhysics.ControllerSystem
 		{
 			get
 			{
-				if (_inputController == null)
+				if (!ControllerIsValid(_inputController))
 					{ _inputController = ControllerProvider.GetController<IInputController>(); }
 				return _inputController;
 			}
@@ -38,7 +46,7 @@ namespace ASSPhysics.ControllerSystem
 		{
 			get
 			{
-				if (_toolManager == null)
+				if (!ControllerIsValid(_toolManager))
 					{ _toolManager = ControllerProvider.GetController<IToolManager>(); }
 				return _toolManager;
 			}
