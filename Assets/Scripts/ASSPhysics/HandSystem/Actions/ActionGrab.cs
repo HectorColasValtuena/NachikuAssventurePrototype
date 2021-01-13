@@ -125,7 +125,7 @@ namespace ASSPhysics.HandSystem.Actions
 			ConfigurableJoint newJoint = tool.gameObject.AddComponent<ConfigurableJoint>();
 			Debug.Log("  created joint: " + newJoint);
 			//apply the sample settings and link target rigidbody
-			newJoint.EMApplySettings<ConfigurableJoint>(sampleSpring);
+			newJoint.EMApplySettings(sampleSpring);
 
 			//
 			//&&&&&&&&&&&&&&&&&&&&
@@ -133,7 +133,7 @@ namespace ASSPhysics.HandSystem.Actions
 			//
 
 			newJoint.connectedBody = targetBody;
-				//*//[DEBUG]
+				/*//[DEBUG]
 				Debug.Log("  Connected body: " + newJoint.connectedBody);
 				Debug.Log("  Linear limit spring: " + newJoint.linearLimitSpring.spring + " damper: " + newJoint.linearLimitSpring.damper);
 				Debug.Log("  X Drive spring: " + newJoint.xDrive.positionSpring + " damper: " + newJoint.xDrive.positionDamper + " maximumForce: " + newJoint.xDrive.maximumForce);
