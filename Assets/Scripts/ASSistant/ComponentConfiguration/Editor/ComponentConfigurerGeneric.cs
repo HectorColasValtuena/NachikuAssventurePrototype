@@ -7,8 +7,12 @@ using UnityEngine;
 
 namespace ASSistant.ComponentConfiguration
 {
-	public static class ComponentConfigurer
+	public static class ComponentConfigurerGeneric
 	{
+	//definition
+		public static T EMApplySettings <T> (this T _this, T sample) where T: Component;
+//generic component configurer
+#if UNITY_EDITOR
 	//constants
 		//default binding flags
 		private static readonly BindingFlags propertyBindingFlags =
@@ -66,7 +70,7 @@ namespace ASSistant.ComponentConfiguration
 
 		private static void PropagateApplySettingsRecursive <T> (T _this, T sample) where T: Component
 		{
-			typeof(ComponentConfigurer)
+			typeof(ComponentConfigurerGeneric)
 				.GetMethod("ApplySettingsRecursive", staticMethodBindingFlags)
 				.MakeGenericMethod(new Type[] {typeof(T).BaseType})
 				.Invoke(null, new System.Object[] {_this, sample});
@@ -129,8 +133,17 @@ namespace ASSistant.ComponentConfiguration
 		}
 		private static void ApplyPropertyIndexed (PropertyInfo property, System.Object target, System.Object sample)
 		{
-			Debug.LogWarning("!! ComponentConfigurer.ApplyPropertyIndexed() unimplemented - property \"" + property.Name + "\" ignored");
+			Debug.LogWarning("!! ComponentConfigurerGeneric.ApplyPropertyIndexed() unimplemented - property \"" + property.Name + "\" ignored");
 		}
 	//ENDOF private static methods
+
+//non-editor version only warns an error
+#else
+		public static T EMApplySettings <T> (this T _this, T sample) where T: Component
+		{
+			Debug.LogWarning("Component configurer generic version doesn't work out of editor dumbass");
+			Debug.LogError("No, seriously: Component configurer generic version doesn't work outside the editor");
+		}
+#endif
 	}
 }

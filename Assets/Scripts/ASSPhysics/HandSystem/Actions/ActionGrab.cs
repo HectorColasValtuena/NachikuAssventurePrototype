@@ -4,7 +4,7 @@ using AnimationNames = ASSPhysics.Constants.AnimationNames;
 using ActionSettings = ASSPhysics.SettingSystem.ActionSettings; //tailGrabSettings, surfaceGrabSettings
 using EInputState = ASSPhysics.InputSystem.EInputState;
 
-using ASSistant.ComponentConfiguration; //ComponentConfigurer.EMApplySettings(this Component);
+using ASSistant.ComponentConfiguration; //ComponentConfigurerGeneric.EMApplySettings(this Component);
 										//ColliderPosition.EMGetColliderTransformOffset(this Collider);
 
 namespace ASSPhysics.HandSystem.Actions

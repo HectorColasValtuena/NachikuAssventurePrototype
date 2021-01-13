@@ -3,7 +3,7 @@ using UnityEditor;
 
 using Unity.Collections; //NativeArray<T>
 
-using static ASSistant.ComponentConfiguration.ComponentConfigurer; //Component.EMApplySettings(sample);
+using static ASSistant.ComponentConfiguration.ComponentConfigurerGeneric; //Component.EMApplySettings(sample);
 using ASSpriteRigging.BoneUtility;	//BoneHierarchy.BoneFindJointConnected()
 
 namespace ASSpriteRigging.BoneUtility
