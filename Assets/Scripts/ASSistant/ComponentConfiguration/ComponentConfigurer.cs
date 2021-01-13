@@ -1,30 +1,87 @@
 using System;	//Type.GetProperties
 using System.Reflection; //BindingFlags
+using System.Linq; //ienumerable.any
 
 using UnityEngine;
+//using Object = UnityEngine.Object;
 
 namespace ASSistant.ComponentConfiguration
 {
 	public static class ComponentConfigurer
 	{
-		//default binding flags limit properties read/written to:
-		//Non-Static, public properties with both set and get methods
-		private static readonly BindingFlags defaultBindingFlags =
+	//constants
+		//default binding flags
+		private static readonly BindingFlags propertyBindingFlags =
 			BindingFlags.Instance |
 			BindingFlags.Public |
 			BindingFlags.SetProperty |
-			BindingFlags.GetProperty;
+			BindingFlags.GetProperty |
+			BindingFlags.DeclaredOnly;
 
+		private static readonly BindingFlags fieldBindingFlags =
+			BindingFlags.Instance |
+			BindingFlags.Public |
+			BindingFlags.NonPublic |
+			BindingFlags.DeclaredOnly;
+
+		private static readonly BindingFlags staticMethodBindingFlags =
+			BindingFlags.NonPublic |
+			BindingFlags.Static;
+	//ENDOF constants
+
+	//public static methods
 		//applies right-hand properties to left-hand objects. returns reference to altered object
 		public static T EMApplySettings <T> (this T _this, T sample) where T: Component
 		{
 			Debug.Log("EMApplySettings<" + typeof(T) + ">(" + _this + ", " + sample + ")");
-			PropertyInfo[] properties = _this.GetType().GetProperties(defaultBindingFlags);
+			ApplySettingsRecursive<T>(_this, sample);
+			return _this;
+		}
+	//ENDOF public static methods
+
+	//private static methods
+		//applies the properties of a single inheritance level and repeats until a class that directly inherits from component
+		private static void ApplySettingsRecursive <T> (T _this, T sample) where T: Component
+		{
+			Type type = typeof(T);
+			FieldInfo[] fields = type.GetFields(fieldBindingFlags);
+			PropertyInfo[] properties = type.GetProperties(propertyBindingFlags);
+
+			foreach (FieldInfo field in fields)
+			{
+				ApplyField(field, _this, sample);
+			}
+
 			foreach (PropertyInfo property in properties)
 			{
-				ApplyProperty (property, _this, sample);
+				ApplyProperty(property, _this, sample);
 			}
-			return _this;
+
+			//if current object is NOT a component and base class is not component, reiterate with inherited class
+			if (type != typeof(Component) && type.BaseType != typeof(Component))
+			{
+				PropagateApplySettingsRecursive<T>(_this, sample);
+			}
+		}
+
+		private static void PropagateApplySettingsRecursive <T> (T _this, T sample) where T: Component
+		{
+			typeof(ComponentConfigurer)
+				.GetMethod("ApplySettingsRecursive", staticMethodBindingFlags)
+				.MakeGenericMethod(new Type[] {typeof(T).BaseType})
+				.Invoke(null, new System.Object[] {_this, sample});
+		}
+
+		//copy the value of a field object from sample to target object
+		private static void ApplyField (FieldInfo field, System.Object target, System.Object sample)
+		{
+			Debug.Log("----\nfield " + field);
+			//if member is obsolete ignore it
+			if (field.CustomAttributes.Any(attribute => attribute.AttributeType == typeof(ObsoleteAttribute)))
+			{ return; }
+
+			field.SetValue(target, field.GetValue(sample));
+			Debug.Log("  modified value: " + field.GetValue(target));
 		}
 
 		//copies the value of one specific property from sample to target object
@@ -32,13 +89,21 @@ namespace ASSistant.ComponentConfiguration
 		{
 			Debug.Log("----\nproperty " + property);
 
-			if (!property.CanRead || !property.CanWrite)
+			//if member is obsolete ignore it
+			if (property.CustomAttributes.Any(attribute => attribute.AttributeType == typeof(ObsoleteAttribute)))
+			{
+				Debug.Log("  Property is obsolete");
+				return;
+			}
+
+			//ignore read-only properties
+			if (!property.CanWrite || !property.CanRead)
 			{
 				Debug.Log("  Property is not read/write");
 				return;
 			}
 
-			//*
+			/*
 			//Debug.Log("attributes " + property.Attributes);
 			//foreach (var attribute in property.Attributes) { Debug.Log("> " + attribute); }
 			//Debug.Log("custom attributes: " + property.CustomAttributes);
@@ -56,7 +121,7 @@ namespace ASSistant.ComponentConfiguration
 				ApplyPropertyIndexed(property, target, sample);	
 			}
 
-			/**/Debug.Log("  modified value: " + property.GetValue(target));
+			Debug.Log("  modified value: " + property.GetValue(target));
 		}
 		private static void ApplyPropertyNonIndexed (PropertyInfo property, System.Object target, System.Object sample)
 		{
@@ -66,5 +131,6 @@ namespace ASSistant.ComponentConfiguration
 		{
 			Debug.LogWarning("!! ComponentConfigurer.ApplyPropertyIndexed() unimplemented - property \"" + property.Name + "\" ignored");
 		}
+	//ENDOF private static methods
 	}
 }
