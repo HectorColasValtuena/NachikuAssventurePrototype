@@ -9,10 +9,6 @@ namespace ASSistant.ComponentConfiguration
 {
 	public static class ComponentConfigurerGeneric
 	{
-	//definition
-		public static T EMApplySettings <T> (this T _this, T sample) where T: Component;
-//generic component configurer
-#if UNITY_EDITOR
 	//constants
 		//default binding flags
 		private static readonly BindingFlags propertyBindingFlags =
@@ -136,14 +132,5 @@ namespace ASSistant.ComponentConfiguration
 			Debug.LogWarning("!! ComponentConfigurerGeneric.ApplyPropertyIndexed() unimplemented - property \"" + property.Name + "\" ignored");
 		}
 	//ENDOF private static methods
-
-//non-editor version only warns an error
-#else
-		public static T EMApplySettings <T> (this T _this, T sample) where T: Component
-		{
-			Debug.LogWarning("Component configurer generic version doesn't work out of editor dumbass");
-			Debug.LogError("No, seriously: Component configurer generic version doesn't work outside the editor");
-		}
-#endif
 	}
 }
