@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+using UnityEngine;
 
 using ControllerProvider = ASSPhysics.ControllerSystem.ControllerProvider;
+using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
 using ITool = ASSPhysics.HandSystem.Tools.ITool;
-using ToolBase = ASSPhysics.HandSystem.Tools.ToolBase;
 
 using EInputState = ASSPhysics.InputSystem.EInputState;
 using IInputController = ASSPhysics.InputSystem.IInputController;
@@ -12,6 +16,34 @@ namespace ASSPhysics.HandSystem.Managers
 {
 	public class ToolManagerMouseInput : ToolManagerBase
 	{
+
+	//private fields
+		[SerializeField]
+		private ASSPhysics.HandSystem.Tools.ToolBase[] initialToolPrefabs = {};
+
+		private List<ITool> toolList;	//list of hands
+		private int focusedToolIndex;		//highligted and active hand
+		private IInputController inputController;	//input controller
+	//ENDOF private fields
+
+	//private properties
+		//input is considered enabled if there are tools and scene controller allows it
+		private bool inputEnabled
+		{
+			get
+			{
+				return
+					toolList != null &&
+					toolList.Any() &&
+					ControllerCache.sceneController.inputEnabled;
+			}
+		}
+	//ENDOF private properties
+
+	//IToolManager implementation
+		public override ITool activeTool { get { return toolList[focusedToolIndex]; }}
+	//ENDOF IToolManager implementation
+
 	//MonoBehaviour Lifecycle implementation
 		//create a mouse input controller for oneself on start, and register with the central controller
 		public override void Awake ()
@@ -23,52 +55,61 @@ namespace ASSPhysics.HandSystem.Managers
 
 		public void Start ()
 		{
-			RallyTools();
+			StartCoroutine(InitializeToolsAfterInputEnabled());
 		}
 
 		public void Update ()
 		{
-			ToolCycleCheck();
-			UpdateFocusedToolPosition();
-			UpdateFocusedToolInput();
+			if (inputEnabled)
+			{
+				ToolCycleCheck();
+				UpdateFocusedToolPosition();
+				UpdateFocusedToolInput();
+			}
 		}
 	//ENDOF MonoBehaviour Lifecycle implementation
 
-	//serialized fields
-		[SerializeField]
-		private ITool[] toolList;	//list of hands
-	//ENDOF serialized fields
-
-	//private fields and properties
-		private int focusedToolIndex;		//highligted and active hand
-		private IInputController inputController;	//input controller
-	//ENDOF private fields and properties
-
-	//IToolManager implementation
-		public override ITool activeTool { get { return toolList[focusedToolIndex]; }}
-	//ENDOF IToolManager implementation
-
 	//private method implementation
-		//finds all tools in the scene and save them to our list
-		private void RallyTools ()
+		//initializes predefined tools as soon as input is enabled by sceneController
+		private IEnumerator InitializeToolsAfterInputEnabled()
 		{
-			toolList = (ITool[]) Object.FindObjectsOfType<ToolBase>(); //Object.FindObjectsOfType<ITool>();
+			toolList = new List<ITool>();
+
+			while (!ControllerCache.sceneController.inputEnabled)
+			{ yield return null; }
+
+			//create initial list of tools in the scene
+			foreach (ITool toolPrefab in initialToolPrefabs)
+			{
+				CreateTool(toolPrefab);
+			}
 			SetFocused(0);
-			Debug.Log ("found " + toolList.Length + " hands");
 		}
 
+		private void CreateTool (ITool toolPrefab)
+		{
+			toolList.Add(InstantiateAsTool(toolPrefab));
+		}
+
+		//set tool under target index as focused
 		private void SetFocused (int target)
 		{
+			if (!toolList.Any())
+			{
+				Debug.LogWarning("Trying to focus on an empty hand list");
+				return;
+			}
+
 			//if cycling out of the list clamp back into range
-			if (target >= toolList.Length || target < 0)
+			if (target >= toolList.Count || target < 0)
 			{	//multiply by its own sign to ensure always positive then get the rest of length
-				target = ((target * (int) Mathf.Sign((float) target))) % toolList.Length;
+				target = ((target * (int) Mathf.Sign((float) target))) % toolList.Count;
 			}
 
 			focusedToolIndex = target;
 
-			//send every know tool an update on its status - true if they're focused false otherwise
-			for (int i = 0, iLimit = toolList.Length; i < iLimit; i++)
+			//send every known tool an update on its status - true if they're focused false otherwise
+			for (int i = 0, iLimit = toolList.Count; i < iLimit; i++)
 			{
 				toolList[i].focused = (i == focusedToolIndex);
 			}
@@ -86,7 +127,7 @@ namespace ASSPhysics.HandSystem.Managers
 
 		private void UpdateFocusedToolPosition ()
 		{
-			toolList[focusedToolIndex].Move(inputController.scaledDelta);
+			activeTool.Move(inputController.scaledDelta);
 		}
 
 		//checks for input corresponding to main action, sends the correct state to the tool
@@ -96,15 +137,15 @@ namespace ASSPhysics.HandSystem.Managers
 			bool buttonFirstDown = Input.GetMouseButtonDown(0);
 			if (button && !buttonFirstDown)
 			{
-				toolList[focusedToolIndex].MainInput(EInputState.Held);
+				activeTool.MainInput(EInputState.Held);
 			}
 			else if (buttonFirstDown)
 			{
-				toolList[focusedToolIndex].MainInput(EInputState.Started);
+				activeTool.MainInput(EInputState.Started);
 			}
 			else if (Input.GetMouseButtonUp(0))
 			{
-				toolList[focusedToolIndex].MainInput(EInputState.Ended);
+				activeTool.MainInput(EInputState.Ended);
 			}
 		}
 	//ENDOF private method implementation
