@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 
 namespace ASSPhysics.SceneSystem
 {
-	public class ASSceneManager : MonoBehaviour
+	public class SceneController :
+		ASSPhysics.ControllerSystem.MonoBehaviourControllerBase <ISceneController>,
+		ISceneController
 	{
 	//Constants and enum definitions
 		//private const float sceneLoadMinimum = 0.9f;
@@ -19,20 +21,10 @@ namespace ASSPhysics.SceneSystem
 
 
 	//static properties and methods
-		private static ASSceneManager instance;
-		public static void InitializeCurtains ()
+		//initialize method manually launchs the curtains layer scene through unityengine's SceneManager
+		public static void Initialize ()
 		{
 			SceneManager.LoadScene(SceneNumbers.CURTAINS, LoadSceneMode.Additive);
-		}
-
-		public static void InitializeMenu ()
-		{
-			StaticChangeScene(SceneNumbers.MAINMENU, 3.0f);
-		}
-
-		public static void StaticChangeScene (int targetScene, float minimumWait = 0.0f)
-		{
-			if (!!instance)	instance.ChangeScene(targetScene, minimumWait);
 		}
 	//ENDOF static properties and methods
 
@@ -41,18 +33,22 @@ namespace ASSPhysics.SceneSystem
 	//ENDOF private fields and properties
 
 	//MonoBehaviour lifecycle implementation
-		public void Awake ()
+		//on first instantiation, load the menu under the curtain
+		public void Start ()
 		{
-			instance = this;
+			ChangeScene(SceneNumbers.MAINMENU, 1.0f);
 		}
 	//ENDOF MonoBehaviour lifecycle implementation
 
-	//private methods
-		private void ChangeScene (int targetScene, float minimumWait = 0.0f)
+	//ISceneController implementation
+		public void ChangeScene (int targetScene, float minimumWait = 0.0f)
 		{
 			if (busy) { return; }
 			StartCoroutine(ChangeSceneAsync(targetScene, minimumWait));
 		}
+	//ENDOF ISceneController implementation
+
+	//private methods
 		private IEnumerator ChangeSceneAsync (int targetScene, float minimumWait = 0.0f)
 		{
 			busy = true;

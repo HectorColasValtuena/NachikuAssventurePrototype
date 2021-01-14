@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-using ASSceneManager = ASSPhysics.SceneSystem.ASSceneManager;
+using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
 public class SceneChanger : MonoBehaviour
 {
 	public void GoToScene (int targetScene)
 	{
-		ASSceneManager.StaticChangeScene(targetScene);
+		ControllerCache.sceneController.ChangeScene(targetScene);
 	}
 }

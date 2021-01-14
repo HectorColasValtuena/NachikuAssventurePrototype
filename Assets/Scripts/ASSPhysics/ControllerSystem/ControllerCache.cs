@@ -1,4 +1,5 @@
-﻿using IViewportController = ASSPhysics.CameraSystem.IViewportController;
+﻿using ISceneController = ASSPhysics.SceneSystem.ISceneController;
+using IViewportController = ASSPhysics.CameraSystem.IViewportController;
 using IInputController = ASSPhysics.InputSystem.IInputController;
 using IToolManager = ASSPhysics.HandSystem.Managers.IToolManager;
 
@@ -23,6 +24,17 @@ namespace ASSPhysics.ControllerSystem
 		}
 	//ENDOF private methods
 
+	//scene controller
+		private static ISceneController _sceneController;
+		public static ISceneController sceneController
+		{
+			get
+			{
+				_sceneController = ValidateController<ISceneController>(_sceneController);
+				return _sceneController;
+			}
+		}
+	//ENDOF scene controller
 
 	//viewport controller
 		private static IViewportController _viewportController;
@@ -30,7 +42,7 @@ namespace ASSPhysics.ControllerSystem
 		{
 			get	
 			{
-				_viewportController = ValidateController<IViewportController>(_viewportController)
+				_viewportController = ValidateController<IViewportController>(_viewportController);
 				return _viewportController;
 			}
 		}

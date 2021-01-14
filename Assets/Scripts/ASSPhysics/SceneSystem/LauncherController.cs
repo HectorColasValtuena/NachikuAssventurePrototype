@@ -9,15 +9,7 @@ namespace ASSPhysics.SceneSystem
 		public void Launch ()
 		{
 			CursorLocker.LockAndHideSystemCursor();
-			StartCoroutine(DelayedLaunch());
-		}
-
-		private IEnumerator DelayedLaunch ()
-		{
-			ASSceneManager.InitializeCurtains();
-			yield return null;
-			//yield return new WaitForSeconds(3f);
-			ASSceneManager.InitializeMenu();
+			SceneController.Initialize();
 		}
 	}
 }
