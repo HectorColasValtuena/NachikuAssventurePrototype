@@ -41,6 +41,15 @@ namespace ASSPhysics.SceneSystem
 	//ENDOF MonoBehaviour lifecycle implementation
 
 	//ISceneController implementation
+		//input is enabled if curtains are open
+		public bool inputEnabled 
+		{
+			get
+			{
+				return !CurtainsController.isCompletelyClosed;
+			}
+		}
+
 		public void ChangeScene (int targetScene, float minimumWait = 0.0f)
 		{
 			if (busy) { return; }
