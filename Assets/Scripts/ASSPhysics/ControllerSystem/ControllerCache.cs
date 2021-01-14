@@ -12,7 +12,17 @@ namespace ASSPhysics.ControllerSystem
 		{
 			return (controller != null && controller.isValid);
 		}
+
+		//if controller is not up to date return a fresh reference
+		private static TController ValidateController <TController> (TController controller)
+			where TController : IController
+		{
+			if (ControllerIsValid(controller))
+			{ return controller; }
+			return ControllerProvider.GetController<TController>();
+		}
 	//ENDOF private methods
+
 
 	//viewport controller
 		private static IViewportController _viewportController;
@@ -20,8 +30,7 @@ namespace ASSPhysics.ControllerSystem
 		{
 			get	
 			{
-				if (!ControllerIsValid(_viewportController))
-					{ _viewportController = ControllerProvider.GetController<IViewportController>(); }
+				_viewportController = ValidateController<IViewportController>(_viewportController)
 				return _viewportController;
 			}
 		}
@@ -33,8 +42,7 @@ namespace ASSPhysics.ControllerSystem
 		{
 			get
 			{
-				if (!ControllerIsValid(_inputController))
-					{ _inputController = ControllerProvider.GetController<IInputController>(); }
+				_inputController = ValidateController<IInputController>(_inputController);
 				return _inputController;
 			}
 		}
@@ -46,8 +54,7 @@ namespace ASSPhysics.ControllerSystem
 		{
 			get
 			{
-				if (!ControllerIsValid(_toolManager))
-					{ _toolManager = ControllerProvider.GetController<IToolManager>(); }
+				_toolManager = ValidateController<IToolManager>(_toolManager);
 				return _toolManager;
 			}
 		}
