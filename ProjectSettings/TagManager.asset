@@ -51,7 +51,7 @@ TagManager:
   - name: DatAss
     uniqueID: 3434142119
     locked: 0
-  - name: MidgroundInterface
+  - name: MidlegroundInterface
     uniqueID: 2083132001
     locked: 0
   - name: Dialogs
