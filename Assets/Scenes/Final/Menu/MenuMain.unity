@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6532832116257498377, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.size
@@ -16965,7 +16965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6532832116257498377, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6973939057084346192, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.size
