@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Curtain.unity
     guid: 432c285153b09b442861357dd707d565
   - enabled: 1
-    path: Assets/Scenes/Final/MainMenu.unity
+    path: Assets/Scenes/Final/Menu/MenuMain.unity
     guid: 15b85e1e363966e4a995f9d4697fd598
   - enabled: 1
     path: Assets/Scenes/Final/Quitter.unity
