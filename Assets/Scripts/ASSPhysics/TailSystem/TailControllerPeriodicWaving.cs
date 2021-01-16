@@ -28,7 +28,7 @@ namespace ASSPhysics.TailSystem
 	//MonoBehaviour lifecycle implementation
 		public void Awake ()
 		{
-			if (firstTailElement == null) { firstTailElement = GetComponent<TailElementBase>(); }
+			if (firstTailElement == null) { firstTailElement = GetComponentInChildren<TailElementBase>(); }
 		}
 
 		public void Update ()
