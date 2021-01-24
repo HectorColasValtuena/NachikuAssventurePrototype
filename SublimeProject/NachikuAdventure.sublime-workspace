@@ -652,6 +652,7 @@
 	],
 	"file_history":
 	[
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Gmeen/InterstellarDemonStripper/Parts/UpperBodyGroup/HeadGroup/LowerJaw.png.meta",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableTriggerOnRelease.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/DialogColliderResizerOnAwake.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Unsorted/SceneChanger.cs",
@@ -778,8 +779,7 @@
 		"/C/Users/Mephi/AppData/Local/Temp/Temp1_sweet-maple.zip/LICENSE-Please Read.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Prefabs/PhysicsDefaults/Rigidbodies/Tails/MenuHairRigidbody.prefab",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorNoController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/SlicedRigs/AssTail/TailPuft.png.meta",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Interface/SpeechBubbles/SpeechBubbleSolid.png.meta"
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/SlicedRigs/AssTail/TailPuft.png.meta"
 	],
 	"find":
 	{

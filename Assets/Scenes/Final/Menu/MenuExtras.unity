@@ -7142,17 +7142,41 @@ PrefabInstance:
       propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1166722292}
+    - target: {fileID: 6943334224796685177, guid: b804d13059131764db78d56d1bf72701, type: 3}
+      propertyPath: callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6943334224796685179, guid: b804d13059131764db78d56d1bf72701, type: 3}
       propertyPath: m_Name
-      value: FrameButtonBase (1)
+      value: IDS SceneButton
       objectReference: {fileID: 0}
+    - target: {fileID: 6943334225807712466, guid: b804d13059131764db78d56d1bf72701, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943334225807712466, guid: b804d13059131764db78d56d1bf72701, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943334225807712467, guid: b804d13059131764db78d56d1bf72701, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 86dc02811f9fda54a869237d9a680e3c, type: 3}
     - target: {fileID: 7165474468988946680, guid: b804d13059131764db78d56d1bf72701, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7165474468988946680, guid: b804d13059131764db78d56d1bf72701, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.15354791
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165474468988946680, guid: b804d13059131764db78d56d1bf72701, type: 3}
+      propertyPath: m_Color.r
+      value: 0.0028924954
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165474468988946680, guid: b804d13059131764db78d56d1bf72701, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6132076
       objectReference: {fileID: 0}
     - target: {fileID: 8733778915044115172, guid: b804d13059131764db78d56d1bf72701, type: 3}
       propertyPath: m_Name
