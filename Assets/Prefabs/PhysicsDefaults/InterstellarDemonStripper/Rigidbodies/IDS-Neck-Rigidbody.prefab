@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1098303708312509871}
   - component: {fileID: 6565896429590492136}
   m_Layer: 0
-  m_Name: IDS-Tongue-Rigidbody
+  m_Name: IDS-Neck-Rigidbody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,8 +39,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6281159955904816983}
   serializedVersion: 2
-  m_Mass: 0.1
-  m_Drag: 0
+  m_Mass: 1
+  m_Drag: 0.1
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0

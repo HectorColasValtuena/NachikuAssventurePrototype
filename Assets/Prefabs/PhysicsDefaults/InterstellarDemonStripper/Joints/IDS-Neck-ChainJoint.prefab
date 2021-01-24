@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3525077929595807720}
   - component: {fileID: 7288562438287999319}
   m_Layer: 0
-  m_Name: IDS-Tongue-ChainJoint
+  m_Name: IDS-Neck-ChainJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 15
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -130,7 +130,7 @@ ConfigurableJoint:
   m_SlerpDrive:
     serializedVersion: 3
     positionSpring: 20
-    positionDamper: 0
+    positionDamper: 10
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.01
