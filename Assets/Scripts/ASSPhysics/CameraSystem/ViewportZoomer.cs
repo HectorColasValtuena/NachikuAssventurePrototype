@@ -7,6 +7,10 @@ namespace ASSPhysics.CameraSystem
 	//[RequireComponent(typeof(IViewportController))]
 	public class ViewportZoomer : MonoBehaviour
 	{
+	//constant definitions
+		private const float minimumSize = 0.1f;
+	//ENDOF constant definitions
+
 	//serialized fields		
 		[SerializeField]
 		private float maxSize = 1f;
@@ -59,8 +63,9 @@ namespace ASSPhysics.CameraSystem
 		{
 			if (zoomDelta != 0)
 			{
-				//[TO-DO] MAYBE it'd be good to scale zoomDelta by screen size
-				size = size + zoomDelta;
+				size = size + (zoomDelta * size);
+				if (size <= minimumSize) size = minimumSize;
+
 
 				viewport.ChangeViewport(
 					position: inputPosition,
