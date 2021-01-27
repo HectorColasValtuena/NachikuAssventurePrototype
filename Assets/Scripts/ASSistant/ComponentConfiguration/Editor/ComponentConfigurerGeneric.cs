@@ -33,7 +33,7 @@ namespace ASSistant.ComponentConfiguration
 		//applies right-hand properties to left-hand objects. returns reference to altered object
 		public static T EMApplySettings <T> (this T _this, T sample) where T: Component
 		{
-			Debug.Log("EMApplySettings<" + typeof(T) + ">(" + _this + ", " + sample + ")");
+			//*[DEBUG]*/ Debug.Log("EMApplySettings<" + typeof(T) + ">(" + _this + ", " + sample + ")");
 			ApplySettingsRecursive<T>(_this, sample);
 			return _this;
 		}
@@ -75,31 +75,31 @@ namespace ASSistant.ComponentConfiguration
 		//copy the value of a field object from sample to target object
 		private static void ApplyField (FieldInfo field, System.Object target, System.Object sample)
 		{
-			Debug.Log("----\nfield " + field);
+			//*[DEBUG]*/ Debug.Log("----\nfield " + field);
 			//if member is obsolete ignore it
 			if (field.CustomAttributes.Any(attribute => attribute.AttributeType == typeof(ObsoleteAttribute)))
 			{ return; }
 
 			field.SetValue(target, field.GetValue(sample));
-			Debug.Log("  modified value: " + field.GetValue(target));
+			//*[DEBUG]*/ Debug.Log("  modified value: " + field.GetValue(target));
 		}
 
 		//copies the value of one specific property from sample to target object
 		private static void ApplyProperty (PropertyInfo property, System.Object target, System.Object sample)
 		{
-			Debug.Log("----\nproperty " + property);
+			//*[DEBUG]*/ Debug.Log("----\nproperty " + property);
 
 			//if member is obsolete ignore it
 			if (property.CustomAttributes.Any(attribute => attribute.AttributeType == typeof(ObsoleteAttribute)))
 			{
-				Debug.Log("  Property is obsolete");
+				//*[DEBUG]*/ Debug.Log("  Property is obsolete");
 				return;
 			}
 
 			//ignore read-only properties
 			if (!property.CanWrite || !property.CanRead)
 			{
-				Debug.Log("  Property is not read/write");
+				//*[DEBUG]*/ Debug.Log("  Property is not read/write");
 				return;
 			}
 
@@ -121,7 +121,7 @@ namespace ASSistant.ComponentConfiguration
 				ApplyPropertyIndexed(property, target, sample);	
 			}
 
-			Debug.Log("  modified value: " + property.GetValue(target));
+			//*[DEBUG]*/ Debug.Log("  modified value: " + property.GetValue(target));
 		}
 		private static void ApplyPropertyNonIndexed (PropertyInfo property, System.Object target, System.Object sample)
 		{
