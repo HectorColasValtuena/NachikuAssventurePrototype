@@ -15,6 +15,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1048576
-  radius: 0.2
+  radius: 0.02
+  screenScaled: 1
   maximumCollisions: -1
   detectTriggers: 1
