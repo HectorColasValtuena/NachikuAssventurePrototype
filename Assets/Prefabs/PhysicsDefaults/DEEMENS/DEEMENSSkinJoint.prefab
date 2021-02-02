@@ -73,11 +73,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_SlerpDrive.positionSpring
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_SlerpDrive.positionDamper
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LinearLimit.limit
@@ -97,23 +97,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_XDrive.positionSpring
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_YDrive.positionSpring
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_XDrive.positionDamper
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_YDrive.positionDamper
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_EnableCollision
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
+      propertyPath: m_ProjectionMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
