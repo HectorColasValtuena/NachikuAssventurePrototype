@@ -57,39 +57,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LinearLimitSpring.damper
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LinearLimitSpring.spring
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_LinearLimit.limit
-      value: 0
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_XMotion
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_YMotion
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_XDrive.positionSpring
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_YDrive.positionSpring
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_YDrive.positionDamper
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_XDrive.positionDamper
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_EnableCollision
