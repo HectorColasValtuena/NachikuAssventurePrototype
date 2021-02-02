@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
-using ASSPhysics.SceneSystem;
+using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
 namespace ASSPhysics.MiscellaneousComponents
 {
-	public class DrumrollController : MonoBehaviour
+	public class ApplicationLaunchDrumroll : MonoBehaviour
 	{
 	//serialized properties and fields
 		public Animator animator;
@@ -23,11 +23,13 @@ namespace ASSPhysics.MiscellaneousComponents
 
 		public void Update ()
 		{
-			if (!done && !CurtainsController.isCompletelyClosed)
-			{
-				animator.SetBool(AnimationNames.Curtains.drumrollFinalClash, true);
-				GetComponent<IntroController>().KickIntro();
+			if (
+				!done &&
+				(ControllerCache.curtainController != null && !ControllerCache.curtainController.isCompletelyClosed)
+			) {
 				done = true;
+				animator.SetBool(AnimationNames.Curtains.drumrollFinalClash, true);
+				GetComponent<MenuLaunchIntro>().KickIntro();
 			}
 		}
 	//Monobehaviour lifecycle

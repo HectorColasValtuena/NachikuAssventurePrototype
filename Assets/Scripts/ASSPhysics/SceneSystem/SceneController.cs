@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
+
 namespace ASSPhysics.SceneSystem
 {
 	public class SceneController :
@@ -46,7 +48,7 @@ namespace ASSPhysics.SceneSystem
 		{
 			get
 			{
-				return !CurtainsController.isCompletelyClosed;
+				return !ControllerCache.curtainController.isCompletelyClosed;
 			}
 		}
 
@@ -61,10 +63,10 @@ namespace ASSPhysics.SceneSystem
 		private IEnumerator ChangeSceneAsync (int targetScene, float minimumWait = 0.0f)
 		{
 			busy = true;
-			CurtainsController.open = false;	//close the curtains
+			ControllerCache.curtainController.open = false;	//close the curtains
 
 			//wait until curtains are closed
-			while (!CurtainsController.isCompletelyClosed)
+			while (!ControllerCache.curtainController.isCompletelyClosed)
 			{ yield return null; }
 
 			//unload previous scene before deploying next
@@ -86,9 +88,9 @@ namespace ASSPhysics.SceneSystem
 			SetActiveScene(targetScene);
 
 			//finally open the curtains and wait until they're done
-			CurtainsController.open = true;
+			ControllerCache.curtainController.open = true;
 
-			while (CurtainsController.isCompletelyClosed)
+			while (ControllerCache.curtainController.isCompletelyClosed)
 			{ yield return null; }
 
 			busy = false;

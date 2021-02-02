@@ -4,50 +4,57 @@ using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
 namespace ASSPhysics.SceneSystem
 {
-	public class CurtainController : MonoBehaviour
+	public class CurtainController :
+		ASSPhysics.ControllerSystem.MonoBehaviourControllerBase <ICurtainController>,
+		ICurtainController
 	{
-	//serialized properties
-		public GameObject spotlightContainer;
-
-		public Transform rightSheetUpperNode;
-		public Transform leftSheetUpperNode;
-		public Transform rightSheetLowerNode;
-		public Transform leftSheetLowerNode;
-	//ENDOF serialized properties
-
-	//static properties and methods
-		private static CurtainsController instance;
-		public static bool open
-		{
-			get { return instance.curtainAnimator.GetBool(AnimationNames.Curtains.open); }
-			set { instance.SetOpen(value); }
-		}
-
-		public static bool isCompletelyClosed
-		{
-			get
-			{
-				//return true if there is no curtain controller instance
-				//Otherwise return true if both upper and lower nodes are beyond eachother
-				return	instance == null ||
-					(instance.rightSheetLowerNode.position.x < instance.leftSheetLowerNode.position.x &&
-					instance.rightSheetUpperNode.position.x < instance.leftSheetUpperNode.position.x);
-			}
-		}
-	//ENDOF static properties and methods
-
 	//private fields and properties
+		//serialized fields
+		[SerializeField]
+		private GameObject spotlightContainer = null;
+
+		[SerializeField]
+		private Transform rightSheetUpperNode = null;
+		[SerializeField]
+		private Transform leftSheetUpperNode = null;
+		[SerializeField]
+		private Transform rightSheetLowerNode = null;
+		[SerializeField]
+		private Transform leftSheetLowerNode = null;
+		//ENDOF serialized fields
+
 		private Animator curtainAnimator;
 		private Animator[] spotlightAnimators;
 	//ENDOF private fields and properties
 
+	//ICurtainController implementation
+		//opens and closes the curtains, or returns the currently DESIRED state
+		public bool open
+		{
+			get { return curtainAnimator.GetBool(AnimationNames.Curtains.open); }
+			set { SetOpen(value); }
+		}
+
+		//returns true if curtain has actually reached a closed state
+		public bool isCompletelyClosed
+		{
+			get
+			{
+				//true if both upper and lower nodes are beyond eachother
+				return
+					rightSheetLowerNode.position.x < leftSheetLowerNode.position.x &&
+					rightSheetUpperNode.position.x < leftSheetUpperNode.position.x;
+			}
+		}
+	//ENDOF ICurtainController implementation
+
 	//MonoBehaviour lifecycle implementation
 		//on creation register this instance
-		public void Awake ()
+		public override void Awake ()
 		{
+			base.Awake();
 			curtainAnimator = GetComponent<Animator>();
 			spotlightAnimators = spotlightContainer.GetComponentsInChildren<Animator>();
-			instance = this;
 		}
 	//ENDOF MonoBehaviour lifecycle implementation
 

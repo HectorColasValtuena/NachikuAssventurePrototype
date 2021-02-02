@@ -12,7 +12,7 @@ namespace ASSPhysics.DialogSystem.DialogChangers
 	{
 	//serialized fields and properties
 		[UnityEngine.SerializeField]
-		private TTool[] handList;
+		private TTool[] handList = null;
 	//ENDOF serialized fields and properties
 
 	//base class abstract method implementation

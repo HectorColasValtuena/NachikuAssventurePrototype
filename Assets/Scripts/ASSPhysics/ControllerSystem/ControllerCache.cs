@@ -1,4 +1,5 @@
 ﻿using ISceneController = ASSPhysics.SceneSystem.ISceneController;
+using ICurtainController = ASSPhysics.SceneSystem.ICurtainController;
 using IViewportController = ASSPhysics.CameraSystem.IViewportController;
 using IInputController = ASSPhysics.InputSystem.IInputController;
 using IToolManager = ASSPhysics.HandSystem.Managers.IToolManager;
@@ -35,6 +36,18 @@ namespace ASSPhysics.ControllerSystem
 			}
 		}
 	//ENDOF scene controller
+
+	//curtain controller
+		private static ICurtainController _curtainController;
+		public static ICurtainController curtainController
+		{
+			get
+			{
+				_curtainController = ValidateController<ICurtainController>(_curtainController);
+				return _curtainController;
+			}
+		}
+	//ENDOF curtain controller
 
 	//viewport controller
 		private static IViewportController _viewportController;

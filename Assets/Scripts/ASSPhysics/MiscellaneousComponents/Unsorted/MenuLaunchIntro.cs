@@ -3,9 +3,9 @@ using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
 using TDialogChanger = ASSPhysics.DialogSystem.DialogChangers.DialogChangerBase;
 
-namespace ASSPhysics.SceneSystem
+namespace ASSPhysics.MiscellaneousComponents
 {
-	public class IntroController : MonoBehaviour
+	public class MenuLaunchIntro : MonoBehaviour
 	{
 		public Animator musicAnimator;
 
