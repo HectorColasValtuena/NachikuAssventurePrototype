@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"v",
+				"ValidateController"
+			],
+			[
+				"IC",
+				"ICurtainController"
+			],
+			[
+				"cur",
+				"CurtainsController"
+			],
+			[
 				"vi",
 				"viewportController"
 			],
@@ -154,10 +166,6 @@
 			[
 				"curre",
 				"currentSize"
-			],
-			[
-				"cur",
-				"currentPosition"
 			],
 			[
 				"desire",
@@ -506,101 +514,61 @@
 			[
 				"def",
 				"defaultTag"
-			],
-			[
-				"RigTailBone",
-				"RigTailBoneElementRecursive"
-			],
-			[
-				"default",
-				"defaultChainJoint"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorBase.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/LauncherController.cs",
 			"settings":
 			{
-				"buffer_size": 956,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/ArmableEditorBase.cs",
-			"settings":
-			{
-				"buffer_size": 1001,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorManyToMany.cs",
-			"settings":
-			{
-				"buffer_size": 854,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorManyToClosestChild.cs",
-			"settings":
-			{
-				"buffer_size": 2782,
+				"buffer_size": 283,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings/ActionSettingCollisionRadius.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/CurtainController.cs",
 			"settings":
 			{
-				"buffer_size": 2404,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerCache.cs",
-			"settings":
-			{
-				"buffer_size": 2019,
+				"buffer_size": 2030,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/IViewportController.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/DEV/DummyCurtainController.cs",
 			"settings":
 			{
-				"buffer_size": 823,
+				"buffer_size": 654,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorManyToClosestChild.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/IController.cs",
 			"settings":
 			{
-				"buffer_size": 237,
-				"encoding": "UTF-8",
+				"buffer_size": 134,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorManyToXBase.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Managers/ToolManagerMouseInput.cs",
 			"settings":
 			{
-				"buffer_size": 177,
+				"buffer_size": 4160,
+				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorBase.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/SceneController.cs",
 			"settings":
 			{
-				"buffer_size": 230,
+				"buffer_size": 3379,
+				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		}
@@ -666,6 +634,32 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Mephi/Desktop/Majesty.2.Collection.GOG/README.txt",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Unsorted/ApplicationLaunchDrumroll.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Unsorted/MenuLaunchIntro.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerCache.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/ICurtainController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/MonoBehaviourControllerBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Behaviours/MenuIntroController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Behaviours/IntroController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/DialogChangerOnActionGrabAutomated.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Behaviours/CurtainToggler.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerProvider.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/CurtainsController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Unsorted/QuitApplicationOnAwake.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Unsorted/SceneChanger.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/AutoScaleToScreenHeight.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/DrumrollController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/SceneController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorManyToXBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorManyToClosestChild.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/IViewportController.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings/ActionSettingCollisionRadius.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorManyToClosestChild.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorManyToMany.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/ArmableEditorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/EditorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/Hand.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ToolBase.cs",
@@ -681,19 +675,13 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/ViewportScroller.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/ViewportZoomer.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Managers/ToolManagerMouseInput.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerCache.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Gmeen/InterstellarDemonStripper/Parts/UpperBodyGroup/HeadGroup/LowerJaw.png.meta",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/SceneController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Gmeen/InterstellarDemonStripper/Parts/UpperBodyGroup/HeadGroup/UpperHead.png.meta",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/InteractableTriggerOnRelease.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Unsorted/SceneChanger.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Tools/ITool.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/IViewportController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/ISceneController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/DialogChangerOnActionGrabAutomated.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/LauncherController.cs",
 		"/C/Users/Mephi/Desktop/TMP.TXT",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/CurtainsController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionGrab.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ComponentConfigurerConfigurableJoint.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/BoneRigging.cs",
@@ -702,22 +690,18 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ComponentConfigurerGeneric.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ComponentConfigurer.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/MouseInputController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerProvider.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/IController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/MonoBehaviourControllerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InputSystem/IInputController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/ViewportControllerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/RectCameraControllerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ComponentConfiguration/ColliderPosition.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/RectCameraControllerSmooth.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/AutoScaleToScreenHeight.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/OneShotTriggers/AudioPlayerOneShot.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/OneShotTriggers/PlayerOneShotBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/RectTransformExtensions.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/RectCameraControllerScrollable.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ProgressionSystem/IProgressionController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/Behaviours/IntroController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings.cs",
 		"/C/Users/Mephi/Documents/Credenciales-Hector-Devtrance.txt",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ASSMath/RectMath.cs",
@@ -748,7 +732,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/BoneUtility/SkinSurfaceRigging.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SkinSurfaceRiggerInspector.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/PySpriteRigger/Sample.txt",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/DrumrollController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/Base/DialogChangerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/DialogChangerOnStart.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Carta propuesta",
@@ -771,7 +754,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/Interactor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Library/PackageCache/com.unity.2d.animation@4.2.4/Editor/SpriteSkin/SpriteSkinEditor.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/InteractableSystem/IInteractor.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings/ActionSettingCollisionRadius.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/PulseSystem/PulsePropagators/ChainElementPulsePropagatorBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/TailSystem/TailElementJointSmoothFollow.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/IDialogController.cs",
@@ -779,21 +761,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogManagerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/DialogChangerOnAwake.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChanger.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/DialogChangers/DialogChangerOnAwake.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/DialogChangers/DialogChanger.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogSimpleBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogManager.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Camera/ZoomableCameraController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/Interface/DialogColliderResizer.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorJointChainBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/TailRiggerInspectorJointChain.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers/SpriteSkinRiggerInspectorBase.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Riggers/TailRiggerEditorSmoothFollowController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogController.cs",
-		"/C/Users/Mephi/AppData/Local/Temp/Temp1_southern-aire.zip/License - READ THIS.txt",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/NewImageEffectShader.shader",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Sprites/Interface/SpeechBubbles/SpeechBubbleRigged.png.meta"
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/MiscellaneousComponents/DialogChangers/DialogChangerOnAwake.cs"
 	],
 	"find":
 	{
@@ -812,6 +780,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"CurtainsController",
+			"SceneController",
 			"radius",
 			"focusedToolIndex",
 			"toolList[focusedToolIndex]",
@@ -937,9 +907,7 @@
 			"DoChildrenToBoneListButton",
 			"ResetBoundsIfNeeded",
 			"ResetBonesIfNeeded",
-			"ResetBoundsIfNeeded",
-			"DoGenerateBonesButton",
-			"Button"
+			"ResetBoundsIfNeeded"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -981,116 +949,29 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorBase.cs",
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/LauncherController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 956,
+						"buffer_size": 283,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								277,
-								277
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C#/C#.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/ArmableEditorBase.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1001,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorManyToMany.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 854,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								657,
-								672
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Editor/ASSpriteRigging/Editors/Weavers/WeaverEditorManyToClosestChild.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2782,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								32,
-								32
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1100,25 +981,55 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings/ActionSettingCollisionRadius.cs",
+					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/CurtainController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2404,
+						"buffer_size": 2030,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								88,
-								88
+								1668,
+								1668
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/DEV/DummyCurtainController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 654,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1128,78 +1039,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/ControllerCache.cs",
+					"buffer": 3,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ControllerSystem/IController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2019,
+						"buffer_size": 134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								282,
-								309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/CameraSystem/IViewportController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 823,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								74,
-								74
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorManyToClosestChild.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								223
+								58,
+								58
 							]
 						],
 						"settings":
@@ -1214,59 +1067,61 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorManyToXBase.cs",
+					"buffer": 4,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Managers/ToolManagerMouseInput.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 177,
+						"buffer_size": 4160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								171
+								1054,
+								1054
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Weavers/WeaverInspectorBase.cs",
+					"buffer": 5,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/SceneController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 230,
+						"buffer_size": 3379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								230,
-								230
+								2843,
+								2843
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.sublime-syntax"
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1321.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
