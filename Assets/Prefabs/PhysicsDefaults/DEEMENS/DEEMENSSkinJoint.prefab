@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_SlerpDrive.positionSpring
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_SlerpDrive.positionDamper
@@ -85,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_EnablePreprocessing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9155374077960295324, guid: d302c39f9886c31498329fdf3f239a56, type: 3}
       propertyPath: m_XMotion
