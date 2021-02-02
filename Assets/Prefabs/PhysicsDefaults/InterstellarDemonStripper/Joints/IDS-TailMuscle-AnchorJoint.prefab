@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4162084163571020770}
   - component: {fileID: 4834676435746489894}
   m_Layer: 0
-  m_Name: IDS-Ass-AnchorJoint
+  m_Name: IDS-TailMuscle-AnchorJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 1
+  m_XMotion: 2
   m_YMotion: 1
   m_ZMotion: 0
   m_AngularXMotion: 0

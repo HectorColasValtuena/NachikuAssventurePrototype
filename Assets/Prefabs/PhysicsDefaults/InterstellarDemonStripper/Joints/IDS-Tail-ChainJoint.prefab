@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3525077929595807720}
   - component: {fileID: 7288562438287999319}
   m_Layer: 0
-  m_Name: IDS-Neck-ChainJoint
+  m_Name: IDS-Tail-ChainJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
