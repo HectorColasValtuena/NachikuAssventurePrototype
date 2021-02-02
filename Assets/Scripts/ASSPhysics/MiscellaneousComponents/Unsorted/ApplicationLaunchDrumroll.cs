@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 
 using AnimationNames = ASSPhysics.Constants.AnimationNames;
+using ASSPhysics.SceneSystem;
 
-namespace ASSPhysics.SceneSystem
+namespace ASSPhysics.MiscellaneousComponents
 {
 	public class DrumrollController : MonoBehaviour
 	{
