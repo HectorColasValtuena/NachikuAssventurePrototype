@@ -4,7 +4,7 @@ using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
 namespace ASSPhysics.SceneSystem
 {
-	public class CurtainsController : MonoBehaviour
+	public class CurtainController : MonoBehaviour
 	{
 	//serialized properties
 		public GameObject spotlightContainer;
