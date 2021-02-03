@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e2fcb8b71f07cf488540ed3718bab11
+guid: e7d52b79b0687904284ae91712f740e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -114,7 +114,27 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-    bones: []
+    bones:
+    - name: RightFootBone
+      position: {x: 761.3662, y: 86.616646, z: 0}
+      rotation: {x: 0, y: 0, z: 0.67329746, w: 0.7393718}
+      length: 220.50595
+      parentId: -1
+    - name: RightLowerLegBone
+      position: {x: 220.50595, y: -0, z: 0}
+      rotation: {x: 0, y: 0, z: -0.38581225, w: 0.9225773}
+      length: 206.00044
+      parentId: 0
+    - name: RightUpperLegBone
+      position: {x: 206.00049, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.8782014, w: 0.47829095}
+      length: 228.89812
+      parentId: 1
+    - name: RightSideHipBone
+      position: {x: 228.89803, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      length: 0
+      parentId: 2
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
