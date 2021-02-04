@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace ASSistant.ComponentConfiguration
+namespace ASSistant.ComponentConfiguration.JointConfiguration
 {
 	public static class ConfigurableJointComponentConfigurer
 	{

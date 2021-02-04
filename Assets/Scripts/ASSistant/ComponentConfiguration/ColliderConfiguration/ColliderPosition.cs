@@ -3,7 +3,7 @@
 using Type = System.Type;
 using System.Reflection;	//PropertyInfo
 
-namespace ASSistant.ComponentConfiguration
+namespace ASSistant.ComponentConfiguration.ColliderConfiguration
 {
 	public static class ColliderPosition
 	{

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;	//IComparer<T>
 
-using static ASSistant.ComponentConfiguration.ColliderPosition;
+using ASSistant.ComponentConfiguration.ColliderConfiguration;
 
 namespace ASSistant.Comparers
 {
