@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ASSistant.ComponentConfiguration
 {
-	public static class ComponentConfigurerConfigurableJoint
+	public static class ConfigurableJointComponentConfigurer
 	{
 	//public static methods
 		//applies right-hand properties to left-hand objects. returns reference to altered object
