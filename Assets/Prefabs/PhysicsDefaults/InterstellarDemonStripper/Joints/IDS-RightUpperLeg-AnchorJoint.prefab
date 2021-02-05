@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4162084163571020770}
   - component: {fileID: 4834676435746489894}
   m_Layer: 0
-  m_Name: IDS-LeftUpperLeg-AnchorJoint
+  m_Name: IDS-RightUpperLeg-AnchorJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,8 +69,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 16
-    damper: 0
+    spring: 24
+    damper: 12
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
