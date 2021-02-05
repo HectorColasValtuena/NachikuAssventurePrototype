@@ -275,8 +275,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: 60, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372076735
 MonoBehaviour:
@@ -291,14 +291,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.16470589, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1c53dc7f0e1f3e04196aa42884cda781, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f0379fcb0833944ab7ea57e58e17c94, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -558,8 +558,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20, y: 10}
-  m_SizeDelta: {x: -160, y: -220}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -160, y: -160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224841238
 MonoBehaviour:
@@ -588,34 +588,28 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 42
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "!Hi! First and foremost, thank you for giving me a chance by seeing this.\nI'm
-    Hector Col\xE1s Valtue\xF1a, an indie developer, and it took me quite an effort
-    to put this together.\n\nThis is a practical demo/prototype of the \"Animated
-    Stretchable Sprites engine\".\nIt's intended as a sample of the kind of BRUTAL
-    porn videogame we could make, with YOUR name.\n\nYou'll love it. Please, after
-    trying it out contact me back at HECTORCOLASVALTUENA@GMAIL.COM\nIt'd be a dream
-    come true to publish a game with Gmeen's name  and art.\nI'd also like to split
-    profits fair and equal, I'm here to make art not exploit anyone :)\n\r\nIMPORTANT
-    DISCLAIMERS\n>>   I own none of the art portrayed here. All of it is used under
-    either free-use license or explicit permission, and without comercial intent.\n>  
-    Particularly, the two first drawings featured here were authored by a great artist,
-    Nasuki (Paula Valiente).\nShe very generously let me use her  art for private
-    demo purposes. Thanks, Nasuki!\n> I also included a sample using one if my favourite
-    drawings of yours. It's only intended as a private sample. None of your property
-    will ever be published without your explicit consent.\n\n>>   This is just a
-    prototype. No behaviour is final, these are only very simple samples. Furthermore,
-    I am no artist yet I had to patch and slice the featured drawings to the best
-    of my skill... to hillarious results.\n>> If you're running this in a browser,
-    be warned performance is ABYSMAL. Particularly in chrome. Desktop runs smoothly.\n\n>>
-    This is a PRIVATE demo. Not only I don't want to share this publicly yet, as
-    mentioned other artists shared or licensed this for private use only. Please,
-    do not share. I beg not only for me but for respect to the artists :)"
+  m_Text: "!Hola! Lo primero, gracias por haberme abierto y darme una oportunidad
+    ^^\r\nEsta es una demo pr\xE1ctica/prototipo creada para los ojos de Paula Valiente.
+    Llevo tres meses trabajando en esto para que lo veas :3\r\nEs una demostraci\xF3n
+    del tipo de escenas con animaci\xF3n f\xEDsica que puedo montar. Podemos crear
+    algo muy brutal con muy poco m\xE1s que lo que ya tengo implementado.\r\n\r\nDisclaimers
+    importantes:\r\n>El arte aqu\xED representado pertenece enteramente a Nasuki/Paula
+    Valiente. Esta demo es s\xF3lo para ti, y NUNCA, JAM\xC1S pienso distribuir tu
+    arte (ni el de otros artistas) sin tu consentimiento expl\xEDcito ni tu parte
+    en el reparto de los beneficios.\r\nDe hecho la idea es espec\xEDficamente que
+    cada artista venda sus videojuegos sobre sus personajes us\xE1ndome como plataforma
+    para el desarrollo y distribuci\xF3n.\r\n\r> Esto es una demo. Ning\xFAn comportamiento
+    es su versi\xF3n final, s\xF3lo pretende demostrar que funciona. \r\nAdem\xE1s...
+    Soy programador, no artista... as\xED que he adaptado tu arte como buenamente
+    he podido apa\xF1arme con GIMP >w<\r\n\r\nEspero con ilusi\xF3n que te guste
+    y que te interese desarrollar alg\xFAn videojuego a partir de \xE9sto.\nTe ruego
+    muy MUY fuerte que te pongas en contacto conmigo cuando lo hayas visto"
 --- !u!222 &1224841239
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -760,7 +754,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: GO! =>
+  m_Text: Dale! =>
 --- !u!222 &1330429982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -941,7 +935,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fullscreen recommended
+  m_Text: Fullscreen recomendado
 --- !u!222 &1710745209
 CanvasRenderer:
   m_ObjectHideFlags: 0
