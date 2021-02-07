@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 17617353}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -512,10 +512,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17617350}
   m_ConnectedBody: {fileID: 1713236778}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16874819, y: 0.00000023227767, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16858919, y: -0.0073299836, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -623,7 +623,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17617350}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -931,7 +931,7 @@ GameObject:
   - component: {fileID: 98662265}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -975,10 +975,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98662262}
   m_ConnectedBody: {fileID: 1895483974}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16092491, y: -0.00000069454836, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1594946, y: 0.021402707, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1086,7 +1086,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98662262}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2174,7 +2174,7 @@ GameObject:
   - component: {fileID: 164800900}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2218,10 +2218,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164800897}
   m_ConnectedBody: {fileID: 1748089401}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.1720902, y: -0.000000028288923, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16823803, y: 0.03620641, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2329,7 +2329,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164800897}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2350,7 +2350,7 @@ GameObject:
   - component: {fileID: 165363393}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2394,10 +2394,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165363390}
   m_ConnectedBody: {fileID: 771045611}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18549283, y: 0.00000018929131, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18495423, y: -0.014126486, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2505,7 +2505,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165363390}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2848,7 +2848,7 @@ GameObject:
   - component: {fileID: 184882059}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2892,10 +2892,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184882056}
   m_ConnectedBody: {fileID: 1203172503}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18870844, y: 0.0000005843176, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18785784, y: 0.017903907, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3003,7 +3003,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184882056}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3579,7 +3579,7 @@ GameObject:
   - component: {fileID: 223248475}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3623,10 +3623,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223248472}
   m_ConnectedBody: {fileID: 458783995}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16798486, y: 0.000000021012966, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16560312, y: 0.028176386, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3734,7 +3734,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223248472}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3755,7 +3755,7 @@ GameObject:
   - component: {fileID: 234159137}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3799,10 +3799,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234159134}
   m_ConnectedBody: {fileID: 1831683797}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.19007137, y: -0.00000011443626, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17796919, y: 0.06673838, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3910,7 +3910,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234159134}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3964,7 +3964,7 @@ GameObject:
   - component: {fileID: 250412239}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4008,10 +4008,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250412236}
   m_ConnectedBody: {fileID: 1908243918}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.17202783, y: 0.00000020809239, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16978008, y: -0.027718836, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -4119,7 +4119,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250412236}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4322,7 +4322,7 @@ GameObject:
   - component: {fileID: 272963417}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4366,10 +4366,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272963414}
   m_ConnectedBody: {fileID: 443722809}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.19470628, y: -0.00000042894214, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.19312653, y: -0.024758855, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -4477,7 +4477,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272963414}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4498,7 +4498,7 @@ GameObject:
   - component: {fileID: 277088800}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4527,10 +4527,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277088798}
   m_ConnectedBody: {fileID: 1385162111}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.15748425, y: 0.00000029522926, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.156695, y: -0.015763523, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -4638,7 +4638,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277088798}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5127,7 +5127,7 @@ GameObject:
   - component: {fileID: 302207318}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5171,10 +5171,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302207315}
   m_ConnectedBody: {fileID: 1411733466}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.15951692, y: 0.00000049365735, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1586548, y: -0.016559953, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -5282,7 +5282,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302207315}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5303,7 +5303,7 @@ GameObject:
   - component: {fileID: 317684050}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5347,10 +5347,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317684047}
   m_ConnectedBody: {fileID: 1978178028}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.13783525, y: 0.0000009729382, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.13574952, y: -0.023885986, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -5458,7 +5458,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317684047}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5479,7 +5479,7 @@ GameObject:
   - component: {fileID: 318320322}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5523,10 +5523,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318320319}
   m_ConnectedBody: {fileID: 2009301298}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18549427, y: -0.00000035234552, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18522488, y: 0.009972753, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -5634,7 +5634,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318320319}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5655,7 +5655,7 @@ GameObject:
   - component: {fileID: 348694406}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5699,10 +5699,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348694403}
   m_ConnectedBody: {fileID: 1154048242}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16746968, y: -0.00000020360984, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16311876, y: -0.037926473, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -5810,7 +5810,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348694403}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6583,7 +6583,7 @@ GameObject:
   - component: {fileID: 373288354}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6627,10 +6627,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373288351}
   m_ConnectedBody: {fileID: 1553958966}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16012362, y: -0.000001272274, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.15868165, y: 0.021424387, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -6738,7 +6738,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373288351}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7108,7 +7108,7 @@ GameObject:
   - component: {fileID: 440847496}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7152,10 +7152,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440847493}
   m_ConnectedBody: {fileID: 480238888}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18939093, y: 0.00000029800435, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1886634, y: -0.016585706, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -7263,7 +7263,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440847493}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7284,7 +7284,7 @@ GameObject:
   - component: {fileID: 443722810}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7328,10 +7328,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443722807}
   m_ConnectedBody: {fileID: 17617352}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18227841, y: 0.0000000064610504, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18021052, y: -0.027382085, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -7439,7 +7439,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443722807}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7465,7 +7465,7 @@ GameObject:
   - component: {fileID: 458783996}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7509,10 +7509,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458783993}
   m_ConnectedBody: {fileID: 373288353}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.14950247, y: 0.000002130546, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.14817522, y: 0.019863112, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -7620,7 +7620,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458783993}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7901,7 +7901,7 @@ GameObject:
   - component: {fileID: 480238889}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7945,10 +7945,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480238886}
   m_ConnectedBody: {fileID: 1901197058}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16585848, y: 0.00000012025339, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16457735, y: -0.020571852, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -8056,7 +8056,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480238886}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8123,6 +8123,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543802c2b0f1dfd4c84f9de30b20987f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!134 &501828085
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1 &521154047
 GameObject:
   m_ObjectHideFlags: 0
@@ -8884,7 +8896,7 @@ GameObject:
   - component: {fileID: 556764425}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8928,10 +8940,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556764422}
   m_ConnectedBody: {fileID: 701991036}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.17475496, y: 0.0000006160117, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17132863, y: -0.034433607, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -9039,7 +9051,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556764422}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9313,7 +9325,7 @@ GameObject:
   - component: {fileID: 568553568}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9357,10 +9369,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568553565}
   m_ConnectedBody: {fileID: 98662264}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18916523, y: 0.00000056199497, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18830301, y: 0.018029187, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -9468,7 +9480,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568553565}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10629,7 +10641,7 @@ GameObject:
   - component: {fileID: 701991037}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10673,10 +10685,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701991034}
   m_ConnectedBody: {fileID: 791030001}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.17912723, y: -0.000000004307367, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17686975, y: -0.028345782, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -10784,7 +10796,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701991034}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11599,7 +11611,7 @@ GameObject:
   - component: {fileID: 771045612}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11643,10 +11655,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771045609}
   m_ConnectedBody: {fileID: 952437199}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18103692, y: -0.00000007584458, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17320059, y: -0.052686285, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -11754,7 +11766,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771045609}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11775,7 +11787,7 @@ GameObject:
   - component: {fileID: 791030002}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11819,10 +11831,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791029999}
   m_ConnectedBody: {fileID: 272963416}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.19939628, y: 0.0000004884496, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.19934252, y: -0.0046362784, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -11930,7 +11942,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791029999}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12095,7 +12107,7 @@ GameObject:
   - component: {fileID: 831584702}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12139,10 +12151,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831584699}
   m_ConnectedBody: {fileID: 1637998219}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16753356, y: 0.00000020786683, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16657442, y: -0.017905077, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -12250,7 +12262,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831584699}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12272,7 +12284,7 @@ GameObject:
   - component: {fileID: 842029132}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12300,10 +12312,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842029127}
   m_ConnectedBody: {fileID: 2020359814}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16624762, y: 0.00000016018748, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16545376, y: -0.016225591, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -12411,7 +12423,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842029127}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -14612,7 +14624,7 @@ GameObject:
   - component: {fileID: 952437200}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14656,10 +14668,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952437197}
   m_ConnectedBody: {fileID: 1350103619}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.17743963, y: 0.000000046100467, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17229162, y: -0.0424302, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -14767,7 +14779,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952437197}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -16330,7 +16342,7 @@ GameObject:
   - component: {fileID: 1091215100}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16374,10 +16386,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091215097}
   m_ConnectedBody: {fileID: 250412238}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.1762241, y: 0.00000020070001, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17202757, y: -0.03822864, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -16485,7 +16497,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091215097}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -16840,18 +16852,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!134 &1111775075
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ' (Instance)'
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1001 &1114580132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17546,7 +17546,7 @@ GameObject:
   - component: {fileID: 1154048243}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17590,10 +17590,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154048240}
   m_ConnectedBody: {fileID: 831584701}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.19209532, y: 0.00000016775448, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.19100973, y: -0.020396948, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -17701,7 +17701,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154048240}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -17722,7 +17722,7 @@ GameObject:
   - component: {fileID: 1203172504}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17766,10 +17766,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203172501}
   m_ConnectedBody: {fileID: 568553567}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.17045864, y: 0.0000006910268, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16973656, y: 0.015679223, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -17877,7 +17877,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203172501}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -17898,7 +17898,7 @@ GameObject:
   - component: {fileID: 1211742212}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17942,10 +17942,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211742209}
   m_ConnectedBody: {fileID: 302207317}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.15431328, y: 0.000000102440936, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1541288, y: -0.0075455345, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -18053,7 +18053,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211742209}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20016,7 +20016,7 @@ GameObject:
   - component: {fileID: 1350103620}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20060,10 +20060,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350103617}
   m_ConnectedBody: {fileID: 2001380360}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.15043399, y: -0.00000029592775, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.14853755, y: -0.02381096, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -20171,7 +20171,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350103617}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20190,7 +20190,7 @@ GameObject:
   - component: {fileID: 1385162112}
   m_Layer: 9
   m_Name: TailGrabNodeCollider
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20218,7 +20218,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385162110}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -20473,7 +20473,7 @@ GameObject:
   - component: {fileID: 1411733467}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20517,10 +20517,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411733464}
   m_ConnectedBody: {fileID: 317684049}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.1609249, y: -0.000000012907549, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16091028, y: -0.0021829559, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -20628,7 +20628,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411733464}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -21486,7 +21486,7 @@ GameObject:
   - component: {fileID: 1553958967}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21530,10 +21530,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553958964}
   m_ConnectedBody: {fileID: 234159136}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16753376, y: -0.0000003666646, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1622546, y: 0.041721154, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -21641,7 +21641,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553958964}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -22107,7 +22107,7 @@ GameObject:
   - component: {fileID: 1573688324}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22151,10 +22151,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573688321}
   m_ConnectedBody: {fileID: 164800899}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.1675335, y: -0.000000016647391, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16334629, y: 0.03721491, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -22262,7 +22262,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573688321}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -22283,7 +22283,7 @@ GameObject:
   - component: {fileID: 1637998220}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22327,10 +22327,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637998217}
   m_ConnectedBody: {fileID: 440847495}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.15843575, y: 0.0000006009577, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.15841275, y: -0.0027235018, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -22438,7 +22438,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637998217}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -22551,7 +22551,7 @@ GameObject:
   - component: {fileID: 1688617431}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22595,10 +22595,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688617428}
   m_ConnectedBody: {fileID: 184882058}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16566361, y: 0.00000036725623, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16319872, y: -0.028472414, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -22706,7 +22706,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688617428}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -22727,7 +22727,7 @@ GameObject:
   - component: {fileID: 1713236779}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22771,10 +22771,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713236776}
   m_ConnectedBody: {fileID: 1688617430}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16125874, y: -0.00000038123562, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16125286, y: 0.0014272901, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -22882,7 +22882,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713236776}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -23265,7 +23265,7 @@ GameObject:
   - component: {fileID: 1748089402}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23309,10 +23309,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748089399}
   m_ConnectedBody: {fileID: 223248474}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16798253, y: 0.00000010966323, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1647837, y: 0.032624125, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -23420,7 +23420,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748089399}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -23790,7 +23790,7 @@ GameObject:
   - component: {fileID: 1768744399}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23834,10 +23834,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768744396}
   m_ConnectedBody: {fileID: 165363392}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16442633, y: -0.0000000357104, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.15444222, y: -0.056424294, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -23945,7 +23945,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768744396}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -24698,7 +24698,7 @@ GameObject:
   - component: {fileID: 1831683798}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24742,10 +24742,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831683795}
   m_ConnectedBody: {fileID: 277088799}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.1584333, y: 0.0000003685709, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.14138019, y: 0.07150807, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -24853,7 +24853,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831683795}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -26238,7 +26238,7 @@ GameObject:
   - component: {fileID: 1895483975}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26282,10 +26282,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895483972}
   m_ConnectedBody: {fileID: 318320321}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.19982708, y: 0.00000063989137, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.19893283, y: 0.018885193, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -26393,7 +26393,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895483972}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -26414,7 +26414,7 @@ GameObject:
   - component: {fileID: 1901197059}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26458,10 +26458,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901197056}
   m_ConnectedBody: {fileID: 1211742211}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18386303, y: 0.00000078225276, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18383741, y: 0.0030646645, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -26569,7 +26569,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901197056}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -26620,7 +26620,7 @@ GameObject:
   - component: {fileID: 1908243919}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26664,10 +26664,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908243916}
   m_ConnectedBody: {fileID: 348694405}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.16746971, y: 0.00000013926183, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.16746983, y: 0.00000026820584, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -26775,7 +26775,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908243916}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -27696,7 +27696,7 @@ GameObject:
   - component: {fileID: 1978178029}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27740,10 +27740,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978178026}
   m_ConnectedBody: {fileID: 2012573870}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.18174759, y: 0.00000034389086, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18019637, y: -0.023692187, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -27851,7 +27851,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978178026}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -28383,7 +28383,7 @@ GameObject:
   - component: {fileID: 2001380361}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28427,10 +28427,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001380358}
   m_ConnectedBody: {fileID: 1091215099}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.17058456, y: -0.000000077299774, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1596379, y: -0.060123958, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -28538,7 +28538,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001380358}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -29353,7 +29353,7 @@ GameObject:
   - component: {fileID: 2009301299}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29397,10 +29397,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009301296}
   m_ConnectedBody: {fileID: 1573688323}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.1767128, y: 0.00000023296252, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17407574, y: 0.03040189, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -29508,7 +29508,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009301296}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -29673,7 +29673,7 @@ GameObject:
   - component: {fileID: 2012573871}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29717,10 +29717,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012573868}
   m_ConnectedBody: {fileID: 556764424}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.19321068, y: -0.00000018680294, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1911109, y: -0.028407961, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -29828,7 +29828,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012573868}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -30486,7 +30486,7 @@ GameObject:
   - component: {fileID: 2020359815}
   m_Layer: 9
   m_Name: MenuTailJoint
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30530,10 +30530,10 @@ ConfigurableJoint:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020359812}
   m_ConnectedBody: {fileID: 1768744398}
-  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Anchor: {x: 0.20591834, y: 0.00000026074122, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.20298438, y: -0.034637116, z: 0}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -30641,7 +30641,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020359812}
-  m_Material: {fileID: 1111775075}
+  m_Material: {fileID: 501828085}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
