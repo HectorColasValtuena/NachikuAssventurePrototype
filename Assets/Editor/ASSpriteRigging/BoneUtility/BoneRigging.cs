@@ -12,7 +12,6 @@ namespace ASSpriteRigging.BoneUtility
 	{
 		public static void BoneSetTagAndLayer (Transform bone, string targetTag, int targetLayer)
 		{
-			Debug.Log(bone);
 			if (targetTag != null) { bone.gameObject.tag = targetTag; }
 			if (targetLayer >= 0) { bone.gameObject.layer = targetLayer; }
 		}

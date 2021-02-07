@@ -27,7 +27,7 @@ namespace ASSpriteRigging.Editors
 		//Recursively populate every transform with adequate controller and components
 		private	void RigTailBoneElementRecursive (Transform bone, TInspector inspector)
 		{
-			Debug.Log("Rigging tail bone: "); Debug.LogWarning(bone);
+			Debug.Log("Rigging tail bone: " + bone.name);
 			RigTailBone(bone, inspector);
 			//loop over this element's transform children, recursively rigging each of them
 			for (int i = 0, iLimit = bone.childCount; i < iLimit; i++)
@@ -49,7 +49,7 @@ namespace ASSpriteRigging.Editors
 		protected abstract void RigTailBone (Transform bone, TInspector inspector);
 
 		//rig a connection between two elements
-		protected abstract void RigTailBonePairConnection (Transform bone, Transform nextBone, TInspector inspector);
+		protected abstract ConfigurableJoint RigTailBonePairConnection (Transform bone, Transform nextBone, TInspector inspector);
 	//ENDOF abstract method declaration
 	}
 }

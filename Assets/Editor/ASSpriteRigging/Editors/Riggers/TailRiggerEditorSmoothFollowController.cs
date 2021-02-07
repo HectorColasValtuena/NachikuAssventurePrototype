@@ -28,11 +28,12 @@ namespace ASSpriteRigging.Editors
 		}
 
 		//rig a connection between two elements. also store the joint in the controller
-		protected override void RigTailBonePairConnection (Transform bone, Transform nextBone, TInspector inspector)
+		protected override ConfigurableJoint RigTailBonePairConnection (Transform bone, Transform nextBone, TInspector inspector)
 		{
+			ConfigurableJoint connectionJoint = base.RigTailBonePairConnection(bone, nextBone, inspector);
 			TElementController elementController = bone.GetComponent<TElementController>();
-			ConfigurableJoint connectionJoint = BoneRigging.BoneConnectJoint<ConfigurableJoint>(bone, nextBone, inspector.defaultChainJoint);
 			if (elementController != null) { elementController.joint = connectionJoint; }
+			return connectionJoint;
 		}
 	//ENDOF overrides
 	}

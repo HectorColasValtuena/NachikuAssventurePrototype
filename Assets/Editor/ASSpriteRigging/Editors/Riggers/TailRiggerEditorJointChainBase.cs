@@ -3,6 +3,7 @@ using UnityEngine;
 
 //using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
+using ASSistant.ComponentConfiguration.JointConfiguration;
 
 namespace ASSpriteRigging.Editors
 {
@@ -38,9 +39,13 @@ namespace ASSpriteRigging.Editors
 		}
 
 		//rig a connection between two elements
-		protected override void RigTailBonePairConnection (Transform bone, Transform nextBone, TInspector inspector)
+		protected override ConfigurableJoint RigTailBonePairConnection (Transform bone, Transform nextBone, TInspector inspector)
 		{
-			BoneRigging.BoneConnectJoint<ConfigurableJoint>(bone, nextBone, inspector.defaultChainJoint);
+			Debug.Log("TailRiggerEditorJointChainBase.RigTailBonePairConnection();");
+			//create a joint and initialize its anchors as a chain setup then return the joint
+			return BoneRigging
+				.BoneConnectJoint<ConfigurableJoint>(bone, nextBone, inspector.defaultChainJoint)
+				.EMSetChainAnchor();
 		}
 	//ENDOF abstract method implementation
 	}
