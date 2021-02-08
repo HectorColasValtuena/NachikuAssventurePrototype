@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final/InterstellarDemonStripper.unity
     guid: f2c0db069cc01fb4e8683d95b545faba
+  - enabled: 1
+    path: Assets/Scenes/Final/Menu/MenuCredits.unity
+    guid: 5bc9b2e379b86b64889b30dd253556dc
   m_configObjects: {}
