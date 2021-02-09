@@ -44,6 +44,12 @@ namespace ASSPhysics.AudioSystem
 		}
 		public void Play(AudioPlaybackProperties properties)
 		{
+			//if requesting same song ignore request
+			if (audioSource.isPlaying && currentPlayback.clip == properties.clip)
+			{
+				return;
+			}
+
 			currentPlayback = properties;
 			audioSource.clip = properties.clip;
 			audioSource.loop = properties.loop;
