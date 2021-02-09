@@ -11,7 +11,7 @@ namespace ASSPhysics.MiscellaneousComponents
 
 		public void KickIntro ()
 		{
-			musicAnimator.SetBool(AnimationNames.Curtains.musicPlayEnabled, true);
+			//musicAnimator.SetBool(AnimationNames.Curtains.musicPlayEnabled, true);
 			GameObject.Find("IntroDialogEnabler").GetComponent<TDialogChanger>().ChangeDialog();
 		}
 	}
