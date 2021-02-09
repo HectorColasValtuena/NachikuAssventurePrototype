@@ -11,7 +11,7 @@ namespace ASSPhysics.AudioSystem.Music
 
 		public void Update ()
 		{
-			
+			ControllerCache.musicController.fadeVolume = musicFadeVolume;
 		}
 	}
 }
