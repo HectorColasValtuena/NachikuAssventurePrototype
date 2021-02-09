@@ -3,6 +3,7 @@ using ICurtainController = ASSPhysics.SceneSystem.ICurtainController;
 using IViewportController = ASSPhysics.CameraSystem.IViewportController;
 using IInputController = ASSPhysics.InputSystem.IInputController;
 using IToolManager = ASSPhysics.HandSystem.Managers.IToolManager;
+using IMusicController = ASSPhysics.AudioSystem.IMusicController;
 
 namespace ASSPhysics.ControllerSystem
 {
@@ -83,6 +84,18 @@ namespace ASSPhysics.ControllerSystem
 				return _toolManager;
 			}
 		}
-	//ENDOF input controller	
+	//ENDOF input controller
+
+	//music controller
+		private static IMusicController _musicController;
+		public static IMusicController musicController
+		{
+			get
+			{
+				_musicController = ValidateController<IMusicController>(_musicController);
+				return _musicController;
+			}
+		}
+	//ENDOF music controller
 	}
 }
