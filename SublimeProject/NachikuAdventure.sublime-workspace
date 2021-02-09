@@ -520,10 +520,13 @@
 	"buffers":
 	[
 		{
+			"contents": "using UnityEngine;\n\nnamespace ASSPhysics.AudioSystem.Music\n{\n\tpublic interface IMusicController : \n\t\tASSPhysics.ControllerSystem.IController\n\t{\n\t\t//?volume?\n\t\t//set this to adjust fade in-out progress. Will stack with global sound settings and clip volume\n\t\tfloat fadeVolume {get; set;}\n\n\t\t//starts playback of desired track\n\t\tvoid PlaySceneSong(int index);\n\t\t\n\t\tvoid Play(AudioPlaybackProperties properties);\n\t\t//stops playback\n\t\tvoid Stop();\n\t}\n}",
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem/Music/IMusicController.cs",
+			"file_size": 456,
+			"file_write_time": 132573815747288872,
 			"settings":
 			{
-				"buffer_size": 766,
+				"buffer_size": 448,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -532,7 +535,7 @@
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem/Music/MusicController.cs",
 			"settings":
 			{
-				"buffer_size": 3505,
+				"buffer_size": 2489,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -541,7 +544,7 @@
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem/AudioPlaybackProperties.cs",
 			"settings":
 			{
-				"buffer_size": 770,
+				"buffer_size": 741,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -916,7 +919,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -925,15 +928,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 766,
+						"buffer_size": 448,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								384,
-								727
+								372,
+								372
 							]
 						],
 						"settings":
@@ -941,11 +944,11 @@
 							"syntax": "Packages/C#/C#.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 63.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -954,15 +957,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3505,
+						"buffer_size": 2489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2975,
-								2975
+								0,
+								0
 							]
 						],
 						"settings":
@@ -970,10 +973,10 @@
 							"syntax": "Packages/C#/C#.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 948.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -982,15 +985,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 770,
+						"buffer_size": 741,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								543,
-								543
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1002,7 +1005,7 @@
 						"translation.y": 16.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

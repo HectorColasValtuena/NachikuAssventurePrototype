@@ -9,13 +9,13 @@ namespace ASSPhysics.AudioSystem
 	public struct AudioPlaybackProperties
 	{
 		[SerializeField]
-		public AudioClip clip = null;				//clip to play back
+		public AudioClip clip;				//clip to play back
 		[SerializeField]
-		public RandomRangeFloat volume = null;		//volume modifier for this clip
+		public RandomRangeFloat volume;		//volume modifier for this clip
 		[SerializeField]
-		public bool loop = false;				//should the clip loop
+		public bool loop;				//should the clip loop
 		[SerializeField]
-		public RandomRangeFloat pitch = null;		//pitch
+		public RandomRangeFloat pitch;		//pitch
 
 		public AudioPlaybackProperties (
 			AudioClip _clip,

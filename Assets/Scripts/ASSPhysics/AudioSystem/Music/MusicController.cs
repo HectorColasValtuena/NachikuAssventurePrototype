@@ -7,33 +7,25 @@ namespace ASSPhysics.AudioSystem.Music
 		ASSPhysics.ControllerSystem.MonoBehaviourControllerBase<IMusicController>,
 		IMusicController
 	{
-	//constant definitions
-		//playback properties object representing no playback
-		private static readonly AudioPlaybackProperties nullPlayback = new AudioPlaybackProperties();
-	//ENDOF constant definitions
 
-	//private fields
+	//private fields and properties
 		//managed AudioSource component
 		[SerializeField]
 		private AudioSource audioSource = null;
 		//serialized list of song presets
 		[SerializeField]
-		private AudioPlaybackProperties[] scenePresets = null;
+		private AudioPlaybackProperties[] playbackPresets = null;
 
 		//currently active playback
-		private AudioPlaybackProperties currentPlayback = nullPlayback;
+		private AudioPlaybackProperties currentPlayback;
 
 		//currently generated playback volume
 		private float playbackVolume = 1.0f;
 
-		//fields used by transitions
- 	//ENDOF private fields
-
-	//private properties
 		//easy getter for global volume settings 
 		private float globalVolume
 		{ get { /*[TO-DO]*/ return 1.0f; /*[TO-DO]*/ }} //////////////////////////////////////////////////////////////////////////////
-	//ENDOF private properties
+ 	//ENDOF private fields and properties
 
 	//IMusicController implementation
 		//set this to adjust fade in-out progress. Will stack with global sound settings and clip volume
@@ -44,31 +36,19 @@ namespace ASSPhysics.AudioSystem.Music
 			set { _fadeVolume = value; }
 		}
 
-		//starts playback of level track if not already playing
-		public void PlaySceneSong(int sceneIndex)
+		//starts playback of desired track
+		public void Play(int index)
 		{ 
-			if (scenePresets == null || scenePresets.Length == 0) { Debug.LogError("MusicController.PlaySceneSong(int): scenePresets empty"); return; }
-			if (sceneIndex < 0 || sceneIndex >= scenePresets.Length) { Debug.LogError("MusicController.PlaySceneSong(int): can't take value: " + sceneIndex); return; }
-			PlaySong(
-				properties:scenePresets[sceneIndex],
-				forceRestart: true,
-				fadeWithCurtain: true
-			);
+			if (playbackPresets == null || playbackPresets.Length == 0) { Debug.LogError("MusicController.Play(int): playbackPresets empty"); return; }
+			Play(playbackPresets[index]);
 		}
-
-		//starts playback of desired track.
-		//If forceRestart is true, attempting to play the same clip will restart playback
-		//if fadeWithCurtain is true, song change will happen with a volume fade in-out synched with scene transition
-		public void PlaySong(
-			AudioPlaybackProperties properties,
-			bool forceRestart = false,
-			bool fadeWithCurtain = false
-		) {
-			//cancel playback if no audio clip
-			if (properties.clip == null) { Debug.LogError("MusicController.PlaySong(properties): received null clip"); return; }
-			
+		public void Play(AudioPlaybackProperties properties)
+		{
 			//if requesting same song ignore request
-			if (audioSource.isPlaying && forceRestart && currentPlayback.clip == properties.clip) { return; }
+			if (audioSource.isPlaying && currentPlayback.clip == properties.clip)
+			{
+				return;
+			}
 
 			currentPlayback = properties;
 			audioSource.clip = properties.clip;
