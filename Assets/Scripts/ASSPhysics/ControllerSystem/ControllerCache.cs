@@ -3,7 +3,7 @@ using ICurtainController = ASSPhysics.SceneSystem.ICurtainController;
 using IViewportController = ASSPhysics.CameraSystem.IViewportController;
 using IInputController = ASSPhysics.InputSystem.IInputController;
 using IToolManager = ASSPhysics.HandSystem.Managers.IToolManager;
-using IMusicController = ASSPhysics.AudioSystem.IMusicController;
+using IMusicController = ASSPhysics.AudioSystem.Music.IMusicController;
 
 namespace ASSPhysics.ControllerSystem
 {
