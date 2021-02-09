@@ -13,8 +13,21 @@ namespace ASSPhysics.AudioSystem
 		[SerializeField]
 		public RandomRangeFloat volume;		//volume modifier for this clip
 		[SerializeField]
-		public bool looping;				//should the clip loop
+		public bool loop;				//should the clip loop
 		[SerializeField]
 		public RandomRangeFloat pitch;		//pitch
+
+		public AudioPlaybackProperties (
+			AudioClip _clip,
+			RandomRangeFloat _volume,
+			bool _loop,
+			RandomRangeFloat _pitch
+		) {
+			clip = _clip;
+			volume = _volume;
+			loop = _loop;
+			pitch = _pitch;
+
+		}
 	}
 }
