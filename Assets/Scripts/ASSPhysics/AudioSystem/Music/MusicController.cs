@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ASSPhysics.AudioSystem
+namespace ASSPhysics.AudioSystem.Music
 {
 //Manages music playback
 	public class MusicController :

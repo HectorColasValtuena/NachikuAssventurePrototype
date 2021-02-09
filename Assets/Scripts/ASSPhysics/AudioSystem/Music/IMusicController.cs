@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ASSPhysics.AudioSystem
+namespace ASSPhysics.AudioSystem.Music
 {
 	public interface IMusicController : 
 		ASSPhysics.ControllerSystem.IController

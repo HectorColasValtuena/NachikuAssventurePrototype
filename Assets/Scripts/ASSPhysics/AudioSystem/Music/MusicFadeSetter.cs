@@ -2,7 +2,7 @@
 
 using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
-namespace ASSPhysics.AudioSystem
+namespace ASSPhysics.AudioSystem.Music
 {
 	public class MusicFadeSetter : MonoBehaviour
 	{
@@ -11,7 +11,7 @@ namespace ASSPhysics.AudioSystem
 
 		public void Update ()
 		{
-
+			
 		}
 	}
 }

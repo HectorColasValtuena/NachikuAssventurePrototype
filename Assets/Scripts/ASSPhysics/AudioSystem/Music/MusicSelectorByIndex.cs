@@ -2,7 +2,7 @@
 
 using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
-namespace ASSPhysics.AudioSystem
+namespace ASSPhysics.AudioSystem.Music
 {
 	public class MusicSelectorByIndex : MonoBehaviour
 	{
