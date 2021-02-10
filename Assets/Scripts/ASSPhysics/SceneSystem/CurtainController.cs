@@ -23,6 +23,9 @@ namespace ASSPhysics.SceneSystem
 		private Transform leftSheetLowerNode = null;
 		//ENDOF serialized fields
 
+		[SerializeField]
+		private float _openingProgress = 0.0f;
+
 		private Animator curtainAnimator;
 		private Animator[] spotlightAnimators;
 	//ENDOF private fields and properties
@@ -34,6 +37,9 @@ namespace ASSPhysics.SceneSystem
 			get { return curtainAnimator.GetBool(AnimationNames.Curtains.open); }
 			set { SetOpen(value); }
 		}
+
+		//returns the state of the transition between 1 and 0, 0 meaning fully closed 1 meaning fully opened
+		public float openingProgress { get { return _openingProgress; }}
 
 		//returns true if curtain has actually reached a closed state
 		public bool isCompletelyClosed

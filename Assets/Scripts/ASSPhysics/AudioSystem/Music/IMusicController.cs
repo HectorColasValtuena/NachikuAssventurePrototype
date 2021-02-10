@@ -5,10 +5,6 @@ namespace ASSPhysics.AudioSystem.Music
 	public interface IMusicController : 
 		ASSPhysics.ControllerSystem.IController
 	{
-		//?volume?
-		//set this to adjust fade in-out progress. Will stack with global sound settings and clip volume
-		float fadeVolume {get; set;}
-
 		//starts playback of level track if not already playing
 		void PlaySceneSong(int sceneIndex);
 		//starts playback of desired track.

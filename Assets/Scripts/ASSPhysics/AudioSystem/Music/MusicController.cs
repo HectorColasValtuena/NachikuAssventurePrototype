@@ -38,12 +38,12 @@ namespace ASSPhysics.AudioSystem.Music
 
 	//IMusicController implementation
 		//set this to adjust fade in-out progress. Will stack with global sound settings and clip volume
-		private float _fadeVolume = 1.0f;
-		public float fadeVolume
+		private float fadeVolume = 1.0f;
+		/*public float fadeVolume
 		{
 			get { return _fadeVolume; }
-			set { _fadeVolume = value; }
-		}
+			private set { _fadeVolume = value; }
+		}*/
 
 		//starts playback of level track if not already playing
 		public void PlaySceneSong(int sceneIndex)
@@ -87,7 +87,13 @@ namespace ASSPhysics.AudioSystem.Music
 				//wait for song fade-out
 				if (fadeWithCurtain)
 				{
-
+					while (
+						!ControllerCache.curtainController.isCompletelyClosed
+						//&& ControllerCache.curtainController.openingProgress > 0f
+					) {
+						fadeVolume = ControllerCache.curtainController.openingProgress;
+						yield return null;
+					}
 				}
 
 				//swap song
@@ -96,10 +102,14 @@ namespace ASSPhysics.AudioSystem.Music
 				//wait for song fade-in
 				if (fadeWithCurtain)
 				{
-
+					while (ControllerCache.curtainController.openingProgress < 1.0f)
+					{
+						fadeVolume = ControllerCache.curtainController.openingProgress;
+					}
 				}
 
 				//done
+				fadeVolume = 1.0f;
 				transitionToPlayback = null;
 			}
 
