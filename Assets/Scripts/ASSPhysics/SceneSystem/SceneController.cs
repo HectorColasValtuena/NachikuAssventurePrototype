@@ -62,7 +62,13 @@ namespace ASSPhysics.SceneSystem
 	//private methods
 		private IEnumerator ChangeSceneAsync (int targetScene, float minimumWait = 0.0f)
 		{
+			//lock on a busy state to avoid stacked coroutines
 			busy = true;
+
+			//start song change
+			ControllerCache.musicController.PlaySceneSong(targetScene);
+
+
 			ControllerCache.curtainController.open = false;	//close the curtains
 
 			//wait until curtains are closed

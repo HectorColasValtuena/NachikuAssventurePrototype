@@ -544,19 +544,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 982720707}
-  playbackPresets:
-  - clip: {fileID: 8300000, guid: 4e87c607007018043ab3ade3334acf75, type: 3}
+  scenePresets:
+  - clip: {fileID: 0}
     volume:
-      min: 0.025
-      max: 0.025
+      min: 0
+      max: 0
+    loop: 0
+    pitch:
+      min: 1
+      max: 1
+  - clip: {fileID: 0}
+    volume:
+      min: 0
+      max: 0
+    loop: 0
+    pitch:
+      min: 1
+      max: 1
+  - clip: {fileID: 8300000, guid: a46d8818ec7485d41b2a6dd0c60243af, type: 3}
+    volume:
+      min: 0.1
+      max: 0.1
+    loop: 1
+    pitch:
+      min: 1
+      max: 1
+  - clip: {fileID: 8300000, guid: a46d8818ec7485d41b2a6dd0c60243af, type: 3}
+    volume:
+      min: 0.1
+      max: 0.1
+    loop: 1
+    pitch:
+      min: 1
+      max: 1
+  - clip: {fileID: 8300000, guid: a46d8818ec7485d41b2a6dd0c60243af, type: 3}
+    volume:
+      min: 0.1
+      max: 0.1
+    loop: 1
+    pitch:
+      min: 1
+      max: 1
+  - clip: {fileID: 8300000, guid: a46d8818ec7485d41b2a6dd0c60243af, type: 3}
+    volume:
+      min: 0.1
+      max: 0.1
+    loop: 1
+    pitch:
+      min: 1
+      max: 1
+  - clip: {fileID: 8300000, guid: a46d8818ec7485d41b2a6dd0c60243af, type: 3}
+    volume:
+      min: 0.1
+      max: 0.1
     loop: 1
     pitch:
       min: 1
       max: 1
   - clip: {fileID: 8300000, guid: 5f5f6472bcd4c154eab8d351d3e29615, type: 3}
     volume:
+      min: 0.2
+      max: 0.2
+    loop: 1
+    pitch:
       min: 1
       max: 1
+  - clip: {fileID: 8300000, guid: a46d8818ec7485d41b2a6dd0c60243af, type: 3}
+    volume:
+      min: 0.1
+      max: 0.1
     loop: 1
     pitch:
       min: 1
@@ -1396,7 +1452,6 @@ GameObject:
   - component: {fileID: 1963693312}
   - component: {fileID: 1963693314}
   - component: {fileID: 1963693313}
-  - component: {fileID: 1963693315}
   m_Layer: 19
   m_Name: Curtains
   m_TagString: Untagged
@@ -1472,19 +1527,6 @@ MonoBehaviour:
   leftSheetUpperNode: {fileID: 2498800278712927825}
   rightSheetLowerNode: {fileID: 1239027658}
   leftSheetLowerNode: {fileID: 2498800278712927824}
---- !u!114 &1963693315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963693310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 892471860ed271e4bbcd2a73fa2debec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicFadeVolume: 0
 --- !u!4 &1969755696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5548706526475424036, guid: c089ecc6cdddc8749a8bad0674765e57, type: 3}

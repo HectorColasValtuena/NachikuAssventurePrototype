@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+using IEnumerator = System.Collections.IEnumerator;
+
+using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
+
 namespace ASSPhysics.AudioSystem.Music
 {
 //Manages music playback
@@ -7,11 +11,6 @@ namespace ASSPhysics.AudioSystem.Music
 		ASSPhysics.ControllerSystem.MonoBehaviourControllerBase<IMusicController>,
 		IMusicController
 	{
-	//constant definitions
-		//playback properties object representing no playback
-		private static readonly AudioPlaybackProperties nullPlayback = new AudioPlaybackProperties();
-	//ENDOF constant definitions
-
 	//private fields
 		//managed AudioSource component
 		[SerializeField]
@@ -21,12 +20,14 @@ namespace ASSPhysics.AudioSystem.Music
 		private AudioPlaybackProperties[] scenePresets = null;
 
 		//currently active playback
-		private AudioPlaybackProperties currentPlayback = nullPlayback;
+		private AudioPlaybackProperties currentPlayback = null;
 
 		//currently generated playback volume
 		private float playbackVolume = 1.0f;
 
 		//fields used by transitions
+		private bool inTransition { get { return transitionToPlayback != null; }}
+		private AudioPlaybackProperties transitionToPlayback = null;
  	//ENDOF private fields
 
 	//private properties
@@ -59,25 +60,59 @@ namespace ASSPhysics.AudioSystem.Music
 		//starts playback of desired track.
 		//If forceRestart is true, attempting to play the same clip will restart playback
 		//if fadeWithCurtain is true, song change will happen with a volume fade in-out synched with scene transition
-		public void PlaySong(
+		public void PlaySong (
 			AudioPlaybackProperties properties,
 			bool forceRestart = false,
 			bool fadeWithCurtain = false
 		) {
 			//cancel playback if no audio clip
-			if (properties.clip == null) { Debug.LogError("MusicController.PlaySong(properties): received null clip"); return; }
+			if (properties == null || properties.clip == null) { Debug.LogError("MusicController.PlaySong(properties): properties null or contains null clip"); return; }
 			
 			//if requesting same song ignore request
 			if (audioSource.isPlaying && forceRestart && currentPlayback.clip == properties.clip) { return; }
 
-			currentPlayback = properties;
-			audioSource.clip = properties.clip;
-			audioSource.loop = properties.loop;
-			audioSource.pitch = properties.pitch.Generate();
-			playbackVolume = properties.volume.Generate();
-			UpdateVolume();
+			StartCoroutine(PlaySongCoroutine());
 
-			audioSource.Play();
+			IEnumerator PlaySongCoroutine ()
+			{
+				//ensure no stacked transitions
+				if (inTransition)
+				{
+					Debug.LogWarning("PlaySongCoroutine(): can't play new song, already waiting for transition");
+					yield break;
+				};
+
+				transitionToPlayback = properties;
+
+				//wait for song fade-out
+				if (fadeWithCurtain)
+				{
+
+				}
+
+				//swap song
+				SetSong();
+
+				//wait for song fade-in
+				if (fadeWithCurtain)
+				{
+
+				}
+
+				//done
+				transitionToPlayback = null;
+			}
+
+			void SetSong ()
+			{
+				currentPlayback = properties;
+				audioSource.clip = properties.clip;
+				audioSource.loop = properties.loop;
+				audioSource.pitch = properties.pitch.Generate();
+				playbackVolume = properties.volume.Generate();
+				UpdateVolume();
+				audioSource.Play();
+			}
 		}
 
 		//stops playback
