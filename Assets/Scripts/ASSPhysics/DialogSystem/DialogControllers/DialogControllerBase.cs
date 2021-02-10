@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 using IEnumerator = System.Collections.IEnumerator;
-using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
 namespace ASSPhysics.DialogSystem.DialogControllers
 {
