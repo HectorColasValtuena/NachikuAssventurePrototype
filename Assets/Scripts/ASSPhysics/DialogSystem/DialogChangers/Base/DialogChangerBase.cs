@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-using TDialogController = ASSPhysics.DialogSystem.DialogControllers.DialogControllerBase;
+using IDialogController = ASSPhysics.DialogSystem.DialogControllers.IDialogController;
 using TDialogManager = ASSPhysics.DialogSystem.DialogManagerBase;
 
 namespace ASSPhysics.DialogSystem.DialogChangers
@@ -10,7 +10,7 @@ namespace ASSPhysics.DialogSystem.DialogChangers
 	//serialized fields
 		[SerializeField]
 		[Tooltip("IDialogController to activate on call")]
-		protected TDialogController defaultTargetDialog = null;
+		protected ASSPhysics.DialogSystem.DialogControllers.DialogControllerSimple defaultTargetDialog = null;
 
 		//if no dialog manager has been set try to find one in our parents or children
 		[SerializeField]
@@ -32,20 +32,20 @@ namespace ASSPhysics.DialogSystem.DialogChangers
 	//public methods
 		//requests a dialogManager to activate target dialog
 		public void ChangeDialog () { ChangeDialog(defaultTargetDialog); }
-		public void ChangeDialog (TDialogController dialog)
+		public void ChangeDialog (IDialogController dialog)
 		{
 			//Debug.Log("Changing dialog");
 			if (delay <= 0){ DoChangeDialog(dialog); }
 			else { StartCoroutine(DelayedChangeDialog(dialog, delay)); }
 		}
 
-		private System.Collections.IEnumerator DelayedChangeDialog (TDialogController dialog, float delayLength)
+		private System.Collections.IEnumerator DelayedChangeDialog (IDialogController dialog, float delayLength)
 		{
 			yield return new UnityEngine.WaitForSeconds(delayLength);
 			DoChangeDialog(dialog);
 		}
 
-		private void DoChangeDialog (TDialogController dialog)
+		private void DoChangeDialog (IDialogController dialog)
 		{
 			dialogManager.SetActiveDialog(dialog);
 		}
