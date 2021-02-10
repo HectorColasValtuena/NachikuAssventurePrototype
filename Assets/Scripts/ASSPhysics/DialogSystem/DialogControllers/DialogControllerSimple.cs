@@ -5,7 +5,7 @@ using AnimationNames = ASSPhysics.Constants.AnimationNames;
 
 namespace ASSPhysics.DialogSystem.DialogControllers
 {
-	public class DialogControllerBase : MonoBehaviour, IDialogController
+	public class DialogControllerSimple : MonoBehaviour, IDialogController
 	{
 	//serialized fields
 		[SerializeField]
