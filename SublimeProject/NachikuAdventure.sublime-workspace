@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerNestedPropagator.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/IDialogController.cs",
 			"settings":
 			{
-				"buffer_size": 152,
+				"buffer_size": 257,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -532,34 +532,28 @@
 			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerBase.cs",
 			"settings":
 			{
-				"buffer_size": 1818,
+				"buffer_size": 831,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogManagerBase.cs",
+			"contents": "using UnityEngine;\n\nnamespace ASSPhysics.DialogSystem.DialogControllers\n{\n\tpublic class DialogControllerSimpleAnimator : DialogControllerBase\n\t{\n\t//serialized fields\n\t\t[SerializeField]\n\t\tprotected Animator animator;\n\t//ENDOF serialized fields\n\n\t//private fields and properties\n\t\tprotected DParameterlessDelegate queuedCallback = null;\n\t//ENDOF private fields and properties\n\n\t//IDialogController implementation overrides\n\t\tpublic override void AnimatedDisable (DParameterlessDelegate finishingCallback)\n\t\t{\n\t\t\tDebug.Log(\"activeDialog.AnimatedDisable\");\n\t\t\tif (closing) { return; }\n\t\t\tclosing = true;\n\t\t\tqueuedCallback = finishingCallback;\n\t\t\tanimator.SetTrigger(AnimationNames.Dialog.close);\n\t\t}\n\t//ENDOF IDialogController implementation\n\n\t//MonoBehaviour lifecycle implementation\n\t\tpublic void Awake ()\n\t\t{\n\t\t\tif (animator == null) { animator = GetComponent<Animator>(); }\n\t\t}\n\n\t\tpublic void OnEnable ()\n\t\t{\n\t\t\tclosing = false;\n\t\t}\n\t//ENDOF MonoBehaviour lifecycle implementation\n\n\t//public methods\n\t\tpublic void ClosingAnimationFinishedCallback ()\n\t\t{\n\t\t\tDebug.Log(\"Closing animation finished\");\n\t\t\tStartCoroutine(FinalizeClosing());\n\t\t}\n\t//ENDOF public methods\n\n\t//private methods\n\t\tprivate IEnumerator FinalizeClosing ()\n\t\t{\n\t\t\t//one-frame delay introduced to guarantee next dialog's animator has a chance to resize the panel before frame\n\t\t\tyield return new WaitForEndOfFrame();\n\t\t\tgameObject.SetActive(false);\n\t\t\tif (queuedCallback != null)\n\t\t\t{\n\t\t\t\tqueuedCallback.Invoke();\n\t\t\t}\n\t\t}\n\t//ENDOF private methods\n\t}\n}",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerSimpleAnimator.cs",
+			"file_size": 1616,
+			"file_write_time": 132574293178915873,
 			"settings":
 			{
-				"buffer_size": 1861,
+				"buffer_size": 1519,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogManager.cs",
+			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerNestedPropagator.cs",
 			"settings":
 			{
-				"buffer_size": 222,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerSimple.cs",
-			"settings":
-			{
-				"buffer_size": 142,
+				"buffer_size": 162,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -606,6 +600,8 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem/Music",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/BaseInspectors",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSpriteRigging/Riggers",
@@ -619,8 +615,10 @@
 	],
 	"file_history":
 	[
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogManagerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogChangers/Base/DialogChangerBase.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerSimple.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogManager.cs",
+		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogManagerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/ICurtainController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/CurtainController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SceneSystem/LauncherController.cs",
@@ -629,7 +627,6 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem/Music/IMusicController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem/Music/MusicController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/IDialogController.cs",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogManager.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/AudioSystem/Music/MusicFadeSetter.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/DEV/DummyCurtainController.cs",
@@ -745,8 +742,7 @@
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/HandSystem/Actions/ActionBase.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/ProgressionSystem/IProgressionController.cs",
 		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/SettingSystem/ActionSettings.cs",
-		"/C/Users/Mephi/Documents/Credenciales-Hector-Devtrance.txt",
-		"/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSistant/ASSMath/RectMath.cs"
+		"/C/Users/Mephi/Documents/Credenciales-Hector-Devtrance.txt"
 	],
 	"find":
 	{
@@ -935,111 +931,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerNestedPropagator.cs",
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/IDialogController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 152,
+						"buffer_size": 257,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								147,
-								147
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerBase.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1818,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								575,
-								575
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogManagerBase.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1861,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/IDialogManager.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 222,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								92,
+								92
 							]
 						],
 						"settings":
@@ -1054,20 +963,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerSimple.cs",
+					"buffer": 1,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerBase.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 142,
+						"buffer_size": 831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19,
-								19
+								733,
+								733
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 33.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerSimpleAnimator.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								739,
+								981
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Projects/Nachiku Adventure Prototype/2D Rigging experiment UnityProject/Assets/Scripts/ASSPhysics/DialogSystem/DialogControllers/DialogControllerNestedPropagator.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
 							]
 						],
 						"settings":
@@ -1079,7 +1046,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
