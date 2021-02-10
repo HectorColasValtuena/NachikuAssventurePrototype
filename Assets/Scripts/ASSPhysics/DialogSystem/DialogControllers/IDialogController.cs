@@ -4,7 +4,7 @@
 	{
 		void Enable ();
 		void AnimatedDisable (DParameterlessDelegate finishingCallback);
-		void ForceDisable ();	
+		void ForceDisable ();
 	}
 
 	public delegate void DParameterlessDelegate ();	
