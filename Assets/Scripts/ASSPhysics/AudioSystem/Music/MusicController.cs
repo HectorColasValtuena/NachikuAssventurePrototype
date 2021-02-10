@@ -66,7 +66,7 @@ namespace ASSPhysics.AudioSystem.Music
 			bool fadeWithCurtain = false
 		) {
 			//cancel playback if no audio clip
-			if (properties == null || properties.clip == null) { Debug.LogError("MusicController.PlaySong(properties): properties null or contains null clip"); return; }
+			if (properties == null) { Debug.LogError("MusicController.PlaySong(properties): properties null"); return; }
 			
 			//if requesting same song ignore request
 			if (audioSource.isPlaying && forceRestart && currentPlayback.clip == properties.clip) { return; }
@@ -121,8 +121,17 @@ namespace ASSPhysics.AudioSystem.Music
 				audioSource.loop = properties.loop;
 				audioSource.pitch = properties.pitch.Generate();
 				playbackVolume = properties.volume.Generate();
-				UpdateVolume();
-				audioSource.Play();
+
+				if (properties.clip != null)
+				{
+					UpdateVolume();
+					audioSource.Play(); 
+				}
+				else 
+				{
+					Stop();
+				}
+
 			}
 		}
 
