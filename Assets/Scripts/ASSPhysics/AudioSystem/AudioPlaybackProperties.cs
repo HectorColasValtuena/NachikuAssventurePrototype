@@ -6,7 +6,7 @@ namespace ASSPhysics.AudioSystem
 {
 	//container object with settings for an audiosource playback
 	[System.Serializable]
-	public struct AudioPlaybackProperties
+	public class AudioPlaybackProperties
 	{
 		[SerializeField]
 		public AudioClip clip = null;				//clip to play back
