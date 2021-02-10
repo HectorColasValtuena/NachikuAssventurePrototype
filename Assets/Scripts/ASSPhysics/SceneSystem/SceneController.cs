@@ -65,11 +65,11 @@ namespace ASSPhysics.SceneSystem
 			//lock on a busy state to avoid stacked coroutines
 			busy = true;
 
+			//close the curtains
+			ControllerCache.curtainController.open = false;
+
 			//start song change
 			ControllerCache.musicController.PlaySceneSong(targetScene);
-
-
-			ControllerCache.curtainController.open = false;	//close the curtains
 
 			//wait until curtains are closed
 			while (!ControllerCache.curtainController.isCompletelyClosed)

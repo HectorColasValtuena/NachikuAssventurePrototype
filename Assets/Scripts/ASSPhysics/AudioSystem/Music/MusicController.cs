@@ -105,6 +105,7 @@ namespace ASSPhysics.AudioSystem.Music
 					while (ControllerCache.curtainController.openingProgress < 1.0f)
 					{
 						fadeVolume = ControllerCache.curtainController.openingProgress;
+						yield return null;
 					}
 				}
 

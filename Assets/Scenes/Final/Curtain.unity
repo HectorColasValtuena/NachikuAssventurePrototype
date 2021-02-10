@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f016ce8ffb585f4ab599bc7b4ec2aac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 982720707}
+  audioSource: {fileID: 0}
   scenePresets:
   - clip: {fileID: 0}
     volume:
@@ -1527,6 +1527,7 @@ MonoBehaviour:
   leftSheetUpperNode: {fileID: 2498800278712927825}
   rightSheetLowerNode: {fileID: 1239027658}
   leftSheetLowerNode: {fileID: 2498800278712927824}
+  _openingProgress: 0
 --- !u!4 &1969755696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5548706526475424036, guid: c089ecc6cdddc8749a8bad0674765e57, type: 3}
