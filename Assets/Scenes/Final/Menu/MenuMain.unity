@@ -8104,7 +8104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Name
-      value: Intro (1)
+      value: Intro (1)x
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
@@ -17512,7 +17512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Name
-      value: IntroPost-drag (4)
+      value: IntroPost-drag (4)x
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
@@ -18831,7 +18831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3080553170014961232, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
       propertyPath: m_Name
-      value: Intro (3)
+      value: Intro (3)x
       objectReference: {fileID: 0}
     - target: {fileID: 3080553170014961232, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
       propertyPath: m_IsActive
@@ -22499,8 +22499,10 @@ PrefabInstance:
       objectReference: {fileID: 500161302}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
-      value: "\xA1Hola! Soy Nachiku, pero eso ya lo sabes... t\xFA me creaste hehehe.\nHaz
-        click aqu\xED y te mostrar\xE9 mi demo :3"
+      value: 'Greetings! The name''s Nachiku and I''ll be your hostess tonight.
+
+        Just
+        tap here and I''ll show you how to play with me :3'
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22526,13 +22528,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Name
       value: Intro (0)
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
@@ -23993,7 +23999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Name
-      value: Intro (2)
+      value: Intro (2)x
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
