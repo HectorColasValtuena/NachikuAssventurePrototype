@@ -10,7 +10,7 @@ namespace ASSPhysics.DialogSystem.DialogChangers
 	//serialized fields
 		[SerializeField]
 		[Tooltip("IDialogController to activate on call")]
-		protected ASSPhysics.DialogSystem.DialogControllers.DialogControllerSimple defaultTargetDialog = null;
+		protected ASSPhysics.DialogSystem.DialogControllers.DialogControllerBase defaultTargetDialog = null;
 
 		//if no dialog manager has been set try to find one in our parents or children
 		[SerializeField]
