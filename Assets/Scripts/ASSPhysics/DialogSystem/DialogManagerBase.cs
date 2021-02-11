@@ -25,6 +25,10 @@ namespace ASSPhysics.DialogSystem
 			public void Awake ()
 			{
 				instance = this;
+			}
+
+			public void Start ()
+			{
 				ResetDialogs();
 			}
 		//ENDOF MonoBehaviour lifecycle
