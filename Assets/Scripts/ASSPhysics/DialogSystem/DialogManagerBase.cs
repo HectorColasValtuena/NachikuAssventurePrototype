@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
+using IEnumerator = System.Collections.IEnumerator;
+
 using IDialogController = ASSPhysics.DialogSystem.DialogControllers.IDialogController;
+
 namespace ASSPhysics.DialogSystem
 {
 	public class DialogManagerBase : MonoBehaviour, IDialogManager
@@ -61,12 +64,19 @@ namespace ASSPhysics.DialogSystem
 
 			private void DelegateOpenNextDialog ()
 			{
-				Debug.Log("Dialog closed callback");
-				activeDialog = waitingDialog;
-				if (waitingDialog != null)
+				StartCoroutine(DelegateOpenNextDialogCoroutine());
+
+				IEnumerator DelegateOpenNextDialogCoroutine ()
 				{
-					waitingDialog.Enable();
-					waitingDialog = null;
+					//one-frame delay introduced to guarantee next dialog's animator has a chance to resize the panel before frame
+					yield return new WaitForEndOfFrame();
+
+					activeDialog = waitingDialog;
+					if (waitingDialog != null)
+					{
+						waitingDialog.Enable();
+						waitingDialog = null;
+					}
 				}
 			}
 		//ENDOF private method definition
