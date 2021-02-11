@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 
 using System.Collections.Generic;
+using IEnumerator = System.Collections.IEnumerator;
 
 namespace ASSPhysics.DialogSystem.DialogControllers
 {
-
 	public class DialogControllerNestedPropagator : DialogControllerBase
 	{
 	//private fields and properties
 		private IDialogController[] childDialogArray = null;
+
+		private int closuresLeft = 0; //number of children left to close
 	//ENDOF private fields and properties
 
 	//IDialogController inherited overrides
@@ -22,9 +24,14 @@ namespace ASSPhysics.DialogSystem.DialogControllers
 			}
 		}
 
-		protected override void PerformClosure (DParameterlessDelegate finishingCallback)
+		protected override void PerformClosure ()
 		{
-			/*[TO-DO]*/
+			closuresLeft = childDialogArray.Length;
+
+			foreach (IDialogController dialog in childDialogArray)
+			{
+				dialog.AnimatedDisable(DelegateChildFinishedClosing);
+			}
 		}
 
 		public override void ForceDisable ()
@@ -62,6 +69,21 @@ namespace ASSPhysics.DialogSystem.DialogControllers
 			}
 
 			childDialogArray = foundDialogList.ToArray();
+		}
+
+		private void DelegateChildFinishedClosing ()
+		{
+			closuresLeft--;
+			if (closuresLeft <= 0)
+			{
+				FinishedClosingChildren();
+			}
+		}
+
+		private void FinishedClosingChildren ()
+		{
+			base.ForceDisable();	//invoke the base version of forcedisable to avoid propagating forceDisable calls twice
+			InvokeFinishingCallback();
 		}
 	//ENDOF private method implementation
 	}
