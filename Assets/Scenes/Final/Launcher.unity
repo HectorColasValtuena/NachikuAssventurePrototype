@@ -270,13 +270,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1224841237}
+  - {fileID: 1961268247}
   m_Father: {fileID: 1632614673}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 5, y: -5}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &372076735
 MonoBehaviour:
@@ -596,26 +597,27 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "!Hi! First and foremost, thank you for giving me a chance by seeing this.\nI'm
     Hector Col\xE1s Valtue\xF1a, an indie developer, and it took me quite an effort
-    to put this together.\n\nThis is a practical demo/prototype of the \"Animated
-    Stretchable Sprites engine\".\nIt's intended as a sample of the kind of BRUTAL
-    porn videogame we could make, with YOUR name.\n\nYou'll love it. Please, after
-    trying it out contact me back at HECTORCOLASVALTUENA@GMAIL.COM\nIt'd be a dream
-    come true to publish a game with Gmeen's name  and art.\nI'd also like to split
-    profits fair and equal, I'm here to make art not exploit anyone :)\n\r\nIMPORTANT
-    DISCLAIMERS\n>>   I own none of the art portrayed here. All of it is used under
-    either free-use license or explicit permission, and without comercial intent.\n>  
-    Particularly, the two first drawings featured here were authored by a great artist,
-    Nasuki (Paula Valiente).\nShe very generously let me use her  art for private
-    demo purposes. Thanks, Nasuki!\n> I also included a sample using one if my favourite
-    drawings of yours. It's only intended as a private sample. None of your property
-    will ever be published without your explicit consent.\n\n>>   This is just a
-    prototype. No behaviour is final, these are only very simple samples. Furthermore,
-    I am no artist yet I had to patch and slice the featured drawings to the best
-    of my skill... to hillarious results.\n>> If you're running this in a browser,
-    be warned performance is ABYSMAL. Particularly in chrome. Desktop runs smoothly.\n\n>>
-    This is a PRIVATE demo. Not only I don't want to share this publicly yet, as
-    mentioned other artists shared or licensed this for private use only. Please,
-    do not share. I beg not only for me but for respect to the artists :)"
+    to put this together.\n\nThis is a practical demo/prototype of the \"PHysically
+    AnimaTAble Stretchable Sprites engine\".\nIt's intended as a sample of the kind
+    of BRUTAL porn videogame we could make together, with YOUR name!\n\nYou'll love
+    it. Please, after trying it out contact me back at HECTORCOLASVALTUENA@GMAIL.COM\nIt'd
+    be a dream come true to publish a game with Gmeen's name  and art.\nI'd also
+    like to split profits fair and equal, I'm here to make art not exploit anyone
+    :)\n\r\nIMPORTANT DISCLAIMERS\n>>   I own none of the art portrayed here. All
+    of it is used under either free-use license or explicit permission, and without
+    comercial intent.\n>   Particularly, the two first drawings featured here were
+    authored by a great artist, Nasuki (Paula Valiente).\nShe very generously let
+    me use her  art for private demo purposes. Thanks, Nasuki!\n> I also included
+    a sample using one if my favourite drawings of yours. It's only intended as a
+    private sample. None of your property will ever be published without your explicit
+    consent.\n\n>>   This is just a prototype. No behaviour is final, these are only
+    very simple samples. Furthermore, I am no artist yet I had to patch and slice
+    the featured drawings to the best of my skill... to hillarious results.\n>> If
+    you're running this in a browser, be warned performance is ABYSMAL. Particularly
+    in chrome. Desktop runs smoothly.\n\n>> This is a PRIVATE demo. Not only I don't
+    want to share this publicly yet, as mentioned other artists shared or licensed
+    this for private use only. Please, do not share. I beg not only for me but for
+    respect to the artists :)"
 --- !u!222 &1224841239
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -949,4 +951,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710745206}
+  m_CullTransparentMesh: 0
+--- !u!1 &1961268246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961268247}
+  - component: {fileID: 1961268249}
+  - component: {fileID: 1961268248}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1961268247
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961268246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 372076734}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: -160, y: 80}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1961268248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961268246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 947aa250446ae9941963be741448901e, type: 3}
+    m_FontSize: 28
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 42
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: PHATASS engine demo
+--- !u!222 &1961268249
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961268246}
   m_CullTransparentMesh: 0
