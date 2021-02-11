@@ -17705,12 +17705,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
-      value: 'I hope you like it :3
+      value: 'Well done! I hope you like it :3
 
-        Try it out, play with me, try wagging
-        my tail!
+        Try it out, play with me,
+        try wagging my tail!
 
-        Whenever you''re ready, just tap the "Play" summoning circle.'
+        Whenever you''re ready, just tap the "Play"
+        summoning circle.'
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalPosition.x
