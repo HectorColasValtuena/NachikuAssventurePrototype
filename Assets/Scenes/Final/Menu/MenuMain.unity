@@ -8186,8 +8186,10 @@ PrefabInstance:
       objectReference: {fileID: 1780167187}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
-      value: "\xBFCan you see how I'm moving? It's not a usual animation.\nThe PHATASS
-        engine is designed around giving 2D images physics behaviours."
+      value: 'Can you see how I''m moving? It''s not a usual animation.
+
+        The
+        PHATASS engine is designed around giving 2D images physics behaviours.'
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalPosition.x
