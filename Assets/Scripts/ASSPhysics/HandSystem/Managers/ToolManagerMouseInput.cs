@@ -75,6 +75,7 @@ namespace ASSPhysics.HandSystem.Managers
 		{
 			toolList = new List<ITool>();
 
+			//wait until sceneController allows input before initializing tool list
 			while (!ControllerCache.sceneController.inputEnabled)
 			{ yield return null; }
 
