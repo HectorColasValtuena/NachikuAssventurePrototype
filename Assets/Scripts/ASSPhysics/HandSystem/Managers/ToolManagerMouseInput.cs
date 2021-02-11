@@ -41,6 +41,7 @@ namespace ASSPhysics.HandSystem.Managers
 	//ENDOF private properties
 
 	//IToolManager implementation
+		public override ITool[] tools { get { return toolList.ToArray(); }}
 		public override ITool activeTool { get { return toolList[focusedToolIndex]; }}
 	//ENDOF IToolManager implementation
 

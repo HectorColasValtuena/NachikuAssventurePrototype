@@ -1,26 +1,26 @@
 ﻿using Debug = UnityEngine.Debug;
 
-using TToolManager = ASSPhysics.HandSystem.Managers.ToolManagerBase;
-using IAction = ASSPhysics.HandSystem.Actions.IAction;
-using TTool = ASSPhysics.HandSystem.Tools.ToolBase;
+using ControllerCache = ASSPhysics.ControllerSystem.ControllerCache;
 
-using TActionGrab = ASSPhysics.HandSystem.Actions.ActionGrab;
+using ITool = ASSPhysics.HandSystem.Tools.ITool;
 
 namespace ASSPhysics.DialogSystem.DialogChangers
 {
 	public class DialogChangerOnActionGrabAutomated : DialogChangerOnConditionHeldBase
 	{
 	//serialized fields and properties
-		[UnityEngine.SerializeField]
-		private TTool[] handList = null;
+		private ITool[] toolList
+		{
+			get	{ return ControllerCache.toolManager.tools;	}
+		}
 	//ENDOF serialized fields and properties
 
 	//base class abstract method implementation
 		protected override bool CheckHeldCondition ()
 		{
-			foreach (TTool hand in handList)
+			foreach (ITool tool in toolList)
 			{
-				if (hand.auto) { return true; }
+				if (tool.auto) { return true; }
 			}
 			return false;
 		}

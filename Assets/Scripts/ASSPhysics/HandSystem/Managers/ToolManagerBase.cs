@@ -12,6 +12,7 @@ namespace ASSPhysics.HandSystem.Managers
 		IToolManager
 	{
 	//IToolManager implementation
+		public abstract ITool[] tools {get;}
 		public abstract ITool activeTool {get;}
 	//ENDOF IToolManager implementation
 
