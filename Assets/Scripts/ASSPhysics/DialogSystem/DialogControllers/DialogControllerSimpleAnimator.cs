@@ -13,13 +13,11 @@ namespace ASSPhysics.DialogSystem.DialogControllers
 	//ENDOF serialized fields
 
 	//private fields and properties
-		protected DParameterlessDelegate queuedCallback = null;
 	//ENDOF private fields and properties
 
 	//inherited abstract method implementation
-		protected override void PerformClosure (DParameterlessDelegate finishingCallback)
+		protected override void PerformClosure ()
 		{
-			queuedCallback = finishingCallback;
 			animator.SetTrigger(AnimationNames.Dialog.close);
 		}
 	//ENDOF inherited abstract method implementation
@@ -34,22 +32,12 @@ namespace ASSPhysics.DialogSystem.DialogControllers
 	//public methods
 		public void ClosingAnimationFinishedCallback ()
 		{
-			Debug.Log("Closing animation finished");
-			StartCoroutine(FinalizeClosing());
+			ForceDisable();
+			InvokeFinishingCallback();
 		}
 	//ENDOF public methods
 
-	//private methods
-		private IEnumerator FinalizeClosing ()
-		{
-			//one-frame delay introduced to guarantee next dialog's animator has a chance to resize the panel before frame
-			yield return new WaitForEndOfFrame();
-			gameObject.SetActive(false);
-			if (queuedCallback != null)
-			{
-				queuedCallback.Invoke();
-			}
-		}
+	//private methods	
 	//ENDOF private methods
 	}
 }
