@@ -8186,8 +8186,8 @@ PrefabInstance:
       objectReference: {fileID: 1780167187}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
-      value: "\xBFPuedes verme en movimiento? No es una animaci\xF3n normal y corriente,
-        tiene algo de especial..."
+      value: "\xBFCan you see how I'm moving? It's not a usual animation.\nThe PHATASS
+        engine is designed around giving 2D images physics behaviours."
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8213,13 +8213,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Name
-      value: Intro (2) accepted
+      value: Intro (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
@@ -17701,8 +17705,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
-      value: "Jiji Espero que te guste \xA1Prueba a tirame de la colita!\nCuando
-        quieras pulsa jugar (el l\xE1tigo enrollado) y te mostrar\xE9 el resto :3"
+      value: 'I hope you like it :3
+
+        Try it out, play with me, try wagging
+        my tail!
+
+        Whenever you''re ready, just tap the "Play" summoning circle.'
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17727,6 +17735,10 @@ PrefabInstance:
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Name
@@ -19043,13 +19055,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3080553169204151112, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
       propertyPath: m_Text
-      value: "Mueve la manita sobre cualquier parte de mi cuerpo (p.ej. mi cabeza).\r\nLuego
-        haz click (ver\xE1s la mano cerrarse), y sin soltar el click, \xA1arrastra
-        en la direcci\xF3n que quieras!"
+      value: 'Move your hand over any part of my body (E.G. my head).
+
+        Then
+        click (the hand will close in a grabbing fist), and without releasing...
+
+        Pull
+        in any direction!'
       objectReference: {fileID: 0}
     - target: {fileID: 3080553170014961232, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
       propertyPath: m_Name
-      value: Intro (3)x
+      value: Intro (4)x
       objectReference: {fileID: 0}
     - target: {fileID: 3080553170014961232, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
       propertyPath: m_IsActive
@@ -19086,6 +19102,10 @@ PrefabInstance:
     - target: {fileID: 3080553170014961239, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3080553170014961239, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef12897ee23ba1e4791093ae31a169b9, type: 3}
@@ -22756,7 +22776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
@@ -24188,8 +24208,7 @@ PrefabInstance:
       objectReference: {fileID: 1310330919}
     - target: {fileID: 4496373747230680932, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Text
-      value: "\xA1Puedes moverme a placer! \xA1Ag\xE1rrame de donde quieras y estira
-        sin soltar el rat\xF3n!"
+      value: So go ahead! Grab any part of my body! Tee-hee :3
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719803, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24217,7 +24236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_Name
-      value: Intro (2)x
+      value: Intro (3)x
       objectReference: {fileID: 0}
     - target: {fileID: 4496373748579719804, guid: 990a0af011c79454d9c0f97b731beb4c, type: 3}
       propertyPath: m_IsActive
@@ -32364,7 +32383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1934904954051517436, guid: f60f2a07b3498f847a32b6dc91ce783d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f60f2a07b3498f847a32b6dc91ce783d, type: 3}
