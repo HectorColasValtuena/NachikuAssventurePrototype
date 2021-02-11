@@ -17083,7 +17083,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1003415991, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_text
-      value: Jugar
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 1768121905, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -32924,7 +32924,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1003415991, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_text
-      value: Salir
+      value: Quit
       objectReference: {fileID: 0}
     - target: {fileID: 1003415991, guid: 45fc4f417d50616429bffe8c6a0db44c, type: 3}
       propertyPath: m_fontSize
