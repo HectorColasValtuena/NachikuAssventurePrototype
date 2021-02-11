@@ -18,6 +18,8 @@ namespace DEV
 			set {}
 		}
 
+		public float openingProgress { get { return 1f; }}
+
 		//returns true if curtain has actually reached a closed state
 		public bool isCompletelyClosed { get { return false; } }
 	//ENDOF ICurtainController implementation
