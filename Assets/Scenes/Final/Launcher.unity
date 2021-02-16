@@ -598,9 +598,9 @@ MonoBehaviour:
   m_Text: "!Hi! First and foremost, thank you for giving me a chance by seeing this.\nI'm
     Hector Col\xE1s Valtue\xF1a, an indie developer, and it took me quite an effort
     to put this together.\n\nThis is a practical demo/prototype of the \"PHysically
-    AnimaTAble Stretchable Sprites engine\".\nIt's intended as a sample of the kind
-    of BRUTAL porn videogame we could make together, with YOUR name!\n\nYou'll love
-    it. Please, after trying it out contact me back at HECTORCOLASVALTUENA@GMAIL.COM\nIt'd
+    AnimaTAble Stretchable Sprites\" framework.\nIt's intended as a sample of the
+    kind of BRUTAL porn videogame we could make together, with YOUR name!\n\nYou'll
+    love it. Please, after trying it out contact me back at HECTORCOLASVALTUENA@GMAIL.COM\nIt'd
     be a dream come true to publish a game with Gmeen's name  and art.\nI'd also
     like to split profits fair and equal, I'm here to make art not exploit anyone
     :)\n\r\nIMPORTANT DISCLAIMERS\n>>   I own none of the art portrayed here. All
@@ -1022,7 +1022,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PHATASS engine demo v uO.l
+  m_Text: "PHATASS framework demo v uO.l\nDemo By Hector Col\xE1s Valtue\xF1a"
 --- !u!222 &1961268249
 CanvasRenderer:
   m_ObjectHideFlags: 0
