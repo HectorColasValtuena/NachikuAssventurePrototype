@@ -42,12 +42,14 @@ namespace ASSPhysics.InputSystem
 		public float zoomDelta
 		{
 			get {
-				return (Input.mouseScrollDelta.y * InputSettings.mouseScrollDeltaScale) +
-				((Input.GetKey(KeyCode.R))
+				return -1 * (Input.mouseScrollDelta.y * InputSettings.mouseScrollDeltaScale);
+				/* commented how to get scroll input through keyboard keys
+				+ ((Input.GetKey(KeyCode.R))
 					? (+ 0.1f)
 					: (Input.GetKey(KeyCode.F))
 						? (- 0.1f)
 						: 0);
+				*/
 			}
 		}
 
