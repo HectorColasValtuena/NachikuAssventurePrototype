@@ -5,7 +5,7 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 	public abstract class KickerOnConditionHeldOnUpdateBase : KickerOnConditionHeldBase
 	{
 	//MonoBehaviour Lifecycle
-		public void Update()
+		public virtual void Update()
 		{
 			UpdateCondition(Time.deltaTime);
 		}

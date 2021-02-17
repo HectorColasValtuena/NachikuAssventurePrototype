@@ -7,7 +7,8 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 	public abstract class KickerOnConditionHeldBase : MonoBehaviour, IKicker
 	{
 	//serialized properties
-		public RandomRangeFloat randomDelay;
+		[SerializeField]
+		public RandomRangeFloat randomDelay = new RandomRangeFloat(1, 1);
 	//ENDOF serialized properties 
 
 	//private fields and properties
