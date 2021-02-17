@@ -1,10 +1,10 @@
-using Time = UnityEngine.Time;
+using UnityEngine;
 
-using ASSistant.ASSRandom; //RandomRangeFloat
+using RandomRangeFloat = ASSistant.ASSRandom.RandomRangeFloat; //RandomRangeFloat
 
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public abstract class KickerOnConditionBase : KickerBase
+	public abstract class KickerOnConditionHeldBase : MonoBehaviour, IKicker
 	{
 	//serialized properties
 		public RandomRangeFloat randomDelay;
@@ -16,9 +16,18 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 	 	private bool previousCheck = false;
 	//ENDOF private fields and properties
 
-	//MonoBehaviour Lifecycle
-	 	//on update check condition state change, timer update,
-		public void FixedUpdate ()
+	//IKicker definition
+		//executes a momentary effect
+		public abstract void Kick ();
+	//ENDOF IKicker definition
+
+	//abstract method definition
+		protected abstract bool CheckCondition ();
+	//ENDOF abstract method definition
+
+	//private methods
+	 	//on update check condition state change, timer update
+		protected void UpdateCondition (float timeDelta)
 		{
 			currentCheck = CheckCondition();
 
@@ -31,7 +40,7 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 			//if condition is true, decrement timer
 			if (currentCheck)
 			{
-				currentDelay -= Time.fixedDeltaTime;
+				currentDelay -= timeDelta;
 
 				//if timer reaches zero, kick and reset timer
 				if (currentDelay <= 0)
@@ -42,11 +51,6 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 			}
 			previousCheck = currentCheck;
 		}
-
-	//ENDOF MonoBehaviour Lifecycle
-
-	//abstract method definition
-		protected abstract bool CheckCondition ();
-	//ENDOF abstract method definition
+	//ENDOF private methods
 	}
 }

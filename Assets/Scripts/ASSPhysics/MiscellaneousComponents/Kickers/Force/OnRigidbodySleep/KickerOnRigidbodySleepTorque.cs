@@ -4,7 +4,7 @@ using ASSistant.ASSRandom; //RandomRangeFloat
 
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public class KickerAutoFireTorque : KickerAutoFireBase
+	public class KickerOnRigidbodySleepTorque : KickerOnRigidbodySleepBase
 	{
 	//serialized properties 
 		public int direction; //if not zero determines the sign of the force applied. If 0, a direction will be chosen randomly each time

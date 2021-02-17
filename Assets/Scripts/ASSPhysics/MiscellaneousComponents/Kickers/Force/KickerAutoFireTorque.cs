@@ -1,10 +1,10 @@
 using UnityEngine;
 
-using ASSistant.ASSRandom; //RandomRangeFloat
+using RandomSign = ASSistant.ASSRandom.RandomSign;
 
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public class KickerOnSleepTorque : KickerOnSleepBase
+	public class KickerAutoFireTorque : KickerOnConditionForceBase
 	{
 	//serialized properties 
 		public int direction; //if not zero determines the sign of the force applied. If 0, a direction will be chosen randomly each time
@@ -27,6 +27,14 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 
 	//MonoBehaviour Lifecycle
 	//ENDOF MonoBehaviour Lifecycle
+
+	//abstract method implementation
+		//checkCondition is always true so kick repeats constantly every interval
+		protected override bool CheckCondition ()
+		{
+			return true;
+		}
+	//ENDOF abstract method implementation
 
 	//private methods
 		private int GetDirection ()

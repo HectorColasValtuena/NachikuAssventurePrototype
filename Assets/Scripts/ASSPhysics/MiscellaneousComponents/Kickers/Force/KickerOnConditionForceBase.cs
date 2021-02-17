@@ -4,7 +4,7 @@ using ASSistant.ASSRandom; //RandomRangeFloat
 
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public abstract class KickerBase : MonoBehaviour, IKicker
+	public abstract class KickerOnConditionForceBase : KickerOnConditionHeldOnFixedUpdateBase
 	{
 	//serialized properties 
 		//Minimum and maximum force range for every kicker
@@ -15,11 +15,6 @@ namespace ASSPhysics.MiscellaneousComponents.Kickers
 
 	//private fields and properties
 	//ENDOF private fields and properties
-
-	//IKicker implementation
-		//applies a random torque at a random direction as the kick
-		public abstract void Kick ();
-	//ENDOF IKicker implementation
 
 	//MonoBehaviour Lifecycle
 		public void Awake ()

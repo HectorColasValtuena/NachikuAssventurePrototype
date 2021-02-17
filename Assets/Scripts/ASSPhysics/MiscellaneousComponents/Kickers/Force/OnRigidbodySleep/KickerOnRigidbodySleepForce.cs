@@ -1,10 +1,10 @@
 using UnityEngine;
 
-using ASSistant.ASSRandom; //RandomRangeFloat
+using RandomRangeFloat = ASSistant.ASSRandom.RandomRangeFloat; //RandomRangeFloat
 
 namespace ASSPhysics.MiscellaneousComponents.Kickers
 {
-	public class KickerOnSleepForce : KickerOnSleepBase
+	public class KickerOnRigidbodySleepForce : KickerOnRigidbodySleepBase
 	{
 	//serialized properties 
 		public RandomRangeFloat forceAngleRange;
