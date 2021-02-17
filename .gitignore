@@ -64,3 +64,6 @@ crashlytics-build.properties
 #sprite .meta files auto-backups
 *.meta.backup
 *.meta.backup.meta
+
+#sublime project 
+*.sublime-workspace
