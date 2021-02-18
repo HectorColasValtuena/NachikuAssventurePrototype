@@ -69,7 +69,7 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 6
+    spring: 4
     damper: 4
   m_LinearLimit:
     limit: 0.001
@@ -129,8 +129,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 12
-    positionDamper: 8
+    positionSpring: 6
+    positionDamper: 6
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
