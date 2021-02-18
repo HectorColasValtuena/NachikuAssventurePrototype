@@ -1,5 +1,4 @@
-py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/AnusGroup/LeftAnus(Top).png.meta ./Parts/LowerBodyGroup/AnusGroup/RightAnus(Bottom).png.meta
-
+py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/AnusGroup/Anus(Both).png.meta
 ::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/UpperBodyGroup/BreastGroup/LeftBreast.png.meta
 
 ::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/TailBaseMuscle.png.meta
