@@ -19,6 +19,9 @@ namespace ASSPhysics.HandSystem.Managers
 
 	//private fields
 		[SerializeField]
+		private Transform toolSpawnPoint = null;
+
+		[SerializeField]
 		private ASSPhysics.HandSystem.Tools.ToolBase[] initialToolPrefabs = {};
 
 		private List<ITool> toolList;	//list of hands
@@ -90,7 +93,14 @@ namespace ASSPhysics.HandSystem.Managers
 
 		private void CreateTool (ITool toolPrefab)
 		{
-			toolList.Add(InstantiateAsTool(toolPrefab));
+			toolList.Add(
+				InstantiateAsTool(
+					prefabTool: toolPrefab,
+					position: (toolSpawnPoint != null)
+						? (Vector2) toolSpawnPoint.position
+						: (Vector2?) null
+				)
+			);
 		}
 
 		//set tool under target index as focused

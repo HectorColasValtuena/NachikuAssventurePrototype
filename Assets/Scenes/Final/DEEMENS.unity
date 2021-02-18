@@ -38198,6 +38198,10 @@ PrefabInstance:
       propertyPath: initialToolPrefabs.Array.data[3]
       value: 
       objectReference: {fileID: 2892260506257502280, guid: 7d83f083a41c5ff49b451ff6e3b4b9aa, type: 3}
+    - target: {fileID: 4370293158354642622, guid: 0b73e548d57be26428ea4ac284796805, type: 3}
+      propertyPath: toolSpawnPoint
+      value: 
+      objectReference: {fileID: 1612363774}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b73e548d57be26428ea4ac284796805, type: 3}
 --- !u!1 &1062819138
@@ -56026,6 +56030,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
+--- !u!224 &1612363774 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2834794938239430289, guid: 39073caf87d848c40ad8c463dd0995d7, type: 3}
+  m_PrefabInstance: {fileID: 1612363773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1614267267
 GameObject:
   m_ObjectHideFlags: 0

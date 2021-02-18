@@ -4313,13 +4313,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775e7f8635e7c4048a94578b2f7c6d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomDelay:
+    min: 0
+    max: 0
   randomForce:
     min: 1
     max: 10
   targetRigidbody: {fileID: 0}
-  randomDelay:
-    min: 0
-    max: 0
   forceAngleRange:
     min: 0
     max: 360
@@ -7989,13 +7989,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fae31c79008241853a4473746b1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomDelay:
+    min: 0
+    max: 0.5
   randomForce:
     min: 10
     max: 80
   targetRigidbody: {fileID: 0}
-  randomDelay:
-    min: 0
-    max: 0.5
   direction: 0
 --- !u!1 &480238886
 GameObject:
@@ -11592,6 +11592,36 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &721033621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721033622}
+  m_Layer: 20
+  m_Name: AltToolSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &721033622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721033621}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &723334855
 GameObject:
   m_ObjectHideFlags: 0
@@ -15014,13 +15044,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c564fd3368b564daf42b8275a9f86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomDelay:
+    min: 1
+    max: 4
   randomForce:
     min: 0
     max: 8
   targetRigidbody: {fileID: 1320590709}
-  randomDelay:
-    min: 1
-    max: 4
   direction: 0
 --- !u!1 &952437197
 GameObject:
@@ -18834,13 +18864,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775e7f8635e7c4048a94578b2f7c6d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomDelay:
+    min: 0
+    max: 0
   randomForce:
     min: 0.5
     max: 5
   targetRigidbody: {fileID: 0}
-  randomDelay:
-    min: 0
-    max: 0
   forceAngleRange:
     min: 0
     max: 360
@@ -19016,13 +19046,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6fae31c79008241853a4473746b1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomDelay:
+    min: 0
+    max: 0
   randomForce:
     min: 1
     max: 100
   targetRigidbody: {fileID: 0}
-  randomDelay:
-    min: 0
-    max: 0
   direction: 0
 --- !u!1 &1269586904
 GameObject:
@@ -33232,6 +33262,10 @@ PrefabInstance:
       propertyPath: initialToolPrefabs.Array.data[1]
       value: 
       objectReference: {fileID: 2892260506257502280, guid: 7d83f083a41c5ff49b451ff6e3b4b9aa, type: 3}
+    - target: {fileID: 4370293158354642622, guid: 0b73e548d57be26428ea4ac284796805, type: 3}
+      propertyPath: toolSpawnPoint
+      value: 
+      objectReference: {fileID: 721033622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b73e548d57be26428ea4ac284796805, type: 3}
 --- !u!1001 &7821669532487885626
