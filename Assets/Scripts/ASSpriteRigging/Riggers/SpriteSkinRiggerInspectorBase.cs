@@ -4,6 +4,7 @@ using SpriteSkin = UnityEngine.U2D.Animation.SpriteSkin;
 
 namespace ASSpriteRigging.Riggers
 {
+	[RequireComponent(typeof(SpriteSkin))]
 	public abstract class SpriteSkinRiggerInspectorBase : ASSpriteRigging.BaseInspectors.ArmableInspectorBase
 	{
 		//[TO-DO]: move this declaration higher up in the hierarchy
@@ -22,5 +23,7 @@ namespace ASSpriteRigging.Riggers
 		public int defaultLayer { get { return (defaultLayerSample != null) ? defaultLayerSample.layer : -1; }}
 		public string defaultTag { get { return defaultLayerSample?.tag; }}
 		//public string defaultTag = "Grabbable";	//Which tag to set the bone transforms as
+
+		public bool purgeKeepsRigidbodies = true; //wether or not purging bone transform tree removes its rigidbodies too
 	}
 }
