@@ -1,6 +1,6 @@
-py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/LegsGroup/LeftUpperLeg.png.meta
+::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/LegsGroup/LeftUpperLeg.png.meta
 
-::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/LeftButtock.png.meta
+py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/LeftButtock.png.meta
 
 ::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/AnusGroup/Anus(Both).png.meta
 
