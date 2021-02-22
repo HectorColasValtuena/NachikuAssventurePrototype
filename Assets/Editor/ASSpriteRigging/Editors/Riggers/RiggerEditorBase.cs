@@ -10,7 +10,10 @@ using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger
 
 namespace ASSpriteRigging.Editors
 {
-	public abstract class RiggerEditorBase<TInspector> : ArmableEditorBase<TInspector>
+	public abstract class RiggerEditorBase<TInspector>
+	:
+		ArmableEditorBase<TInspector>,
+		IRiggerEditor
 		where TInspector : SpriteSkinRiggerInspectorBase
 	{
 	//EditorBase implementation
@@ -22,6 +25,18 @@ namespace ASSpriteRigging.Editors
 			DoButton("Purge components", Purge);
 		}
 	//ENDOF EditorBase implementation
+
+	//IRiggerEditor implementation
+		void IRiggerEditor.FullSetup ()
+		{
+			FullSetup();
+		}
+
+		void IRiggerEditor.Purge ()
+		{
+			Purge();
+		}
+	//ENDOF IRiggerEditor implementation
 
 	//private methods
 		//performs every step of the automated rigging process at once:
