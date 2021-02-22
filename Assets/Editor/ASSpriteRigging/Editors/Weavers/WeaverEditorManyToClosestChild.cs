@@ -11,7 +11,7 @@ namespace ASSpriteRigging.Editors
 	public class WeaverEditorManyToClosestChild : WeaverEditorBase<WeaverInspectorManyToClosestChild>
 	{
 	//overriden inherited methods
-		protected override void WeaveJoints()
+		public override void WeaveJoints()
 		{
 		//value validation
 			if (targetInspector.targetRootTransformList == null || targetInspector.targetRootTransformList.Length == 0)

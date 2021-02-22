@@ -9,7 +9,7 @@ namespace ASSpriteRigging.Editors
 	public class WeaverEditorManyToMany : WeaverEditorBase<WeaverInspectorManyToMany>
 	{
 	//private method declaration
-		protected override void WeaveJoints()
+		public override void WeaveJoints()
 		{
 			if (targetInspector.originRigidbodyList.Length != targetInspector.targetRigidbodyList.Length)
 			{

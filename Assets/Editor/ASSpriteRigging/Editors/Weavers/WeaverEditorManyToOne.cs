@@ -9,7 +9,7 @@ namespace ASSpriteRigging.Editors
 	public class WeaverEditorManyToOne : WeaverEditorBase<WeaverInspectorManyToOne>
 	{
 	//private method declaration
-		protected override void WeaveJoints()
+		public override void WeaveJoints()
 		{
 			foreach (Rigidbody originRigidbody in targetInspector.originRigidbodyList)
 			{

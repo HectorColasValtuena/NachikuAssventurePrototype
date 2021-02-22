@@ -7,8 +7,10 @@ using WeaverInspectorBase = ASSpriteRigging.Weavers.WeaverInspectorBase;
 
 namespace ASSpriteRigging.Editors
 {
-	//[CustomEditor(typeof(WeaverManyToOne))]
-	public abstract class WeaverEditorBase<TInspector> : ArmableEditorBase<TInspector>
+	public abstract class WeaverEditorBase<TInspector> 
+	:
+		ArmableEditorBase<TInspector>,
+		IWeaverEditor
 		where TInspector : WeaverInspectorBase
 	{
 	//ArmableEditorBase implementation
@@ -17,6 +19,10 @@ namespace ASSpriteRigging.Editors
 			DoButton("Setup weaving joints", WeaveJoints);
 		}
 	//ENDOF ArmableEditorBase implementation
+
+	//IWeaverEditor declaration
+		public abstract void WeaveJoints ();
+	//ENDOF IWeaverEditor declaration
 
 	//private methods
 		protected void ConnectRigidbodies (Rigidbody fromRigidbody, Rigidbody toRigidbody)
@@ -29,8 +35,5 @@ namespace ASSpriteRigging.Editors
 		}
 	//ENDOF private methods
 
-	//Abstract methods
-		protected abstract void WeaveJoints ();
-	//ENDOF Abstract methods
 	}
 }
