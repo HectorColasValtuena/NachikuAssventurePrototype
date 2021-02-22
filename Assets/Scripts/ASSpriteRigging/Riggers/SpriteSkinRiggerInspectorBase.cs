@@ -5,7 +5,10 @@ using SpriteSkin = UnityEngine.U2D.Animation.SpriteSkin;
 namespace ASSpriteRigging.Riggers
 {
 	[RequireComponent(typeof(SpriteSkin))]
-	public abstract class SpriteSkinRiggerInspectorBase : ASSpriteRigging.BaseInspectors.ArmableInspectorBase
+	public abstract class SpriteSkinRiggerInspectorBase
+	:
+		ASSpriteRigging.BaseInspectors.ArmableInspectorBase,
+		IRiggerInspector
 	{
 		//[TO-DO]: move this declaration higher up in the hierarchy
 		public Rigidbody targetAnchor;
