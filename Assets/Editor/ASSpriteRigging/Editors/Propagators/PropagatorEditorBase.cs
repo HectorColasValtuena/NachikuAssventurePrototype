@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using IPropagatorInspector = ASSpriteRigging.Inspectors.IPropagatorInspector;
+
 namespace ASSpriteRigging.Editors
 {
 	public class PropagatorEditorBase<TInspector>

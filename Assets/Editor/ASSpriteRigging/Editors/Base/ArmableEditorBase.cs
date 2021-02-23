@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-using ArmableInspectorBase = ASSpriteRigging.BaseInspectors.ArmableInspectorBase; 
+using IArmableInspector = ASSpriteRigging.Inspectors.IArmableInspector;
 
 namespace ASSpriteRigging.Editors
 {

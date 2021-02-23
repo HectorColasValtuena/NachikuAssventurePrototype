@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEditor;
 
+using IInspectorBase = ASSpriteRigging.Inspectors.IInspectorBase;
+
 namespace ASSpriteRigging.Editors
 {
 	public abstract class EditorBase<TInspector> : Editor, IEditorBase

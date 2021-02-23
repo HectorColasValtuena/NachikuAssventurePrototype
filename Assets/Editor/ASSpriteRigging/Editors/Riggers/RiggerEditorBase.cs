@@ -5,8 +5,7 @@ using System.Collections.Generic;
 
 using SpriteSkin = UnityEngine.U2D.Animation.SpriteSkin;
 
-using ASSpriteRigging.BoneUtility;
-using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger
+using BoneHierarchy = ASSpriteRigging.BoneUtility.BoneHierarchy;
 
 namespace ASSpriteRigging.Editors
 {

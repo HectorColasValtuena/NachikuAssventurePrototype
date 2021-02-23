@@ -1,6 +1,6 @@
 ﻿namespace ASSpriteRigging.Inspectors
 {
-	public interface IWeaverInspector
+	public interface IWeaverInspector : IArmableInspector
 	{
 	}
 }

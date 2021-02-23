@@ -1,8 +1,6 @@
-﻿using UnityEngine;
-
-namespace ASSpriteRigging.Inspectors
+﻿namespace ASSpriteRigging.Inspectors
 {
-	public interface IRiggerInspector
+	public interface IRiggerInspector : IArmableInspector
 	{
 
 	}

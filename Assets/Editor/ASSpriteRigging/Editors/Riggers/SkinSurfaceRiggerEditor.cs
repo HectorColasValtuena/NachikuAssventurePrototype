@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger, SpriteSkinRigger
-using ASSpriteRigging.BoneUtility;
+using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
 
 namespace ASSpriteRigging.Editors
 {

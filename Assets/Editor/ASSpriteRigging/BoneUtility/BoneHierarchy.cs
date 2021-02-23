@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+
 using UnityEngine.U2D.Animation; //SpriteSkin
 using U2DAnimationAccessor;	//SpriteSkin.
 
-using ASSpriteRigging.Riggers; //SpriteSkinBaseRigger
+using IRiggerInspector = ASSpriteRigging.Inspectors.IRiggerInspector;
 
 namespace ASSpriteRigging.BoneUtility
 {
@@ -37,7 +36,7 @@ namespace ASSpriteRigging.BoneUtility
 		}
 
 		//creates gameobjects for every bone and stores them in spriteskin
-		public static void CreateBoneHierarchy (SpriteSkinRiggerInspectorBase rigger)
+		public static void CreateBoneHierarchy (IRiggerInspector rigger)
 		{
 			SpriteSkin spriteSkin = rigger.spriteSkin;
 			Sprite sprite = rigger.sprite;

@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEditor;
 
-//using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
 
-using TInspector = ASSpriteRigging.Riggers.TailRiggerInspectorSmoothFollowController;
+using TInspector = ASSpriteRigging.Inspectors.TailRiggerInspectorSmoothFollowController;
 
 using TElementController = ASSPhysics.TailSystem.TailElementJointSmoothFollow;
 
