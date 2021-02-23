@@ -10,7 +10,7 @@ namespace ASSpriteRigging.Editors
 //rigs a chain of bones with required components
 	public abstract class TailRiggerEditorJointChainBase<TInspector>
 		: TailRiggerEditorBase<TInspector>
-		where TInspector: ASSpriteRigging.Riggers.TailRiggerInspectorJointChain
+		where TInspector: ASSpriteRigging.Inspectors.TailRiggerInspectorJointChain
 	{
 	//abstract method implementation
 		//rig the base/root of the transform chain
