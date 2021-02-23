@@ -14,25 +14,25 @@ namespace ASSpriteRigging.Editors
 	:
 		ArmableEditorBase<TInspector>,
 		IRiggerEditor
-		where TInspector : SpriteSkinRiggerInspectorBase
+		where TInspector : IRiggerInspector
 	{
 	//EditorBase implementation
 		protected override void DoButtons ()
 		{
 			DoButton("Full setup", FullSetup);
-			DoButton("Rig bone components & configuration", RigBones);
+			//DoButton("Rig bone components & configuration", RigBones);
 			DoButton("Disarm", Disarm);
 			DoButton("Purge components", Purge);
 		}
 	//ENDOF EditorBase implementation
 
 	//IRiggerEditor implementation
-		void IRiggerEditor.FullSetup ()
+		public override void DoSetup ()
 		{
 			FullSetup();
 		}
 
-		void IRiggerEditor.Purge ()
+		public void DoPurge ()
 		{
 			Purge();
 		}

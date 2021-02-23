@@ -11,7 +11,7 @@ namespace ASSpriteRigging.Editors
 	:
 		ArmableEditorBase<TInspector>,
 		IWeaverEditor
-		where TInspector : WeaverInspectorBase
+		where TInspector : IWeaverInspector
 	{
 	//ArmableEditorBase implementation
 		protected override void DoButtons ()
@@ -20,9 +20,12 @@ namespace ASSpriteRigging.Editors
 		}
 	//ENDOF ArmableEditorBase implementation
 
-	//IWeaverEditor declaration
-		public abstract void WeaveJoints ();
-	//ENDOF IWeaverEditor declaration
+	//IWeaverEditor implementation
+		public override void DoSetup ()
+		{
+			WeaveJoints();
+		}
+	//ENDOF IWeaverEditor implementation
 
 	//private methods
 		protected void ConnectRigidbodies (Rigidbody fromRigidbody, Rigidbody toRigidbody)
@@ -35,5 +38,8 @@ namespace ASSpriteRigging.Editors
 		}
 	//ENDOF private methods
 
+	//overridable methods
+		public abstract void WeaveJoints();
+	//ENDOF overridable methods
 	}
 }

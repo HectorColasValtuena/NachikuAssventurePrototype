@@ -1,8 +1,6 @@
 ﻿namespace ASSpriteRigging.Editors
 {
-	public interface IRiggerEditor
+	public interface IRiggerEditor : IEditorPurgeableBase
 	{
-		void FullSetup ();
-		void Purge ();
 	}
 }

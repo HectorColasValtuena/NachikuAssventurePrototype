@@ -1,7 +1,6 @@
 ﻿namespace ASSpriteRigging.Editors
 {
-	public interface IWeaverEditor
+	public interface IWeaverEditor : IEditorBase
 	{
-		void WeaveJoints ();
 	}
 }
