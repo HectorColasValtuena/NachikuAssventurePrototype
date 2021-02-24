@@ -3,6 +3,8 @@
 using UnityEngine;
 using UnityEditor;
 
+using WeaverInspectorManyToClosestChild = ASSpriteRigging.Inspectors.WeaverInspectorManyToClosestChild;
+
 namespace ASSpriteRigging.Editors
 {
 	[CustomEditor(typeof(WeaverInspectorManyToClosestChild))]

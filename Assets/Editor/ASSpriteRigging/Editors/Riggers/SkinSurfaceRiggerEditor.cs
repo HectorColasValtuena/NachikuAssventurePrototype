@@ -1,9 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEditor;
 
+using static UnityEngine.U2D.SpriteDataAccessExtensions; //Sprite.GetIndices();
+using Unity.Collections;	//nativeArray<T>
+
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
+
+using SkinSurfaceRiggerInspector = ASSpriteRigging.Inspectors.SkinSurfaceRiggerInspector;
+
 
 namespace ASSpriteRigging.Editors
 {

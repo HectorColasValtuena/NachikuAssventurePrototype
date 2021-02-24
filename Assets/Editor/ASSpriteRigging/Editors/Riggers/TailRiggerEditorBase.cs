@@ -19,7 +19,7 @@ namespace ASSpriteRigging.Editors
 
 	//private methods
 		//extracts all the data from rigger object and calls a properly parametrized RigTailBoneRecursive
-		private void RigTail (TInspector inspector = null)
+		private void RigTail (TInspector inspector)
 		{	
 			if (inspector == null) { inspector = targetInspector; }
 			RigTailRoot(inspector.spriteSkin.rootBone, inspector);

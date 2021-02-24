@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEditor;
 
+using WeaverInspectorManyToOne = ASSpriteRigging.Inspectors.WeaverInspectorManyToOne;
+
 namespace ASSpriteRigging.Editors
 {
 	[CustomEditor(typeof(WeaverInspectorManyToOne))]

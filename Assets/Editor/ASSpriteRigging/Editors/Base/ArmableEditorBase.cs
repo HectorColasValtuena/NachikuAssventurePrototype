@@ -10,8 +10,8 @@ namespace ASSpriteRigging.Editors
 	{
 		protected bool isArmed 
 		{ 
-			get { return (targetInspector as TInspector).armed; }
-			set { (targetInspector as TInspector).armed = value; }
+			get { return targetInspector.armed; }
+			set { targetInspector.armed = value; }
 		}
 
 	//Setup GUI layout
