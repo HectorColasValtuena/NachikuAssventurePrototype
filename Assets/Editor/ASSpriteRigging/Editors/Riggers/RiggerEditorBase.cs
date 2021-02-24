@@ -1,11 +1,11 @@
-using UnityEngine;
-using UnityEditor;
-
 using System.Collections.Generic;
 
+using UnityEngine;
+using UnityEditor;
 using SpriteSkin = UnityEngine.U2D.Animation.SpriteSkin;
 
 using BoneHierarchy = ASSpriteRigging.BoneUtility.BoneHierarchy;
+using IRiggerInspector = ASSpriteRigging.Inspectors.IRiggerInspector;
 
 namespace ASSpriteRigging.Editors
 {

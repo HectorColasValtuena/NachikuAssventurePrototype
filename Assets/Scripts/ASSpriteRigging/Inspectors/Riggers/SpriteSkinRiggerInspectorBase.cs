@@ -10,6 +10,8 @@ namespace ASSpriteRigging.Inspectors
 		ArmableInspectorBase,
 		IRiggerInspector
 	{
+		public bool purgeKeepsRigidbodies = true; //wether or not purging bone transform tree removes its rigidbodies too
+
 		//[TO-DO]: move this declaration higher up in the hierarchy
 		public Rigidbody targetAnchor;
 		public Rigidbody anchorRigidbody { get {
@@ -27,6 +29,7 @@ namespace ASSpriteRigging.Inspectors
 		public string defaultTag { get { return defaultLayerSample?.tag; }}
 		//public string defaultTag = "Grabbable";	//Which tag to set the bone transforms as
 
-		public bool purgeKeepsRigidbodies = true; //wether or not purging bone transform tree removes its rigidbodies too
+		public Rigidbody defaultRigidbody;		//Sample rigidbody configuration
+		public SphereCollider defaultCollider;	//Collider to include with each bone
 	}
 }

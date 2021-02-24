@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
-using WeaverInspectorBase = ASSpriteRigging.Inspectors.WeaverInspectorBase;
+using IWeaverInspector = ASSpriteRigging.Inspectors.IWeaverInspector;
 
 
 namespace ASSpriteRigging.Editors

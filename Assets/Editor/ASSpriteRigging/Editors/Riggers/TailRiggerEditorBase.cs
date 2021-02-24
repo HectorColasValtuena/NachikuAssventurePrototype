@@ -1,5 +1,7 @@
 using UnityEngine;
 
+using IRiggerInspector = ASSpriteRigging.Inspectors.IRiggerInspector;
+
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components

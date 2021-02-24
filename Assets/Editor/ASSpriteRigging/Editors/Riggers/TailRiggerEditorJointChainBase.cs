@@ -5,12 +5,15 @@ using UnityEngine;
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
 using ASSistant.ComponentConfiguration.JointConfiguration;
 
+using IJointChainRiggerInspector = ASSpriteRigging.Inspectors.IJointChainRiggerInspector;
+
 namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
 	public abstract class TailRiggerEditorJointChainBase<TInspector>
-		: TailRiggerEditorBase<TInspector>
-		where TInspector: ASSpriteRigging.Inspectors.TailRiggerInspectorJointChain
+	:
+		TailRiggerEditorBase<TInspector>
+		where TInspector : IJointChainRiggerInspector
 	{
 	//abstract method implementation
 		//rig the base/root of the transform chain
