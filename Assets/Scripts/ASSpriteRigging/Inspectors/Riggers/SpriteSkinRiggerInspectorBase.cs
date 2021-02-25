@@ -10,26 +10,42 @@ namespace ASSpriteRigging.Inspectors
 		ArmableInspectorBase,
 		IRiggerInspector
 	{
-		public bool purgeKeepsRigidbodies = true; //wether or not purging bone transform tree removes its rigidbodies too
+		//wether or not purging bone transform tree removes its rigidbodies too
+		[SerializeField]
+		private bool _purgeKeepsRigidbodies = true;
+		public bool purgeKeepsRigidbodies { get { return _purgeKeepsRigidbodies; }}
 
 		//[TO-DO]: move this declaration higher up in the hierarchy
-		public Rigidbody targetAnchor;
-		public Rigidbody anchorRigidbody { get {
+		[SerializeField]
+		private Rigidbody targetAnchor = null;
+		public Rigidbody anchorRigidbody
+		{
+			get {
 			//return this rigidbody if no target anchor is set
 			return (targetAnchor != null)
 				? targetAnchor
 				: gameObject.GetComponent<Rigidbody>();
-		}}
+			}
+		}
 		
 		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
 		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<SpriteSkin>(); }}
 
-		public GameObject defaultLayerSample; //gameobject with sample of layer tag
+		//information on layer & tag
+		[SerializeField]
+		private GameObject defaultLayerSample = null;
 		public int defaultLayer { get { return (defaultLayerSample != null) ? defaultLayerSample.layer : -1; }}
 		public string defaultTag { get { return defaultLayerSample?.tag; }}
-		//public string defaultTag = "Grabbable";	//Which tag to set the bone transforms as
 
-		public Rigidbody defaultRigidbody;		//Sample rigidbody configuration
-		public SphereCollider defaultCollider;	//Collider to include with each bone
+
+		//Desired rigidbody configuration
+		[SerializeField]
+		private Rigidbody _defaultRigidbody = null;
+		public Rigidbody defaultRigidbody { get { return _defaultRigidbody; }}
+
+		//Collider to include with each bone
+		[SerializeField]
+		private SphereCollider _defaultCollider = null;
+		public SphereCollider defaultCollider { get { return _defaultCollider; }}
 	}
 }
