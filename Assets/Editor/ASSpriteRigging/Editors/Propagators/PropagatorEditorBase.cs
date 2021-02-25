@@ -14,6 +14,8 @@ namespace ASSpriteRigging.Editors
 	  //IEditorPurgeableBase declaration
 		public abstract void DoPurge ();
 	  //ENDOF IEditorPurgeableBase declaration
+
+		public abstract void DoPropagate (PropagationApplicationDelegate apply);
 	//ENDOF IPropagatorEditor declaration
 
 	//EditorBase implementation
