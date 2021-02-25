@@ -11,7 +11,7 @@ namespace ASSpriteRigging.Editors
 	:
 		ArmableEditorBase<TInspector>,
 		IWeaverEditor
-		where TInspector : IWeaverInspector
+		where TInspector : UnityEngine.Object, IWeaverInspector
 	{
 	//ArmableEditorBase implementation
 		protected override void DoButtons ()

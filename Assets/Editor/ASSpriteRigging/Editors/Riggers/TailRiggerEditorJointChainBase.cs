@@ -1,9 +1,7 @@
 using UnityEngine;
-//using UnityEditor;
 
-//using ASSPhysics.TailSystem;	//TailRootWiggle, ITailElement
 using BoneRigging = ASSpriteRigging.BoneUtility.BoneRigging;
-using ASSistant.ComponentConfiguration.JointConfiguration;
+using ASSistant.ComponentConfiguration.JointConfiguration; //ConfigurableJoint extension methods
 
 using IJointChainRiggerInspector = ASSpriteRigging.Inspectors.IJointChainRiggerInspector;
 
@@ -13,20 +11,20 @@ namespace ASSpriteRigging.Editors
 	public abstract class TailRiggerEditorJointChainBase<TInspector>
 	:
 		TailRiggerEditorBase<TInspector>
-		where TInspector : IJointChainRiggerInspector
+		where TInspector : UnityEngine.Object, IJointChainRiggerInspector
 	{
 	//abstract method implementation
 		//rig the base/root of the transform chain
 		protected override void RigTailRoot (Transform rootBone, TInspector inspector)
 		{
-			if (inspector.defaultTailAnchorJoint != null)
+			if (inspector.defaultRootAnchorJoint != null)
 			{
-				foreach (Rigidbody tailAnchor in inspector.tailAnchorList)
+				foreach (Rigidbody rootAnchor in inspector.rootAnchorList)
 				{
 					BoneRigging.BoneConnectJoint<ConfigurableJoint>(
 						bone: rootBone,
-						targetRigidbody: tailAnchor,
-						sample: inspector.defaultTailAnchorJoint
+						targetRigidbody: rootAnchor,
+						sample: inspector.defaultRootAnchorJoint
 					);
 				}
 			}

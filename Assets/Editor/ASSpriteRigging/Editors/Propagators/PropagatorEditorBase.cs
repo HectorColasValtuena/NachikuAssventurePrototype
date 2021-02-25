@@ -8,23 +8,15 @@ namespace ASSpriteRigging.Editors
 	:
 		ArmableEditorBase<TInspector>,
 		IPropagatorEditor
-		where TInspector : IPropagatorInspector
+		where TInspector : UnityEngine.Object, IPropagatorInspector
 	{
 	//IPropagatorEditor implementation
 	  //IEditorBase implementation
-		public override void DoSetup ()
-		{
-			//[TO-DO]
-			Debug.LogError("PropagatorEditorBase UNIMPLEMENTED");
-		}
+		//public override void DoSetup ()	//already implemented higher up 
 	  //ENDOF IEditorBase implementation
 
 	  //IEditorPurgeableBase implementation
-		public void DoPurge ()
-		{
-			//[TO-DO]
-			Debug.LogError("PropagatorEditorBase UNIMPLEMENTED");
-		}
+		public abstract void DoPurge ();
 	  //ENDOF IEditorPurgeableBase implementation
 	//ENDOF IPropagatorEditor implementation
 		

@@ -13,7 +13,7 @@ namespace ASSpriteRigging.Editors
 	:
 		ArmableEditorBase<TInspector>,
 		IRiggerEditor
-		where TInspector : IRiggerInspector
+		where TInspector : UnityEngine.Object, IRiggerInspector
 	{
 	//EditorBase implementation
 		protected override void DoButtons ()

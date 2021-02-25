@@ -5,8 +5,11 @@ using IInspectorBase = ASSpriteRigging.Inspectors.IInspectorBase;
 
 namespace ASSpriteRigging.Editors
 {
-	public abstract class EditorBase<TInspector> : Editor, IEditorBase
-		where TInspector : IInspectorBase
+	public abstract class EditorBase<TInspector>
+	:
+		Editor,
+		IEditorBase
+		where TInspector : UnityEngine.Object, IInspectorBase
 	{
 	//inheritable properties
 		protected TInspector targetInspector { get { return (TInspector) target; }}

@@ -15,7 +15,11 @@ namespace ASSpriteRigging.Inspectors
 		private bool _purgeKeepsRigidbodies = true;
 		public bool purgeKeepsRigidbodies { get { return _purgeKeepsRigidbodies; }}
 
-		//[TO-DO]: move this declaration higher up in the hierarchy
+		//references to fundamental components
+		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
+		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<SpriteSkin>(); }}
+
+		//anchor rigidbody: every bone will be connected to this rigidbody with an anchor joint 
 		[SerializeField]
 		private Rigidbody targetAnchor = null;
 		public Rigidbody anchorRigidbody
@@ -28,10 +32,7 @@ namespace ASSpriteRigging.Inspectors
 			}
 		}
 		
-		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
-		public SpriteSkin spriteSkin { get { return gameObject.GetComponent<SpriteSkin>(); }}
-
-		//information on layer & tag
+		//information on transform layer & tag
 		[SerializeField]
 		private GameObject defaultLayerSample = null;
 		public int defaultLayer { get { return (defaultLayerSample != null) ? defaultLayerSample.layer : -1; }}

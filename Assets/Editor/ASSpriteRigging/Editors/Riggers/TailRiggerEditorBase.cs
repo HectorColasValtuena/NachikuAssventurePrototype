@@ -6,8 +6,9 @@ namespace ASSpriteRigging.Editors
 {
 //rigs a chain of bones with required components
 	public abstract class TailRiggerEditorBase<TInspector>
-		: RiggerEditorBase<TInspector>
-		where TInspector : IRiggerInspector
+	:
+		RiggerEditorBase<TInspector>
+		where TInspector : UnityEngine.Object, IRiggerInspector
 	{
 	//inherited abstract method implementation
 		protected override void RigBones ()

@@ -5,8 +5,10 @@ using IArmableInspector = ASSpriteRigging.Inspectors.IArmableInspector;
 
 namespace ASSpriteRigging.Editors
 {
-	public abstract class ArmableEditorBase<TInspector> : EditorBase<TInspector>
-		where TInspector : IArmableInspector
+	public abstract class ArmableEditorBase<TInspector>
+	:
+		EditorBase<TInspector>
+		where TInspector : UnityEngine.Object, IArmableInspector
 	{
 		protected bool isArmed 
 		{ 
