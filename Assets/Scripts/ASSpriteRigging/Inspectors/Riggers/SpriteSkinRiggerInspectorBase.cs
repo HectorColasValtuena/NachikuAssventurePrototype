@@ -11,9 +11,11 @@ namespace ASSpriteRigging.Inspectors
 		IRiggerInspector
 	{
 		//wether or not purging bone transform tree removes its rigidbodies too
-		[SerializeField]
-		private bool _purgeKeepsRigidbodies = true;
-		public bool purgeKeepsRigidbodies { get { return _purgeKeepsRigidbodies; }}
+			//[SerializeField]
+			//private bool _purgeKeepsRigidbodies = true;
+			//public bool purgeKeepsRigidbodies { get { return _purgeKeepsRigidbodies; }}
+		//for now at least, purge will only admit NOT removing rigidbodies
+		public bool purgeKeepsRigidbodies { get { return true; }}
 
 		//references to fundamental components
 		public Sprite sprite { get { return gameObject.GetComponent<SpriteRenderer>()?.sprite; }}
