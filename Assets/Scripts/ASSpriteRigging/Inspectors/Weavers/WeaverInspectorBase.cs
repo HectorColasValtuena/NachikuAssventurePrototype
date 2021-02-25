@@ -7,7 +7,7 @@ namespace ASSpriteRigging.Inspectors
 	{
 		//Weave interconnection joint configuration
 		[SerializeField]
-		private ConfigurableJoint _defaultWeavingJoint; 
+		private ConfigurableJoint _defaultWeavingJoint = null; 
 		public ConfigurableJoint defaultWeavingJoint { get { return _defaultWeavingJoint; }}
 	}
 }
