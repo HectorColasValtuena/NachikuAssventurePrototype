@@ -8,9 +8,20 @@ namespace ASSpriteRigging.Inspectors
 		SpriteSkinRiggerInspectorBase,
 		IJointChainRiggerInspector
 	{
-		public Rigidbody[] rootAnchorList;	//list of root anchor targets
+		//list of root anchor targets
+		[SerializeField]
+		private Rigidbody[] _rootAnchorList = {};
+		public Rigidbody[] rootAnchorList { get { return _rootAnchorList; }}
 
-		public ConfigurableJoint defaultChainJoint; //Sample spring configuration
-		public ConfigurableJoint defaultRootAnchorJoint; //Sample spring configuration
+
+		//Sample chain spring configuration
+		[SerializeField]
+		private ConfigurableJoint _defaultChainJoint = null;
+		public ConfigurableJoint defaultChainJoint { get { return _defaultChainJoint; }}
+
+		//Sample root anchoring spring configuration
+		[SerializeField]
+		private ConfigurableJoint _defaultRootAnchorJoint = null;
+		public ConfigurableJoint defaultRootAnchorJoint { get { return _defaultRootAnchorJoint; }}
 	}
 }
