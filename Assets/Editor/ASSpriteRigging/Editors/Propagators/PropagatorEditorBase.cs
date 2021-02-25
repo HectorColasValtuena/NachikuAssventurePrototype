@@ -10,15 +10,20 @@ namespace ASSpriteRigging.Editors
 		IPropagatorEditor
 		where TInspector : UnityEngine.Object, IPropagatorInspector
 	{
-	//IPropagatorEditor implementation
-	  //IEditorBase implementation
-		//public override void DoSetup ()	//already implemented higher up 
-	  //ENDOF IEditorBase implementation
-
-	  //IEditorPurgeableBase implementation
+	//IPropagatorEditor declaration
+	  //IEditorPurgeableBase declaration
 		public abstract void DoPurge ();
-	  //ENDOF IEditorPurgeableBase implementation
-	//ENDOF IPropagatorEditor implementation
-		
+	  //ENDOF IEditorPurgeableBase declaration
+	//ENDOF IPropagatorEditor declaration
+
+	//EditorBase implementation
+		protected override void DoButtons ()
+		{
+			DoButton("Propagate Rig Setup", DoSetup);
+			//DoButton("Rig bone components & configuration", RigBones);
+			DoButton("Disarm", Disarm);
+			DoButton("Propagate Purge components", DoPurge);
+		}
+	//ENDOF EditorBase implementation
 	}
 }
