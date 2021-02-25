@@ -33,7 +33,7 @@ namespace ASSpriteRigging.Editors
 			BoneRigging.BoneConnectJoint<ConfigurableJoint>(
 				bone: fromRigidbody.transform,
 				targetRigidbody: toRigidbody,
-				sample: targetInspector.defaultJoint
+				sample: targetInspector.defaultWeavingJoint
 			);
 		}
 	//ENDOF private methods

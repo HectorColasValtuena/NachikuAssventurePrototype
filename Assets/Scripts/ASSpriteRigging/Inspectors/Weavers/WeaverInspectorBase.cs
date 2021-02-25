@@ -5,6 +5,9 @@ namespace ASSpriteRigging.Inspectors
 	public abstract class WeaverInspectorBase
 		: ArmableInspectorBase, IWeaverInspector
 	{
-		public ConfigurableJoint defaultJoint;	//Sample joint configuration
+		//Weave interconnection joint configuration
+		[SerializeField]
+		private ConfigurableJoint _defaultWeavingJoint; 
+		public ConfigurableJoint defaultWeavingJoint { get { return _defaultWeavingJoint; }}
 	}
 }
