@@ -51,14 +51,6 @@ namespace ASSpriteRigging.Editors
 			Debug.Log(targetInspector.name + " full setup finished");
 		}
 
-		//forces inspector to disarm
-		private void Disarm ()
-		{
-			//superfluous set, pressing a button automatically disarms
-			//targetInspector.armed = false;
-			Debug.Log("Disarmed");
-		}
-
 		private void Purge ()
 		{
 			SpriteSkin targetSpriteSkin = targetInspector.spriteSkin;

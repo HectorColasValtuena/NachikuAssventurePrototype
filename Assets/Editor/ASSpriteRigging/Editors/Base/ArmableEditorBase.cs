@@ -10,13 +10,23 @@ namespace ASSpriteRigging.Editors
 		EditorBase<TInspector>
 		where TInspector : UnityEngine.Object, IArmableInspector
 	{
+	//protected properties
 		protected bool isArmed 
 		{ 
 			get { return targetInspector.armed; }
 			set { targetInspector.armed = value; }
 		}
+	//ENDOF protected properties
 
-	//Setup GUI layout
+	//protected methods
+		//forces inspector to disarm
+		protected void Disarm ()
+		{
+			isArmed = false;
+			Debug.Log("Disarmed");
+		}
+
+	  //Setup GUI layout
 		//check if script is armed for use
 		protected bool RequestArmed ()
 		{
@@ -39,6 +49,7 @@ namespace ASSpriteRigging.Editors
 				if (RequestArmed()) { action(); }
 			});
 		}
-	//ENDOF Setup GUI layout
+	  //ENDOF Setup GUI layout
+	//ENDOF protected methods
 	}
 }
