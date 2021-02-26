@@ -62723,8 +62723,8 @@ MonoBehaviour:
   armed: 0
   targetAnchor: {fileID: 0}
   defaultLayerSample: {fileID: 7552566682554623769, guid: f7c6cab6232cc8e43a816fb80009893a, type: 3}
-  defaultRigidbody: {fileID: 3639075385825546470, guid: a06a7bd81e4e8ed469142c1187da969c, type: 3}
-  defaultCollider: {fileID: 7892877375867828106, guid: 269919ecddc5c274fa7f2783414b28c4, type: 3}
+  _defaultRigidbody: {fileID: 3639075385825546470, guid: a06a7bd81e4e8ed469142c1187da969c, type: 3}
+  _defaultCollider: {fileID: 7892877375867828106, guid: 269919ecddc5c274fa7f2783414b28c4, type: 3}
   defaultAnchorJoint: {fileID: 862743949859629513, guid: de4b5e9d5cb27fe428712516bb9e7d8d, type: 3}
   defaultMeshJoint: {fileID: 862743949859629513, guid: a59058f1721d1c84a9c75424000c83b2, type: 3}
 --- !u!114 &1736093444
