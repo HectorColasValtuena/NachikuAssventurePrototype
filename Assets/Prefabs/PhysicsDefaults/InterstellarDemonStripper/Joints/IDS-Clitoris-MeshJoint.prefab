@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2100997657853326911}
   - component: {fileID: 5439485516416815386}
   m_Layer: 0
-  m_Name: IDS-Ass-MeshJoint
+  m_Name: IDS-Clitoris-MeshJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,17 +62,17 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 1
-  m_YMotion: 1
+  m_XMotion: 2
+  m_YMotion: 2
   m_ZMotion: 0
   m_AngularXMotion: 0
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 8
-    damper: 0.1
+    spring: 0
+    damper: 0
   m_LinearLimit:
-    limit: 0.001
+    limit: 0
     bounciness: 0
     contactDistance: 0
   m_AngularXLimitSpring:
