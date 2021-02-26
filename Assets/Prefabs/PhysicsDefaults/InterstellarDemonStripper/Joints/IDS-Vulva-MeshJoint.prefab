@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2100997657853326911}
   - component: {fileID: 5439485516416815386}
   m_Layer: 0
-  m_Name: IDS-Ass-MeshJoint
+  m_Name: IDS-Vulva-MeshJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,10 +69,10 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 8
-    damper: 0.1
+    spring: 32
+    damper: 0
   m_LinearLimit:
-    limit: 0.001
+    limit: 0.01
     bounciness: 0
     contactDistance: 0
   m_AngularXLimitSpring:
@@ -101,13 +101,13 @@ ConfigurableJoint:
   m_TargetVelocity: {x: 0, y: 0, z: 0}
   m_XDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 16
+    positionDamper: 8
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 16
+    positionDamper: 8
     maximumForce: 3.4028233e+38
   m_ZDrive:
     serializedVersion: 3
@@ -129,8 +129,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 8
-    positionDamper: 0
+    positionSpring: 16
+    positionDamper: 8
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
