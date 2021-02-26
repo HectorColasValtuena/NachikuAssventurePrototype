@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4162084163571020770}
   - component: {fileID: 4834676435746489894}
   m_Layer: 0
-  m_Name: IDS-Ass-AnchorJoint
+  m_Name: IDS-InnerVag-AnchorJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,8 +69,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 2
   m_LinearLimitSpring:
-    spring: 1
-    damper: 0
+    spring: 64
+    damper: 8
   m_LinearLimit:
     limit: 0.001
     bounciness: 0
@@ -101,13 +101,13 @@ ConfigurableJoint:
   m_TargetVelocity: {x: 0, y: 0, z: 0}
   m_XDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 64
+    positionDamper: 8
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 64
+    positionDamper: 8
     maximumForce: 3.4028233e+38
   m_ZDrive:
     serializedVersion: 3
