@@ -16,7 +16,7 @@ TagManager:
   - 
   - GrabbableSurface
   - GrabbableTail
-  - 
+  - NoGrab
   - 
   - VsTailCollider
   - 
