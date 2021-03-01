@@ -1,6 +1,6 @@
-py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/BottomHolesCombo.png.meta
+::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/BottomHolesCombo.png.meta
 
-::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/TailBaseMuscle.png.meta
+py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/TailBaseMuscle.png.meta
 
 
 ::py ../../../../PySpriteRigger/PySpriteRigger.py ./Parts/LowerBodyGroup/VulvaGroup/Clitoris.png.meta ./Parts/LowerBodyGroup/VulvaGroup/VaginaInnerTissue.png.meta
