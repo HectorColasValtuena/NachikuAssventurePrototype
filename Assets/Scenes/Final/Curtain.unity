@@ -603,8 +603,8 @@ MonoBehaviour:
       max: 1
   - clip: {fileID: 8300000, guid: ec7309e8c8c82d045ae1481ce1fd5683, type: 3}
     volume:
-      min: 0.2
-      max: 0.2
+      min: 0.6
+      max: 0.6
     loop: 1
     pitch:
       min: 1
