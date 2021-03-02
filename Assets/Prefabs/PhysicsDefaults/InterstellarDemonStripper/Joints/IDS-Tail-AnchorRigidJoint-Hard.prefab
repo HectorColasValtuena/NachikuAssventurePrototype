@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4231269617543097262, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_Name
-      value: IDS-RigidJoint-Hard
+      value: IDS-Tail-AnchorRigidJoint-Hard
       objectReference: {fileID: 0}
     - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_XMotion
@@ -86,6 +86,10 @@ PrefabInstance:
     - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
       propertyPath: m_EnablePreprocessing
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132355659745217365, guid: 2857b3982ea1781438dae604a583aea1, type: 3}
+      propertyPath: m_MassScale
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2857b3982ea1781438dae604a583aea1, type: 3}

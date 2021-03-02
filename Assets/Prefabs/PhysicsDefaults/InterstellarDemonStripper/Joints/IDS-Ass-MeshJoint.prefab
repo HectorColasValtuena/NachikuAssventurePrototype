@@ -101,12 +101,12 @@ ConfigurableJoint:
   m_TargetVelocity: {x: 0, y: 0, z: 0}
   m_XDrive:
     serializedVersion: 3
-    positionSpring: 32
+    positionSpring: 64
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
-    positionSpring: 32
+    positionSpring: 64
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ZDrive:
@@ -129,7 +129,7 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 64
+    positionSpring: 128
     positionDamper: 0
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
