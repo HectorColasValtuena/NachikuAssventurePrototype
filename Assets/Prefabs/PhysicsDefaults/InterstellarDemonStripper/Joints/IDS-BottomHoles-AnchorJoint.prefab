@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4162084163571020770}
   - component: {fileID: 4834676435746489894}
   m_Layer: 0
-  m_Name: IDS-Vulva-AnchorJoint
+  m_Name: IDS-BottomHoles-AnchorJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,12 +101,12 @@ ConfigurableJoint:
   m_TargetVelocity: {x: 0, y: 0, z: 0}
   m_XDrive:
     serializedVersion: 3
-    positionSpring: 128
+    positionSpring: 48
     positionDamper: 16
     maximumForce: 3.4028233e+38
   m_YDrive:
     serializedVersion: 3
-    positionSpring: 128
+    positionSpring: 48
     positionDamper: 16
     maximumForce: 3.4028233e+38
   m_ZDrive:
