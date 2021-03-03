@@ -44,18 +44,20 @@ namespace ASSistant.ComponentConfiguration
 		private static void ApplySettingsRecursive <T> (T _this, T sample) where T: Component
 		{
 			Type type = typeof(T);
-			FieldInfo[] fields = type.GetFields(fieldBindingFlags);
+
 			PropertyInfo[] properties = type.GetProperties(propertyBindingFlags);
-
-			foreach (FieldInfo field in fields)
-			{
-				ApplyField(field, _this, sample);
-			}
-
 			foreach (PropertyInfo property in properties)
 			{
 				ApplyProperty(property, _this, sample);
 			}
+
+			/*
+			FieldInfo[] fields = type.GetFields(fieldBindingFlags);
+			foreach (FieldInfo field in fields)
+			{
+				ApplyField(field, _this, sample);
+			}
+			//*/
 
 			//if current object is NOT a component and base class is not component, reiterate with inherited class
 			if (type != typeof(Component) && type.BaseType != typeof(Component))
