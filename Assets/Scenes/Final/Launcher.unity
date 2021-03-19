@@ -598,27 +598,24 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "!Hi! First and foremost, thank you for giving me a chance by seeing this.\nI'm
     Hector Col\xE1s Valtue\xF1a, an indie developer, and it took me quite an effort
-    to put this together.\n\nThis is a practical demo/prototype of the \"PHysically
-    AnimaTAble Stretchable Sprites\" framework.\nIt's intended as a sample of the
-    kind of BRUTAL porn videogame we could make together, with YOUR name!\n\nYou'll
-    love it. Please, after trying it out contact me back at HECTORCOLASVALTUENA@GMAIL.COM\nIt'd
-    be a dream come true to publish a game with Gmeen's name  and art.\nI'd also
-    like to split profits fair and equal, I'm here to make art not exploit anyone
-    :)\n\r\nIMPORTANT DISCLAIMERS\n>>   I own none of the art portrayed here. All
-    of it is used under either free-use license or explicit permission, and without
-    comercial intent.\n>   Particularly, the two first drawings featured here were
-    authored by a great artist, Nasuki (Paula Valiente).\nShe very generously let
-    me use her  art for private demo purposes. Thanks, Nasuki!\n> I also included
-    a sample using one of my favourite drawings of yours. It's only intended as a
-    private sample. None of your property will ever be published without your explicit
-    consent.\n\n>>   THIS IS JUST A PROTOTYPE. There's a lot of holes and no behaviour
-    is final. These are only very simple samples. Furthermore, I am no artist yet
-    I had to patch and slice the featured drawings to the best of my skill... to
-    hillarious results.\n>> If you're running this in a browser, be warned performance
-    is ABYSMAL. Particularly in chrome. Desktop runs smoothly.\n\n>> This is a PRIVATE
-    demo. Not only I don't want to share this publicly yet, as mentioned other artists
-    shared or licensed this for private use only. Please, do not share. I beg not
-    only for me but for respect to the artists :)"
+    to put this together.\n\nThis is a demo of the \"PHysically AnimaTAble Stretchable
+    Sprites\" (PHATASS) framework.\nIt's intended as a sample of the kind of BRUTAL
+    porn videogame we could make together, with YOUR name!\nOf course, splitting
+    the profits too. I want to make videogames not exploit anyone :)\n\nYou'll love
+    it. Please, after trying it out contact me back at PHATASSSTUDIOS@GMAIL.COM or
+    https://twitter.com/PhatassStudios\n\r\nIMPORTANT DISCLAIMERS\n>>   I own none
+    of the art portrayed here. All of it is used under either free-use license or
+    explicit permission, and without comercial intent.\n>   Particularly I'm borrowing
+    artwork from Nachikusan and Gmeen.\nThey very generously let me use their  art
+    for private demo purposes. Thank you both!\n> Check them out on twitter!  https://twitter.com/Nachikusan_
+    https://twitter.com/GmeenOfficial\n\n>>   THIS IS JUST A PROTOTYPE. There's a
+    lot of holes and no behaviour is final. These are only very simple samples. Furthermore,
+    I am no artist yet I had to patch and slice the featured drawings to the best
+    of my skill... to hillarious results.\n>> If you're running this in a browser,
+    be warned performance is ABYSMAL. Particularly in chrome. Desktop runs smoothly.\n\n>>
+    This is a PRIVATE demo. Not only I don't want to share this publicly yet,  other
+    artists shared or licensed this for private use only. Please, do not share. I
+    beg not only for me but for respect to the artists :)"
 --- !u!222 &1224841239
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -965,7 +962,7 @@ GameObject:
   - component: {fileID: 1869157012}
   - component: {fileID: 1869157011}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: donotshare text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1044,7 +1041,7 @@ GameObject:
   - component: {fileID: 1961268249}
   - component: {fileID: 1961268248}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: TitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1102,7 +1099,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PHATASS framework demo v uO.l
+  m_Text: PHATASS framework demo v AO.l
 --- !u!222 &1961268249
 CanvasRenderer:
   m_ObjectHideFlags: 0
