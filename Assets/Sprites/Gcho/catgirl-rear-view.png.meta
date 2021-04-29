@@ -114,7 +114,37 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-    bones: []
+    bones:
+    - name: HipBone
+      position: {x: 385.4166, y: 375.92368, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      length: 0
+      parentId: -1
+    - name: LeftUpperLegBone
+      position: {x: -77.426636, y: -39.291138, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6895212, w: 0.7242655}
+      length: 211.73438
+      parentId: 0
+    - name: LeftLowerLegBone
+      position: {x: 211.73438, y: 0.0000039554125, z: 0}
+      rotation: {x: 0, y: 0, z: 0.5759049, w: 0.8175167}
+      length: 199.24005
+      parentId: 1
+    - name: LeftFootBone
+      position: {x: 199.24004, y: -0.000013479245, z: 0}
+      rotation: {x: 0, y: 0, z: -0.120804995, w: 0.99267626}
+      length: 49.74541
+      parentId: 2
+    - name: RightUpperLegBone
+      position: {x: 62.403564, y: -41.602386, z: 0}
+      rotation: {x: 0, y: -0, z: -0.77180475, w: 0.6358596}
+      length: 187.20358
+      parentId: 0
+    - name: RightLowerLegBone
+      position: {x: 187.20358, y: 0.000022862447, z: 0}
+      rotation: {x: 0, y: 0, z: 0.49059027, w: 0.8713904}
+      length: 85.89769
+      parentId: 4
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
