@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3731531104364136496}
   - component: {fileID: 1742885846346054137}
   m_Layer: 0
-  m_Name: IDS-Ass-Collider
+  m_Name: GCHO-Surfaces-Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
