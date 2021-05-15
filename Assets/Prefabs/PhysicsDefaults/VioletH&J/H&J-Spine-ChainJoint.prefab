@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3525077929595807720}
   - component: {fileID: 7288562438287999319}
   m_Layer: 0
-  m_Name: IDS-Tail-ChainJoint
+  m_Name: H&J-Spine-ChainJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ ConfigurableJoint:
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 5
+    limit: 3
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -129,8 +129,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 20
-    positionDamper: 20
+    positionSpring: 24
+    positionDamper: 8
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0
