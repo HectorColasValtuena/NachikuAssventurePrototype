@@ -12,24 +12,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Curtain.unity
     guid: 432c285153b09b442861357dd707d565
   - enabled: 1
+    path: Assets/Scenes/VioletH&J.unity
+    guid: 5734a1203d9394f40967fc67b239137b
+  - enabled: 0
     path: Assets/Scenes/Final/Menu/MenuMain.unity
     guid: 15b85e1e363966e4a995f9d4697fd598
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Quitter.unity
     guid: 35968d4cb0ebc204ca7bf3bcc8efdb6a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Menu/MenuExtras.unity
     guid: 295effee5577ce24998bee7e89558ac0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Scene1-AssTail.unity
     guid: 5d92c6eb38ee37f45b7ea1ce6061b230
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/DEEMENS.unity
     guid: 320485ac2fbed844e8fd7b8ee592bafe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/InterstellarDemonStripper-Simplified.unity
     guid: f2c0db069cc01fb4e8683d95b545faba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Final/Menu/MenuCredits.unity
     guid: 5bc9b2e379b86b64889b30dd253556dc
   m_configObjects: {}

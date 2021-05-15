@@ -17482,6 +17482,7 @@ GameObject:
   - component: {fileID: 275659669}
   - component: {fileID: 275659671}
   - component: {fileID: 275659670}
+  - component: {fileID: 275659672}
   m_Layer: 9
   m_Name: NeckUpperBone
   m_TagString: Untagged
@@ -17527,12 +17528,32 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
+--- !u!114 &275659672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275659668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c564fd3368b564daf42b8275a9f86c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomDelay:
+    min: 2
+    max: 5
+  randomForce:
+    min: 1
+    max: 2
+  targetRigidbody: {fileID: 0}
+  direction: 0
 --- !u!1 &278760685
 GameObject:
   m_ObjectHideFlags: 0
@@ -18338,6 +18359,8 @@ GameObject:
   - component: {fileID: 292796554}
   - component: {fileID: 292796555}
   - component: {fileID: 292796556}
+  - component: {fileID: 292796557}
+  - component: {fileID: 292796558}
   m_Layer: 9
   m_Name: RLowerArmBone
   m_TagString: Grabbable
@@ -18384,12 +18407,56 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
+--- !u!114 &292796557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292796553}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4907032cf4c49448b0186777b71142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomDelay:
+    min: 0.2
+    max: 2
+  randomForce:
+    min: 2
+    max: 4
+  targetRigidbody: {fileID: 0}
+  forceAngleRange:
+    min: 0
+    max: 360
+--- !u!114 &292796558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292796553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775e7f8635e7c4048a94578b2f7c6d87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomDelay:
+    min: 0.1
+    max: 0.1
+  randomForce:
+    min: 10
+    max: 30
+  targetRigidbody: {fileID: 0}
+  forceAngleRange:
+    min: 0
+    max: 360
 --- !u!1 &306999575
 GameObject:
   m_ObjectHideFlags: 0
@@ -33917,7 +33984,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -62673,7 +62740,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -62760,8 +62827,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 4
-    positionDamper: 2
+    positionSpring: 2
+    positionDamper: 1
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -80943,7 +81010,7 @@ Rigidbody:
   m_GameObject: {fileID: 1293454917}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.05
+  m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -88831,7 +88898,7 @@ Rigidbody:
   m_GameObject: {fileID: 1390677365}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.05
+  m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -89014,8 +89081,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 16
-    positionDamper: 8
+    positionSpring: 2
+    positionDamper: 1
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
@@ -102161,7 +102228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1589950142
 Transform:
   m_ObjectHideFlags: 0
@@ -133025,7 +133092,7 @@ Rigidbody:
   m_GameObject: {fileID: 2136388735}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.05
+  m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -133208,8 +133275,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 4
-    positionDamper: 2
+    positionSpring: 2
+    positionDamper: 1
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 0
   m_ProjectionDistance: 0.1
