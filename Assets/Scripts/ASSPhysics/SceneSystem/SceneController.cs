@@ -52,6 +52,7 @@ namespace ASSPhysics.SceneSystem
 			}
 		}
 
+		//[TO-DO]: ChangeScene should return a value indicating success on scene change, or failure
 		public void ChangeScene (int targetScene, float minimumWait = 0.0f)
 		{
 			if (busy) { return; }
