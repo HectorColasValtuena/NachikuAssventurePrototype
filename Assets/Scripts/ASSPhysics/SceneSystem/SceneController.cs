@@ -15,7 +15,7 @@ namespace ASSPhysics.SceneSystem
 		private static class SceneNumbers
 		{
 			public static readonly int LAUNCHER = 0;	//unused, included for consistency
-			public static readonly int CURTAINS = 1;
+			public static readonly int TRANSITION = 1;
 			public static readonly int MAINMENU = 2;
 			public static readonly int QUITTER = 3;
 		}
@@ -26,7 +26,7 @@ namespace ASSPhysics.SceneSystem
 		//initialize method manually launchs the curtains layer scene through unityengine's SceneManager
 		public static void Initialize ()
 		{
-			SceneManager.LoadScene(SceneNumbers.CURTAINS, LoadSceneMode.Additive);
+			SceneManager.LoadScene(SceneNumbers.TRANSITION, LoadSceneMode.Additive);
 		}
 	//ENDOF static properties and methods
 
@@ -105,7 +105,7 @@ namespace ASSPhysics.SceneSystem
 
 		private AsyncOperation UnloadActiveScene ()
 		{
-			if (SceneManager.GetActiveScene().buildIndex == SceneNumbers.CURTAINS)
+			if (SceneManager.GetActiveScene().buildIndex == SceneNumbers.TRANSITION)
 			{
 				Debug.LogWarning("Cannot unload curtain scene - ignoring request");
 				return null;
