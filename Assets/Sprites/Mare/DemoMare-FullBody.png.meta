@@ -117,100 +117,100 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones:
-    - name: bone_1
+    - name: LowerBack[ROOT]
       guid: 44214dc103e53ec40a3a60c8a09e2f83
-      position: {x: 570.84503, y: 740.3703, z: 0}
+      position: {x: 570.84503, y: 740.3703, z: 100}
       rotation: {x: 0, y: 0, z: 0.49974892, w: 0.86617035}
-      length: 241.00508
+      length: 241.00514
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_2
+    - name: UpperBack
       guid: 77aba3f5029019645b76db3577e07bee
-      position: {x: 241.00511, y: 0.000006708644, z: 0}
-      rotation: {x: 0, y: 0, z: 0.2316287, w: 0.9728043}
-      length: 460.4143
+      position: {x: 241.00516, y: 0.00003725686, z: 99}
+      rotation: {x: 0, y: 0, z: 0.23162873, w: 0.97280425}
+      length: 460.41437
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_3
+    - name: RightUpperLeg
       guid: af0346ca71081e2438422e57386d04bb
-      position: {x: -102.53185, y: 125.24372, z: 0}
+      position: {x: -102.53185, y: 125.24372, z: 220}
       rotation: {x: 0, y: -0, z: -0.8338213, w: 0.55203444}
       length: 677.4518
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_4
+    - name: RightLowerLeg
       guid: 2d5fdaee779b89a47b06f535fa3fe242
-      position: {x: 677.4518, y: 0.000034297213, z: 0}
-      rotation: {x: 0, y: 0, z: -0.89949566, w: 0.43692982}
+      position: {x: 677.4518, y: 0.000025118461, z: 210}
+      rotation: {x: 0, y: 0, z: -0.89949566, w: 0.43692988}
       length: 776.0769
       parentId: 2
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_5
+    - name: LeftUpperLeg
       guid: a6345f0a8c9d8b64f8f1fe7e5d717122
-      position: {x: -256.88138, y: 20.947786, z: 0}
+      position: {x: -256.88138, y: 20.947786, z: 20}
       rotation: {x: 0, y: 0, z: -0.56228596, w: 0.82694286}
       length: 797.62787
       parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_6
+    - name: LeftLowerLeg
       guid: 6ee4f19742740f34590836cad8a2e26e
-      position: {x: 797.62787, y: 0.00005660513, z: 0}
+      position: {x: 797.62787, y: 0.00008679054, z: 50}
       rotation: {x: 0, y: 0, z: -0.99190164, w: 0.12700835}
       length: 793.4865
       parentId: 4
       color:
         serializedVersion: 2
         rgba: 4294902015
-    - name: bone_7
+    - name: Neck
       guid: a432ceafd559fc944b5f907234e6f718
-      position: {x: 460.41428, y: -0.000021620222, z: 0}
+      position: {x: 460.41434, y: 0.000009595099, z: 100}
       rotation: {x: 0, y: 0, z: -0.037932657, w: 0.99928033}
       length: 148.00377
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278223103
-    - name: bone_8
+    - name: RightUpperArm
       guid: fd3a7985b10673f4da41d0f7e1237267
-      position: {x: 442.77866, y: 80.63211, z: 0}
-      rotation: {x: 0, y: 0, z: -0.9912111, w: 0.1322897}
-      length: 566.5087
+      position: {x: 442.77866, y: 80.63211, z: 200}
+      rotation: {x: 0, y: -0, z: -0.99121106, w: 0.13228989}
+      length: 566.5089
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255488
-    - name: bone_9
+    - name: RightLowerArm
       guid: eaa1767b9215f744b9c6bd6184554725
-      position: {x: 566.5088, y: 0.000027839906, z: 0}
-      rotation: {x: 0, y: 0, z: 0.10055243, w: 0.9949318}
+      position: {x: 566.50885, y: -0.00019166898, z: 190}
+      rotation: {x: 0, y: 0, z: 0.10055223, w: 0.9949318}
       length: 327.05252
       parentId: 7
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_10
+    - name: LeftUpperArm
       guid: 82163c233244a7f4a9e62c7d973591f9
-      position: {x: 474.49603, y: -133.0815, z: 0}
+      position: {x: 474.49603, y: -133.0815, z: 10}
       rotation: {x: 0, y: 0, z: 0.99993193, w: 0.011670152}
       length: 693.36127
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294934528
-    - name: bone_11
+    - name: Head
       guid: 19f0cb0702766e541b0ab7cd81110cc9
-      position: {x: 148.00375, y: -0.0000171893, z: 0}
-      rotation: {x: 0, y: 0, z: 0.16305846, w: 0.9866165}
+      position: {x: 148.00371, y: 0.00007358977, z: 110}
+      rotation: {x: 0, y: 0, z: 0.16305839, w: 0.98661643}
       length: 269.17133
       parentId: 6
       color:
